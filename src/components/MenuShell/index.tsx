@@ -123,15 +123,15 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                         </div>
                         {/* end */}
                       </div>
-                      <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
+                      <div className="flex-1 h-0 pt-0 pb-2 overflow-y-auto">
                         <div className="flex-shrink-0 flex items-center px-4">
                           <img
-                            className="h-8 w-auto"
-                            src="/android-chrome-192x192.png"
-                            alt="Brf Imatra"
+                            className="h-20 w-auto"
+                            src="/brf_imatra_logo_200x200.png"
+                            alt="Brf Imatra logo"
                           />
                         </div>
-                        <nav className="mt-5 px-2 space-y-1">
+                        <nav className="mt-2 px-2 space-y-1">
                           <MenuItem
                             text="Hem"
                             href="/"
@@ -151,7 +151,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                           <MenuItem
                             text="Föreningssträmma"
                             mobile={true}
-                            icon={MenuItemIcon.scheduel}
+                            icon={MenuItemIcon.calendar}
                           />
                           <MenuItem
                             text="Dokument"
@@ -162,6 +162,11 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                             text="Nyhetsarkiv"
                             mobile={true}
                             icon={MenuItemIcon.barchart}
+                          />
+                          <MenuItem
+                            text="Hjälp"
+                            mobile={true}
+                            icon={MenuItemIcon.support}
                           />
                         </nav>
                       </div>
@@ -180,15 +185,15 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
         <div className="hidden md:flex md:flex-shrink-0">
           <div className="flex flex-col w-64">
             <div className="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
-              <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+              <div className="flex-1 flex flex-col pt-0 pb-1 overflow-y-auto">
                 <div className="flex items-center flex-shrink-0 px-4">
                   <img
-                    className="h-8 w-auto"
-                    src="/android-chrome-192x192.png"
-                    alt="Workflow"
+                    className="h-24 w-auto"
+                    src="/brf_imatra_logo_200x200.png"
+                    alt="Brf Imatra logo"
                   />
                 </div>
-                <nav className="mt-5 flex-1 px-2 bg-white space-y-1">
+                <nav className="mt-1 flex-1 px-2 bg-white space-y-1">
                   <MenuItem text="Hem" href="/" icon={MenuItemIcon.home} />
                   <MenuItem
                     text="Medlemsinformation"
@@ -197,10 +202,11 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                   <MenuItem text="Kontakta oss" icon={MenuItemIcon.folder} />
                   <MenuItem
                     text="Föreningssträmma"
-                    icon={MenuItemIcon.scheduel}
+                    icon={MenuItemIcon.calendar}
                   />
                   <MenuItem text="Dokument" icon={MenuItemIcon.document} />
                   <MenuItem text="Nyhetsarkiv" icon={MenuItemIcon.barchart} />
+                  <MenuItem text="Hjälp" icon={MenuItemIcon.support} />
                 </nav>
               </div>
               {profileElement}
