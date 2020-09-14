@@ -127,7 +127,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                         <div className="flex-shrink-0 flex items-center px-4">
                           <img
                             className="h-20 w-auto"
-                            src="/brf_imatra_logo_200x200.png"
+                            src="/brf_imatra_logo_359x322.jpg"
                             alt="Brf Imatra logo"
                           />
                         </div>
@@ -189,7 +189,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                 <div className="flex items-center flex-shrink-0 px-4">
                   <img
                     className="h-24 w-auto"
-                    src="/brf_imatra_logo_200x200.png"
+                    src="/brf_imatra_logo_359x322.jpg"
                     alt="Brf Imatra logo"
                   />
                 </div>
