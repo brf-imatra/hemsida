@@ -1,5 +1,7 @@
 # BRF Imatra
 
+![Node.js CI](https://github.com/brf-imatra/hemsida/workflows/Node.js%20CI/badge.svg)
+
 Welcome to the source code for building the homepage for [brfimatra.se](https://brfimatra.se)
 
 
