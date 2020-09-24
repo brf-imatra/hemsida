@@ -123,10 +123,10 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                         </div>
                         {/* end */}
                       </div>
-                      <div className="flex-1 h-0 pt-0 pb-2 overflow-y-auto">
+                      <div className="flex-1 h-auto pt-0 pb-2 overflow-y-auto">
                         <div className="flex-shrink-0 flex items-center px-4">
                           <img
-                            className="h-20 w-auto"
+                            className="h-12 md:h-16 w-auto"
                             src="/brf_imatra_logo_359x322.jpg"
                             alt="Brf Imatra logo"
                           />
@@ -137,36 +137,45 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                             href="/"
                             mobile={true}
                             icon={MenuItemIcon.home}
+                            setIsShowing={setIsShowing}
                           />
                           <MenuItem
                             text="Medlemsinformation"
+                            href="/medlemsinformation"
                             mobile={true}
                             icon={MenuItemIcon.users}
+                            setIsShowing={setIsShowing}
                           />
                           <MenuItem
                             text="Kontakta oss"
+                            href="/kontakt"
                             mobile={true}
                             icon={MenuItemIcon.folder}
+                            setIsShowing={setIsShowing}
                           />
                           <MenuItem
-                            text="Föreningssträmma"
+                            text="Föreningsstämma"
                             mobile={true}
                             icon={MenuItemIcon.calendar}
+                            setIsShowing={setIsShowing}
                           />
                           <MenuItem
                             text="Dokument"
                             mobile={true}
                             icon={MenuItemIcon.document}
+                            setIsShowing={setIsShowing}
                           />
                           <MenuItem
                             text="Nyhetsarkiv"
                             mobile={true}
                             icon={MenuItemIcon.barchart}
+                            setIsShowing={setIsShowing}
                           />
                           <MenuItem
                             text="Hjälp"
                             mobile={true}
                             icon={MenuItemIcon.support}
+                            setIsShowing={setIsShowing}
                           />
                         </nav>
                       </div>
@@ -194,19 +203,44 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                   />
                 </div>
                 <nav className="mt-1 flex-1 px-2 bg-white space-y-1">
-                  <MenuItem text="Hem" href="/" icon={MenuItemIcon.home} />
+                  <MenuItem
+                    text="Hem"
+                    href="/"
+                    icon={MenuItemIcon.home}
+                    setIsShowing={setIsShowing}
+                  />
                   <MenuItem
                     text="Medlemsinformation"
+                    href="/medlemsinformation"
                     icon={MenuItemIcon.users}
+                    setIsShowing={setIsShowing}
                   />
-                  <MenuItem text="Kontakta oss" icon={MenuItemIcon.folder} />
                   <MenuItem
-                    text="Föreningssträmma"
-                    icon={MenuItemIcon.calendar}
+                    text="Kontakta oss"
+                    href="/kontakt"
+                    icon={MenuItemIcon.folder}
+                    setIsShowing={setIsShowing}
                   />
-                  <MenuItem text="Dokument" icon={MenuItemIcon.document} />
-                  <MenuItem text="Nyhetsarkiv" icon={MenuItemIcon.barchart} />
-                  <MenuItem text="Hjälp" icon={MenuItemIcon.support} />
+                  <MenuItem
+                    text="Föreningsstämma"
+                    icon={MenuItemIcon.calendar}
+                    setIsShowing={setIsShowing}
+                  />
+                  <MenuItem
+                    text="Dokument"
+                    icon={MenuItemIcon.document}
+                    setIsShowing={setIsShowing}
+                  />
+                  <MenuItem
+                    text="Nyhetsarkiv"
+                    icon={MenuItemIcon.barchart}
+                    setIsShowing={setIsShowing}
+                  />
+                  <MenuItem
+                    text="Hjälp"
+                    icon={MenuItemIcon.support}
+                    setIsShowing={setIsShowing}
+                  />
                 </nav>
               </div>
               {profileElement}
@@ -239,19 +273,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
             className="flex-1 relative z-0 overflow-y-auto focus:outline-none"
             tabIndex={0}
           >
-            <div className="pt-2 pb-6 md:py-6">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-                <h1 className="text-2xl font-semibold text-gray-900">
-                  Information om BRF Imatra
-                </h1>
-              </div>
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-                <div className="py-4">
-                  <div className="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
-                </div>
-                {children}
-              </div>
-            </div>
+            {children}
           </main>
         </div>
       </div>
