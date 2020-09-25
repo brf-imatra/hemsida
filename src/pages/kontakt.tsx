@@ -1,55 +1,76 @@
 import React, { Children, PropsWithChildren } from "react";
-import { Body, Card } from "../components";
+import { Body, Card, MenuItemIcon } from "../components";
 
 export default function MedlemsInfomation() {
   return (
-    <Body title="Medlemsinformation">
+    <Body title="Kontakta oss">
       <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
         <DescriptionList
           title="HSB Medlemsservice"
           description="Vår förvaltare HSB tar hand om administrativa ärenden som faktura-frågor, felanmälan, nyckelhantering och andra löpande ärenden."
         >
-                        <DescriptionListRow title="Telefon kl 9-17">
-                <span><a href="tel:010-442 11 00">010-442 11 00</a></span>
-            </DescriptionListRow>
-            <DescriptionListRow title="Epost">
-                <a href="mailto:service.stockholm@hsb.se">service.stockholm@hsb.se</a>
-            </DescriptionListRow>
-            <DescriptionListRow title="Besök">
-                Finlandsgatan 10
-            </DescriptionListRow>
-            <DescriptionListRow title="Öppettider">
-                <dl>
-                <dt className="text-sm leading-5 font-medium text-gray-500 pb-2">
-                    1 september - 30 juni
-                    </dt>
-                    <dt>
-                    Måndag & onsdag 8-12
-                    </dt>
-                    <dt>
-                    Tisdag & torsdag 13-18
-                    </dt>
-                </dl>
-            </DescriptionListRow>
-
-            <DescriptionListRow>
+          <DescriptionListRow title="Telefon kl 9-17" borderless={true}>
+            <div className="flex flex-1">
+                <MyIcon icon={MenuItemIcon.phone} />
+              <span className="pl-2">
+                <a
+                  href="tel:010-442 11 00"
+                  className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
+                >
+                  010-442 11 00
+                </a>
+              </span>
+            </div>
+          </DescriptionListRow>
+          <DescriptionListRow title="Epost">
+          <div className="flex flex-1">
+          <MyIcon icon={MenuItemIcon.mail} />
+          <span className="pl-2">
+            <a
+              href="mailto:service.stockholm@hsb.se"
+              className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
+            >
+              service.stockholm@hsb.se
+            </a>
+            </span>
+            </div>
+          </DescriptionListRow>
+          <DescriptionListRow title="Besök">
+            Finlandsgatan 10
+          </DescriptionListRow>
+          <DescriptionListRow title="Öppettider">
             <dl>
-                    <dt className="text-sm leading-5 font-medium text-gray-500 pb-2">
-                    1 juli - 31 augusti
-                    </dt>
-                    <dt>
-                    Måndag 8-12
-                    </dt>
-                    <dt>
-                    Torsdag 13-18
-                    </dt>
-                </dl>
-            </DescriptionListRow>
-           <DescriptionListRow title="Akut felanmälan dygnet runt">
-            <span><a href="tel:08-695 00 00">08-695 00 00</a></span>
-           </DescriptionListRow>
-        </DescriptionList>
+              <dt className="text-sm leading-5 font-medium text-gray-500 pb-2">
+                1 september - 30 juni
+              </dt>
+              <dt>Måndag & onsdag 8-12</dt>
+              <dt>Tisdag & torsdag 13-18</dt>
+            </dl>
+          </DescriptionListRow>
 
+          <DescriptionListRow borderless={true}>
+            <dl>
+              <dt className="text-sm leading-5 font-medium text-gray-500 pb-2">
+                1 juli - 31 augusti
+              </dt>
+              <dt>Måndag 8-12</dt>
+              <dt>Torsdag 13-18</dt>
+            </dl>
+          </DescriptionListRow>
+          <DescriptionListRow title="Akut felanmälan dygnet runt">
+          <div className="flex flex-1">
+              <MyIcon icon={MenuItemIcon.phone} />
+            <span className="ml-2">
+              <a
+                href="tel:08-695 00 00"
+                className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
+              >
+                08-695 00 00
+              </a>
+            </span>
+            </div>
+          </DescriptionListRow>
+        </DescriptionList>
 
         <Card2 title="HSB Fastighetsskötaren" />
 
@@ -88,7 +109,7 @@ interface DescriptionListProps {
 function DescriptionList({
   title,
   description,
-  children
+  children,
 }: PropsWithChildren<DescriptionListProps>) {
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-lg">
@@ -99,36 +120,39 @@ function DescriptionList({
         </p>
       </div>
       <div className="px-4 py-5 sm:p-0">
-        <dl>
-            {children}
-        </dl>
+        <dl>{children}</dl>
       </div>
     </div>
   );
 }
 
 interface DescriptionListRowProps {
-    title?: string
+  title?: string;
+  borderless?: boolean;
 }
 
-function DescriptionListRow({title, children}: PropsWithChildren<DescriptionListRowProps>) {
-    return (
-        <div className="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
-        <dt className="text-sm leading-5 font-medium text-gray-500">
-          {title}
-        </dt>
-        <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-          {children}
-        </dd>
-      </div>
-    )
-}
+function DescriptionListRow({
+  title,
+  borderless = false,
+  children,
+}: PropsWithChildren<DescriptionListRowProps>) {
+  const blah = borderless
+    ? "sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-5"
+    : "mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5";
 
+  return (
+    <div className={blah}>
+      <dt className="text-sm leading-5 font-medium text-gray-500">{title}</dt>
+      <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
+        {children}
+      </dd>
+    </div>
+  );
+}
 
 function BodyMoving() {
-    return (
-        <>
-
+  return (
+    <>
       <div className="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
         <dt className="text-sm leading-5 font-medium text-gray-500">
           Application for
@@ -154,15 +178,12 @@ function BodyMoving() {
         </dd>
       </div>
       <div className="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
-        <dt className="text-sm leading-5 font-medium text-gray-500">
-          About
-        </dt>
+        <dt className="text-sm leading-5 font-medium text-gray-500">About</dt>
         <dd className="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-          Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim
-          incididunt cillum culpa consequat. Excepteur qui ipsum aliquip
-          consequat sint. Sit id mollit nulla mollit nostrud in ea officia
-          proident. Irure nostrud pariatur mollit ad adipisicing
-          reprehenderit deserunt qui eu.
+          Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt
+          cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint.
+          Sit id mollit nulla mollit nostrud in ea officia proident. Irure
+          nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
         </dd>
       </div>
       <div className="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
@@ -175,7 +196,7 @@ function BodyMoving() {
               <div className="w-0 flex-1 flex items-center">
                 {/* <!-- Heroicon name: paper-clip --> */}
                 <svg
-                  class="flex-shrink-0 h-5 w-5 text-gray-400"
+                  className="flex-shrink-0 h-5 w-5 text-gray-400"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -228,6 +249,27 @@ function BodyMoving() {
           </ul>
         </dd>
       </div>
-      </>
+    </>
+  );
+}
+
+
+interface MyIconProps {
+    icon: MenuItemIcon
+}
+
+function MyIcon({icon}: MyIconProps) {
+    return (
+        <svg
+        className="flex-shrink-0 h-5 w-5 text-gray-400"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d={icon}
+          clip-rule="evenodd"
+        />
+      </svg>
     )
 }
