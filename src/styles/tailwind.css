@@ -3,3 +3,12 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer base {
+    .prose a:hover {
+        @apply font-medium text-indigo-500 transition duration-150 ease-in-out;
+    }
+    .prose a {
+        @apply font-medium text-indigo-600;
+    }
+}

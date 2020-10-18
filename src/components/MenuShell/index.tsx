@@ -94,10 +94,10 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                 {(ref) => (
                   <div ref={ref}>
                     <div className="relative flex-1 flex flex-col max-w-xs w-full bg-white">
-                      <div className="absolute top-0 right-0 -mr-14 p-1">
+                      <div className="absolute top-0 right-0 -mr-1 p-1">
                         {/* start */}
                         <div
-                          className="absolute top-0 right-0 -mr-14 p-1"
+                          className="absolute top-0 right-0 -mr-1 p-1"
                           onClick={() => setIsShowing(false)}
                         >
                           <Transition.Child
@@ -161,6 +161,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                           />
                           <MenuItem
                             text="Dokument"
+                            href="/dokument"
                             mobile={true}
                             icon={MenuItemIcon.document}
                             setIsShowing={setIsShowing}
@@ -228,6 +229,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                   />
                   <MenuItem
                     text="Dokument"
+                    href="/dokument"
                     icon={MenuItemIcon.document}
                     setIsShowing={setIsShowing}
                   />
