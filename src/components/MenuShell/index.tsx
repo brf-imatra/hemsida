@@ -153,12 +153,12 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                             icon={MenuItemIcon.folder}
                             setIsShowing={setIsShowing}
                           />
-                          <MenuItem
+                          {/* <MenuItem
                             text="Föreningsstämma"
                             mobile={true}
                             icon={MenuItemIcon.calendar}
                             setIsShowing={setIsShowing}
-                          />
+                          /> */}
                           <MenuItem
                             text="Dokument"
                             href="/dokument"
@@ -166,7 +166,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                             icon={MenuItemIcon.document}
                             setIsShowing={setIsShowing}
                           />
-                          <MenuItem
+                          {/* <MenuItem
                             text="Nyhetsarkiv"
                             mobile={true}
                             icon={MenuItemIcon.barchart}
@@ -177,7 +177,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                             mobile={true}
                             icon={MenuItemIcon.support}
                             setIsShowing={setIsShowing}
-                          />
+                          /> */}
                         </nav>
                       </div>
                       {mobileProfileElement}
@@ -222,18 +222,18 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                     icon={MenuItemIcon.folder}
                     setIsShowing={setIsShowing}
                   />
-                  <MenuItem
+                  {/* <MenuItem
                     text="Föreningsstämma"
                     icon={MenuItemIcon.calendar}
                     setIsShowing={setIsShowing}
-                  />
+                  /> */}
                   <MenuItem
                     text="Dokument"
                     href="/dokument"
                     icon={MenuItemIcon.document}
                     setIsShowing={setIsShowing}
                   />
-                  <MenuItem
+                  {/* <MenuItem
                     text="Nyhetsarkiv"
                     icon={MenuItemIcon.barchart}
                     setIsShowing={setIsShowing}
@@ -242,7 +242,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                     text="Hjälp"
                     icon={MenuItemIcon.support}
                     setIsShowing={setIsShowing}
-                  />
+                  /> */}
                 </nav>
               </div>
               {profileElement}
