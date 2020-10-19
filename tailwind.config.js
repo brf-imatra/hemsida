@@ -20,9 +20,7 @@ module.exports = {
   },
   typography: (theme) => ({
     default: {
-      css: {
-
-      },
+      css: {},
     },
   }),
   variants: {},

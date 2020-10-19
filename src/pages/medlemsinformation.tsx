@@ -42,21 +42,21 @@ export default function MedlemsInfomation({
       </BasicCard>
 
       <WellOnGrey className="mt-6">
-          <Cykel />
-        </WellOnGrey>
-  
-        <BasicCard className="mt-6">
-          <Förråd />
-        </BasicCard>
-        <WellOnGrey className="mt-6">
-          <Garage />
-        </WellOnGrey>
-        <BasicCard className="mt-6">
-          <Återvinning />
-        </BasicCard>
-        <WellOnGrey className="mt-6">
-          <Tvättstugor />
-        </WellOnGrey>
+        <Cykel />
+      </WellOnGrey>
+
+      <BasicCard className="mt-6">
+        <Förråd />
+      </BasicCard>
+      <WellOnGrey className="mt-6">
+        <Garage />
+      </WellOnGrey>
+      <BasicCard className="mt-6">
+        <Återvinning />
+      </BasicCard>
+      <WellOnGrey className="mt-6">
+        <Tvättstugor />
+      </WellOnGrey>
     </Body>
   );
 }
@@ -78,7 +78,6 @@ function Bostadsrätt({
 }
 
 function Medlemskap() {
-
   const text = `En grundprincip för alla ekonomiska föreningar är att de ska vara öppna. Den som vill bli medlem får inte stängas ute. I en bostadsrättsförening är denna princip inte riktigt lika uttalad.
 
   Styrelsen, som beviljar medlemskapet i bostadsrättsföreningen, prövar om köparen uppfyller de krav som finns i lag och stadgar. Exempelvis ska en medlem kunna fullgöra sina ekonomiska förpliktelser gentemot föreningen. Styrelsen får däremot inte vägra någon medlemskap med hänvisning till att han eller hon inte är svensk medborgare, kommmer från ett visst land eller saknar förmögenhet. Det är dock tillåtet att vägra juridiska personer medlemskap i en bostadsrättsförening. Villkoret för att ditt köp av bostadsrätten ska bli giltigt är att du blivit antagen som medlem.
@@ -86,11 +85,11 @@ function Medlemskap() {
   Styrelsen är skyldig att snarast, normalt inom en månad från ansökan, avgöra frågan och ge dig ett besked. Om styrelsen vägrar dig medlemskap blir överlåtelsen ogiltig och säljaren kvarstår som bostadsrättshavare. Du kan ansöka om prövning i hyresnämnden och hyresnämndens beslut kan överklagas.`;
 
   return (
-    <Centered 
-    introducing="Medlemskap"
-    title="Medlemskap"
-    content={text}
-    summary="Styrelsen beviljar dig medlemskap"
+    <Centered
+      introducing="Medlemskap"
+      title="Medlemskap"
+      content={text}
+      summary="Styrelsen beviljar dig medlemskap"
     />
   );
 }
@@ -126,7 +125,6 @@ function Historik() {
   );
 }
 
-
 function Cykel() {
   const left = `Låst cykelrum finns på varje gård. Detta hittar du i källaren i låghusen. Ha din cykel låst med godkänt lås även i cykel-rummet. Det krävs tagg med full behörighet att komma in. (Märkt 1 eller 2 i standarduppsättningen).
 
@@ -138,29 +136,26 @@ function Cykel() {
 
   return (
     <TwoColumns
-    title="Cykelförvaring"
-    introducing="Cykel"
-    leftContent={left}
-    rightContent={right}
-  />
-  )
+      title="Cykelförvaring"
+      introducing="Cykel"
+      leftContent={left}
+      rightContent={right}
+    />
+  );
 }
-
 
 function Förråd() {
   return (
-              <Centered 
-              introducing="Förvaring"
-              title="Förråd"
-              content="Till varje lägenhet hör ett källarförråd som är märkt med ditt lägenhetsnummer på vit skylt. Vänligen sätt dit hänglås även om du inte använder förrådet så ingen annan tar det."
-              summary=""
-              />
-  )
+    <Centered
+      introducing="Förvaring"
+      title="Förråd"
+      content="Till varje lägenhet hör ett källarförråd som är märkt med ditt lägenhetsnummer på vit skylt. Vänligen sätt dit hänglås även om du inte använder förrådet så ingen annan tar det."
+      summary=""
+    />
+  );
 }
 
-
 function Garage() {
-
   const text = `Under varje gård finns det ett antal garageplatser för uthyrning.
   Våra varmgarage ger dig en garanterad plats, hög säkerhet och är tryggare än gatan. Kontakta HSB som hjälper dig med det praktiska.
 
@@ -169,18 +164,11 @@ function Garage() {
   Det går inte i dagsläget att ladda elbilar i våra garage. Det finns laddare vid husbybadet.`;
 
   return (
-    <Centered 
-    introducing="Bil"
-    title="Garage"
-    content={text}
-    summary=""
-    />
-  )
+    <Centered introducing="Bil" title="Garage" content={text} summary="" />
+  );
 }
 
-
 function Tvättstugor() {
-
   const left = `Det finns elva tvättstugor, två på varje gård i låghusen. Du kan boka vilken du vill av dessa och två åt gången.
   
   Tvättmedel tillsätts automatiskt men går att välja bort med ett knapptryck om du vill använda eget tvättmedel som då läggs in direkt i maskinen. Tänk på att vi har mjukt vatten och ta en mindre dos tvättmedel.`;
@@ -189,20 +177,17 @@ function Tvättstugor() {
   
   _Efter avslutat tvättpass_, vänligen torka av bord och maskiner med trasa, rensa torktumlarens luddfilter och sopa golvet. Torka golvet i torkskåpet om det behövs.`;
 
-
   return (
     <TwoColumns
-    title="Tvättstuga"
-    introducing="Tvättstugor"
-    leftContent={left}
-    rightContent={right}
-  />
-  )
+      title="Tvättstuga"
+      introducing="Tvättstugor"
+      leftContent={left}
+      rightContent={right}
+    />
+  );
 }
 
-
 function Återvinning() {
-
   const text = `I föreningen finns ett miljöhus, beläget vid vändplanen Helsingforsgatan 39-51, utrustat med kärl för bl.a. återvinning av tidningar, glas, elektronik och brännbart material.
   Det finns även en ”batteriholk” för mindre hushållsbatterier.
   
@@ -224,18 +209,17 @@ Detta material får Ni själva ta hand om och slänga gratis på [återvinningsc
 [Link1]: http://www.stockholm.se/avc "Återvinningscentraler"`;
 
   return (
-<Centered 
-    introducing="Återvinning"
-    title="Återvinningsstugans"
-    content={text}
-    summary=""
+    <Centered
+      introducing="Återvinning"
+      title="Återvinningsstugans"
+      content={text}
+      summary=""
     />
-  )
+  );
 }
 
 export function getStaticProps(): { props: { articles: MedlemsInformation } } {
   const articles = readMedlemsInformation();
-
 
   return {
     props: {
