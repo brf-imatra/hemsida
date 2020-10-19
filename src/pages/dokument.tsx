@@ -14,6 +14,7 @@ export default function Dokument() {
         <År2015 />
         <År2014 />
         <År2013 />
+        <År2012 />
       </div>
     </Body>
   );
@@ -290,7 +291,7 @@ function År2014() {
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-md">
       <div className="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
-        <h2 className="text-lg leading-6 font-medium text-gray-900">2013</h2>
+        <h2 className="text-lg leading-6 font-medium text-gray-900">2014</h2>
       </div>
       <ul>
         <li className="border-gray-200">
@@ -319,7 +320,7 @@ function År2013() {
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-md">
       <div className="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
-        <h2 className="text-lg leading-6 font-medium text-gray-900">2012</h2>
+        <h2 className="text-lg leading-6 font-medium text-gray-900">2013</h2>
       </div>
       <ul>
         <li className="border-gray-200">
@@ -336,6 +337,27 @@ function År2013() {
             href="/dokument/arsredovisning/2013/protokoll_brf_imatra_stamma_2013-04-24.pdf"
             tag="PDF"
             title="Föreningsstämma"
+          />
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+
+function År2012() {
+  return (
+    <div className="bg-white shadow overflow-hidden sm:rounded-md">
+      <div className="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
+        <h2 className="text-lg leading-6 font-medium text-gray-900">2012</h2>
+      </div>
+      <ul>
+        <li className="border-gray-200">
+          <FullTest
+            documentName="årsredovisning_2011_imatra.pdf"
+            href="/dokument/arsredovisning/2012/arsredovisning_2011_imatra.pdf"
+            tag="PDF"
+            title="Årsredovisning"
           />
         </li>
       </ul>
