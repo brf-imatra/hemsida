@@ -1,0 +1,82 @@
+import { useRouter } from "next/router";
+import { GetStaticPaths, GetStaticProps, GetStaticPropsResult } from "next";
+import Head from "next/head";
+import { PropsWithChildren } from "react";
+import fs from 'fs';
+import path from 'path';
+
+interface ImatraNyttProps {
+  posts: []
+}
+
+
+export default function ImatraNytt({ posts }: PropsWithChildren<ImatraNyttProps>) {
+  const router = useRouter();
+  const { title } = router.query;
+  console.log(posts);
+
+  return (
+    <div className="bg-gray-400">
+      <Head>
+        <title>BRF Imatra - {title}</title>
+      </Head>
+      <main>
+          <h1 className="text-6xl pl-4 pt-8 uppercase font-extrabold shadow-md ">{title}</h1>
+          {posts.map((x, i) => (<div key={i}>{JSON.stringify(x)}</div>))}
+      </main>
+
+
+      <footer>
+        Brf Imatra
+      </footer>
+    </div>
+  );
+}
+
+
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const files = fs.readdirSync(`${process.cwd()}/content`)
+
+
+  files.push("sommar-2020.md");
+  const paths = files.map((filename) => ({
+    params: {
+      slug: filename.replace(".md", ""),
+    },
+  }));
+
+  console.log(paths);
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+
+
+// : Promise<GetStaticPropsResult<any>>
+export const getStaticProps : GetStaticProps = async ({params: { slug }})  => {
+  const contentsDirectory = path.join(process.cwd(), 'content')
+  const filenames = fs.readdirSync(contentsDirectory);
+
+  const posts = filenames.map((filename) => {
+    const filePath = path.join(contentsDirectory, filename)
+    const fileContents = fs.readFileSync(filePath, 'utf8')
+
+    // Generally you would parse/transform the contents
+    // For example you can transform markdown to HTML here
+
+    return {
+      filename,
+      content: fileContents,
+    }
+  })
+  
+    return {
+      props: {
+        posts
+      }
+    }
+  }
