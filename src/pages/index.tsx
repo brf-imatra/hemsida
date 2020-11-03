@@ -8,8 +8,6 @@ import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const router = useRouter();
-
   return (
     <>
       <div className="relative overflow-hidden">
@@ -34,21 +32,9 @@ export default function Home({
       </div>
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
-          <div
-            className="w-40 pr-5"
-            onClick={() => router.push('/imatranytt/sommar-2020')}
-          >
-            <div className="h-24 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">
-              <h2>Imatra Nytt</h2>
-              <p>Hej hej</p>
-              <ButtonWithIcon primary={false} icon={MenuItemIcon.externalLink}>
-                <a href="http://brfimatra.se" target="_window">
-                  Brf Imatra
-                </a>
-              </ButtonWithIcon>
-            </div>
-          </div>
-          {news.slice(0, 5).map((post) => (
+          <Test />
+          <GruppanslutningCard />
+          {/* {news.slice(0, 5).map((post) => (
             <div
               key={post.id}
               className="pt-10 w-64 pr-5 flex-grow"
@@ -62,9 +48,10 @@ export default function Home({
                 }
                 title={post.title}
                 summary={post.body}
+                hrefLink="/"
               />
             </div>
-          ))}
+          ))} */}
         </div>
       </Body>
     </>
@@ -90,3 +77,53 @@ export const getStaticProps = async () => {
     },
   };
 };
+
+function ExperimentCard() {
+  const router = useRouter();
+  return (
+    <div
+      className="w-40 pr-5"
+      onClick={() => router.push('/imatranytt/sommar-2020')}
+    >
+      <div className="h-24 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">
+        <h2>Imatra Nytt</h2>
+        <p>Hej hej</p>
+        <ButtonWithIcon primary={false} icon={MenuItemIcon.externalLink}>
+          <a href="http://brfimatra.se" target="_window">
+            Brf Imatra
+          </a>
+        </ButtonWithIcon>
+      </div>
+    </div>
+  );
+}
+
+function GruppanslutningCard() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_Documents_re_isxv.png"
+        imageAlt="Internet vanliga frågor"
+        published={null}
+        title="Internet"
+        summary="Föreningen har kollektiv uppkoppling till internet från Bahnhof via datauttag i hallen."
+        hrefLink="/banhof-faq"
+      />
+    </div>
+  );
+}
+
+function Test() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_newspaper_k72w.png"
+        imageAlt="Nya hemsidan"
+        published={null}
+        title="Mer information kommer"
+        summary="Under dom kommande veckorna kommer mer information från nyhetsbrev och boendeinformation att publiseras."
+        hrefLink="#"
+      />
+    </div>
+  );
+}
