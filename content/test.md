@@ -1,3 +1,0 @@
-Hej Brf Imatra!
-
-Kul!

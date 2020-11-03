@@ -154,7 +154,7 @@ function BredbandFrågor() {
     <div className="bg-gray-50">
       <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-          Vanliga frågor om breband
+          Vanliga frågor om bredband
         </h2>
         <div className="mt-6 border-t-2 border-gray-200 pt-6">
           <dl>
