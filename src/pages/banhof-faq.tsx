@@ -133,8 +133,9 @@ function FrågaSvar({ fråga, svar, svar2, first }: FrågaProps) {
     : 'mt-8 border-t border-gray-200 pt-6 md:grid md:grid-cols-12 md:gap-8';
 
   const svar2Element = svar2 ? (
-    <p className="text-base leading-6 text-gray-400">{svar2}</p>
+    <p className="text-base leading-6 text-gray-500 pt-3">{svar2}</p>
   ) : null;
+
 
   return (
     <div className={firstStyle}>
@@ -143,7 +144,7 @@ function FrågaSvar({ fråga, svar, svar2, first }: FrågaProps) {
       </dt>
       <dd className="mt-2 md:mt-0 md:col-span-7">
         <p className="text-base leading-6 text-gray-500">{svar}</p>
-        {svar2}
+        {svar2Element}
       </dd>
     </div>
   );
