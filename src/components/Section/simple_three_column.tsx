@@ -95,7 +95,7 @@ export function SimpleThreeColumn() {
                 />
               </p>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                Betäckningen på bostadsförening är Imatra nr 193.
+                Beteckningen på bostadsförening är Imatra nr 193.
               </p>
             </div>
           </div>
