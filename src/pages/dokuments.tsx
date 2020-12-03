@@ -1,7 +1,7 @@
 import React from 'react';
 import { Body } from '../components';
 
-export default function Dokument() {
+export default function Dokuments() {
   return (
     <Body title="Dokument">
       <div className="grid grid-cols-1 gap-6">
