@@ -36,6 +36,7 @@ export function SimpleThreeColumn() {
                 />
               </p>
             </div>
+
           </div>
           <div className="mt-10 lg:mt-0">
             {/* <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
