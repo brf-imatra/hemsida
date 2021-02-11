@@ -85,7 +85,7 @@ Med vänlig hälsning,
 `;
 export default function Garage() {
     return (
-        <Body title="Garage">
+        <Body>
             <Centered
                 introducing="Digital tjänst för hantering"
                 title="Garageplatser och lokaler"

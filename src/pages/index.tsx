@@ -34,9 +34,11 @@ export default function Home({
       </div>
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
+          <Motioner />
           <ImatraNytt />
           <Garageplatser />
           <GruppanslutningCard />
+
           {/* {news.slice(0, 5).map((post) => (
             <div
               key={post.id}
@@ -144,6 +146,22 @@ function ImatraNytt() {
       />
     </div>
   )
+}
+
+
+function Motioner() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
+        imageAlt="Motioner"
+        published="2021-02-11"
+        title="Motion för 2021"
+        summary="Söndag den 28 februari är sista dagen att komma in med motioner till årets föreningsstämma."
+        hrefLink="/motion"
+      />
+    </div>
+  );
 }
 
 
