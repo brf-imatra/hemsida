@@ -33,6 +33,7 @@ jobs:
     - run: yarn build
       working-directory: ${{ env.working_dir }}
     
+    - run: echo ftp_server | sed -e 's/\(.\)/\1 /g'
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
