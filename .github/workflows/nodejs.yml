@@ -29,3 +29,12 @@ jobs:
       working-directory: ${{ env.working-dir }}
       env:
         CI: true
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ${{ env.working-dir }}/build/
+        dry-run: true
