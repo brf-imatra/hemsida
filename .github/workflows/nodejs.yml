@@ -5,27 +5,42 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   client-build:
 
     runs-on: ubuntu-latest
     env:
-      working-dir: ./
+      working_dir: ./
+      out_dir: ./out/
+      ftp_host: ${{ secrets.FTP_HOST }}
+      ftp_user: ${{ secrets.FTP_USER }}
 
     steps:
     - uses: actions/checkout@v2
-    - name: Client use Node.js 12.x
+    - name: Client use Node.js 15.x
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '15.x'
+        
     - name: Install dependencies
       run: yarn
-      working-directory: ${{ env.working-dir }}
-    - run: yarn build
-      working-directory: ${{ env.working-dir }}
+      working-directory: ${{ env.working_dir }}
+      
+    - run: yarn export
+      working-directory: ${{ env.working_dir }}
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ${{ env.ftp_host }}
+        username: ${{ env.ftp_user }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ${{ env.out_dir }}
+        dry-run: true
+
       env:
         CI: true
