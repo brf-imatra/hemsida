@@ -30,7 +30,7 @@ jobs:
       run: yarn
       working-directory: ${{ env.working_dir }}
       
-    - run: yarn build
+    - run: yarn export
       working-directory: ${{ env.working_dir }}
     
     - name: 📂 Sync files
