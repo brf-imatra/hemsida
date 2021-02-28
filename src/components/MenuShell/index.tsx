@@ -161,7 +161,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                           /> */}
                           <MenuItem
                             text="Dokument"
-                            href="/dokument"
+                            href="/dokuments"
                             mobile={true}
                             icon={MenuItemIcon.document}
                             setIsShowing={setIsShowing}
@@ -183,7 +183,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                       {mobileProfileElement}
                     </div>
 
-                    <div className="flex-shrink-0 w-14"></div>
+                    <div className="flex-shrink-0 w-14"/>
                   </div>
                 )}
               </Transition.Child>
@@ -229,7 +229,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                   /> */}
                   <MenuItem
                     text="Dokument"
-                    href="/dokument"
+                    href="/dokuments"
                     icon={MenuItemIcon.document}
                     setIsShowing={setIsShowing}
                   />

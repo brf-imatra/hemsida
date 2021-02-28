@@ -1,8 +1,14 @@
 import React, { PropsWithChildren } from 'react';
+import Head from 'next/head'
 import { Body, MenuItemIcon } from '../components';
 
 export default function MedlemsInfomation() {
   return (
+      <>
+        <Head>
+           <meta property="og:description" content="Kontakta Brf Imatra" key="description" />
+            <meta property="og:keywords" content="HSB medlemsservice, kontakt, styrelsen, varberedning" key="keywords" />
+        </Head>
     <Body title="Kontakta oss">
       <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
         <HSBMedlemsservice />
@@ -14,6 +20,7 @@ export default function MedlemsInfomation() {
         <Valberedning />
       </div>
     </Body>
+        </>
   );
 }
 
@@ -53,6 +60,16 @@ function HSBMedlemsservice() {
       <DescriptionListRow title="Öppettider">
         <dl>
           <dt className="text-sm leading-5 font-medium text-gray-500 pb-2">
+            Öppettiderna är korrigerade och vi har öppet för drop-in besök:
+          </dt>
+          <dt>Onsdag 8-12</dt>
+          <dt>Torsdag 13-18</dt>
+        </dl>
+      </DescriptionListRow>
+      {/*
+      <DescriptionListRow title="Öppettider">
+        <dl>
+          <dt className="text-sm leading-5 font-medium text-gray-500 pb-2">
             1 september - 30 juni
           </dt>
           <dt>Måndag & onsdag 8-12</dt>
@@ -69,6 +86,7 @@ function HSBMedlemsservice() {
           <dt>Torsdag 13-18</dt>
         </dl>
       </DescriptionListRow>
+      */}
       <DescriptionListRow title="Akut felanmälan dygnet runt">
         <div className="flex flex-1">
           <MyIcon icon={MenuItemIcon.phone} />
@@ -337,7 +355,7 @@ function BodyMoving() {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
                     clipRule="evenodd"
                   />
@@ -364,7 +382,7 @@ function BodyMoving() {
                   fill="currentColor"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
                     clipRule="evenodd"
                   />

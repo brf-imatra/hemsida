@@ -12,21 +12,21 @@
   },
   "dependencies": {
     "@headlessui/react": "^0.2.0",
-    "next": "10.0.0",
+    "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-markdown": "^5.0.2",
+    "react-markdown": "^5.0.3",
     "react-transition-group": "^4.4.1"
   },
   "devDependencies": {
     "@tailwindcss/ui": "^0.7.2",
-    "autoprefixer": "^10.0.1",
-    "@types/node": "^14.14.6",
-    "@types/react": "^16.9.55",
+    "autoprefixer": "^10.2.4",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
     "gray-matter": "^4.0.2",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.1.2",
+    "prettier": "^2.2.1",
     "tailwindcss": "^1.9.6",
-    "typescript": "^4.0.5"
+    "typescript": "^4.1.5"
   }
 }
