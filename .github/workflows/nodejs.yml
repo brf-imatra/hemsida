@@ -16,7 +16,7 @@ jobs:
     env:
       working_dir: ./
       out_dir: ./out/
-      ftp_server: ${{ secrets.FTP_HOST }}
+      ftp_host: ${{ secrets.FTP_HOST }}
       ftp_user: ${{ secrets.FTP_USER }}
 
     steps:
