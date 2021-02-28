@@ -34,7 +34,6 @@ export default function Home({
       </div>
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
-          <Motioner />
           <ImatraNytt />
           <Garageplatser />
           <GruppanslutningCard />
@@ -155,9 +154,9 @@ function Motioner() {
       <Card
         imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
         imageAlt="Motioner"
-        published="2021-02-11"
-        title="Motion för 2021"
-        summary="Söndag den 28 februari är sista dagen att komma in med motioner till årets föreningsstämma."
+        published="2022-02-01"
+        title="Motion för 2022"
+        summary="Måndag den 28 februari är sista dagen att komma in med motioner till årets föreningsstämma."
         hrefLink="/motion"
       />
     </div>
