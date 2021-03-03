@@ -208,7 +208,7 @@ function År2017() {
         <li className="border-gray-200">
           <FullTest
             documentName="protokoll_brf_imatra_stämma_2017-04-27.pdf"
-            href="public/dokument/arsredovisning/2017/protokoll_brf_imatra_stamma_2017-04-27.pdf"
+            href="/dokument/arsredovisning/2017/protokoll_brf_imatra_stamma_2017-04-27.pdf"
             tag="PDF"
             title="Föreningsstämma"
           />
