@@ -46,9 +46,11 @@ export default function MedlemsInfomation({
               </ul>*/}
               <div
                   className="relative h-0 overflow-hidden max-w-full"
-                  style={{"padding-bottom": "25rem"}}
+                  style={{"paddingBottom": "56.25%"}}
               >
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/G64_T709Bns" frameBorder="0"
+                  <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                      src="https://www.youtube.com/embed/G64_T709Bns" frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   ></iframe>
