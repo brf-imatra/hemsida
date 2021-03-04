@@ -30,6 +30,32 @@ export default function MedlemsInfomation({
     <Body title="Medlemsinformation">
       <BasicCard id="bostadsratt">
         <Bostadsrätt {...articles.bostadsratt} />
+            <div className="relative py-16 bg-white overflow-hidden">
+      <div className="relative px-4 sm:px-6 lg:px-8">
+          <div className="text-lg max-w-prose mx-auto mb-6">
+
+      {/*            <h1>INTRESSERAD AV STYRELSEARBETE?</h1>
+          <p>Är du intresserad av att sitta i styrelsen i din bostadsrättsförening, men vet inte riktigt vad det innebär och vad du behöver kunna?
+                  HSB Stockholm erbjuder en föreläsning med verksamhetschef Petrus Jansson som besvarar frågeställningar som:
+              </p>
+              <ul>
+                  <li>Hur arbetar en bostadsrättsförenings styrelse och vilka roller finns?</li>
+                  <li>Hur fungerar en bostadsrättsförenings ekonomi?</li>
+                  <li>Vilka lagar och regler styr en bostadsrättsförening?</li>
+                  <li>Vilket ansvar har styrelsen i en bostadsrättsföreningen?</li>
+              </ul>*/}
+              <div
+                  className="relative h-0 overflow-hidden max-w-full"
+                  style={{"padding-bottom": "25rem"}}
+              >
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/G64_T709Bns" frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  ></iframe>
+              </div>
+          </div>
+      </div>
+            </div>
       </BasicCard>
       <WellOnGrey className="mt-6">
         <Historik />
