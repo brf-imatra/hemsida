@@ -14,6 +14,6 @@ Viktigt, vad ska ni göra:
 1. Lämna nycklarna till fastighetsskötaren som då ordnar så att spolningen kan utföras.
 2. Ni kan även vara hemma när spolningen ska ske om in inte vill lämna nycklarna till fastighetsskötaren.
 
-Ni kan även vara hemma när spolningen ska ske om in inte vill lämna nycklarna till fastighetsskötaren.
+Ni kan även vara hemma när spolningen ska ske om ni inte vill lämna nycklarna till fastighetsskötaren.
 
 > Styrelsen
