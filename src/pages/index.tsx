@@ -171,9 +171,9 @@ function Årsstämma() {
       <Card
         imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
         imageAlt="Kallelse brf Imatra föreningsårsstämma"
-        published="2021-03-24"
+        published="2021-03-30"
         title="Kallelse årsstämma"
-        summary="Kallelse till brf Imatras årsstämma torsdagen 22/4 i Akalla By"
+        summary="Kallelse och dagordning till brf Imatras årsstämma torsdagen 22/4 i Akalla By"
         hrefLink="/arsstamma"
       />
     </div>
