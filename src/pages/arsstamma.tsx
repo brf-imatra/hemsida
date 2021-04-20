@@ -34,7 +34,11 @@ Välkomna
 
 Styrelsen för Brf. Imatra. 
 
-## Dagordning:
+__OBS! Det traditionella samkväm som vi brukar ha efter årstämman måste tyvärr ställas in i år för att minska smittrisken på grund av Covid-19.__
+
+__Handsprit och munskydd kommer att finnas att tillgå på stämman.__
+
+## Dagordning för föreningsstämman 22/4:
 1. Stämmans öppnande
 2. Val av ordförande vid stämman
 3. Anmälan av stämmoordförandes val av protokollförare
@@ -54,19 +58,18 @@ Styrelsen för Brf. Imatra.
 17. Fråga om arvoden för valberedning
 18. Val av representation i HSB
 19. Anmälda ärenden – motioner
-20. Ny förenings logga
-21. Det behövs flera volontärer till återvinningsstugan (stående punkt). Intresserade var snäll och kontakta Liliane Bennis.
-22. Avslutning
+20. Det behövs flera volontärer till återvinningsstugan (stående punkt). Intresserade var snäll och kontakta Liliane Bennis.
+21. Avslutning
     `;
 
 export default function FöreningsÅrsstämma() {
     return (
         <Body>
             <Centered
-                introducing="Kallelse"
-                title="Föreningsårsstämma brf Imatra"
+                introducing="Inbjudan"
+                title="Föreningsstämma Brf. Imatra nr 193"
                 content={kallelse_distribuerad}
-                summary="Kallelse till brf Imatras årsstämma torsdagen 22/4 i Akalla By" />
+                summary="Inbjudan till Brf. Imatras föreningsårsstämma torsdagen 22/4 i Akalla By" />
         </Body>
     )
 }
