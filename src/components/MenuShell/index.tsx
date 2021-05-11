@@ -183,7 +183,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                       {mobileProfileElement}
                     </div>
 
-                    <div className="flex-shrink-0 w-14"/>
+                    <div className="flex-shrink-0 w-14" />
                   </div>
                 )}
               </Transition.Child>

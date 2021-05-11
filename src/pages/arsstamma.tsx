@@ -1,5 +1,5 @@
-import React from 'react'
-import {Body, Centered} from "../components";
+import React from 'react';
+import { Body, Centered } from '../components';
 
 const kallelse_inbjudan = `
 Plats: Konferenslokalen i Akalla By
@@ -12,7 +12,6 @@ Mer info om årsstämman kommer med dagordning och årsredovisningen som delas u
 
 Hälsningar Styrelsen
 `;
-
 
 const kallelse_distribuerad = `
 Medlemmarna i Brf. Imatra nr 193 i Stockholm inbjuds härmed till ordinarie föreningsstämma torsdagen den 22 april 2021 i Akalla By
@@ -63,13 +62,14 @@ __Handsprit och munskydd kommer att finnas att tillgå på stämman.__
     `;
 
 export default function FöreningsÅrsstämma() {
-    return (
-        <Body>
-            <Centered
-                introducing="Inbjudan"
-                title="Föreningsstämma Brf. Imatra nr 193"
-                content={kallelse_distribuerad}
-                summary="Inbjudan till Brf. Imatras föreningsårsstämma torsdagen 22/4 i Akalla By" />
-        </Body>
-    )
+  return (
+    <Body>
+      <Centered
+        introducing="Inbjudan"
+        title="Föreningsstämma Brf. Imatra nr 193"
+        content={kallelse_distribuerad}
+        summary="Inbjudan till Brf. Imatras föreningsårsstämma torsdagen 22/4 i Akalla By"
+      />
+    </Body>
+  );
 }

@@ -1,10 +1,17 @@
 import { InferGetStaticPropsType } from 'next';
 import { useRouter } from 'next/router';
-import {Body, Card, Well, ButtonWithIcon, MenuItemIcon, Centered} from '../components';
+import {
+  Body,
+  Card,
+  Well,
+  ButtonWithIcon,
+  MenuItemIcon,
+  Centered,
+} from '../components';
 import { News } from '../types';
 import { readNews } from '../utils';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
-import React from "react";
+import React from 'react';
 
 export default function Home({
   news,
@@ -34,6 +41,7 @@ export default function Home({
       </div>
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
+          <FläktByte />
           <ImatraNytt />
           <Garageplatser />
           <GruppanslutningCard />
@@ -134,7 +142,7 @@ function Garageplatser() {
 
 function ImatraNytt() {
   return (
-      <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
         imageUrl="/undraw/undraw_news_go0e.png"
         imageAlt="Brf Imatra Nyhetsbrev"
@@ -144,9 +152,23 @@ function ImatraNytt() {
         hrefLink="/dokument/imatranytt/nyhetsbrev_2020-12.pdf"
       />
     </div>
-  )
+  );
 }
 
+function FläktByte() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_Online_calendar_re_wk3t.svg"
+        imageAlt="Fläktbyte information"
+        published="2021-05-11"
+        title="Fläktbyte under v. 20"
+        summary="Under v. 20 med start måndagen (17/5) sker de fysiska byten. Detta kan medföra störningar/avsaknad ventilation under några timmar sett per fläkt/port. Klicka här för att läsa mer om hur ventilationen fungerar i husen."
+        hrefLink="/dokument/sa_funkar_er_ventilation.pdf"
+      />
+    </div>
+  );
+}
 
 function Motioner() {
   return (
@@ -163,7 +185,6 @@ function Motioner() {
   );
 }
 
-
 function Årsstämma() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">
@@ -178,7 +199,6 @@ function Årsstämma() {
     </div>
   );
 }
-
 
 function HSBMeddlemsserviceCorona() {
   const text = `
@@ -201,11 +221,11 @@ __VID BESÖKET ÄR DET VIKTIGT ATT TÄNKA PÅ ATT__:
   `;
 
   return (
-      <Centered
+    <Centered
       introducing="HSB Kontoret"
       title="Information om att vi nu öppnar receptionen"
       content={text}
       summary=""
     />
-  )
+  );
 }

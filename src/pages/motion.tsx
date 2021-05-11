@@ -1,5 +1,5 @@
-import React from 'react'
-import {Body, Centered} from "../components";
+import React from 'react';
+import { Body, Centered } from '../components';
 
 const data = `
 Motionerna kan mailas till: [info@brfimatra.se](info@brfimatra.se) eller lämnas i brevlådan styrelselokalen, Helsingforsgatan 69 eller hos fastighetsskötarna på Helsingforsgatan 45.  
@@ -22,13 +22,14 @@ Hälsningar Styrelsen
 `;
 
 export default function Motion() {
-    return (
-        <Body>
-            <Centered
-                introducing="Dags att motionera"
-                title="Motioner för år 2022"
-                content={data}
-                summary="Måndag den 28 februari är sista dagen att komma in med motioner till årets föreningsstämma." />
-        </Body>
-    )
+  return (
+    <Body>
+      <Centered
+        introducing="Dags att motionera"
+        title="Motioner för år 2022"
+        content={data}
+        summary="Måndag den 28 februari är sista dagen att komma in med motioner till årets föreningsstämma."
+      />
+    </Body>
+  );
 }

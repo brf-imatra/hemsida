@@ -1,26 +1,34 @@
 import React, { PropsWithChildren } from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 import { Body, MenuItemIcon } from '../components';
 
 export default function MedlemsInfomation() {
   return (
-      <>
-        <Head>
-           <meta property="og:description" content="Kontakta Brf Imatra" key="description" />
-            <meta property="og:keywords" content="HSB medlemsservice, kontakt, styrelsen, varberedning" key="keywords" />
-        </Head>
-    <Body title="Kontakta oss">
-      <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
-        <HSBMedlemsservice />
-        <HSBFastighetsskotare />
-        <Securitas />
-        <Anticimex />
+    <>
+      <Head>
+        <meta
+          property="og:description"
+          content="Kontakta Brf Imatra"
+          key="description"
+        />
+        <meta
+          property="og:keywords"
+          content="HSB medlemsservice, kontakt, styrelsen, varberedning"
+          key="keywords"
+        />
+      </Head>
+      <Body title="Kontakta oss">
+        <div className="mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+          <HSBMedlemsservice />
+          <HSBFastighetsskotare />
+          <Securitas />
+          <Anticimex />
 
-        <Styrelsen />
-        <Valberedning />
-      </div>
-    </Body>
-        </>
+          <Styrelsen />
+          <Valberedning />
+        </div>
+      </Body>
+    </>
   );
 }
 

@@ -3,13 +3,11 @@ import React from 'react';
 const bredbandFaq: FrågaProps[] = [
   {
     fråga: 'Vilket uttag skall jag koppla in mit bredband från Banhof?',
-    svar:
-      'Anslutningen av bredband från Banhof skall göras i det uttag som är i närheten av det första telefonuttaget för lägenheten. Vanligen är detta uttag placerat i hallen.',
+    svar: 'Anslutningen av bredband från Banhof skall göras i det uttag som är i närheten av det första telefonuttaget för lägenheten. Vanligen är detta uttag placerat i hallen.',
   },
   {
     fråga: 'Jag hittar inte något bredbandsuttag i hallen. Vad kan jag göra?',
-    svar:
-      'Om din lägenhet är renoverad efter 2002 kan det vara att detta uttag har tagits bort. Installationskostnad för att återinstallera datauttaget är något den boende står för. Det spelar ingen roll om det är en tidigare medlem som tagit bort uttaget.',
+    svar: 'Om din lägenhet är renoverad efter 2002 kan det vara att detta uttag har tagits bort. Installationskostnad för att återinstallera datauttaget är något den boende står för. Det spelar ingen roll om det är en tidigare medlem som tagit bort uttaget.',
     svar2:
       'Det går att ordna egen elektriker som får kontakta styrelsen för dokumentation. Det går också att beställa installationen från föreningen så ordnar vi en elektriker som kan göra jobbet.',
   },
@@ -23,8 +21,7 @@ const telfoniFaq: FrågaProps[] = [
   {
     fråga:
       'Jag har fast telefoni idag, kan jag behålla mitt telefonnummer om jag ansluter telefonin med Banhof?',
-    svar:
-      'Ja, Banhof erbjuder portering av ditt befintliga telefonnummer. Kontakta deras kundtjäst för mer information och prisuppgifter om denna tjänst.',
+    svar: 'Ja, Banhof erbjuder portering av ditt befintliga telefonnummer. Kontakta deras kundtjäst för mer information och prisuppgifter om denna tjänst.',
   },
   {
     fråga:
@@ -36,13 +33,11 @@ const telfoniFaq: FrågaProps[] = [
 const televisionFaq: FrågaProps[] = [
   {
     fråga: 'Vad behövs för att ta emot signalen?',
-    svar:
-      'Comhem sänder digital-TV (DVB-C). I princip alla TV-apparater sålda efter 2008 stöder denna teknik, box krävs ej.',
+    svar: 'Comhem sänder digital-TV (DVB-C). I princip alla TV-apparater sålda efter 2008 stöder denna teknik, box krävs ej.',
   },
   {
     fråga: 'Jag har en tjock-TV. Kan jag ändå se på TV?',
-    svar:
-      'Ja, men du behöver en box/kanalväljare. Går att köpa från Comhem utan abonnemang eller hos elektronikbutiker. Samma gäller äldre platta TV-apparater som inte har stöd för DVC-C.',
+    svar: 'Ja, men du behöver en box/kanalväljare. Går att köpa från Comhem utan abonnemang eller hos elektronikbutiker. Samma gäller äldre platta TV-apparater som inte har stöd för DVC-C.',
   },
 ];
 
@@ -135,7 +130,6 @@ function FrågaSvar({ fråga, svar, svar2, first }: FrågaProps) {
   const svar2Element = svar2 ? (
     <p className="text-base leading-6 text-gray-500 pt-3">{svar2}</p>
   ) : null;
-
 
   return (
     <div className={firstStyle}>

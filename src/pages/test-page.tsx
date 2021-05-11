@@ -11,7 +11,7 @@ function classNames(...classes: (false | null | undefined | string)[]): string {
 
 export function match<
   TValue extends string | number = string,
-  TReturnValue = unknown
+  TReturnValue = unknown,
 >(
   value: TValue,
   lookup: Record<TValue, TReturnValue | (() => TReturnValue)>,

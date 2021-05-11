@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactMarkdown from "react-markdown";
-import {Body, Centered} from "../components";
+import ReactMarkdown from 'react-markdown';
+import { Body, Centered } from '../components';
 
-const data =  `
+const data = `
 **HSB har lanserat en ny digital tjänst som hanterar
 bostadsrättsföreningars garageplatser och lokaler.**
 
@@ -84,13 +84,14 @@ Med vänlig hälsning,
 > HSB Stockholm / HSB Akallakontoret
 `;
 export default function Garage() {
-    return (
-        <Body>
-            <Centered
-                introducing="Digital tjänst för hantering"
-                title="Garageplatser och lokaler"
-                content={data}
-                summary="Fr.o.m den 2021-01-01 flyttas din bostadsrättsförening Imatra över till den digitala tjänsten och du som boende kan ställa dig i kö och göra intresseanmälningar via Mitt HSB." />
-        </Body>
-    )
+  return (
+    <Body>
+      <Centered
+        introducing="Digital tjänst för hantering"
+        title="Garageplatser och lokaler"
+        content={data}
+        summary="Fr.o.m den 2021-01-01 flyttas din bostadsrättsförening Imatra över till den digitala tjänsten och du som boende kan ställa dig i kö och göra intresseanmälningar via Mitt HSB."
+      />
+    </Body>
+  );
 }

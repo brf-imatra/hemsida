@@ -50,7 +50,11 @@ export function readNews(): News[] {
 
 export function toSwedishDateString(input: string): string {
   // Convert post date to format: Month day, Year
-  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+  const options: Intl.DateTimeFormatOptions = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
   const formattedDate = new Date(input).toLocaleDateString('sv-SE', options);
 
   return formattedDate;

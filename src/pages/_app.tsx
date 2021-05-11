@@ -23,8 +23,16 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <meta property="og:description" content="Bostadsrättförening Imatra på Helsingforsgatan, Akalla" key="description" />
-        <meta property="og:keywords" content="bostadsrätt, brf, imatra, helsingforsgatan, akalla" key="keywords" />
+        <meta
+          property="og:description"
+          content="Bostadsrättförening Imatra på Helsingforsgatan, Akalla"
+          key="description"
+        />
+        <meta
+          property="og:keywords"
+          content="bostadsrätt, brf, imatra, helsingforsgatan, akalla"
+          key="keywords"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
           rel="stylesheet"
