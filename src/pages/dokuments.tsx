@@ -6,6 +6,7 @@ export default function Dokuments() {
     <Body title="Dokument">
       <div className="grid grid-cols-1 gap-6">
         <FöreningsDokument />
+          <År2021 />
         <År2020 />
         <År2019 />
         <År2018 />
@@ -99,6 +100,34 @@ function FöreningsDokument() {
             href="/dokument/2018-05-04_HSB_brf_Imatra_Normalstadgar_2011-version_5.pdf"
             tag="PDF"
             title="HSB brf Imatra Normalstadgar"
+          />
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function År2021() {
+  return (
+    <div className="bg-white shadow overflow-hidden sm:rounded-md">
+      <div className="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
+        <h2 className="text-lg leading-6 font-medium text-gray-900">2021</h2>
+      </div>
+      <ul>
+        <li className="border-gray-200">
+          <FullTest
+            documentName="årsredovisning_2020_imatra.pdf"
+            href="/dokument/arsredovisning/2021/arsredovisning_2020_imatra.pdf"
+            tag="PDF"
+            title="Årsredovisning"
+          />
+        </li>
+        <li className="border-gray-200">
+          <FullTest
+            documentName="protokoll_brf_imatra_stämma_2021-04-22.pdf"
+            href="/dokument/arsredovisning/2021/protokoll_brf_imatra_stamma_2021-04-22.pdf"
+            tag="PDF"
+            title="Föreningsstämma"
           />
         </li>
       </ul>
