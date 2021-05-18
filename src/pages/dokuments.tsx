@@ -125,7 +125,7 @@ function År2021() {
         <li className="border-gray-200">
           <FullTest
             documentName="protokoll_brf_imatra_stämma_2021-04-22.pdf"
-            href="/dokument/arsredovisning/2021/protokoll_brf_imatra_stamma_2020-04-22.pdf"
+            href="/dokument/arsredovisning/2021/protokoll_brf_imatra_stamma_2021-04-22.pdf"
             tag="PDF"
             title="Föreningsstämma"
           />
