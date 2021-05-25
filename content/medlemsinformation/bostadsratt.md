@@ -3,7 +3,7 @@ title: "Att bo i bostadsrätt"
 introducing: "Grundläggande"
 summary: "Att bo i bostadsrätt innebär att man har inflytande över sitt boende men också att man tillsammans med övriga medlemmar har solidariskt ansvar för omvårdnad av fastigheterna och utemiljön."
 ---
-Det finns ingen hyra eftersom det inte finns någon att hyra lägenheten av.
+Det 😀 finns ingen hyra eftersom det inte finns någon att hyra lägenheten av.
 Vi är 254 medlemmar som tillsammans äger våra hus och bor här till självkostnadspris.
 Ingen ägare pressar oss att göra vinst.
 
