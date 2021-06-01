@@ -146,10 +146,10 @@ function ImatraNytt() {
       <Card
         imageUrl="/undraw/undraw_news_go0e.png"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2020-12-31"
+        published="2020-06-01"
         title="Brf Imatra Nyhetsbrev"
-        summary="Vad har hänt under året? Det här året har inte varit sig likt för någon vare sig i Världen, Europa, Sverige eller i i vår förening."
-        hrefLink="/dokument/imatranytt/nyhetsbrev_2020-12.pdf"
+        summary="Till att börja med vill vi informera om att det är en ny styrelse sedan 24 april.  Nytt avtal med ny leverantör av markskötsel sedan april ..."
+        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-05.pdf"
       />
     </div>
   );
