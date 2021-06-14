@@ -110,7 +110,7 @@ interface ExternalLinkProps {
   href: string;
 }
 
-function ExternalLink({ text, href }: ExternalLinkProps) {
+export function ExternalLink({ text, href }: ExternalLinkProps) {
   return (
     <div className="ml-2 flex flex-1 text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out">
       <svg
