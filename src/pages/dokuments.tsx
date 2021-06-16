@@ -6,7 +6,7 @@ export default function Dokuments() {
     <Body title="Dokument">
       <div className="grid grid-cols-1 gap-6">
         <FöreningsDokument />
-          <År2021 />
+        <År2021 />
         <År2020 />
         <År2019 />
         <År2018 />
@@ -28,7 +28,7 @@ interface FullTestProps {
   href: string;
 }
 
-function FullTest({ href, title, tag, documentName }: FullTestProps) {
+export function FullTest({ href, title, tag, documentName }: FullTestProps) {
   const headerElement =
     title || tag ? (
       <div className="flex items-center justify-between">

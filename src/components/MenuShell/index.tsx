@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import { Transition } from '@headlessui/react';
 import { MenuItem, MenuItemIcon } from '..';
-import {ExternalLink} from "../Section/simple_three_column";
+import { ExternalLink } from '../Section/simple_three_column';
 
 interface MenuShellProps {
   isShowing: boolean;
@@ -14,18 +14,18 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
   const profileElement = true ? (
     <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
       <ExternalLink
-                  text="Milou login"
-                  href="https://milou.brfimatra.se:10003"
-                />
+        text="Milou login"
+        href="https://milou.brfimatra.se:10003"
+      />
     </div>
   ) : null;
 
   const mobileProfileElement = true ? (
     <div className="flex-shrink-0 flex border-t border-grey-200 p-4">
       <ExternalLink
-                  text="Milou login"
-                  href="https://milou.brfimatra.se:10003"
-                />
+        text="Milou login"
+        href="https://milou.brfimatra.se:10003"
+      />
     </div>
   ) : null;
 
@@ -137,6 +137,13 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                             icon={MenuItemIcon.document}
                             setIsShowing={setIsShowing}
                           />
+                          <MenuItem
+                            text="Mallar"
+                            href="/mallar"
+                            mobile={true}
+                            icon={MenuItemIcon.document}
+                            setIsShowing={setIsShowing}
+                          />
                           {/* <MenuItem
                             text="Nyhetsarkiv"
                             mobile={true}
@@ -201,6 +208,12 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                   <MenuItem
                     text="Dokument"
                     href="/dokuments"
+                    icon={MenuItemIcon.document}
+                    setIsShowing={setIsShowing}
+                  />
+                  <MenuItem
+                    text="Mallar"
+                    href="/mallar"
                     icon={MenuItemIcon.document}
                     setIsShowing={setIsShowing}
                   />

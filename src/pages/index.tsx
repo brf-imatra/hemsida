@@ -41,7 +41,7 @@ export default function Home({
       </div>
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
-          <FläktByte />
+          {/*<FläktByte />*/}
           <ImatraNytt />
           <Garageplatser />
           <GruppanslutningCard />
@@ -146,10 +146,10 @@ function ImatraNytt() {
       <Card
         imageUrl="/undraw/undraw_news_go0e.png"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2021-06-01"
+        published="2021-06-16"
         title="Brf Imatra Nyhetsbrev"
-        summary="Till att börja med vill vi informera om att det är en ny styrelse sedan 24 april.  Nytt avtal med ny leverantör av markskötsel sedan april ..."
-        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-05.pdf"
+        summary="Det är tillåtet att grilla på de fasta betonggrillarna på gårdarna med endast grillkol. Årets garagestädning är beställd och utförs den 21 juni. Mellan den 12 juli till 22 juli kommer Nova Städ att se till att våra våra trapphus blir grundligt städade och polerade."
+        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-06.pdf"
       />
     </div>
   );
