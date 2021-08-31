@@ -146,10 +146,10 @@ function ImatraNytt() {
       <Card
         imageUrl="/undraw/undraw_news_go0e.png"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2021-06-16"
+        published="2021-08-31"
         title="Brf Imatra Nyhetsbrev"
-        summary="Det är tillåtet att grilla på de fasta betonggrillarna på gårdarna med endast grillkol. Årets garagestädning är beställd och utförs den 21 juni. Mellan den 12 juli till 22 juli kommer Nova Städ att se till att våra våra trapphus blir grundligt städade och polerade."
-        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-06.pdf"
+        summary="Runt den 23 augusti påbörjar vi arbete med att byta ut 24 branddörrar i våra garage. Leverantören heter Proloc och tillsamman med Aptus kommer de att arbeta i våra garage en tid framöver."
+        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-08.pdf"
       />
     </div>
   );

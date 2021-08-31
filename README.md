@@ -36,6 +36,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 [Next.js](https://nextjs.org) to make the static HTML, JS and CSS that is hosted.
 
 [Tailwind CSS](https://tailwindcss.com) use for all styling of the web application.
+- [Tailwind in 100 Seconds](https://youtu.be/mr15Xzb1Ook) YouTube video that showcase Tailwind CSS functionality.
 
 [Heroicons](https://github.com/tailwindlabs/heroicons) is a free SVG icon set created by Steve Schoger.
 
