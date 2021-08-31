@@ -12,7 +12,6 @@ export default function Dokuments() {
   );
 }
 
-// https://www.hsb.se/contentassets/08b595d8053848ecaba5249d1e290a49/andrahandsuthyrning-blankett.pdf
 
 function BlankettLista() {
   return (
