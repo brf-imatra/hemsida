@@ -12,8 +12,8 @@
     "format": "prettier --write \"./{src,content}/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
-    "@headlessui/react": "^1.4.0",
-    "next": "11.1.0",
+    "@headlessui/react": "^1.4.1",
+    "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-markdown": "^5.0.3",
@@ -21,11 +21,11 @@
   },
   "devDependencies": {
     "@tailwindcss/ui": "^0.7.2",
-    "@types/node": "^16.7.2",
+    "@types/node": "^16.7.9",
     "@types/react": "^17.0.19",
     "autoprefixer": "^10.3.3",
     "eslint": "^7.32.0",
-    "eslint-config-next": "^11.1.0",
+    "eslint-config-next": "^11.1.2",
     "gray-matter": "^4.0.3",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.3.2",

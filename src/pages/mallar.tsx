@@ -6,13 +6,15 @@ export default function Dokuments() {
   return (
     <Body title="Mallar">
       <div className="grid grid-cols-1 gap-6">
-        <ÄndringILägenhet />
+        <BlankettLista />
       </div>
     </Body>
   );
 }
 
-function ÄndringILägenhet() {
+// https://www.hsb.se/contentassets/08b595d8053848ecaba5249d1e290a49/andrahandsuthyrning-blankett.pdf
+
+function BlankettLista() {
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-md">
       <div className="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
@@ -25,6 +27,14 @@ function ÄndringILägenhet() {
             href="/dokument/mallar/andring-i-lagenhet.pdf"
             tag="PDF"
             title="Ändring i lägenhet"
+          />
+        </li>
+          <li className="border-gray-200">
+          <FullTest
+            documentName="andrahandsuthyrning-blankett.pdf"
+            href="/dokument/mallar/andrahandsuthyrning-blankett.pdf"
+            tag="PDF"
+            title="Andrahandsuthyrning"
           />
         </li>
       </ul>
