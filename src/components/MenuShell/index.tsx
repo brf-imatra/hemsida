@@ -138,8 +138,8 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                             setIsShowing={setIsShowing}
                           />
                           <MenuItem
-                            text="Mallar"
-                            href="/mallar"
+                            text="Blanketter"
+                            href="/blanketter"
                             mobile={true}
                             icon={MenuItemIcon.document}
                             setIsShowing={setIsShowing}
@@ -212,8 +212,8 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
                     setIsShowing={setIsShowing}
                   />
                   <MenuItem
-                    text="Mallar"
-                    href="/mallar"
+                    text="Blanketter"
+                    href="/blanketter"
                     icon={MenuItemIcon.document}
                     setIsShowing={setIsShowing}
                   />

@@ -4,7 +4,7 @@ import { FullTest } from './dokuments';
 
 export default function Dokuments() {
   return (
-    <Body title="Mallar">
+    <Body title="Blanketter">
       <div className="grid grid-cols-1 gap-6">
         <BlankettLista />
       </div>

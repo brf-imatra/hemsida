@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@tailwindcss/ui": "^0.7.2",
-    "@types/node": "^16.7.9",
+    "@types/node": "^16.7.10",
     "@types/react": "^17.0.19",
     "autoprefixer": "^10.3.3",
     "eslint": "^7.32.0",
