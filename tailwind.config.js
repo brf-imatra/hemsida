@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [
     './src/components/**/*.{js,ts,jsx,tsx}',
@@ -6,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       pacifico: ['pacifico', 'sans-serif'],
-      //'MyFont': ['"My Font"', 'serif'] // Ensure fonts with spaces have " " surrounding it.
+      sans: ['Inter var', ...defaultTheme.fontFamily.sans],
     },
     extend: {},
   },
@@ -16,5 +18,5 @@ module.exports = {
     },
   }),
   variants: {},
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [],
 };

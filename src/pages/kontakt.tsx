@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import Head from 'next/head';
 import { Body, MenuItemIcon } from '../components';
+import { PhoneIcon, MailIcon } from '@heroicons/react/solid'
 
 export default function MedlemsInfomation() {
   return (
@@ -40,7 +41,7 @@ function HSBMedlemsservice() {
     >
       <DescriptionListRow title="Telefon kl 9-17" borderless={true}>
         <div className="flex flex-1">
-          <MyIcon icon={MenuItemIcon.phone} />
+          <PhoneIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           <span className="pl-2">
             <a
               href="tel:010-442 11 00"
@@ -53,7 +54,7 @@ function HSBMedlemsservice() {
       </DescriptionListRow>
       <DescriptionListRow title="Epost">
         <div className="flex flex-1">
-          <MyIcon icon={MenuItemIcon.mail} />
+          <MailIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           <span className="pl-2">
             <a
               href="mailto:service.stockholm@hsb.se"
@@ -97,7 +98,7 @@ function HSBMedlemsservice() {
       */}
       <DescriptionListRow title="Akut felanmälan dygnet runt">
         <div className="flex flex-1">
-          <MyIcon icon={MenuItemIcon.phone} />
+          <PhoneIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           <span className="ml-2">
             <a
               href="tel:08-695 00 00"
@@ -120,7 +121,7 @@ function HSBFastighetsskotare() {
     >
       <DescriptionListRow title="Telefon vardagar kl 7-8" borderless={true}>
         <div className="flex flex-1">
-          <MyIcon icon={MenuItemIcon.phone} />
+          <PhoneIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           <span className="pl-2">
             <a
               href="tel:08-751 11 12"
@@ -146,7 +147,7 @@ function Securitas() {
     >
       <DescriptionListRow title="Störningsjour" borderless={true}>
         <div className="flex flex-1">
-          <MyIcon icon={MenuItemIcon.phone} />
+          <PhoneIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           <span className="pl-2">
             <a
               href="tel:010-470 55 10"
@@ -159,7 +160,7 @@ function Securitas() {
       </DescriptionListRow>
       <DescriptionListRow title="Felparkering">
         <div className="flex flex-1">
-          <MyIcon icon={MenuItemIcon.phone} />
+          <PhoneIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           <span className="pl-2">
             <a
               href="tel:08-657 77 75"
@@ -185,7 +186,7 @@ function Anticimex() {
         borderless={true}
       >
         <div className="flex flex-1">
-          <MyIcon icon={MenuItemIcon.phone} />
+          <PhoneIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           <span className="pl-2">
             <a
               href="tel:075-2451000"
@@ -208,7 +209,7 @@ function Styrelsen() {
     >
       <DescriptionListRow title="Epost" borderless={true}>
         <div className="flex flex-1">
-          <MyIcon icon={MenuItemIcon.mail} />
+          <MailIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           <span className="pl-2">
             <a
               href="mailto:info@brfimatra.se"
@@ -231,7 +232,7 @@ function Valberedning() {
     >
       <DescriptionListRow title="Epost" borderless={true}>
         <div className="flex flex-1">
-          <MyIcon icon={MenuItemIcon.mail} />
+          <MailIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           <span className="pl-2">
             <a
               href="mailto:valberedning@brfimatra.se"

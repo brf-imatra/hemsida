@@ -1,7 +1,5 @@
 import React from 'react';
-import { MyIcon } from '../../pages/kontakt';
-import { ButtonWithIcon } from '../Button/button_with_icon';
-import { MenuItemIcon } from '../MenuItem';
+import { ExternalLinkIcon } from '@heroicons/react/solid'
 
 export function SimpleThreeColumn() {
   return (
@@ -113,20 +111,7 @@ interface ExternalLinkProps {
 export function ExternalLink({ text, href }: ExternalLinkProps) {
   return (
     <div className="ml-2 flex flex-1 text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="-ml-1 mr-3 h-5 w-5"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d={MenuItemIcon.externalLink}
-        />
-      </svg>
+      <ExternalLinkIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
       <a href={href} target="_window" className="font-medium">
         {text}
       </a>
