@@ -15,26 +15,28 @@ export function Centered({
   summary,
 }: CenteredProps) {
   const introducingElement = introducing ? (
-    <p className="text-base text-center leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+    <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
       {introducing}
-    </p>
+    </span>
   ) : null;
 
   const leadingElement = summary ? (
-    <p className="text-xl text-gray-500 leading-8">{summary}</p>
+    <p className="mt-8 text-xl text-gray-500 leading-8">{summary}</p>
   ) : null;
 
   return (
     <div className="relative py-16 bg-white overflow-hidden">
       <div className="relative px-4 sm:px-6 lg:px-8">
-        <div className="text-lg max-w-prose mx-auto mb-6">
-          {introducingElement}
-          <h2 className="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-            {title}
-          </h2>
+        <div className="text-lg max-w-prose mx-auto">
+          <h1>
+            {introducingElement}
+            <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              {title}
+            </span>
+          </h1>
           {leadingElement}
         </div>
-        <div className="prose prose-lg text-gray-500 mx-auto">
+        <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
           <ReactMarkdown source={content} />
         </div>
       </div>

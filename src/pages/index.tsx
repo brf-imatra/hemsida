@@ -12,6 +12,7 @@ import { News } from '../types';
 import { readNews } from '../utils';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
+import SocialLinksFooter from "../components/MenuShell/footer";
 
 export default function Home({
   news,
@@ -27,7 +28,7 @@ export default function Home({
         <div className="px-6 py-4 absolute left-0 top-0">
           <p className="text-gray-100 font-pacifico subpixel-antialiased text-2xl md:text-5xl lg:text-6xl leading-normal">
             Välkommen till{' '}
-            <span className="whitespace-no-wrap">BRF Imatra</span>
+            <span className="whitespace-nowrap">BRF Imatra</span>
           </p>
         </div>
       </div>
@@ -66,6 +67,7 @@ export default function Home({
           ))} */}
         </div>
       </Body>
+      <SocialLinksFooter />
     </>
   );
 }
@@ -202,8 +204,6 @@ function Årsstämma() {
 
 function HSBMeddlemsserviceCorona() {
   const text = `
-Vi värnar om både våra besökares och våra medarbetares hälsa och har därför under en tid haft receptionen på Finlandsgatan 10 stängd. Vi har nu genomfört en rad åtgärder utifrån den nya pandemilagen och kan glädjande berätta att vi kommer att öppna receptionen på ett säkert sätt den 3 februari.
-
 Öppettiderna är korrigerade och vi har öppet för drop-in besök:
 
 Onsdagar 08:00 – 12:00    
@@ -225,7 +225,7 @@ __VID BESÖKET ÄR DET VIKTIGT ATT TÄNKA PÅ ATT__:
       introducing="HSB Kontoret"
       title="Information om att vi nu öppnar receptionen"
       content={text}
-      summary=""
+      summary="Vi värnar om både våra besökares och våra medarbetares hälsa och har därför under en tid haft receptionen på Finlandsgatan 10 stängd. Vi har nu genomfört en rad åtgärder utifrån den nya pandemilagen och kan glädjande berätta att vi kommer att öppna receptionen på ett säkert sätt den 3 februari."
     />
   );
 }
