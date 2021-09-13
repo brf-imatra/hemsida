@@ -1,14 +1,11 @@
 import * as React from 'react';
-import { OfficeBuildingIcon } from '@heroicons/react/solid'
-
+import { OfficeBuildingIcon } from '@heroicons/react/solid';
 
 const navigation = [
   {
     name: 'HSB Login',
     href: 'https://hsb-login.hsb.se/logon/LogonPoint/index.html',
-    icon: (props) => (
-      <OfficeBuildingIcon {...props} />
-    ),
+    icon: (props) => <OfficeBuildingIcon {...props} />,
   },
   {
     name: 'GitHub',
@@ -23,7 +20,7 @@ const navigation = [
       </svg>
     ),
   },
-]
+];
 
 export default function SocialLinksFooter() {
   return (
@@ -31,16 +28,22 @@ export default function SocialLinksFooter() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-gray-400 hover:text-gray-500"
+            >
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
           ))}
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-center text-base text-gray-400">&copy; 2021 Brf Imatra.</p>
+          <p className="text-center text-base text-gray-400">
+            &copy; 2021 Brf Imatra.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

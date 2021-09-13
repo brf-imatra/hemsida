@@ -12,7 +12,7 @@ import { News } from '../types';
 import { readNews } from '../utils';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
-import SocialLinksFooter from "../components/MenuShell/footer";
+import SocialLinksFooter from '../components/MenuShell/footer';
 
 export default function Home({
   news,
@@ -27,8 +27,7 @@ export default function Home({
         />
         <div className="px-6 py-4 absolute left-0 top-0">
           <p className="text-gray-100 font-pacifico subpixel-antialiased text-2xl md:text-5xl lg:text-6xl leading-normal">
-            Välkommen till{' '}
-            <span className="whitespace-nowrap">BRF Imatra</span>
+            Välkommen till <span className="whitespace-nowrap">BRF Imatra</span>
           </p>
         </div>
       </div>

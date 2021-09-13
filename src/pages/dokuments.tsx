@@ -1,6 +1,6 @@
 import React from 'react';
 import { Body } from '../components';
-import { PaperClipIcon } from '@heroicons/react/solid'
+import { PaperClipIcon } from '@heroicons/react/solid';
 
 export default function Dokuments() {
   return (
@@ -51,7 +51,10 @@ export function FullTest({ href, title, tag, documentName }: FullTestProps) {
 
         <div className="mt-2 sm:flex sm:justify-between">
           <div className="w-0 flex-1 flex items-center">
-            <PaperClipIcon className="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
+            <PaperClipIcon
+              className="flex-shrink-0 h-5 w-5 text-gray-400"
+              aria-hidden="true"
+            />
             <a
               href={href}
               className="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition duration-150 ease-in-out"
