@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import { Body, Centered } from '../components';
+import { Body, Centered2 } from '../components';
+import {MDXProvider} from '@mdx-js/react'
 
-const data = `
+
 **HSB har lanserat en ny digital tjänst som hanterar
 bostadsrättsföreningars garageplatser och lokaler.**
 
@@ -39,6 +38,7 @@ garageplatsen/garageplatserna lokalen/lokalerna du är intresserad av
 inte finns lediga just nu kan du prenumerera på garageplatsen/lokalen
 för att få en notis om när den blir ledig.
 
+
 **HUR FUNGERAR FÖRDELNINGEN AV GARAGEPLATSER/LOKALER?**
 
 Ett ledigt objekt ligger synligt i Mitt HSB under "_mina sidor_ -- _min
@@ -72,9 +72,12 @@ sista dagen i avflyttningsmånaden.
 Har du några frågor är du varmt välkommen att kontakta oss på Kund-och
 Medlemsservice.
 
+
 Telefon: [010-442 11 00](tel:010-4421100),
 
+
 [service.stockholm@hsb.se](mailto:service.stockholm@hsb.se)
+
 
 alternativt via kontaktformuläret på vår hemsida.
 [www.hsb.se/stockholm/kontakt](http://www.hsb.se/stockholm/kontakt)
@@ -82,16 +85,19 @@ alternativt via kontaktformuläret på vår hemsida.
 
 Med vänlig hälsning,
 > HSB Stockholm / HSB Akallakontoret
-`;
-export default function Garage() {
-  return (
-    <Body>
-      <Centered
+
+
+
+export default props => (
+  <MDXProvider>
+      <Body>
+          <Centered2
         introducing="Digital tjänst för hantering"
         title="Garageplatser och lokaler"
-        content={data}
         summary="Fr.o.m den 2021-01-01 flyttas din bostadsrättsförening Imatra över till den digitala tjänsten och du som boende kan ställa dig i kö och göra intresseanmälningar via Mitt HSB."
-      />
-    </Body>
-  );
-}
+      >
+               <main {...props} />
+          </Centered2>
+      </Body>
+  </MDXProvider>
+)

@@ -75,16 +75,6 @@ function HSBMedlemsservice() {
       <DescriptionListRow title="Öppettider">
         <dl>
           <dt className="text-sm leading-5 font-medium text-gray-500 pb-2">
-            Öppettiderna är korrigerade och vi har öppet för drop-in besök:
-          </dt>
-          <dt>Onsdag 8-12</dt>
-          <dt>Torsdag 13-18</dt>
-        </dl>
-      </DescriptionListRow>
-      {/*
-      <DescriptionListRow title="Öppettider">
-        <dl>
-          <dt className="text-sm leading-5 font-medium text-gray-500 pb-2">
             1 september - 30 juni
           </dt>
           <dt>Måndag & onsdag 8-12</dt>
@@ -101,7 +91,7 @@ function HSBMedlemsservice() {
           <dt>Torsdag 13-18</dt>
         </dl>
       </DescriptionListRow>
-      */}
+      
       <DescriptionListRow title="Akut felanmälan dygnet runt">
         <div className="flex flex-1">
           <PhoneIcon
