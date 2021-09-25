@@ -52,6 +52,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
       <MenuShell isShowing={isShowing} setIsShowing={setIsShowing.bind(this)}>
         <Component {...pageProps} />

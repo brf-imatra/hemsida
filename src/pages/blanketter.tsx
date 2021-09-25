@@ -12,7 +12,6 @@ export default function Dokuments() {
   );
 }
 
-
 function BlankettLista() {
   return (
     <div className="bg-white shadow overflow-hidden sm:rounded-md">
@@ -28,7 +27,7 @@ function BlankettLista() {
             title="Ändring i lägenhet"
           />
         </li>
-          <li className="border-gray-200">
+        <li className="border-gray-200">
           <FullTest
             documentName="andrahandsuthyrning-blankett.pdf"
             href="/dokument/mallar/andrahandsuthyrning-blankett.pdf"
