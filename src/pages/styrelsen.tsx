@@ -23,11 +23,6 @@ const styrelsemedlemmar = [
     imageUrl: '/avatars/img_avatar_w.png',
   },
   {
-    name: 'Daniel Vikström',
-    role: 'Ledamot ',
-    imageUrl: '/avatars/img_avatar_m.png',
-  },
-  {
     name: 'Emmelie Wiktorsson',
     role: 'Suppleant',
     imageUrl: '/avatars/img_avatar_w.png',
