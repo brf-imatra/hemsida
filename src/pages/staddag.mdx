@@ -1,0 +1,20 @@
+import { Body, Centered2 } from '../components';
+import {MDXProvider} from '@mdx-js/react'
+
+# Städdag
+
+Välkommen _till_  årets **städdag**!
+
+## H2
+
+### H3
+
+
+
+export default props => (
+  <MDXProvider>
+      <Body>
+        <main {...props} />
+      </Body>
+  </MDXProvider>
+)
