@@ -43,6 +43,7 @@ export default function Home({
         <div className="flex flex-row w-full flex-wrap justify-start">
           {/*<FläktByte />*/}
           <ImatraNytt />
+          <Städdag />
           <Garageplatser />
           <GruppanslutningCard />
 
@@ -196,6 +197,22 @@ function Årsstämma() {
         title="Årsstämma 2021"
         summary="Inbjudan och dagordning till Brf. Imatras föreningsårsstämma torsdagen 22/4 i Akalla By"
         hrefLink="/arsstamma"
+      />
+    </div>
+  );
+}
+
+
+function Städdag() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_Online_calendar_re_wk3t.svg"
+        imageAlt="Fläktbyte information"
+        published="2021-09-30"
+        title="Föreningen har gemensam städdag"
+        summary="Föreningen har gemensam städdag lördagen den 9 oktober kl. 10.00-14.00!"
+        hrefLink="/staddag"
       />
     </div>
   );

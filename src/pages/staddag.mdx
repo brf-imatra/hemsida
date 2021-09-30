@@ -1,20 +1,35 @@
 import { Body, Centered2 } from '../components';
 import {MDXProvider} from '@mdx-js/react'
 
-# Städdag
+Samling klockan 10.00 vid Återvinningsstugan på vändplan 2. Där vi delar upp oss och hjälps åt med att bl.a.:
 
-Välkommen _till_  årets **städdag**!
+- Rensa källargångar och garage från skräp
+- Ställa ut snöskyfflar och märka upp kvastar i garagen
+- Se över gårdarna, ställa upp cyklar och kasta trasiga prylar
+- Märka upp och placera ut nya städredskap i tvättstugorna
+- Tvätta fönster i föreningslokalen fönster
+- Damma av torkskåp och ventiler i tvättstugor
 
-## H2
+Container kommer att finnas för skrymmande möbler/skräp vid återvinningsstugan. Så passa på att rensa ditt förråd.
 
-### H3
+__OBS!__
+Vitvaror och miljöfarliga ämnen ska lämnas till närmaste återvinningsstation, till exempel Lövsta, Återvinningsstation i Hässelby.
 
+Passet slutar klockan 14.00 då bjuder föreningen på varm choklad/kaffe/te och smörgås efter passet cirka klockan 14.00!
+Extra till alla barn som deltar; Festis & klubba.
 
+Barn & vuxna är välkomna att hjälpa till!
+
+> Hälsar Styrelsen
 
 export default props => (
   <MDXProvider>
       <Body>
-        <main {...props} />
+          <Centered2
+              introducing="Föreningen har gemensam städdag lördagen"
+              title="9 oktober kl. 10.00-14.00!">
+            <main {...props} />
+          </Centered2>
       </Body>
   </MDXProvider>
 )
