@@ -220,28 +220,15 @@ function Städdag() {
 
 function HSBMeddlemsserviceCorona() {
   const text = `
-Öppettiderna är korrigerade och vi har öppet för drop-in besök:
-
-Onsdagar 08:00 – 12:00    
-Torsdagar 13:00 – 17:00
-
-
-__VID BESÖKET ÄR DET VIKTIGT ATT TÄNKA PÅ ATT__:
-* man bara besöker oss om man är symtomfri.
-* vi tar bara emot en besökare åt gången och eventuellt sällskap får vänta utanför oavsett väder.
-* bokade besök har förtur under öppettiderna, så alla uppmanas att boka sitt besök då bokade besök även kan ske utanför öppettiderna.
-* besök bokas enbart under receptionens öppettider på 010-442 13 23.
-* man kan behöva köa utanför om det redan finns en besökare på kontoret.
-* alla möten sker med plexiglas mellan personerna som träffas.
-* besökare behöver använda handsprit och munskydd (finns på plats) vid besöket.
+Återgår till normal öppettider. Mer information om [HSB Medlemsservice](/kontakt) på sidan Kontakta oss.
 `;
 
   return (
     <Centered
       introducing="HSB Kontoret"
-      title="Information om att vi nu öppnar receptionen"
+      title="Normala öppettider"
       content={text}
-      summary="Vi värnar om både våra besökares och våra medarbetares hälsa och har därför under en tid haft receptionen på Finlandsgatan 10 stängd. Vi har nu genomfört en rad åtgärder utifrån den nya pandemilagen och kan glädjande berätta att vi kommer att öppna receptionen på ett säkert sätt den 3 februari."
+      summary=""
     />
   );
 }

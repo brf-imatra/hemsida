@@ -1,7 +1,7 @@
 import React from 'react';
 import { Body } from '../components';
 
-const styrelsemedlemmar = [
+const styrelsemedlemmar: People[] = [
   {
     name: 'Mimmi Wiktorsson',
     role: 'Ledamot / Ordförande',
@@ -34,26 +34,52 @@ const styrelsemedlemmar = [
   },
 ];
 
+const valberedningen: People[] = [
+  {
+    name: 'Lena Ringdahl',
+    role: 'Sammankallande',
+    imageUrl: '/avatars/img_avatar_w.png',
+  },
+    {
+    name: 'Abdullah Kadir-Danzas',
+    role: 'Ledamot',
+    imageUrl: '/avatars/img_avatar_m.png',
+  },
+      {
+    name: 'Aafreen Gillani Haji',
+    role: 'Ledamot',
+    imageUrl: '/avatars/img_avatar_m.png',
+  },
+]
+
 export default function Styrelsen() {
   return (
     <Body>
       <TeamWithSmallImages
         title="Styrelsemedlemmar"
-        summary="Styrelsesammansättning maj 2020 till april/maj 2021."
+        summary="Verksamhetsåret maj 2020 till april/maj 2021."
         people={styrelsemedlemmar}
+      />
+      <TeamWithSmallImages
+        title="Valberedningen"
+        summary="Verksamhetsåret maj 2020 till april/maj 2021."
+        people={valberedningen}
       />
     </Body>
   );
 }
 
-interface TeamProps {
-  title: string;
-  summary: string;
-  people: {
+type People = {
     name: string;
     role: string;
     imageUrl: string;
-  }[];
+}
+
+
+interface TeamProps {
+  title: string;
+  summary: string;
+  people: People[];
 }
 
 function TeamWithSmallImages({ title, summary, people }: TeamProps) {
