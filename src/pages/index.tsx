@@ -43,7 +43,7 @@ export default function Home({
         <div className="flex flex-row w-full flex-wrap justify-start">
           {/*<FläktByte />*/}
           <ImatraNytt />
-          <Städdag />
+          {/*<Städdag />*/}
           <Garageplatser />
           <GruppanslutningCard />
 
