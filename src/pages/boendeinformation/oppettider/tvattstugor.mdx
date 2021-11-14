@@ -1,0 +1,73 @@
+import { Body, Centered2 } from '../../../components';
+import {MDXProvider} from '@mdx-js/react'
+
+
+Tvättstugan är kanske det viktigaste gemensamma utrymmet i hela huset och en plats där många goda grannrelationer skapas.
+Följ noga reglerna i tvättstugan! Boka ordentligt! Var rädd om maskinerna när du tvättar.
+Läs och följ anvisningarna för tvättmaskinerna noga.
+Då får du också det bästa tvättresultatet.
+Lämna tvättstugan så att nästa hyresgäst kan komma till i tid. Städa efter dig.
+Lämna tvättstugan och torkrum i det kick du själv vill finna det i!
+
+I våran förening finns det 5 stycken tvättstugor.
+De är belägna i 2-våningshusens källare innanför södra gaveln.
+I tvättstugan på Helsingforsgatan 11 finns en grovtvättstuga med en maskin avsedd för bl. a mattor.
+Tvättstugor och grovtvättstuga bokas med tagg på bokningstavla eller via [Aptus Portalen][1].
+Betr. ordningsregler se anslag i tvättstugan.
+
+
+
+<table>
+<th>Tvättpass</th>
+<th>Tvättid</th>
+<td>Kommentar</td>
+<tr>
+<td>1</td>
+<td>07:00 - 10:00</td>
+<td>Lördag, söndag och helgdagar utgår detta tvättpass</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10:00 - 13:00</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>13:00 - 16:00</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>16:00 - 19:00</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>19:00 - 22:00</td>
+<td>Lördag, söndag och helgdagar utgår detta tvättpass</td>
+</tr>
+</table>
+
+
+## Bokning av tvättider via portalen
+
+Genom [Aptus Portalen][1] kan du boka tvättid från din dator.
+Du loggar in med de uppgifterna du fick när du kvitterade ut och hämtade taggen.
+
+
+[1]: https://imatra.aptustotal.se/Aptusportal/ "Aptus Portalen"
+
+
+export default props => (
+  <MDXProvider>
+      <Body>
+          <Centered2
+        introducing="Tvättstugor"
+        title="Bokning och regler"
+        summary=""
+      >
+               <main {...props} />
+          </Centered2>
+      </Body>
+  </MDXProvider>
+)

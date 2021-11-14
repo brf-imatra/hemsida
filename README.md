@@ -37,6 +37,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 [Tailwind CSS](https://tailwindcss.com) use for all styling of the web application.
 - [Tailwind in 100 Seconds](https://youtu.be/mr15Xzb1Ook) YouTube video that showcase Tailwind CSS functionality.
+- [Headless UI](https://headlessui.dev) Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.
 
 [Heroicons](https://github.com/tailwindlabs/heroicons) is a free SVG icon set created by Steve Schoger.
 
