@@ -146,12 +146,12 @@ function ImatraNytt() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
-        imageUrl="/undraw/undraw_news_go0e.png"
+        imageUrl="/undraw/undraw_news_re_6uub.svg"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2021-08-31"
+        published="2021-11-16"
         title="Brf Imatra Nyhetsbrev"
-        summary="Runt den 23 augusti påbörjar vi arbete med att byta ut 24 branddörrar i våra garage. Leverantören heter Proloc och tillsamman med Aptus kommer de att arbeta i våra garage en tid framöver."
-        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-08.pdf"
+        summary=" Styrelsen nu påbörjat projektering till ett kommande stambyte i våra fastigheter. Ny städfirma NOVA Städ från den 8 november. Lediga garageplatser att hyra. Påminnelse att att motordrivna köksfläktar är förbjudna. Klicka för att läsa mer"
+        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-11.pdf"
       />
     </div>
   );
