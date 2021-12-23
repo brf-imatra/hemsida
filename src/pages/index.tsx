@@ -146,12 +146,12 @@ function ImatraNytt() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
-        imageUrl="/undraw/undraw_news_re_6uub.svg"
+        imageUrl="/undraw/undraw_christmas_tree_-56-sw.svg"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2021-11-16"
+        published="2021-12-23   "
         title="Brf Imatra Nyhetsbrev"
-        summary=" Styrelsen nu påbörjat projektering till ett kommande stambyte i våra fastigheter. Ny städfirma NOVA Städ från den 8 november. Lediga garageplatser att hyra. Påminnelse att att motordrivna köksfläktar är förbjudna. Klicka för att läsa mer"
-        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-11.pdf"
+        summary="Med december månads Nyhetsbrev vill vi i styrelsen först och främst tacka för i år! Vi uppmanar er att kontrollera att era brandvarnare fungerar och påminner om att ha extra koll på alla levande ljus denna månad. Får du gäster över helgerna? – Hotellet StayExtra på Helsingforsgatan 45 har extra rum för gäster."
+        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-12.pdf"
       />
     </div>
   );
