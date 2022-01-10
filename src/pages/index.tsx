@@ -220,13 +220,24 @@ function Städdag() {
 
 function HSBMeddlemsserviceCorona() {
   const text = `
-Återgår till normal öppettider. Mer information om [HSB Medlemsservice](/kontakt) på sidan Kontakta oss.
+Receptionen är stäng för spontanbesök men boka gärna ditt besök så hjälper vi dig.
+För att minska smittspridningen gäller nedan:
+* Nödvändiga besök bokas
+* Endast 1 person i lokalen åt gången
+* Håll 1,5 m avstånd i kön utanför ingågnen
+* Besök oss bara om du är symptomfri
+
+## Kontakta oss gärna i våra andra kanaler
+Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)    
+Övriga ärenden:     
+  - [hsb.se/stockholm/kontakt](https://www.hsb.se/stockholm/kontakt)   
+  - [010-442 11 00](tel:0104421100)
 `;
 
   return (
     <Centered
-      introducing="HSB Kontoret"
-      title="Normala öppettider"
+      introducing="Tack för att du hjälper oss minska smittspridningen!"
+      title="Ändrade öppettider HSB"
       content={text}
       summary=""
     />
