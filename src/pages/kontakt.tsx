@@ -91,7 +91,7 @@ function HSBMedlemsservice() {
           <dt>Torsdag 13-18</dt>
         </dl>
       </DescriptionListRow>
-      
+
       <DescriptionListRow title="Akut felanmälan dygnet runt">
         <div className="flex flex-1">
           <PhoneIcon

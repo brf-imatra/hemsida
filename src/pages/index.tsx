@@ -202,7 +202,6 @@ function Årsstämma() {
   );
 }
 
-
 function Städdag() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">

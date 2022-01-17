@@ -1,4 +1,4 @@
-import React, {PropsWithChildren} from 'react';
+import React, { PropsWithChildren } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 interface CenteredProps {
@@ -44,13 +44,11 @@ export function Centered({
   );
 }
 
-
-
 export function Centered2({
   introducing,
   title,
   summary,
-    children
+  children,
 }: PropsWithChildren<CenteredProps>) {
   const introducingElement = introducing ? (
     <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">

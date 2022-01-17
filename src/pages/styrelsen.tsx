@@ -40,17 +40,17 @@ const valberedningen: People[] = [
     role: 'Sammankallande',
     imageUrl: '/avatars/img_avatar_w.png',
   },
-    {
+  {
     name: 'Abdullah Kadir-Danzas',
     role: 'Ledamot',
     imageUrl: '/avatars/img_avatar_m.png',
   },
-      {
+  {
     name: 'Aafreen Gillani Haji',
     role: 'Ledamot',
     imageUrl: '/avatars/img_avatar_m.png',
   },
-]
+];
 
 export default function Styrelsen() {
   return (
@@ -70,11 +70,10 @@ export default function Styrelsen() {
 }
 
 type People = {
-    name: string;
-    role: string;
-    imageUrl: string;
-}
-
+  name: string;
+  role: string;
+  imageUrl: string;
+};
 
 interface TeamProps {
   title: string;
