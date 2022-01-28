@@ -8,11 +8,6 @@ const styrelsemedlemmar: People[] = [
     imageUrl: '/avatars/img_avatar_w.png',
   },
   {
-    name: 'Linda Rebane',
-    role: 'Ledamot / Vice Ordförande',
-    imageUrl: '/avatars/img_avatar_w.png',
-  },
-  {
     name: 'Marcus Holmgren',
     role: 'Ledamot / Sekreterare',
     imageUrl: '/avatars/img_avatar_m.png',
@@ -57,12 +52,12 @@ export default function Styrelsen() {
     <Body>
       <TeamWithSmallImages
         title="Styrelsemedlemmar"
-        summary="Verksamhetsåret maj 2020 till april/maj 2021."
+        summary="Verksamhetsåret maj 2021 till april/maj 2022."
         people={styrelsemedlemmar}
       />
       <TeamWithSmallImages
         title="Valberedningen"
-        summary="Verksamhetsåret maj 2020 till april/maj 2021."
+        summary="Verksamhetsåret maj 2021 till april/maj 2022."
         people={valberedningen}
       />
     </Body>
