@@ -34,7 +34,7 @@ export default function Home({
       <Body>
         <SimpleThreeColumn />
 
-        <HSBMeddlemsserviceCorona />
+        {/*<HSBMeddlemsserviceCorona />*/}
         {/* <Well>
     <div className="flex-1 flex h-24 w-auto sm:h-32 md:h-48 lg:h-64">
         <img className="overflow-y-visible" src="/imatra/foton/helsingforsgatan_spring20.jpg" alt="Brf Imatra våren 2020" loading="eager" />
