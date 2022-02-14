@@ -146,12 +146,12 @@ function ImatraNytt() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
-        imageUrl="/undraw/undraw_christmas_tree_-56-sw.svg"
+        imageUrl="/undraw/undraw_year_2022_uci7.svg"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2021-12-23   "
+        published="2022-02-14"
         title="Brf Imatra Nyhetsbrev"
-        summary="Med december månads Nyhetsbrev vill vi i styrelsen först och främst tacka för i år! Vi uppmanar er att kontrollera att era brandvarnare fungerar och påminner om att ha extra koll på alla levande ljus denna månad. Får du gäster över helgerna? – Hotellet StayExtra på Helsingforsgatan 45 har extra rum för gäster."
-        hrefLink="/dokument/imatranytt/nyhetsbrev_2021-12.pdf"
+        summary="Vi hälsar Alvedo Omsorg AB välkomna till oss som ny hyresgäst sedan 1 januari 2022. Styrelsen planerar en genomgång av samtliga fläktar framöver och informerar då om när fastighetsskötaren behöver tillträde till din bostad."
+        hrefLink="/dokument/imatranytt/nyhetsbrev_2022-02.pdf"
       />
     </div>
   );
