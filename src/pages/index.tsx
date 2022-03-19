@@ -41,6 +41,7 @@ export default function Home({
       </div>
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
+          <InbjudanFöreningsstämma />
           {/*<FläktByte />*/}
           <ImatraNytt />
           {/*<Städdag />*/}
@@ -194,7 +195,7 @@ function Årsstämma() {
         imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
         imageAlt="Föreningsårsstämma för brf Imatra 2021"
         published="2021-05-01"
-        title="Årsstämma 2021"
+        title="Årsstämma 2022"
         summary="Inbjudan och dagordning till Brf. Imatras föreningsårsstämma torsdagen 22/4 i Akalla By"
         hrefLink="/arsstamma"
       />
@@ -214,6 +215,21 @@ function Städdag() {
         hrefLink="/staddag"
       />
     </div>
+  );
+}
+
+function InbjudanFöreningsstämma() {
+  const text = `
+Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 veckor innan föreningsstämman.
+`;
+
+  return (
+    <Centered
+      introducing="Föreningsstämma"
+      title="Inbjudan för verksamhetsåret 2021"
+      content={text}
+      summary="Föreningsstämma kommer att genomföras torsdagen 28/4 i Akalla By"
+    />
   );
 }
 
