@@ -42,6 +42,7 @@ export default function Home({
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
           <InbjudanFöreningsstämma />
+            <Årsstämma />
           {/*<FläktByte />*/}
           <ImatraNytt />
           {/*<Städdag />*/}
@@ -193,11 +194,11 @@ function Årsstämma() {
     <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
         imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
-        imageAlt="Föreningsårsstämma för brf Imatra 2021"
-        published="2021-05-01"
-        title="Årsstämma 2022"
-        summary="Inbjudan och dagordning till Brf. Imatras föreningsårsstämma torsdagen 22/4 i Akalla By"
-        hrefLink="/arsstamma"
+        imageAlt="Föreningsårsstämma för brf Imatra"
+        published="2021-03-19"
+        title="Föreningsstämma 2022"
+        summary="Inbjudan till Brf. Imatras föreningsårsstämma torsdagen 28/4 i Akalla By"
+        hrefLink="/foreningsstamma"
       />
     </div>
   );
