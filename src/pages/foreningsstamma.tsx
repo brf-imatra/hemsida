@@ -8,7 +8,7 @@ Tid: Mötet börjar kl: 19.00 torsdagen 28/4
 
 Registrering från och med 18.30 kom i tid.
 
-Mer info om årsstämman kommer med dagordning och årsredovisningen som delas ut senast 7/4.
+Mer info om årsstämman kommer med dagordning och årsredovisningen som delas ut senast 4 veckor innan föreningsstämman.
 
 Hälsningar Styrelsen
 `;
