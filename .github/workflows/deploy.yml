@@ -32,7 +32,7 @@ jobs:
       working-directory: ${{ env.working_dir }}
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ${{ env.ftp_host }}
         username: ${{ env.ftp_user }}
