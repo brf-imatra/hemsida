@@ -4,7 +4,7 @@ import { Body, Centered } from '../components';
 const kallelse_inbjudan = `
 Plats: Konferenslokalen i Akalla By
 
-Tid: Mötet börjar kl: 19.00 torsdagen 22/4 
+Tid: Mötet börjar kl: 19.00 torsdagen 28/4 
 
 Registrering från och med 18.30 kom i tid.
 
@@ -61,14 +61,14 @@ __Handsprit och munskydd kommer att finnas att tillgå på stämman.__
 21. Avslutning
     `;
 
-export default function FöreningsÅrsstämma() {
+export default function FöreningsStämma() {
   return (
     <Body>
       <Centered
         introducing="Inbjudan"
         title="Föreningsstämma Brf. Imatra nr 193"
-        content={kallelse_distribuerad}
-        summary="Inbjudan till Brf. Imatras föreningsårsstämma torsdagen 22/4 i Akalla By"
+        content={kallelse_inbjudan}
+        summary="Inbjudan till Brf. Imatras föreningstämma torsdagen 28/4 i Akalla By"
       />
     </Body>
   );
