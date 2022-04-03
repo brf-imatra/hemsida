@@ -1,7 +1,7 @@
 import React from 'react';
 import { Body, Centered } from '../components';
 
-const kallelse_inbjudan = `
+const inbjudan = `
 Plats: Konferenslokalen i Akalla By
 
 Tid: Mötet börjar kl: 19.00 torsdagen 28/4 
@@ -33,11 +33,8 @@ Välkomna
 
 Styrelsen för Brf. Imatra. 
 
-__OBS! Det traditionella samkväm som vi brukar ha efter årstämman måste tyvärr ställas in i år för att minska smittrisken på grund av Covid-19.__
 
-__Handsprit och munskydd kommer att finnas att tillgå på stämman.__
-
-## Dagordning för föreningsstämman 22/4:
+## Dagordning för föreningsstämman 28/4:
 1. Stämmans öppnande
 2. Val av ordförande vid stämman
 3. Anmälan av stämmoordförandes val av protokollförare
@@ -57,7 +54,7 @@ __Handsprit och munskydd kommer att finnas att tillgå på stämman.__
 17. Fråga om arvoden för valberedning
 18. Val av representation i HSB
 19. Anmälda ärenden – motioner
-20. Det behövs flera volontärer till återvinningsstugan (stående punkt). Intresserade var snäll och kontakta Liliane Bennis.
+20. Övriga inkomna frågor
 21. Avslutning
     `;
 
@@ -65,10 +62,10 @@ export default function FöreningsStämma() {
   return (
     <Body>
       <Centered
-        introducing="Inbjudan"
+        introducing="Kallelse"
         title="Föreningsstämma Brf. Imatra nr 193"
-        content={kallelse_inbjudan}
-        summary="Inbjudan till Brf. Imatras föreningstämma torsdagen 28/4 i Akalla By"
+        content={kallelse_distribuerad}
+        summary="Kallelse till Brf. Imatras föreningstämma torsdagen 28/4 i Akalla By"
       />
     </Body>
   );
