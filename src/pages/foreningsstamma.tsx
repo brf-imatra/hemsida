@@ -14,7 +14,7 @@ Hälsningar Styrelsen
 `;
 
 const kallelse_distribuerad = `
-Medlemmarna i Brf. Imatra nr 193 i Stockholm inbjuds härmed till ordinarie föreningsstämma torsdagen den 22 april 2021 i Akalla By
+Medlemmarna i Brf. Imatra nr 193 i Stockholm inbjuds härmed till ordinarie föreningsstämma torsdagen den 28 april 2021 i Akalla By
 
 Registrering startas kl:18.30 och mötet börjar kl:19.00
 
