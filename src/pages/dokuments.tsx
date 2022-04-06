@@ -7,7 +7,7 @@ export default function Dokuments() {
     <Body title="Dokument">
       <div className="grid grid-cols-1 gap-6">
         <FöreningsDokument />
-          <År2022 />
+        <År2022 />
         <År2021 />
         <År2020 />
         <År2019 />
@@ -116,7 +116,7 @@ function År2022() {
             title="Årsredovisning"
           />
         </li>
-{/*        <li className="border-gray-200">
+        {/*        <li className="border-gray-200">
           <FullTest
             documentName="protokoll_brf_imatra_stämma_2021-04-22.pdf"
             href="/dokument/arsredovisning/2021/protokoll_brf_imatra_stamma_2021-04-22.pdf"

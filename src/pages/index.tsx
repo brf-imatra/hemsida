@@ -42,7 +42,7 @@ export default function Home({
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
           {/*<InbjudanFöreningsstämma />*/}
-            <Årsstämma />
+          <Årsstämma />
           {/*<FläktByte />*/}
           <ImatraNytt />
           {/*<Städdag />*/}
