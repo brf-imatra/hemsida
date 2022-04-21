@@ -15,7 +15,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
     <div className="flex-shrink-0 flex border-t border-gray-200 p-4">
       <ExternalLink
         text="Milou login"
-        href="https://milou.brfimatra.se:10003"
+        href="https://milou.brfimatra.se/drive/"
       />
     </div>
   ) : null;
@@ -24,7 +24,7 @@ export function MenuShell(props: PropsWithChildren<MenuShellProps>) {
     <div className="flex-shrink-0 flex border-t border-grey-200 p-4">
       <ExternalLink
         text="Milou login"
-        href="https://milou.brfimatra.se:10003"
+        href="https://milou.brfimatra.se/drive/"
       />
     </div>
   ) : null;
