@@ -33,10 +33,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="bostadsrätt, brf, imatra, helsingforsgatan, akalla"
           key="keywords"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-          rel="stylesheet"
-        />
         <title>BRF Imatra - Hemsida</title>
         <link
           rel="icon"
@@ -50,9 +46,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           sizes="512x512"
           href="/android-chrome-512x512.png"
         />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="BRF Imatra" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
       <MenuShell isShowing={isShowing} setIsShowing={setIsShowing.bind(this)}>
         <Component {...pageProps} />

@@ -6,3 +6,4 @@ export * from './Body';
 export * from './Content';
 export * from './Panels';
 export * from './Button/button_with_icon';
+export * from './Banner'
