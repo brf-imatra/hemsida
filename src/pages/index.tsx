@@ -1,6 +1,7 @@
 import { InferGetStaticPropsType } from 'next';
 import { useRouter } from 'next/router';
 import {
+    Banner,
   Body,
   Card,
   Well,
@@ -32,6 +33,7 @@ export default function Home({
         </div>
       </div>
       <Body>
+        <Banner title="Föreningsstämma!" message="Missa inte föreningsstämman nu på torsdag 28 April i Akalla By" />
         <SimpleThreeColumn />
 
         {/*<HSBMeddlemsserviceCorona />*/}
@@ -44,7 +46,7 @@ export default function Home({
           {/*<InbjudanFöreningsstämma />*/}
           <Årsstämma />
           {/*<FläktByte />*/}
-          <ImatraNytt />
+          {/*<ImatraNytt />*/}
           {/*<Städdag />*/}
           <Garageplatser />
           <GruppanslutningCard />
