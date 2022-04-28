@@ -33,7 +33,7 @@ export default function Home({
         </div>
       </div>
       <Body>
-        <Banner title="Föreningsstämma!" message="Missa inte föreningsstämman nu på torsdag 28 April i Akalla By" />
+        {/*<Banner title="Föreningsstämma!" message="Missa inte föreningsstämman nu på torsdag 28 April i Akalla By" />*/}
         <SimpleThreeColumn />
 
         {/*<HSBMeddlemsserviceCorona />*/}
@@ -44,7 +44,7 @@ export default function Home({
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
           {/*<InbjudanFöreningsstämma />*/}
-          <Årsstämma />
+          {/*<Årsstämma />*/}
           {/*<FläktByte />*/}
           {/*<ImatraNytt />*/}
           {/*<Städdag />*/}
