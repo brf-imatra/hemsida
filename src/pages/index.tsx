@@ -1,7 +1,7 @@
 import { InferGetStaticPropsType } from 'next';
 import { useRouter } from 'next/router';
 import {
-    Banner,
+  Banner,
   Body,
   Card,
   Well,

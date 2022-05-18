@@ -1,24 +1,35 @@
 import React from 'react';
 import { Body } from '../components';
 
+const summaryText = 'Verksamhetsåret maj 2022 till april/maj 2023.';
 const styrelsemedlemmar: People[] = [
   {
-    name: 'Mimmi Wiktorsson',
-    role: 'Ledamot / Ordförande',
-    imageUrl: '/avatars/img_avatar_w.png',
-  },
-  {
     name: 'Marcus Holmgren',
-    role: 'Ledamot / Sekreterare',
+    role: 'Ledamot / Ordförande',
     imageUrl: '/avatars/img_avatar_m.png',
   },
   {
     name: 'Maria Enander',
-    role: 'Ledamot ',
+    role: 'Ledamot / Sekreterare',
     imageUrl: '/avatars/img_avatar_w.png',
   },
   {
-    name: 'Emmelie Wiktorsson',
+    name: 'Alexandra Leyton',
+    role: 'Ledamot',
+    imageUrl: '/avatars/img_avatar_w.png',
+  },
+  {
+    name: 'Pedram Ghorbani Damavandian',
+    role: 'Ledamot',
+    imageUrl: '/avatars/img_avatar_m.png',
+  },
+  {
+    name: 'Demosthenes Giannatos',
+    role: 'Ledamot',
+    imageUrl: '/avatars/img_avatar_m.png',
+  },
+  {
+    name: 'Minna Pohjola Rahem',
     role: 'Suppleant',
     imageUrl: '/avatars/img_avatar_w.png',
   },
@@ -52,12 +63,12 @@ export default function Styrelsen() {
     <Body>
       <TeamWithSmallImages
         title="Styrelsemedlemmar"
-        summary="Verksamhetsåret maj 2021 till april/maj 2022."
+        summary={summaryText}
         people={styrelsemedlemmar}
       />
       <TeamWithSmallImages
         title="Valberedningen"
-        summary="Verksamhetsåret maj 2021 till april/maj 2022."
+        summary={summaryText}
         people={valberedningen}
       />
     </Body>
