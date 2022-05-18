@@ -1,7 +1,7 @@
 import React from 'react';
 import { Body } from '../components';
 
-const summaryText = "Verksamhetsåret maj 2022 till april/maj 2023.";
+const summaryText = 'Verksamhetsåret maj 2022 till april/maj 2023.';
 const styrelsemedlemmar: People[] = [
   {
     name: 'Marcus Holmgren',
