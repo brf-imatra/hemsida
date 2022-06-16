@@ -70,16 +70,16 @@ function Header() {
             Här hittar du Banhofs sida för{' '}
             <a
               className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-              href="https://www.bahnhof.se/support/category"
+              href="https://bahnhof.se/privat/kundservice/"
             >
               Kundservice &amp; Hjälp
             </a>
             . Där kan du felanmäla, hitta guider och se svar på vanliga frågor.
             <br />
-            Kundservice för Brf Imatra{' '}
+            Kundservice{' '}
             <a
               className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-              href="tel:010-510 30 19"
+              href="tel:010-510 00 00"
             >
               010-510 30 19
             </a>{' '}
@@ -103,7 +103,7 @@ function Header() {
             Telenor kan leverera på uttaget i hallen. Maila{' '}
             <a
               className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-              href="mailto:info@brfimatra.se"
+              href="mailto:info@brfimatra.se?subject=Anslutn%20Banhof%20internet"
             >
               info@brfimatra.se
             </a>{' '}
