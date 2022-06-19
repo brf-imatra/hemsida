@@ -47,7 +47,7 @@ export default function Home({
           {/*<InbjudanFöreningsstämma />*/}
           {/*<Årsstämma />*/}
           {/*<FläktByte />*/}
-          {/*<ImatraNytt />*/}
+          <ImatraNytt />
           {/*<Städdag />*/}
             <StambyteMedlemsInformation />
           <Garageplatser />
@@ -171,10 +171,10 @@ function ImatraNytt() {
       <Card
         imageUrl="/undraw/undraw_year_2022_uci7.svg"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2022-02-14"
+        published="2022-06-19"
         title="Brf Imatra Nyhetsbrev"
-        summary="Vi hälsar Alvedo Omsorg AB välkomna till oss som ny hyresgäst sedan 1 januari 2022. Styrelsen planerar en genomgång av samtliga fläktar framöver och informerar då om när fastighetsskötaren behöver tillträde till din bostad."
-        hrefLink="/dokument/imatranytt/nyhetsbrev_2022-02.pdf"
+        summary="Ny styrelse sedan 28 april. Helsingforsgatan har av Stockholms stad utvalts att ingå i pilotprojektet 'Stockholms Framtidsgator'. Mellan den 11 juli till 22 juli kommer Nova Städ att se till att våra våra trapphus blir grundligt städade och polerade. Klicka för att läsa mer..."
+        hrefLink="/dokument/imatranytt/nyhetsbrev_2022-06.pdf"
       />
     </div>
   );
