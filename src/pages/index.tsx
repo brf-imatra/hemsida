@@ -36,6 +36,7 @@ export default function Home({
         {/*<Banner title="Föreningsstämma!" message="Missa inte föreningsstämman nu på torsdag 28 April i Akalla By" />*/}
         <SimpleThreeColumn />
 
+          <StambyteTider />
         {/*<HSBMeddlemsserviceCorona />*/}
         {/* <Well>
     <div className="flex-1 flex h-24 w-auto sm:h-32 md:h-48 lg:h-64">
@@ -48,6 +49,7 @@ export default function Home({
           {/*<FläktByte />*/}
           {/*<ImatraNytt />*/}
           {/*<Städdag />*/}
+            <StambyteMedlemsInformation />
           <Garageplatser />
           <GruppanslutningCard />
 
@@ -115,6 +117,23 @@ function ExperimentCard() {
     </div>
   );
 }
+
+
+function StambyteMedlemsInformation() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
+        imageAlt="Stambyte medlemsinformation"
+        published="2022-06-18"
+        title="Stambytesinformation"
+        summary="Vårt hus är nu snart 50 år gammalt, byggda på 70-talet. Vi är en attraktiv bostadsrättsförening i ett trevligt område. Men visst märks det att husen åldrats! Styrelsen har under en tid undersökt vad som är bäst för just våra hus. Under våren har styrelsen arbetat tillsammans med Nabo och nu kommit fram till ett ställningstagande om hur vi ska gå vidare med den nödvändiga renoveringen av rörstammar och våtrum."
+        hrefLink="/boendeinformation/stambyte-info-2022-06-16"
+      />
+    </div>
+  );
+}
+
 
 function GruppanslutningCard() {
   return (
@@ -260,4 +279,37 @@ Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)
       summary=""
     />
   );
+}
+
+
+
+function StambyteTider() {
+    const meetings = [
+      { id: 1,   title: "Information / medlemsmöte - tillfälle ett", location: "Plats Akalla by", date: new Date(2022, 7, 18, 18, 0,0) },
+        { id: 2,   title: "Information / medlemsmöte - tillfälle två", location: "Plats Akalla by", date: new Date(2022, 7, 23, 18, 0, 0) },
+           { id: 3,   title: "Extra föreningsstämma", location: "Plats Akalla by", date: new Date(2022, 8, 20, 18, 0, 0) }
+    ];
+    const seShort = new Intl.DateTimeFormat('sv-SE');
+      const seLong= new Intl.DateTimeFormat('sv-SE', { weekday: 'long', month: 'long', day: 'numeric' });
+            const seTid= new Intl.DateTimeFormat('sv-SE', { hour: 'numeric', minute: 'numeric' });
+    return (
+              <section className="mt-12">
+        <h2 className="font-semibold text-gray-900">Kommande aktiviteter</h2>
+        <ol className="mt-2 divide-y divide-gray-200 text-sm leading-6 text-gray-500">
+          {meetings.map(m => (
+              <li key={m.id} className="py-4 sm:flex">
+              <time dateTime={seShort.format(m.date)} className="w-28 flex-none">
+                {seLong.format(m.date)}
+              </time>
+              <p className="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">{m.title}</p>
+                  <p className="flex-none sm:ml-6">{m.location}</p>
+              <p className="flex-none sm:ml-6">
+                starttid <time dateTime={m.date.toISOString()}>{seTid.format(m.date)}</time>
+              </p>
+          </li>
+
+          ))}
+        </ol>
+      </section>
+    );
 }
