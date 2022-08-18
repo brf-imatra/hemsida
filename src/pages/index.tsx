@@ -285,7 +285,6 @@ Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)
 
 function StambyteTider() {
     const meetings = [
-      { id: 1,   title: "Information / medlemsmöte - tillfälle ett", location: "Plats Akalla by", date: new Date(2022, 7, 18, 18, 0,0) },
         { id: 2,   title: "Information / medlemsmöte - tillfälle två", location: "Plats Akalla by", date: new Date(2022, 7, 23, 18, 0, 0) },
            { id: 3,   title: "Extra föreningsstämma", location: "Plats Akalla by", date: new Date(2022, 8, 20, 18, 0, 0) }
     ];
