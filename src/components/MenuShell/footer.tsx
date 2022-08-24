@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { OfficeBuildingIcon } from '@heroicons/react/solid';
+import {BuildingOfficeIcon} from "@heroicons/react/24/outline";
 
 const navigation = [
   {
     name: 'HSB Login',
     href: 'https://hsb-login.hsb.se/logon/LogonPoint/index.html',
-    icon: (props) => <OfficeBuildingIcon {...props} />,
+    icon: (props) => <BuildingOfficeIcon {...props} />,
   },
   {
     name: 'GitHub',

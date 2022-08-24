@@ -285,8 +285,8 @@ Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)
 
 function StambyteTider() {
     const meetings = [
-        { id: 2,   title: "Information / medlemsmöte - tillfälle två", location: "Plats Akalla by", date: new Date(2022, 7, 23, 18, 0, 0) },
-           { id: 3,   title: "Extra föreningsstämma", location: "Plats Akalla by", date: new Date(2022, 8, 20, 18, 0, 0) }
+        { id: 2,   title: "Öppet hus", location: "Plats styrelselokalen Helsingforsgatan ", date: new Date(2022, 7, 30, 13, 0, 0), endDate: new Date(2022, 7, 30, 18, 0, 0) },
+           { id: 3,   title: "Extra föreningsstämma", location: "OBS! Ny plats Folkets Husby - https://folketshusby.se", date: new Date(2022, 8, 20, 18, 0, 0), endDate: new Date(2022, 8, 20, 20, 0, 0) }
     ];
     const seShort = new Intl.DateTimeFormat('sv-SE');
       const seLong= new Intl.DateTimeFormat('sv-SE', { weekday: 'long', month: 'long', day: 'numeric' });
@@ -303,7 +303,8 @@ function StambyteTider() {
               <p className="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">{m.title}</p>
                   <p className="flex-none sm:ml-6">{m.location}</p>
               <p className="flex-none sm:ml-6">
-                starttid <time dateTime={m.date.toISOString()}>{seTid.format(m.date)}</time>
+                start <time dateTime={m.date.toISOString()}>{seTid.format(m.date)}</time> -
+                  slut <time dateTime={m.endDate.toISOString()}>{seTid.format(m.endDate)}</time>
               </p>
           </li>
 
