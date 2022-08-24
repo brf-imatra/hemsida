@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import Head from 'next/head';
 import { Body, MenuItemIcon } from '../components';
-import { PhoneIcon, MailIcon } from '@heroicons/react/solid';
+import {EnvelopeIcon, PhoneIcon} from "@heroicons/react/24/outline";
 
 export default function MedlemsInfomation() {
   return (
@@ -57,7 +57,7 @@ function HSBMedlemsservice() {
       </DescriptionListRow>
       <DescriptionListRow title="Epost">
         <div className="flex flex-1">
-          <MailIcon
+          <EnvelopeIcon
             className="flex-shrink-0 h-5 w-5 text-gray-400"
             aria-hidden="true"
           />
@@ -220,7 +220,7 @@ function Styrelsen() {
     >
       <DescriptionListRow title="Epost" borderless={true}>
         <div className="flex flex-1">
-          <MailIcon
+          <EnvelopeIcon
             className="flex-shrink-0 h-5 w-5 text-gray-400"
             aria-hidden="true"
           />
@@ -246,7 +246,7 @@ function Valberedning() {
     >
       <DescriptionListRow title="Epost" borderless={true}>
         <div className="flex flex-1">
-          <MailIcon
+          <EnvelopeIcon
             className="flex-shrink-0 h-5 w-5 text-gray-400"
             aria-hidden="true"
           />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Body } from '../components';
-import { PaperClipIcon } from '@heroicons/react/solid';
+import {PaperClipIcon} from "@heroicons/react/20/solid";
 
 export default function Dokuments() {
   return (

@@ -1,10 +1,6 @@
 import React from 'react';
-import { ExternalLinkIcon } from '@heroicons/react/solid';
-import {
-  GlobeAltIcon,
-  LightningBoltIcon,
-  ScaleIcon,
-} from '@heroicons/react/outline';
+import {LinkIcon, GlobeAltIcon, ScaleIcon, BoltIcon} from "@heroicons/react/24/outline";
+
 
 const features = [
   {
@@ -38,7 +34,7 @@ const features = [
       />,
       'Här kan du göra en felanmälan för din bostadsrätt. Beteckningen på bostadsrättsförening är Imatra nr 193.',
     ],
-    icon: LightningBoltIcon,
+    icon: BoltIcon,
   },
 ];
 
@@ -79,7 +75,7 @@ interface ExternalLinkProps {
 export function ExternalLink({ text, href }: ExternalLinkProps) {
   return (
     <div className="ml-2 flex flex-1 text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out">
-      <ExternalLinkIcon
+      <LinkIcon
         className="flex-shrink-0 h-5 w-5 text-gray-400"
         aria-hidden="true"
       />
