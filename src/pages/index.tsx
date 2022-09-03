@@ -36,7 +36,7 @@ export default function Home({
         {/*<Banner title="Föreningsstämma!" message="Missa inte föreningsstämman nu på torsdag 28 April i Akalla By" />*/}
         <SimpleThreeColumn />
 
-          <StambyteTider />
+        <StambyteTider />
         {/*<HSBMeddlemsserviceCorona />*/}
         {/* <Well>
     <div className="flex-1 flex h-24 w-auto sm:h-32 md:h-48 lg:h-64">
@@ -49,7 +49,8 @@ export default function Home({
           {/*<FläktByte />*/}
           <ImatraNytt />
           {/*<Städdag />*/}
-            <StambyteMedlemsInformation />
+          <StambyteExtastämma />
+          <StambyteMedlemsInformation />
           <Garageplatser />
           <GruppanslutningCard />
 
@@ -118,6 +119,20 @@ function ExperimentCard() {
   );
 }
 
+function StambyteExtastämma() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_public_discussion_re_w9up.svg"
+        imageAlt="Extra föreningstämma för brf Imatra"
+        published="2022-09-04"
+        title="Extra föreningsstämma 2022"
+        summary="Kallelse och dagordning för Brf. Imatras extra föreningstämma tisdag 20/9 i Folkets Husby."
+        hrefLink="/boendeinformation/stambyte-foreningstamma"
+      />
+    </div>
+  );
+}
 
 function StambyteMedlemsInformation() {
   return (
@@ -133,7 +148,6 @@ function StambyteMedlemsInformation() {
     </div>
   );
 }
-
 
 function GruppanslutningCard() {
   return (
@@ -281,35 +295,59 @@ Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)
   );
 }
 
-
-
 function StambyteTider() {
-    const meetings = [
-        { id: 2,   title: "Öppet hus", location: "Plats styrelselokalen Helsingforsgatan ", date: new Date(2022, 8, 13, 13, 0, 0), endDate: new Date(2022, 8, 13, 18, 0, 0) },
-           { id: 3,   title: "Extra föreningsstämma", location: "OBS! Ny plats Folkets Husby - https://folketshusby.se", date: new Date(2022, 8, 20, 18, 0, 0), endDate: new Date(2022, 8, 20, 20, 0, 0) }
-    ];
-    const seShort = new Intl.DateTimeFormat('sv-SE');
-      const seLong= new Intl.DateTimeFormat('sv-SE', { weekday: 'long', month: 'long', day: 'numeric' });
-            const seTid= new Intl.DateTimeFormat('sv-SE', { hour: 'numeric', minute: 'numeric' });
-    return (
-              <section className="mt-12">
-        <h2 className="font-semibold text-gray-900">Kommande aktiviteter</h2>
-        <ol className="mt-2 divide-y divide-gray-200 text-sm leading-6 text-gray-500">
-          {meetings.map(m => (
-              <li key={m.id} className="py-4 sm:flex">
-              <time dateTime={seShort.format(m.date)} className="w-28 flex-none">
-                {seLong.format(m.date)}
+  const meetings = [
+    {
+      id: 2,
+      title: 'Öppet hus',
+      location: 'Plats styrelselokalen Helsingforsgatan ',
+      date: new Date(2022, 8, 13, 13, 0, 0),
+      endDate: new Date(2022, 8, 13, 18, 0, 0),
+    },
+    {
+      id: 3,
+      title: 'Extra föreningsstämma',
+      location: 'OBS! Ny plats Folkets Husby - https://folketshusby.se',
+      date: new Date(2022, 8, 20, 18, 0, 0),
+      endDate: new Date(2022, 8, 20, 20, 0, 0),
+    },
+  ];
+  const seShort = new Intl.DateTimeFormat('sv-SE');
+  const seLong = new Intl.DateTimeFormat('sv-SE', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+  });
+  const seTid = new Intl.DateTimeFormat('sv-SE', {
+    hour: 'numeric',
+    minute: 'numeric',
+  });
+  return (
+    <section className="mt-12">
+      <h2 className="font-semibold text-gray-900">Kommande aktiviteter</h2>
+      <ol className="mt-2 divide-y divide-gray-200 text-sm leading-6 text-gray-500">
+        {meetings.map((m) => (
+          <li key={m.id} className="py-4 sm:flex">
+            <time dateTime={seShort.format(m.date)} className="w-28 flex-none">
+              {seLong.format(m.date)}
+            </time>
+            <p className="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">
+              {m.title}
+            </p>
+            <p className="flex-none sm:ml-6">{m.location}</p>
+            <p className="flex-none sm:ml-6">
+              start{' '}
+              <time dateTime={m.date.toISOString()}>
+                {seTid.format(m.date)}
+              </time>{' '}
+              - slut{' '}
+              <time dateTime={m.endDate.toISOString()}>
+                {seTid.format(m.endDate)}
               </time>
-              <p className="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">{m.title}</p>
-                  <p className="flex-none sm:ml-6">{m.location}</p>
-              <p className="flex-none sm:ml-6">
-                start <time dateTime={m.date.toISOString()}>{seTid.format(m.date)}</time> -
-                  slut <time dateTime={m.endDate.toISOString()}>{seTid.format(m.endDate)}</time>
-              </p>
+            </p>
           </li>
-
-          ))}
-        </ol>
-      </section>
-    );
+        ))}
+      </ol>
+    </section>
+  );
 }

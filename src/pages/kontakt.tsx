@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 import Head from 'next/head';
 import { Body, MenuItemIcon } from '../components';
-import {EnvelopeIcon, PhoneIcon} from "@heroicons/react/24/outline";
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 export default function MedlemsInfomation() {
   return (

@@ -1,6 +1,10 @@
 import React from 'react';
-import {LinkIcon, GlobeAltIcon, ScaleIcon, BoltIcon} from "@heroicons/react/24/outline";
-
+import {
+  LinkIcon,
+  GlobeAltIcon,
+  ScaleIcon,
+  BoltIcon,
+} from '@heroicons/react/24/outline';
 
 const features = [
   {
