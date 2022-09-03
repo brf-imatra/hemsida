@@ -1,4 +1,5 @@
 export * from './Alert';
+export * from './Attachment';
 export * from './MenuItem';
 export * from './MenuShell';
 export * from './Card';
