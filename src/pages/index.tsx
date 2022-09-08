@@ -306,6 +306,13 @@ function StambyteTider() {
     },
     {
       id: 3,
+      title: 'Öppet hus',
+      location: 'Plats styrelselokalen Helsingforsgatan ',
+      date: new Date(2022, 8, 14, 16, 0, 0),
+      endDate: new Date(2022, 8, 14, 18, 0, 0),
+    },
+    {
+      id: 4,
       title: 'Extra föreningsstämma',
       location: 'OBS! Ny plats Folkets Husby - https://folketshusby.se',
       date: new Date(2022, 8, 20, 18, 0, 0),
