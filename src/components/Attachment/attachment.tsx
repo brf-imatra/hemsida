@@ -13,7 +13,10 @@ export type AttachmentItem = {
 export function Attachment({ items }: AttachmentProps) {
   const listEl = items
     ? items.map((item) => (
-        <li key={item.filename} className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
+        <li
+          key={item.filename}
+          className="flex items-center justify-between py-3 pl-3 pr-4 text-sm"
+        >
           <div className="flex w-0 flex-1 items-center">
             <PaperClipIcon
               className="h-5 w-5 flex-shrink-0 text-gray-400"
