@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { SpeakerphoneIcon, XIcon } from '@heroicons/react/outline';
+import { MegaphoneIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 interface BannerProps {
   title: string;
@@ -13,12 +13,12 @@ export function Banner({ title, message }: BannerProps) {
         <div className="flex items-center justify-between flex-wrap">
           <div className="w-0 flex-1 flex items-center">
             <span className="flex p-2 rounded-lg bg-yellow-600">
-              <SpeakerphoneIcon
-                className="h-6 w-6 text-white"
+              <MegaphoneIcon
+                className="h-6 w-6 text-black"
                 aria-hidden="true"
               />
             </span>
-            <p className="ml-3 font-medium text-white truncate">
+            <p className="ml-3 font-medium text-black truncate">
               <span className="md:hidden">{title}</span>
               <span className="hidden md:inline">{message}</span>
             </p>

@@ -33,7 +33,10 @@ export default function Home({
         </div>
       </div>
       <Body>
-        {/*<Banner title="Föreningsstämma!" message="Missa inte föreningsstämman nu på torsdag 28 April i Akalla By" />*/}
+        <Banner
+          title="Extra föreningsstämma!"
+          message="Missa inte extra föreningsstämman nu på tisdag 20 september i Folkets Husby"
+        />
         <SimpleThreeColumn />
 
         <StambyteTider />
@@ -297,20 +300,6 @@ Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)
 
 function StambyteTider() {
   const meetings = [
-    {
-      id: 2,
-      title: 'Öppet hus',
-      location: 'Plats styrelselokalen Helsingforsgatan ',
-      date: new Date(2022, 8, 13, 13, 0, 0),
-      endDate: new Date(2022, 8, 13, 18, 0, 0),
-    },
-    {
-      id: 3,
-      title: 'Öppet hus',
-      location: 'Plats styrelselokalen Helsingforsgatan ',
-      date: new Date(2022, 8, 14, 16, 0, 0),
-      endDate: new Date(2022, 8, 14, 18, 0, 0),
-    },
     {
       id: 4,
       title: 'Extra föreningsstämma',
