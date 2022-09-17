@@ -1,0 +1,90 @@
+import { Body,  Centered2 } from '../../components';
+import {MDXProvider} from '@mdx-js/react'
+
+
+Information om Brf Imatras ekonomi inför extra föreningsstämman
+Föreningen kommer att behöva höja årsavgiften kraftigare än normalt under de kommande åren p.g.a. diverse anledningar;
+väldigt höga elkostnader, mycket omfattande vattenskador de senaste åren, underdimensionerad underhållsplan, höga sophanterings- och städkostnader.
+Föreningen har följaktligen haft ett väldigt lågt sparande och kommer, om inte avgifterna höjs, snart behöva låna för de löpande driftskostnaderna.
+Ovanpå detta kommer de nya lånen som behövs för att finansiera stambytet.
+
+För att uppnå en långsiktigt hållbar ekonomi, så att nuvarande boende inte bor på framtida medlemmars bekostnad,
+har styrelsen bett HSB:s ekonomiavdelning att räkna på nödvändiga årsavgiftshöjningar för de kommande åren.
+De höjningar som här redovisas är en prognos om vad som krävs för att i slutet av perioden uppnå balans mellan sparande och underhållsbehov.
+Dessa siffror kan givetvis komma att justeras ned eller upp beroende på diverse faktorer, som exempelvis räntan eller effektiviseringar.
+Det är också viktigt att inse att dessa höjningar kommer genomföras oavsett om stambytet genomförs eller inte.
+Om stambytet inte genomförs behövs motsvarande höjningar för att täcka kostnaderna för fortlöpande vattenskador samt för att stärka föreningens ekonomi inför stambyte som ändå måste genomföras längre fram.
+
+## Planerade avgiftshöjningar
+
+<table className="min-w-full divide-y divide-gray-300">
+<thead className="bg-gray-50">
+  <tr>
+    <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">År</th>
+    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">2023</th>
+    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">2024</th>
+      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">2025</th>
+      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">2026</th>
+      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">2027</th>
+      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">2028</th>
+      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">2029</th>
+      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">2030</th>
+      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">2031</th>
+  </tr>
+</thead>
+<tbody className="divide-y divide-gray-200 bg-white">
+    <tr>
+      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">%</td>
+      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">10</td>
+      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">10</td>
+      <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">6</td>
+        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">4</td>
+        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">4</td>
+        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">4</td>
+        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">3</td>
+        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">3</td>
+        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">3</td>
+    </tr>
+</tbody>
+</table>
+
+
+
+
+## Information om individuell elmätning (IMD)
+Eftersom vi inte mäter elförbrukningen i olika delar av fastigheten går det inte att
+säga exakt hur stor del av elen som används av de boende inne lägenheterna, men
+en schablonmässig uppskattning av HSB:s energiexperter är 46%. Detta innebär
+att de boendes elanvändning inne i lägenheterna utgör ca 6 % av årsavgiften.
+Denna siffra är givetvis beroende av vilka ingångsvärden för elkostnad och årsavgift
+man använder, men är en rimlig avvägning. När IMD införs kommer årsavgiften
+därför att sänkas med 6 %, utöver de höjningar som genomförs.
+Det går inte att säga vad elkostnaden för ett specifikt hushåll kommer att bli efter
+att IMD införts, då det beror på faktorer som elprisets utveckling samt hushållets elförbrukning.
+Att man inte längre betalar för elen kollektivt gör det dock
+möjligt att påverka sina egna kostnader. Elavtal kommer även fortsättningsvis att
+förhandlas av föreningen, som sen debiterar medlemmarna för hushållets förbrukning.
+
+_Innan den extra föreningsstämman startar kommer HSB-ekonomen Gustaf Nyblom att hålla en kort presentation kl 18.00._
+
+Välkomna tisdagen den 20:e september till Folkets Husby.
+
+Styrelsen för Brf Imatra i Kista
+16 september 2022
+
+export default (props) => {
+    const components = {
+  h2: props => <h2 className="text-2xl font-extrabold text-red-900 tracking-tight sm:text-3xl" {...props} />
+    }
+    return <MDXProvider components={components} >
+              <Body>
+          <Centered2
+        introducing="Ekonomi"
+        title="Ekonomi-info"
+        summary="Brf Imatras kommer att behöva höja årsavgiften kraftigare än normalt under de kommande åren"
+      >
+               <main {...props} />
+          </Centered2>
+      </Body>
+    </MDXProvider>
+}

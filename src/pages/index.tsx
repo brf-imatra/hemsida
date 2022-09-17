@@ -52,6 +52,7 @@ export default function Home({
           {/*<FläktByte />*/}
           <ImatraNytt />
           {/*<Städdag />*/}
+          <KommandeAvgiftshöjningar />
           <StambyteExtastämma />
           <StambyteMedlemsInformation />
           <Garageplatser />
@@ -118,6 +119,21 @@ function ExperimentCard() {
           </a>
         </ButtonWithIcon>
       </div>
+    </div>
+  );
+}
+
+function KommandeAvgiftshöjningar() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_investing_re_bov7.svg"
+        imageAlt="Plannerad avgiftshöjning 2023"
+        published="2022-09-16"
+        title="Ekonomi-info"
+        summary="Brf Imatras kommer att behöva höja årsavgiften kraftigare än normalt under de kommande åren. Detta beror på att vi behöver göra stora investeringar i fastigheten. Vi kommer att behöva höja årsavgiften med 10% under 2023."
+        hrefLink="/boendeinformation/stambyte-ekonomi-info-2022-09-16"
+      />
     </div>
   );
 }
