@@ -18,6 +18,13 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const bannerEl = false ? (
+      <Banner
+          title="Extra föreningsstämma!"
+          message="Missa inte extra föreningsstämman nu på tisdag 20 september i Folkets Husby"
+        />
+  ) : null;
+
   return (
     <>
       <div className="relative overflow-hidden">
@@ -33,10 +40,7 @@ export default function Home({
         </div>
       </div>
       <Body>
-        <Banner
-          title="Extra föreningsstämma!"
-          message="Missa inte extra föreningsstämman nu på tisdag 20 september i Folkets Husby"
-        />
+        {bannerEl}
         <SimpleThreeColumn />
 
         <StambyteTider />
