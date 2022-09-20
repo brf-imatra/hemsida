@@ -43,7 +43,7 @@ export default function Home({
         {bannerEl}
         <SimpleThreeColumn />
 
-        <StambyteTider />
+        {/*<KommandeAktiviteter />*/}
         {/*<HSBMeddlemsserviceCorona />*/}
         {/* <Well>
     <div className="flex-1 flex h-24 w-auto sm:h-32 md:h-48 lg:h-64">
@@ -318,7 +318,7 @@ Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)
   );
 }
 
-function StambyteTider() {
+function KommandeAktiviteter() {
   const meetings = [
     {
       id: 4,
