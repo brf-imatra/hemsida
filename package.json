@@ -12,10 +12,10 @@
     "format": "prettier --write \"./{src,content}/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.2",
-    "@heroicons/react": "^2.0.11",
-    "@mdx-js/loader": "^2.1.3",
-    "@mdx-js/react": "^2.1.3",
+    "@headlessui/react": "^1.7.3",
+    "@heroicons/react": "^2.0.12",
+    "@mdx-js/loader": "^2.1.4",
+    "@mdx-js/react": "^2.1.4",
     "@next/mdx": "^12.3.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
@@ -28,15 +28,15 @@
     "tailwind": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.7.18",
-    "@types/react": "^18.0.20",
-    "autoprefixer": "^10.4.11",
-    "eslint": "^8.23.1",
+    "@types/node": "^18.8.3",
+    "@types/react": "^18.0.21",
+    "autoprefixer": "^10.4.12",
+    "eslint": "^8.25.0",
     "eslint-config-next": "^12.3.1",
     "gray-matter": "^4.0.3",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.17",
     "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8",
-    "typescript": "^4.8.3"
+    "typescript": "^4.8.4"
   }
 }

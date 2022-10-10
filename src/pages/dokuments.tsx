@@ -124,6 +124,14 @@ function År2022() {
             title="Föreningsstämma"
           />
         </li>
+        <li className="border-gray-200">
+          <FullTest
+            documentName="protokoll_brf_imatra_extra_stämma_2022-09-20.pdf"
+            href="/dokument/arsredovisning/2022/protokoll_brf_imatra_extra_stamma_2022-09-20.pdf"
+            tag="PDF"
+            title="Extra föreningsstämma"
+          />
+        </li>
       </ul>
     </div>
   );

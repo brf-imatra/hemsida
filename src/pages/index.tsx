@@ -19,10 +19,10 @@ export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const bannerEl = false ? (
-      <Banner
-          title="Extra föreningsstämma!"
-          message="Missa inte extra föreningsstämman nu på tisdag 20 september i Folkets Husby"
-        />
+    <Banner
+      title="Extra föreningsstämma!"
+      message="Missa inte extra föreningsstämman nu på tisdag 20 september i Folkets Husby"
+    />
   ) : null;
 
   return (
@@ -56,8 +56,10 @@ export default function Home({
           {/*<FläktByte />*/}
           <ImatraNytt />
           {/*<Städdag />*/}
-          <KommandeAvgiftshöjningar />
+          <StambyteSamtyckesblankett />
           <StambyteExtastämma />
+          <KommandeAvgiftshöjningar />
+
           <StambyteMedlemsInformation />
           <Garageplatser />
           <GruppanslutningCard />
@@ -147,11 +149,26 @@ function StambyteExtastämma() {
     <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
         imageUrl="/undraw/undraw_public_discussion_re_w9up.svg"
-        imageAlt="Extra föreningstämma för brf Imatra"
-        published="2022-09-04"
-        title="Extra föreningsstämma 2022"
-        summary="Kallelse och dagordning för Brf. Imatras extra föreningstämma tisdag 20/9 i Folkets Husby."
-        hrefLink="/boendeinformation/stambyte-foreningstamma"
+        imageAlt="Protokoll från den extra föreningstämman för brf Imatra"
+        published="2022-10-10"
+        title="Protokoll"
+        summary="Protokoll från extra föreningsstämma 2022-09-04 i Fokets Husby är nu justerat och godkännt. Protokollet finns att läsa här eller under fliken 'Dokument' i menyn."
+        hrefLink="/dokument/arsredovisning/2022/protokoll_brf_imatra_extra_stamma_2022-09-20.pdf"
+      />
+    </div>
+  );
+}
+
+function StambyteSamtyckesblankett() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_Documents_re_isxv.png"
+        imageAlt="Protokoll från den extra föreningstämman för brf Imatra"
+        published="2022-10-10"
+        title="Samtyckesblankett"
+        summary="Här hittar du samtyckesblanketten för stambyte. Styrelsen rekommenderar att du lämnar samtycke till genomförande av stambyte. Utan samtycke blir du som medlem motpart i hyresnämnden. Samtyckesblanketten ska vara ifylld och undertecknad senast den 24 oktober 2022."
+        hrefLink="/dokument/mallar/stambyte_samtyckesblankett.pdf"
       />
     </div>
   );
