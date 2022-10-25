@@ -14,7 +14,6 @@ export function Card(props: CardProps) {
   return (
     <div className="bg-white border border-lg rounded-lg overflow-hidden">
       <Link href={props.hrefLink}>
-        <a>
           <img
             src={props.imageUrl}
             alt={props.imageAlt}
@@ -32,7 +31,6 @@ export function Card(props: CardProps) {
               <span className="text-gray-600 text-sm">{props.summary}</span>
             </div>
           </div>
-        </a>
       </Link>
     </div>
   );
