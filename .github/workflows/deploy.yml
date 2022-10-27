@@ -18,7 +18,7 @@ jobs:
       ftp_user: ${{ secrets.FTP_USER }}
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Client use Node.js 16.x
       uses: actions/setup-node@v1
       with:
@@ -32,7 +32,7 @@ jobs:
       working-directory: ${{ env.working_dir }}
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         server: ${{ env.ftp_host }}
         username: ${{ env.ftp_user }}
