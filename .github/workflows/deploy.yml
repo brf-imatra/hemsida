@@ -29,11 +29,13 @@ jobs:
     - run: yarn export
       working-directory: ${{ env.working_dir }}
 
-    - name: 📂 Sync Files
-      uses: SamKirkland/web-deploy@v1
+    - name: copy file to web server
+      uses: appleboy/scp-action@master
       with:
-        target-server: ssh.brfimatra.se
-        remote-user: brfimatra.se
-        private-ssh-key: ${{ secrets.SSH_KEY }}
-        destination-path: /www/
-        source-path: ${{ env.out_dir }}
+        host: ssh.brfimatra.se
+        username: brfimatra.se
+        password: ${{ secrets.SSH_KEY }}
+        port: 22
+        source: ${{ env.out_dir }}
+        target: "/www/"
+
