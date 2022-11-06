@@ -81,7 +81,7 @@ function Header() {
               className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
               href="tel:010-510 00 00"
             >
-              010-510 30 19
+              010-510 00 00
             </a>{' '}
             .
           </p>
