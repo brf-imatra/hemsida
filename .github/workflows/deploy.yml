@@ -35,5 +35,5 @@ jobs:
         target-server: ssh.brfimatra.se
         remote-user: brfimatra.se
         private-ssh-key: ${{ secrets.SSH_KEY }}
-        destination-path: ~/www/
+        destination-path: /www/
         source-path: ${{ env.out_dir }}
