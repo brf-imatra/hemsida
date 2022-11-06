@@ -14,15 +14,13 @@ jobs:
     env:
       working_dir: ./
       out_dir: ./out/
-      ftp_host: ${{ secrets.FTP_HOST }}
-      ftp_user: ${{ secrets.FTP_USER }}
 
     steps:
     - uses: actions/checkout@v3
     - name: Client use Node.js 16.x
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
-        node-version: '16.x'
+        node-version: 16
         
     - name: Install dependencies
       run: yarn
@@ -30,11 +28,12 @@ jobs:
       
     - run: yarn export
       working-directory: ${{ env.working_dir }}
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+
+    - name: 📂 Sync Files
+      uses: SamKirkland/web-deploy@v1
       with:
-        server: ${{ env.ftp_host }}
-        username: ${{ env.ftp_user }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ${{ env.out_dir }}
+        target-server: ssh.brfimatra.se
+        remote-user: brfimatra.se
+        private-ssh-key: ${{ secrets.SSH_KEY }}
+        destination-path: ~/www/
+        source-path: ${{ env.out_dir }}
