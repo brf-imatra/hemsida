@@ -34,7 +34,7 @@ jobs:
       with:
           username: 'brfimatra.se'
           server: 'ssh.brfimatra.se'
-          ssh_private_key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.SSH_KEY }}
           local_path: ${{ env.out_dir }}
           remote_path: '/www/'
           sftpArgs: '-o ConnectTimeout=5'
