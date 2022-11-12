@@ -1,0 +1,40 @@
+import { Body, Centered2 } from '../../components';
+import {MDXProvider} from '@mdx-js/react';
+
+Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning. När vi infört individuell el-mätning så kan vi själva se tydligt vad förändringar i vår egen förbrukning betyder.
+
+Vi har samlat några tips:
+_Källor: Dagens Nyheter 2022-09-20,2022-10-08. HSB.se 2022-10-24._
+
+- Ställ inte möbler framför element och termostater.
+- Vädra kort tid hellre än låta fönster och balkongdörr stå öppna länge.
+- Se till att fönstren har tätningslister.
+- Byt till LED-lampor och släck i rum där du inte vistas. LED lampor är dyrare men håller mycket längre.
+- Diska i full diskmaskin. Välj ECO program. Finns inte diskmaskin, använd diskho och propp och undvik diska under rinnande vatten.
+- Fyll tvättmaskinen. Välj ECO program om det finns och välj inte högre temperatur än nödvändigt.
+- Spara på vattenförbrukning och varmvatten. Installera snålspolande kranar och duschmunstycken.
+- Torkskåp och torktumlare drar mycket el. Lufttorka om möjligt.
+- Använd inte standby-läge på TV och andra apparater. Dra ur laddare som känns varma även när de inte används. Dessa är gamla modeller. Nya drar ingen el när de inte används.
+- Håll +4 i kylen och -18 i frysen. Det ger lägre energianvändning och maten håller längre. Avfrostning minst en gång/år ger bättre kyla.
+- Frosta av frysen. Håll baksidan dammfri.
+- Sänk temperaturen på golvvärme och handdukstork. Stäng av när de inte behövs. Lösa el-element drar mycket energi.
+
+Föreningen behöver fortsätta arbeta med energibesparande åtgärder på kort och lång sikt:
+- Förberedelser för införande av individuell el-mätning pågår.
+- Vi ser över innertemperaturer och belysning/lampor i våra gemensamma utrymmen.
+- Temperaturen i garagen har därför sänkts något och vi byter till LED-belysning successivt.
+- Ventilationen ses över med återkommande OVK (Obligatorisk Ventilationskontroll) vilket kommer att ske hos alla boende 2023.
+- Andra viktiga områden är el-avtal, isolering, fönster och att undersöka värmeåtervinning och om solpaneler kan installeras.
+
+
+export default props => (
+  <MDXProvider>
+      <Body>
+          <Centered2
+              introducing="Tips för att minska elförbrukningen"
+              title="Så kan vi påverka vår elräkning">
+            <main {...props} />
+          </Centered2>
+      </Body>
+  </MDXProvider>
+)

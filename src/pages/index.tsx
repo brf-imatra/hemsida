@@ -56,6 +56,7 @@ export default function Home({
           {/*<FläktByte />*/}
           <ImatraNytt />
           {/*<Städdag />*/}
+          <ElSparTips />
           <StambyteSamtyckesblankett />
           <StambyteExtastämma />
           <KommandeAvgiftshöjningar />
@@ -225,10 +226,10 @@ function ImatraNytt() {
       <Card
         imageUrl="/undraw/undraw_year_2022_uci7.svg"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2022-06-19"
+        published="2022-11-12"
         title="Brf Imatra Nyhetsbrev"
-        summary="Ny styrelse sedan 28 april. Helsingforsgatan har av Stockholms stad utvalts att ingå i pilotprojektet 'Stockholms Framtidsgator'. Mellan den 11 juli till 22 juli kommer Nova Städ att se till att våra våra trapphus blir grundligt städade och polerade. Klicka för att läsa mer..."
-        hrefLink="/dokument/imatranytt/nyhetsbrev_2022-06.pdf"
+        summary="Nyhetsbrev där du kan läsa om avgiftshöjningen 2023, stambytet, individuell elmätning, container för grovsopor 19-20 november m.m. Klicka för att läsa mer..."
+        hrefLink="/dokument/imatranytt/nyhetsbrev_2022-11.pdf"
       />
     </div>
   );
@@ -382,5 +383,20 @@ function KommandeAktiviteter() {
         ))}
       </ol>
     </section>
+  );
+}
+
+function ElSparTips() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_checklist__re_2w7v.svg"
+        imageAlt="Tips för att hålla nere elförbrukningen"
+        published="2022-11-12"
+        title="Elförbrukningstips"
+        summary="Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning"
+        hrefLink="/boendeinformation/el-spar-tips"
+      />
+    </div>
   );
 }

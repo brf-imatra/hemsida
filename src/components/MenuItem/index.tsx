@@ -49,24 +49,25 @@ export function MenuItem({
     'mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150';
 
   return (
-    <Link href={href}
-        className={mobile ? linkMobileClassName : linkDesktopClassName}
-        onClick={() => setIsShowing(false)}
+    <Link
+      href={href}
+      className={mobile ? linkMobileClassName : linkDesktopClassName}
+      onClick={() => setIsShowing(false)}
+    >
+      <svg
+        className={mobile ? svgMobileClassName : svgDesktopClassName}
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
       >
-        <svg
-          className={mobile ? svgMobileClassName : svgDesktopClassName}
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d={icon}
-          />
-        </svg>
-        {text}
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d={icon}
+        />
+      </svg>
+      {text}
     </Link>
   );
 }
