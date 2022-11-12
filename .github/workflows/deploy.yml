@@ -29,13 +29,12 @@ jobs:
     - run: yarn export
       working-directory: ${{ env.working_dir }}
 
-    - name: copy file to web server
-      uses: appleboy/scp-action@master
+    - name: deploy file to server
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
       with:
-        host: ssh.brfimatra.se
-        username: brfimatra.se
-        password: ${{ secrets.SSH_KEY }}
-        port: 22
-        source: ${{ env.out_dir }}
-        target: /www/
-
+          username: 'brfimatra.se'
+          server: 'ssh.brfimatra.se'
+          ssh_private_key: ${{ secrets.SSH_KEY }}
+          local_path: ${{ env.out_dir }}
+          remote_path: '/www/'
+          sftpArgs: '-o ConnectTimeout=5'
