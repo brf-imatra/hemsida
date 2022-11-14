@@ -18,6 +18,7 @@ export default function Dokuments() {
         <År2014 />
         <År2013 />
         <År2012 />
+        <År2007 />
       </div>
     </Body>
   );
@@ -408,6 +409,26 @@ function År2012() {
           <FullTest
             documentName="årsredovisning_2011_imatra.pdf"
             href="/dokument/arsredovisning/2012/arsredovisning_2011_imatra.pdf"
+            tag="PDF"
+            title="Årsredovisning"
+          />
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function År2007() {
+  return (
+    <div className="bg-white shadow overflow-hidden sm:rounded-md">
+      <div className="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
+        <h2 className="text-lg leading-6 font-medium text-gray-900">2007</h2>
+      </div>
+      <ul>
+        <li className="border-gray-200">
+          <FullTest
+            documentName="årsredovisning_2007_imatra.pdf"
+            href="/dokument/arsredovisning/2007/arsredovisning_2007_imatra.pdf"
             tag="PDF"
             title="Årsredovisning"
           />

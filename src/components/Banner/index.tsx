@@ -8,20 +8,15 @@ interface BannerProps {
 
 export function Banner({ title, message }: BannerProps) {
   return (
-    <div className="bg-yellow-400">
-      <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between flex-wrap">
-          <div className="w-0 flex-1 flex items-center">
-            <span className="flex p-2 rounded-lg bg-yellow-600">
-              <MegaphoneIcon
-                className="h-6 w-6 text-black"
-                aria-hidden="true"
-              />
-            </span>
-            <p className="ml-3 font-medium text-black truncate">
-              <span className="md:hidden">{title}</span>
-              <span className="hidden md:inline">{message}</span>
-            </p>
+    <div className="rounded-md bg-yellow-50 p-4">
+      <div className="flex">
+        <div className="flex-shrink-0">
+          <MegaphoneIcon className="h-6 w-6 text-black" aria-hidden="true" />
+        </div>
+        <div className="ml-3">
+          <h3 className="text-sm font-medium text-yellow-800">{title}</h3>
+          <div className="mt-2 text-sm text-yellow-700">
+            <p>{message}</p>
           </div>
         </div>
       </div>

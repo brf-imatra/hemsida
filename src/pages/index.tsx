@@ -18,10 +18,10 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const bannerEl = false ? (
+  const bannerEl = true ? (
     <Banner
-      title="Extra föreningsstämma!"
-      message="Missa inte extra föreningsstämman nu på tisdag 20 september i Folkets Husby"
+      title="Stängt på onsdag!"
+      message="HSB Akallakontoret har stängt för besök nu på onsdag 2022-11-16. Det är öppet som vanligt på torsdag."
     />
   ) : null;
 
