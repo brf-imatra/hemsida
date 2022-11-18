@@ -1,5 +1,4 @@
 import React, { PropsWithChildren } from 'react';
-import ReactMarkdown from 'react-markdown';
 
 interface CenteredProps {
   introducing?: string;
@@ -23,7 +22,8 @@ export function Centered({
   const leadingElement = summary ? (
     <p className="mt-8 text-xl text-gray-500 leading-8">{summary}</p>
   ) : null;
-
+  //const markdown = await markdownToHtml(content)
+  //console.log(markdown)
   return (
     <div className="relative py-16 bg-white overflow-hidden">
       <div className="relative px-4 sm:px-6 lg:px-8">
@@ -36,9 +36,9 @@ export function Centered({
           </h1>
           {leadingElement}
         </div>
-        <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-          <ReactMarkdown source={content} />
-        </div>
+        <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto"
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
       </div>
     </div>
   );

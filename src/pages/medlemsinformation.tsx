@@ -1,16 +1,11 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Link from 'next/link';
-import { InferGetStaticPropsType } from 'next';
-//import matter from "gray-matter";
-//import ReactMarkdown from "react-markdown";
 import {
   Body,
-  Card,
   Centered,
   SplitWithImage,
   TwoColumns,
   BasicCard,
-  Well,
   WellOnGrey,
 } from '../components';
 import {
@@ -18,7 +13,8 @@ import {
   MedlemsInformationArticle,
   readMedlemsInformation,
 } from '../utils';
-import { PropsOf } from '@headlessui/react/dist/types';
+import markdownToHtml from "../utils/markdownToHtml";
+
 
 interface MedlemsInfomationProps {
   articles: MedlemsInformation;
@@ -45,8 +41,8 @@ export default function MedlemsInfomation({
         </div>
         <div className="relative py-16 bg-white overflow-hidden">
           <div className="relative px-4 sm:px-6 lg:px-8">
-            <div className="text-lg max-w-prose mx-auto mb-6">
-              {/*            <h1>INTRESSERAD AV STYRELSEARBETE?</h1>
+            <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+               <h2>Intresserad av styrelsearbete?</h2>
           <p>Är du intresserad av att sitta i styrelsen i din bostadsrättsförening, men vet inte riktigt vad det innebär och vad du behöver kunna?
                   HSB Stockholm erbjuder en föreläsning med verksamhetschef Petrus Jansson som besvarar frågeställningar som:
               </p>
@@ -55,7 +51,7 @@ export default function MedlemsInfomation({
                   <li>Hur fungerar en bostadsrättsförenings ekonomi?</li>
                   <li>Vilka lagar och regler styr en bostadsrättsförening?</li>
                   <li>Vilket ansvar har styrelsen i en bostadsrättsföreningen?</li>
-              </ul>*/}
+              </ul>
               <div
                 className="relative h-0 overflow-hidden max-w-full"
                 style={{ paddingBottom: '56.25%' }}
@@ -153,8 +149,6 @@ function Hemförsäkring({
   introducing,
   summary,
 }: MedlemsInformationArticle) {
-  // "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
-  //const image = "/undraw/undraw_Documents_re_isxv.png";
   const image = '/imatra/foton/helsingforsgatan_autumn19.jpg';
   return (
     <SplitWithImage
@@ -222,6 +216,8 @@ function Garage() {
 }
 
 function Tvättstugor() {
+  const [leftContent, setLeftContent] = useState('');
+    const [rightContent, setRightContent] = useState('');
   const left = `Det finns elva tvättstugor, två på varje gård i låghusen. Du kan boka vilken du vill av dessa och två åt gången.
   
   Tvättmedel tillsätts automatiskt men går att välja bort med ett knapptryck om du vill använda eget tvättmedel som då läggs in direkt i maskinen. Tänk på att vi har mjukt vatten och ta en mindre dos tvättmedel.`;
@@ -230,17 +226,31 @@ function Tvättstugor() {
   
   _Efter avslutat tvättpass_, vänligen torka av bord och maskiner med trasa, rensa torktumlarens luddfilter och sopa golvet. Torka golvet i torkskåpet om det behövs.`;
 
+    useEffect( () => {
+    const doIt = async () => {
+      const leftContent = await markdownToHtml(left);
+      setLeftContent(leftContent);
+      const rightContent = await markdownToHtml(right);
+        setRightContent(rightContent);
+    }
+    // call the function
+  doIt()
+    // make sure to catch any error
+    .catch(console.error);
+  }, [])
+
   return (
     <TwoColumns
       title="Tvättstuga"
       introducing="Tvättstugor"
-      leftContent={left}
-      rightContent={right}
+      leftContent={leftContent}
+      rightContent={rightContent}
     />
   );
 }
 
 function Återvinning() {
+  const [content, setContent] = useState('');
   const text = `I föreningen finns ett miljöhus, beläget vid vändplanen Helsingforsgatan 39-51, utrustat med kärl för bl.a. återvinning av tidningar, glas, elektronik och brännbart material.
   Det finns även en ”batteriholk” för mindre hushållsbatterier.
   
@@ -260,12 +270,22 @@ Dessutom är de en sanitär olägenhet då förbipasserande slänger både hush�
 Detta material får Ni själva ta hand om och slänga gratis på [återvinningscentralen][Link1].
 
 [Link1]: http://www.stockholm.se/avc "Återvinningscentraler"`;
+  useEffect( () => {
+    const doIt = async () => {
+      const content = await markdownToHtml(text);
+      setContent(content);
+    }
+    // call the function
+  doIt()
+    // make sure to catch any error
+    .catch(console.error);
+  }, [])
 
   return (
     <Centered
       introducing="Återvinning"
       title="Återvinningsstugans"
-      content={text}
+      content={content}
       summary=""
     />
   );

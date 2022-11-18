@@ -1,8 +1,7 @@
 import fs from 'fs';
-import path from 'path';
 import matter from 'gray-matter';
 import { News } from '../types';
-import MedlemsInfomation from '../pages/kontakt';
+import markdownToHtml from "./markdownToHtml";
 
 export function readNews(): News[] {
   const files = fs
@@ -84,7 +83,7 @@ export function readMedlemsInformation(): MedlemsInformation {
   //@ts-ignore
   const medlemsInformation: MedlemsInformation = {};
 
-  files.forEach((filename, index) => {
+  files.forEach(async (filename, index) => {
     const markdownWithMetadata = fs
       .readFileSync(`${rootFolder}/${filename}`)
       .toString();
@@ -97,7 +96,7 @@ export function readMedlemsInformation(): MedlemsInformation {
       id: 1 + index,
       title: title,
       introducing: data.introducing,
-      content: content,
+      content: await markdownToHtml(content || ''),
       summary: data.summary,
     };
   });

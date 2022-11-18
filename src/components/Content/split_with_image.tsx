@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 
 interface SplitWithImageProps {
   introducing?: string;
@@ -38,9 +37,9 @@ export function SplitWithImage({
               {title}
             </h2>
             <p className="text-lg leading-7 text-gray-500 mb-5">{summary}</p>
-            <div className="prose prose-lg text-gray-500">
-              <ReactMarkdown source={content} />
-            </div>
+            <div className="prose prose-lg text-gray-500"
+                 dangerouslySetInnerHTML={{ __html: content }}
+            />
           </div>
         </div>
       </div>
