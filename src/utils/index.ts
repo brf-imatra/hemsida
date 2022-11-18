@@ -92,6 +92,7 @@ export function readMedlemsInformation(): MedlemsInformation {
     const title: string = data.title;
     const name: string = filename.split('.')[0];
 
+    //@ts-ignore
     medlemsInformation[name] = {
       id: 1 + index,
       title: title,
