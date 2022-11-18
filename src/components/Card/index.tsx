@@ -4,7 +4,7 @@ import Link from 'next/link';
 interface CardProps {
   imageUrl: string;
   imageAlt: string;
-  published: string;
+  published?: string;
   title: string;
   summary: string;
   hrefLink: string;

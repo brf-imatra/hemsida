@@ -1,14 +1,6 @@
 import { InferGetStaticPropsType } from 'next';
-import { useRouter } from 'next/router';
-import {
-  Banner,
-  Body,
-  Card,
-  Well,
-  ButtonWithIcon,
-  MenuItemIcon,
-  Centered,
-} from '../components';
+
+import { Banner, Body, Card, Centered } from '../components';
 import { News } from '../types';
 import { readNews } from '../utils';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
@@ -18,10 +10,10 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const bannerEl = true ? (
+  const bannerEl = false ? (
     <Banner
-      title="Stängt på onsdag!"
-      message="HSB Akallakontoret har stängt för besök nu på onsdag 2022-11-16. Det är öppet som vanligt på torsdag."
+      title="Ändrade öppettider!"
+      message="Återvinningstugan kommer att vara stängd söndag 25 december och söndag 1 januari."
     />
   ) : null;
 
@@ -110,26 +102,6 @@ export const getStaticProps = async () => {
   };
 };
 
-function ExperimentCard() {
-  const router = useRouter();
-  return (
-    <div
-      className="w-40 pr-5"
-      onClick={() => router.push('/imatranytt/sommar-2020')}
-    >
-      <div className="h-24 bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">
-        <h2>Imatra Nytt</h2>
-        <p>Hej hej</p>
-        <ButtonWithIcon primary={false} icon={MenuItemIcon.externalLink}>
-          <a href="http://brfimatra.se" target="_window">
-            Brf Imatra
-          </a>
-        </ButtonWithIcon>
-      </div>
-    </div>
-  );
-}
-
 function KommandeAvgiftshöjningar() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">
@@ -196,7 +168,6 @@ function GruppanslutningCard() {
       <Card
         imageUrl="/undraw/undraw_Documents_re_isxv.png"
         imageAlt="Internet vanliga frågor"
-        published={null}
         title="Internet"
         summary="Föreningen har kollektiv uppkoppling till internet från Bahnhof via datauttag i hallen."
         hrefLink="/banhof-faq"

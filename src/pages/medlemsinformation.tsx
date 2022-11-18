@@ -31,7 +31,7 @@ export default function MedlemsInfomation({
     <Body title="Medlemsinformation">
       <BasicCard id="bostadsratt">
         <Bostadsrätt {...articles.bostadsratt} />
-        <div className="bg-white overflow-hidden">
+        <div className="bg-white overflow-hidden flex justify-center">
           <div className="px-4 py-5 sm:p-6">
             <Link href="/styrelsen" passHref>
               <button
