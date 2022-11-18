@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
 
 interface TwoColumnsProps {
   introducing?: string;
@@ -30,18 +29,13 @@ export function TwoColumns({
         <div className="relative">
           <div className="relative md:bg-white md:p-6">
             <div className="lg:grid lg:grid-cols-2 lg:gap-6 mb-8">
-              <div className="prose prose-lg text-gray-500 mb-6 lg:max-w-none lg:mb-0">
-                <ReactMarkdown source={leftContent} />
-              </div>
-              <div className="prose prose-lg text-gray-500">
-                <ReactMarkdown source={rightContent} />
-              </div>
+              <div className="prose prose-lg text-gray-500 mb-6 lg:max-w-none lg:mb-0"
+                   dangerouslySetInnerHTML={{ __html: leftContent }}
+              />
+              <div className="prose prose-lg text-gray-500"
+                     dangerouslySetInnerHTML={{ __html: rightContent }}
+              />
             </div>
-            {/* <div className="inline-flex rounded-md shadow">
-          <a href="#" className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:ring-indigo transition duration-150 ease-in-out">
-            Contact sales
-          </a>
-        </div> */}
           </div>
         </div>
       </div>

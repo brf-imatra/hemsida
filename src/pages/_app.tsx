@@ -1,24 +1,9 @@
 import { AppProps } from 'next/app';
 import '../styles/tailwind.css';
 import Head from 'next/head';
-import { useState, useEffect } from 'react';
-import { MenuShell } from '../components';
+import { LightSidebar } from '../components/MenuShell';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [isShowing, setIsShowing] = useState(false);
-
-  useEffect(() => {
-    function handleEscape(event) {
-      if (!isShowing) return;
-
-      if (event.key === 'Escape') {
-        setIsShowing(false);
-      }
-    }
-
-    document.addEventListener('keyup', handleEscape);
-    return () => document.removeEventListener('keyup', handleEscape);
-  }, [isShowing]);
 
   return (
     <>
@@ -58,9 +43,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <MenuShell isShowing={isShowing} setIsShowing={setIsShowing.bind(this)}>
+      <LightSidebar>
         <Component {...pageProps} />
-      </MenuShell>
+      </LightSidebar>
     </>
   );
 }

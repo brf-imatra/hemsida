@@ -6,7 +6,7 @@ export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    function handleEscape(event) {
+    function handleEscape(event: any) {
       if (!mobileOpen) return;
 
       if (event.key === 'Escape') {

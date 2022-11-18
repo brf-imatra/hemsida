@@ -25,5 +25,28 @@
         }
     ],
     "url": "https://brfimatra.se",
-    "screenshots": []
+    "screenshots": [],
+    "shortcuts": [
+       {
+          "name": "Medlemsinformation",
+          "short_name": "Info",
+          "description": "Bostadsrättsföreningens information om medlemskap och fastighet.",
+          "url": "/medlemsinformation?source=pwa",
+          "icons": [{ "src": "android-chrome-192x192.png", "sizes": "192x192" }]
+        },
+        {
+          "name": "Kontakta oss",
+          "short_name": "Kontakt",
+          "description": "Kontakt uppgifter till styrelsen och förvaltningen.",
+          "url": "/kontakt?source=pwa",
+          "icons": [{ "src": "android-chrome-192x192.png", "sizes": "192x192" }]
+        },
+        {
+          "name": "Dokument",
+          "short_name": "Dokument",
+          "description": "Föreningensstadgar, årsredovisningar och stämmoprotokoll.",
+          "url": "/dokuments?source=pwa",
+          "icons": [{ "src": "android-chrome-192x192.png", "sizes": "192x192" }]
+        }
+    ]
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  LinkIcon,
+  ArrowTopRightOnSquareIcon,
   GlobeAltIcon,
   ScaleIcon,
   BoltIcon,
@@ -79,7 +79,7 @@ interface ExternalLinkProps {
 export function ExternalLink({ text, href }: ExternalLinkProps) {
   return (
     <div className="ml-2 flex flex-1 text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out">
-      <LinkIcon
+      <ArrowTopRightOnSquareIcon
         className="flex-shrink-0 h-5 w-5 text-gray-400"
         aria-hidden="true"
       />

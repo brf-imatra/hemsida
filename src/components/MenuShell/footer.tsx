@@ -5,12 +5,12 @@ const navigation = [
   {
     name: 'HSB Login',
     href: 'https://hsb-login.hsb.se/logon/LogonPoint/index.html',
-    icon: (props) => <BuildingOfficeIcon {...props} />,
+    icon: (props: any) => <BuildingOfficeIcon {...props} />,
   },
   {
     name: 'GitHub',
     href: 'https://github.com/brf-imatra/hemsida',
-    icon: (props) => (
+    icon: (props: any) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
           fillRule="evenodd"
