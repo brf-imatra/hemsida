@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import Head from 'next/head';
-import { Body, MenuItemIcon } from '../components';
+import { Body } from '../components';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 export default function MedlemsInfomation() {
@@ -433,18 +433,3 @@ function BodyMoving() {
   );
 }
 
-interface MyIconProps {
-  icon: MenuItemIcon;
-}
-
-export function MyIcon({ icon }: MyIconProps) {
-  return (
-    <svg
-      className="flex-shrink-0 h-5 w-5 text-gray-400"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path fillRule="evenodd" d={icon} clipRule="evenodd" />
-    </svg>
-  );
-}
