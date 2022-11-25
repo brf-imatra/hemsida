@@ -36,7 +36,8 @@ export function Centered({
           </h1>
           {leadingElement}
         </div>
-        <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto"
+        <div
+          className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto"
           dangerouslySetInnerHTML={{ __html: content }}
         />
       </div>

@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { LightSidebar } from '../components/MenuShell';
 
 function MyApp({ Component, pageProps }: AppProps) {
-
   return (
     <>
       <Head>

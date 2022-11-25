@@ -231,7 +231,7 @@ function År2018() {
       <ul>
         <li className="border-gray-200">
           <FullTest
-            documentName="årsredovisning_2018_imatra.pdf"
+            documentName="årsredovisning_2017_imatra.pdf"
             href="/dokument/arsredovisning/2018/arsredovisning_2017_imatra.pdf"
             tag="PDF"
             title="Årsredovisning"
@@ -380,7 +380,7 @@ function År2013() {
         <li className="border-gray-200">
           <FullTest
             documentName="årsredovisning_2012_imatra.pdf"
-            href="public/dokument/arsredovisning/2013/arsredovisning_2012_imatra.pdf"
+            href="/dokument/arsredovisning/2013/arsredovisning_2012_imatra.pdf"
             tag="PDF"
             title="Årsredovisning"
           />

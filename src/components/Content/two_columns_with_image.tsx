@@ -93,8 +93,9 @@ export function TwoColumnsWithImage({
             <div className="text-base max-w-prose mx-auto lg:max-w-none">
               <p className="text-lg leading-7 text-gray-500 mb-5">{leading}</p>
             </div>
-            <div className="prose prose-lg text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1"
-                 dangerouslySetInnerHTML={{ __html: content }}
+            <div
+              className="prose prose-lg text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1"
+              dangerouslySetInnerHTML={{ __html: content }}
             />
           </div>
         </div>

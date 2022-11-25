@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import {
   Body,
@@ -13,8 +13,7 @@ import {
   MedlemsInformationArticle,
   readMedlemsInformation,
 } from '../utils';
-import markdownToHtml from "../utils/markdownToHtml";
-
+import markdownToHtml from '../utils/markdownToHtml';
 
 interface MedlemsInfomationProps {
   articles: MedlemsInformation;
@@ -42,15 +41,24 @@ export default function MedlemsInfomation({
         <div className="relative py-16 bg-white overflow-hidden">
           <div className="relative px-4 sm:px-6 lg:px-8">
             <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-               <h2>Intresserad av styrelsearbete?</h2>
-          <p>Är du intresserad av att sitta i styrelsen i din bostadsrättsförening, men vet inte riktigt vad det innebär och vad du behöver kunna?
-                  HSB Stockholm erbjuder en föreläsning med verksamhetschef Petrus Jansson som besvarar frågeställningar som:
+              <h2>Intresserad av styrelsearbete?</h2>
+              <p>
+                Är du intresserad av att sitta i styrelsen i din
+                bostadsrättsförening, men vet inte riktigt vad det innebär och
+                vad du behöver kunna? HSB Stockholm erbjuder en föreläsning med
+                verksamhetschef Petrus Jansson som besvarar frågeställningar
+                som:
               </p>
               <ul>
-                  <li>Hur arbetar en bostadsrättsförenings styrelse och vilka roller finns?</li>
-                  <li>Hur fungerar en bostadsrättsförenings ekonomi?</li>
-                  <li>Vilka lagar och regler styr en bostadsrättsförening?</li>
-                  <li>Vilket ansvar har styrelsen i en bostadsrättsföreningen?</li>
+                <li>
+                  Hur arbetar en bostadsrättsförenings styrelse och vilka roller
+                  finns?
+                </li>
+                <li>Hur fungerar en bostadsrättsförenings ekonomi?</li>
+                <li>Vilka lagar och regler styr en bostadsrättsförening?</li>
+                <li>
+                  Vilket ansvar har styrelsen i en bostadsrättsföreningen?
+                </li>
               </ul>
               <div
                 className="relative h-0 overflow-hidden max-w-full"
@@ -217,7 +225,7 @@ function Garage() {
 
 function Tvättstugor() {
   const [leftContent, setLeftContent] = useState('');
-    const [rightContent, setRightContent] = useState('');
+  const [rightContent, setRightContent] = useState('');
   const left = `Det finns elva tvättstugor, två på varje gård i låghusen. Du kan boka vilken du vill av dessa och två åt gången.
   
   Tvättmedel tillsätts automatiskt men går att välja bort med ett knapptryck om du vill använda eget tvättmedel som då läggs in direkt i maskinen. Tänk på att vi har mjukt vatten och ta en mindre dos tvättmedel.`;
@@ -226,18 +234,18 @@ function Tvättstugor() {
   
   _Efter avslutat tvättpass_, vänligen torka av bord och maskiner med trasa, rensa torktumlarens luddfilter och sopa golvet. Torka golvet i torkskåpet om det behövs.`;
 
-    useEffect( () => {
+  useEffect(() => {
     const doIt = async () => {
       const leftContent = await markdownToHtml(left);
       setLeftContent(leftContent);
       const rightContent = await markdownToHtml(right);
-        setRightContent(rightContent);
-    }
+      setRightContent(rightContent);
+    };
     // call the function
-  doIt()
-    // make sure to catch any error
-    .catch(console.error);
-  }, [])
+    doIt()
+      // make sure to catch any error
+      .catch(console.error);
+  }, []);
 
   return (
     <TwoColumns
@@ -270,16 +278,16 @@ Dessutom är de en sanitär olägenhet då förbipasserande slänger både hush�
 Detta material får Ni själva ta hand om och slänga gratis på [återvinningscentralen][Link1].
 
 [Link1]: http://www.stockholm.se/avc "Återvinningscentraler"`;
-  useEffect( () => {
+  useEffect(() => {
     const doIt = async () => {
       const content = await markdownToHtml(text);
       setContent(content);
-    }
+    };
     // call the function
-  doIt()
-    // make sure to catch any error
-    .catch(console.error);
-  }, [])
+    doIt()
+      // make sure to catch any error
+      .catch(console.error);
+  }, []);
 
   return (
     <Centered
