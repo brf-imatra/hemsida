@@ -13,7 +13,7 @@ export default function Home({
   const bannerEl = true ? (
     <Banner
       title="Ändrade öppettider!"
-      message="Återvinningstugan kommer att vara stängd söndag 25 december och söndag 1 januari."
+      message="Återvinningstugan kommer att hållas stängd söndag 25 december och söndag 1 januari."
     />
   ) : null;
 
@@ -47,6 +47,7 @@ export default function Home({
           {/*<Årsstämma />*/}
           {/*<FläktByte />*/}
           <ImatraNytt />
+          <EkonomiGrafer />
           {/*<Städdag />*/}
           <ElSparTips />
           <StambyteSamtyckesblankett />
@@ -358,16 +359,32 @@ function KommandeAktiviteter() {
 }
 
 function ElSparTips() {
+    return (
+        <div className="pt-10 w-64 pr-5 flex-grow">
+            <Card
+                imageUrl="/undraw/undraw_checklist__re_2w7v.svg"
+                imageAlt="Tips för att hålla nere elförbrukningen"
+                published="2022-11-12"
+                title="Elförbrukningstips"
+                summary="Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning"
+                hrefLink="/boendeinformation/el-spar-tips"
+            />
+        </div>
+    );
+}
+
+  function EkonomiGrafer() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
-        imageUrl="/undraw/undraw_checklist__re_2w7v.svg"
-        imageAlt="Tips för att hålla nere elförbrukningen"
-        published="2022-11-12"
-        title="Elförbrukningstips"
-        summary="Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning"
-        hrefLink="/boendeinformation/el-spar-tips"
+        imageUrl="/undraw/undraw_visual_data_re_mxxo.svg"
+        imageAlt="Årsredovisning tabell"
+        published="2022-11-30"
+        title="Årsredovisningsanalys"
+        summary="Föreningen drabbas av en kraftigt ökad försäkringspremie för år 2023. En grafisk presentation av försäkringspremie, samt nettoomsättning och drift, från de senaste två deceniernas årsredovisningar kan du se här."
+        hrefLink="/boendeinformation/arsredovisning-analys"
       />
     </div>
   );
 }
+
