@@ -10,7 +10,7 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const bannerEl = false ? (
+  const bannerEl = true ? (
     <Banner
       title="Ändrade öppettider!"
       message="Återvinningstugan kommer att vara stängd söndag 25 december och söndag 1 januari."
@@ -22,8 +22,8 @@ export default function Home({
       <div className="relative overflow-hidden">
         <img
           className="w-full h-48 object-cover"
-          src="/imatra/foton/helsingforsgatan_spring20.jpg"
-          alt="Brf Imatra våren 2020"
+          src="/imatra/foton/helsingforsgatan_winter22.jpg"
+          alt="Brf Imatra vinter 2022"
         />
         <div className="px-6 py-4 absolute left-0 top-0">
           <p className="text-gray-100 font-pacifico subpixel-antialiased text-2xl md:text-5xl lg:text-6xl leading-normal">

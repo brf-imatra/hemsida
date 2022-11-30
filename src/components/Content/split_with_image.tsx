@@ -37,8 +37,9 @@ export function SplitWithImage({
               {title}
             </h2>
             <p className="text-lg leading-7 text-gray-500 mb-5">{summary}</p>
-            <div className="prose prose-lg text-gray-500"
-                 dangerouslySetInnerHTML={{ __html: content }}
+            <div
+              className="prose prose-lg text-gray-500"
+              dangerouslySetInnerHTML={{ __html: content }}
             />
           </div>
         </div>

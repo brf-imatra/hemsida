@@ -29,11 +29,13 @@ export function TwoColumns({
         <div className="relative">
           <div className="relative md:bg-white md:p-6">
             <div className="lg:grid lg:grid-cols-2 lg:gap-6 mb-8">
-              <div className="prose prose-lg text-gray-500 mb-6 lg:max-w-none lg:mb-0"
-                   dangerouslySetInnerHTML={{ __html: leftContent }}
+              <div
+                className="prose prose-lg text-gray-500 mb-6 lg:max-w-none lg:mb-0"
+                dangerouslySetInnerHTML={{ __html: leftContent }}
               />
-              <div className="prose prose-lg text-gray-500"
-                     dangerouslySetInnerHTML={{ __html: rightContent }}
+              <div
+                className="prose prose-lg text-gray-500"
+                dangerouslySetInnerHTML={{ __html: rightContent }}
               />
             </div>
           </div>

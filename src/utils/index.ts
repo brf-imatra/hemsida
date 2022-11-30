@@ -1,7 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import { News } from '../types';
-import markdownToHtml from "./markdownToHtml";
+import markdownToHtml from './markdownToHtml';
 
 export function readNews(): News[] {
   const files = fs
