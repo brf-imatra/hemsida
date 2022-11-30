@@ -174,7 +174,7 @@ function Historik() {
     <TwoColumns
       title="Historia"
       introducing="Föreningensursprung"
-      leftContent="Brf Imatra och radhusen i trädgårdsstaden byggdes som hyreslägenheter av JM Mattsson och blev inflyttningsklart 1975-1976. HSB bildade 1979 två bostadsrättsföreningar som köpte husen."
+      leftContent="Brf Imatra och radhusen i trädgårdsstaden byggdes ursprungligen som hyreslägenheter av JM Mattsson och inflyttningen började mellan 1975-1976. Bostadsrättsföreningen Imatra bildades 1979-02-27 och registrerades 1979-04-17."
       rightContent={`Brf Imatra arrenderar tre tomträtter från Stockholms stad där våra 15 hus står. Totalt har föreningen 254 lägenheter, 10 kommersiella lokaler och fem garage med ungefär 300 parkeringsplatser.\n\nFöreningens mål är att skapa en bra boendemiljö för våra medlemmar på lång sikt`}
     />
   );

@@ -1,0 +1,33 @@
+import { Body, Centered2 } from '../../components';
+import {MDXProvider} from '@mdx-js/react';
+import {Fastighetsförsäkring, NettoomsättningOchDrift} from "../../components/Årsredovisning";
+
+Data till grafiken nedanför är hämtade från årsredoviningarnas noter __Not 1__ _nettoomsättning_ och __Not 3__ _drift och underhåll_.
+Notera treden att driftskostnaderna har närmat sig drift och underhålls kostnaderna de senaste årenen. För verksamhetsåret 2021 överskred drift och underhålls kostnaderna föreningens nettoomsättning.
+För att komma till rätta med denna kostnadsökning behöver föreningen hitta sätt att sänka kostnaden för drift och underhålls kostnaderna.
+
+De senaste årens digitaliserade årsredovisningarna hittar du i huvudmenyn under [Dokument](/dokuments).
+
+## Fastighetsförsäkring
+
+Eftersom föreningen dragits med flera stora vattenskador de senaste åren påverkar det föreningensförsäkringspremien kraftigt negativt.
+Denna post har dom senaste året haft en ohållbar kostnadsutveckling.
+Av denna anledning startade föreningen undersökning och planer på ett kommande stambyte i slutet av 2021.
+På den extra föreningsstämma i september 2022 beslutades att föreningen ska genomföra ett stambyte.
+När stambyte är slutfört har föreningen en mycket bra position att förhandla fram en lägre försäkringspremie som borde ligga på en tredje del av dagens premie.
+
+
+export default props => (
+  <MDXProvider>
+      <Body>
+          <Centered2
+              introducing="Årsredovisningsanalys"
+              title="Nettoomsättning och drift">
+            <main {...props} />
+          </Centered2>
+            <Fastighetsförsäkring />
+          <div className="mt-4" />
+            <NettoomsättningOchDrift />
+      </Body>
+  </MDXProvider>
+)

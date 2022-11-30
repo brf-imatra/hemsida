@@ -2,6 +2,7 @@ import { AppProps } from 'next/app';
 import '../styles/tailwind.css';
 import Head from 'next/head';
 import { LightSidebar } from '../components/MenuShell';
+import '@tremor/react/dist/esm/tremor.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
