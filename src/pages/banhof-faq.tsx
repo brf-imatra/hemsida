@@ -89,9 +89,9 @@ function Header() {
             Om du saknar router, maila{' '}
             <a
               className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-              href="mailto:info@brfimatra.se"
+              href="mailto:styrelsen@brfimatra.se"
             >
-              info@brfimatra.se
+              styrelsen@brfimatra.se
             </a>{' '}
             så ordnar vi det. Notera att routern tillhör lägenheten och ska
             lämnas inkopplad vid avflyttning.
@@ -103,9 +103,9 @@ function Header() {
             Telenor kan leverera på uttaget i hallen. Maila{' '}
             <a
               className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-              href="mailto:info@brfimatra.se?subject=Anslutn%20Banhof%20internet"
+              href="mailto:styrelsen@brfimatra.se?subject=Anslutn%20Banhof%20internet"
             >
-              info@brfimatra.se
+              styrelsen@brfimatra.se
             </a>{' '}
             för att ordna detta.
           </p>

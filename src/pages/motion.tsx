@@ -2,7 +2,7 @@ import React from 'react';
 import { Body, Centered } from '../components';
 
 const data = `
-Motionerna kan mailas till: [info@brfimatra.se](info@brfimatra.se) eller lämnas i brevlådan styrelselokalen, Helsingforsgatan 69 eller hos fastighetsskötarna på Helsingforsgatan 45.  
+Motionerna kan mailas till: [styrelsen@brfimatra.se](styrelsen@brfimatra.se) eller lämnas i brevlådan styrelselokalen, Helsingforsgatan 69 eller hos fastighetsskötarna på Helsingforsgatan 45.  
 OBS! Märk motionen med _Brf Imatra_.
 
 Tid och plats för föreningsstämman meddelas senare.
