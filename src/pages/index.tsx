@@ -47,7 +47,9 @@ export default function Home({
           {/*<Årsstämma />*/}
           {/*<FläktByte />*/}
           <ImatraNytt />
+            <StambyteFaq />
           <EkonomiGrafer />
+
           {/*<Städdag />*/}
           <ElSparTips />
           <StambyteSamtyckesblankett />
@@ -383,6 +385,21 @@ function ElSparTips() {
         title="Årsredovisningsanalys"
         summary="Föreningen drabbas av en kraftigt ökad försäkringspremie för år 2023. En grafisk presentation av försäkringspremie, samt nettoomsättning och drift, från de senaste två deceniernas årsredovisningar kan du se här."
         hrefLink="/boendeinformation/arsredovisning-analys"
+      />
+    </div>
+  );
+}
+
+  function StambyteFaq() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_questions_re_1fy7.svg"
+        imageAlt="Frågor och svar om stambyte"
+        published="2022-12-30"
+        title="Stambyte FAQ"
+        summary="Vanliga frågor och svar om stambyte hittar du här. Denna kommer att uppdateras löpande."
+        hrefLink="/boendeinformation/stambyte/faq"
       />
     </div>
   );
