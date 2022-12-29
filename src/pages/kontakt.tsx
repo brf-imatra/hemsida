@@ -226,10 +226,10 @@ function Styrelsen() {
           />
           <span className="pl-2">
             <a
-              href="mailto:info@brfimatra.se"
+              href="mailto:styrelsen@brfimatra.se"
               className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
             >
-              info@brfimatra.se
+              styrelsen@brfimatra.se
             </a>
           </span>
         </div>

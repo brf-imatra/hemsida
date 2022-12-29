@@ -1,0 +1,70 @@
+import { Body, Centered2 } from '../../../components';
+import {MDXProvider} from '@mdx-js/react'; import Pricing from "./Pricing";
+
+
+
+Denna rapport avser Brf Imatra som underlag för val av golvvärme typ inom deras badrumstyper.
+
+Vattenburen golvvärme bedrivs genom en undercentral där systemtemperaturerna är inställda på lägre systemtemperaturer än vanliga värmesystem som oftast förser radiatorer.
+Därav krävs en annan värmesystemkrets enskilt för golvvärme.
+Kretsen kan shuntas (blandas) i undercentralen och distribueras ut genom huvudledningar till varje enskilt badrum genom nya stammar inom de befintliga slitsar.
+
+Inom varje slits måste utrymme finnas för nya stammar vilket är begränsat i vissa badrumstyper.
+Risk finns att vissa slits måste utökas vilket påverkar även tätskiktet med mera inom varje badrum.
+I och med vattenburen är kopplad till undercentralen och förblir ett separat system för samtliga boende påverkas även användningen säsongsvis.
+Då användningen är mindre under sommaren påverkas distributionen och risk finns att man råkar ut för straffavgifter genom fjärrvärmetaxan.
+
+Vattenburen golvvärme bygger aningen mer i höjd än eldrivna. Noterat att enskilda badrum redan är upphöjda pga. olika typer av renoveringar.
+
+Val av ytskikt spelar även stor roll då det måste anpassas för vilken maxtemperatur det får vara i badrummet.
+
+Eldrivna golvvärme bygger mindre i höjd, reagerar snabbare och är inte i behov av externa distributioner.
+Kopplas till dess boendes elförbrukning och varje enskild boende står för sin egen förbrukning.
+
+Fördelen med vattenburen golvvärme i badrum är att radiator oftast inte krävs.
+
+Oavsett val av golvvärme typ styrs värmen genom en termostat vilket kan reglera till önskade temperaturer.
+
+
+### För- och nackdelar.
+
+__Eldriven Golvvärme__
+- Billig materialkostnad och enkel installation.
+- Bygger mindre i höjd än vattenburen.
+- Varje enskild boende står för sin förbrukning.
+- Ingen påverkan på övriga BRF:s system.
+- Reagerar snabbare än vattenburen.
+- 3 gånger billigare i drift än vattenburen.
+
+__Vattenburen Golvvärme__
+- Låg driftkostnad
+- Utbyggnad av separat värmesystem från bägge undercentralerna samt distribution av
+sekundärvärmesystem till varje stam.
+- Utbyggnad av badrumsslitsar inom vissa badrumstyper.
+- Bygger mer i höjd än eldriven.
+- Dyr installation.
+- Risk för vattenskador ökar.
+
+
+## Generellt
+Uppvärmning av vattenburen golvvärme avser oftast större ytor medan enstaka rum oftast är lämpligast att lägga eldriven värme. Det tar flertals år för att det ska bli lönsamt att ha vattenburen golvvärme än eldriven. Investeringskostnaden är betydligt högre ställd till än till den lägre driftkostnaden man får genom vattenburna golvvärmen. Dock bör man beakta med dagens el-priser blir driftkostnaden för eldriven golvvärme även dyrare för varje enskild brukare.
+
+## Investeringskostnader
+
+<Pricing />
+
+
+_*_ samtliga kostnadsbedömningar är grovt uppskattade utifrån Brf Imatras badrumstyper, utformning av källarplan, undercentraler m.m.
+
+
+export default props => (
+  <MDXProvider>
+      <Body>
+          <Centered2
+              introducing="Vattenburen eller el-uppvärmt golvvärme?"
+              title="Rapport Golvvärme">
+            <main {...props} />
+          </Centered2>
+      </Body>
+  </MDXProvider>
+)
