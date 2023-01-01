@@ -10,7 +10,7 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const bannerEl = true ? (
+  const bannerEl = false ? (
     <Banner
       title="Ändrade öppettider!"
       message="Återvinningstugan kommer att hållas stängd söndag 25 december och söndag 1 januari."
