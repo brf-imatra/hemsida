@@ -24,7 +24,7 @@ Eftersom vi bor här till självkostnadspris bygger det hela på att det finns b
 
 Det finns mycket som behöver ordnas, man lär sig mycket och det är merit att ha på ditt cv. Det kan vara styrelsearbete (börjar som suppleant), valberedning, värd i återvinningsstuga, gårdsombud och representation hos andra föreningar vi är medlemmar i.
 
-Kontakta valberedningen och berätta lite om dig själv. [valberedning@brfimatra.se](mailto:valberedning@brfimatra.se)
+Kontakta valberedningen och berätta lite om dig själv. [valberedningen@brfimatra.se](mailto:valberedning@brfimatra.se)
 
 ## Ansvarsfördelning
 

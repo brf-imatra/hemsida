@@ -47,7 +47,7 @@ export default function Home({
           {/*<Årsstämma />*/}
           {/*<FläktByte />*/}
           <ImatraNytt />
-            <StambyteFaq />
+          <StambyteFaq />
           <EkonomiGrafer />
 
           {/*<Städdag />*/}
@@ -198,12 +198,12 @@ function ImatraNytt() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
-        imageUrl="/undraw/undraw_year_2022_uci7.svg"
+        imageUrl="/undraw/undraw_new_year_2023_pfnc.svg"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2022-11-12"
+        published="2023-01-22"
         title="Brf Imatra Nyhetsbrev"
-        summary="Nyhetsbrev där du kan läsa om avgiftshöjningen 2023, stambytet, individuell elmätning, container för grovsopor 19-20 november m.m. Klicka för att läsa mer..."
-        hrefLink="/dokument/imatranytt/nyhetsbrev_2022-11.pdf"
+        summary="Nyhetsbrev där du kan läsa om Stambytet, Individuell elmätning, Garagesyn, Snöröjningen, Köksfläktar, Brandvarnare, Tvättstugorna, och Föreningsstämma. Klicka för att läsa mer..."
+        hrefLink="/imatranytt/2023-januari"
       />
     </div>
   );
@@ -361,21 +361,21 @@ function KommandeAktiviteter() {
 }
 
 function ElSparTips() {
-    return (
-        <div className="pt-10 w-64 pr-5 flex-grow">
-            <Card
-                imageUrl="/undraw/undraw_checklist__re_2w7v.svg"
-                imageAlt="Tips för att hålla nere elförbrukningen"
-                published="2022-11-12"
-                title="Elförbrukningstips"
-                summary="Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning"
-                hrefLink="/boendeinformation/el-spar-tips"
-            />
-        </div>
-    );
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_checklist__re_2w7v.svg"
+        imageAlt="Tips för att hålla nere elförbrukningen"
+        published="2022-11-12"
+        title="Elförbrukningstips"
+        summary="Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning"
+        hrefLink="/boendeinformation/el-spar-tips"
+      />
+    </div>
+  );
 }
 
-  function EkonomiGrafer() {
+function EkonomiGrafer() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
@@ -390,7 +390,7 @@ function ElSparTips() {
   );
 }
 
-  function StambyteFaq() {
+function StambyteFaq() {
   return (
     <div className="pt-10 w-64 pr-5 flex-grow">
       <Card
@@ -404,4 +404,3 @@ function ElSparTips() {
     </div>
   );
 }
-

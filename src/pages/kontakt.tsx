@@ -252,10 +252,10 @@ function Valberedning() {
           />
           <span className="pl-2">
             <a
-              href="mailto:valberedning@brfimatra.se"
+              href="mailto:valberedningen@brfimatra.se"
               className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
             >
-              valberedning@brfimatra.se
+              valberedningen@brfimatra.se
             </a>
           </span>
         </div>
