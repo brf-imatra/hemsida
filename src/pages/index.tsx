@@ -200,10 +200,10 @@ function ImatraNytt() {
       <Card
         imageUrl="/undraw/undraw_new_year_2023_pfnc.svg"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2023-01-22"
+        published="2023-03-03"
         title="Brf Imatra Nyhetsbrev"
-        summary="Nyhetsbrev där du kan läsa om Stambytet, Individuell elmätning, Garagesyn, Snöröjningen, Köksfläktar, Brandvarnare, Tvättstugorna, och Föreningsstämma. Klicka för att läsa mer..."
-        hrefLink="/imatranytt/2023-januari"
+        summary="Nyhetsbrev där du kan läsa om individuell elmätning projektet som startas upp nu, status på stambytetsprojektet, förstudie solceller. Klicka för att läsa mer..."
+        hrefLink="/imatranytt/2023-mars"
       />
     </div>
   );
@@ -312,12 +312,19 @@ Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)
 
 function KommandeAktiviteter() {
   const meetings = [
+      {
+      id: 0,
+      title: 'Medlemsmöte',
+      location: 'Folkets Husby - https://folketshusby.se',
+      date: new Date(2023, 3, 20, 18, 0, 0),
+      endDate: new Date(2023, 3, 20, 20, 0, 0),
+    },
     {
       id: 4,
-      title: 'Extra föreningsstämma',
-      location: 'OBS! Ny plats Folkets Husby - https://folketshusby.se',
-      date: new Date(2022, 8, 20, 18, 0, 0),
-      endDate: new Date(2022, 8, 20, 20, 0, 0),
+      title: 'Föreningsstämma',
+      location: 'Folkets Husby - https://folketshusby.se',
+      date: new Date(2023, 4, 4, 17, 45, 0),
+      endDate: new Date(2023, 4, 4, 20, 0, 0),
     },
   ];
   const seShort = new Intl.DateTimeFormat('sv-SE');

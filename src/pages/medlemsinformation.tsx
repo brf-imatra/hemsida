@@ -128,7 +128,7 @@ function KonsekvensUtanStyrelse() {
     <Centered
       introducing="Hur gör vi utan styrelse?"
       title="Det saknas styrelseledamöter"
-      summary="Konsekvensen av att inte få ihop en styrelse kan bli att bostadsrättsföreningen tvingas gå i likvidation. I en bostadsrättsförening måste styrelsen bestå av minst tre styrelseledamöter. Om det saknas en behörig styrelse är bostadsrättsföreningen likvidationspliktig."
+      summary="Konsekvensen av att inte få ihop en styrelse kan bli att bostadsrättsföreningen tvingas gå i likvidation. I en bostadsrättsförening måste styrelsen bestå av minst tre styrelseledamöter varav en skall vara ordförande. Om det saknas en behörig styrelse är bostadsrättsföreningen likvidationspliktig."
       content="Om bostadsrättsföreningen skulle tvingas att gå i likvidation innebär det att bostadsrättsföreningen upplöses genom att fastigheter och andra tillgångar säljs, skulder betalas och eventuellt överskott fördelas mellan medlemmarna i enlighet med bestämmelser i bostadsrättsföreningens stadgar. För att undvika en likvidation är det viktigt att alla medlemmar i bostadsrättsföreningen förstår vikten av att engagera sig i föreningen."
     />
   );

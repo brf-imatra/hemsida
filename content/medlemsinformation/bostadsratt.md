@@ -29,7 +29,7 @@ Kontakta valberedningen och berätta lite om dig själv. [valberedningen@brfimat
 ## Ansvarsfördelning
 
 Sammanfattat kan man säga att den boende har ansvar för ytskiktet i sin lägenhet medan föreningen har ansvar för resten.
-Kolla upp vad som gäller innan renovering i detta häfte.
+Kolla upp vad som gäller innan renovering.
 Ingrepp i vattenledningar, värmerör, elektricitet eller datakablar kräver kontakt med styrelsen samt fackman med certifiering.
 
 Mer utförlig beskrivning av ansvarsfördelningen finns i föreningens stadgar. Dessa finns på vår webbsida [brfimatra.se](https://brfimatra.se)

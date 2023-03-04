@@ -216,7 +216,7 @@ function Styrelsen() {
   return (
     <DescriptionList
       title="Styrelsen BRF Imatra"
-      description="Varje år väljs några boenden att representera de övriga i strategiska frågor. Styrelsen lyssnar gärna på förslag och synpunkter från medlemmar."
+      description="Varje år väljs några boenden att representera de övriga medlemmarna i strategiska frågor. Styrelsen lyssnar gärna på förslag och synpunkter från medlemmar."
     >
       <DescriptionListRow title="Epost" borderless={true}>
         <div className="flex flex-1">
