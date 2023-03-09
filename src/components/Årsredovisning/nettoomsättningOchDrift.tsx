@@ -134,11 +134,11 @@ const fastighetsFörsäkringsData = [
     Nettoomsättning: 17_169_064,
     'Drift och underhåll': 18_594_590,
   },
-  // {
-  //   date: "2022",
-  //   "Nettoomsättning": 0,
-  //     "Drift och underhåll": 0,
-  // },
+  {
+    date: '2022',
+    Nettoomsättning: 17_913_032,
+    'Drift och underhåll': 16_303_675,
+  },
   // {
   //   date: "2023",
   //   "Nettoomsättning": 0,
@@ -154,7 +154,9 @@ export function NettoomsättningOchDrift() {
   return (
     <Card>
       <Title>Nettoomsättning samt drift och underhåll</Title>
-      <Text>Jämförelse av nettoomsättning mot kostnaderna för drift och underhåll</Text>
+      <Text>
+        Jämförelse av nettoomsättning mot kostnaderna för drift och underhåll
+      </Text>
       <AreaChart
         data={fastighetsFörsäkringsData}
         categories={['Nettoomsättning', 'Drift och underhåll']}

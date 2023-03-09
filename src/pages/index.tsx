@@ -37,6 +37,7 @@ export default function Home({
 
         {/*<KommandeAktiviteter />*/}
         {/*<HSBMeddlemsserviceCorona />*/}
+          <StatusBesiktningBalkonger />
         {/* <Well>
     <div className="flex-1 flex h-24 w-auto sm:h-32 md:h-48 lg:h-64">
         <img className="overflow-y-visible" src="/imatra/foton/helsingforsgatan_spring20.jpg" alt="Brf Imatra våren 2020" loading="eager" />
@@ -306,6 +307,25 @@ Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)
       title="Ändrade öppettider HSB"
       content={text}
       summary=""
+    />
+  );
+}
+
+function StatusBesiktningBalkonger() {
+  const text = `
+HSB Stockholm har fått i uppdrag av styrelsen att undersöka bostadsrättsföreningens balkonger.
+Detta gör man för att få en uppfattning av dess skick och kunna planera eventuella underhållsåtgärder.
+
+<br />
+Berörda lägenheter har blivit informerade via utskick.
+`;
+
+  return (
+    <Centered
+      introducing="Statusbesiktning"
+      title="Balkonger"
+      content={text}
+      summary="20 balkonger kommer att besiktas onsdag 22/3 mellan 09.00-15.00."
     />
   );
 }
