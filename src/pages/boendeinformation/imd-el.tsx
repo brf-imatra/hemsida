@@ -160,7 +160,7 @@ export function ImdElTidplan() {
 const timeline: Array<FeadItem> = [
   {
     content: 'Helsingforsgatan',
-    target: '11, 13, 15, 17, 19, 21',
+    target: '65, 67, 69, 71, 73, 75',
     href: '#',
     datetime: new Date(2023, 2, 23),
     icon: WrenchScrewdriverIcon,
@@ -168,7 +168,7 @@ const timeline: Array<FeadItem> = [
   },
       {
     content: 'Helsingforsgatan',
-    target: '23, 25, 27, 29, 31, 33',
+    target: '51, 53, 55, 57, 59, 61',
     href: '#',
     datetime: new Date(2023, 3, 13),
     icon: CalendarIcon,
@@ -184,7 +184,7 @@ const timeline: Array<FeadItem> = [
   },
               {
     content: 'Helsingforsgatan',
-    target: '51, 53, 55, 57, 59, 61',
+    target: '23, 25, 27, 29, 31, 33',
     href: '#',
     datetime: new Date(2023, 4, 10),
     icon: CalendarIcon,
@@ -192,7 +192,7 @@ const timeline: Array<FeadItem> = [
   },
     {
     content: 'Helsingforsgatan',
-    target: '65, 67, 69, 71, 73, 75',
+    target: '11, 13, 15, 17, 19, 21',
     href: '#',
     datetime: new Date(2023, 4, 24),
     icon: CalendarIcon,
