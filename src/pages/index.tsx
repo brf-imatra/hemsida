@@ -6,6 +6,7 @@ import { readNews } from '../utils';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
 import SocialLinksFooter from '../components/MenuShell/footer';
+import {ImdElTidplan} from "./boendeinformation/imd-el";
 
 export default function Home({
   news,
@@ -38,6 +39,7 @@ export default function Home({
         {/*<KommandeAktiviteter />*/}
         {/*<HSBMeddlemsserviceCorona />*/}
           <StatusBesiktningBalkonger />
+          <ImdElTidplan />
         {/* <Well>
     <div className="flex-1 flex h-24 w-auto sm:h-32 md:h-48 lg:h-64">
         <img className="overflow-y-visible" src="/imatra/foton/helsingforsgatan_spring20.jpg" alt="Brf Imatra våren 2020" loading="eager" />
