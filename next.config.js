@@ -3,6 +3,9 @@ module.exports = {
 
 const withMDX = require('@next/mdx')({
   extension: /\.mdx$/,
+  experimental: {
+    serverComponentsExternalPackages: ['@tremor/react'],
+  },
   options: {
     remarkPlugins: [],
     rehypePlugins: [],

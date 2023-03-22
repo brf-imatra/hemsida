@@ -160,12 +160,11 @@ export function NettoomsättningOchDrift() {
       <AreaChart
         data={fastighetsFörsäkringsData}
         categories={['Nettoomsättning', 'Drift och underhåll']}
-        dataKey="date"
-        height="h-72"
+        index="date"
+        className="h-72 mt-4"
         colors={['amber', 'pink']}
-        yAxisWidth={'w-24'}
+        yAxisWidth={90}
         valueFormatter={dataFormatter}
-        marginTop="mt-4"
       />
     </Card>
   );

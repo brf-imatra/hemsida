@@ -23,7 +23,7 @@ export default function Home({
       <div className="relative overflow-hidden">
         <img
           className="w-full h-48 object-cover"
-          src="/imatra/foton/helsingforsgatan_winter22.jpg"
+          src="/imatra/foton/helsingforsgatan_spring20.jpg"
           alt="Brf Imatra vinter 2022"
         />
         <div className="px-6 py-4 absolute left-0 top-0">
@@ -38,7 +38,7 @@ export default function Home({
 
         {/*<KommandeAktiviteter />*/}
         {/*<HSBMeddlemsserviceCorona />*/}
-          <StatusBesiktningBalkonger />
+        {/*  <StatusBesiktningBalkonger />*/}
           <ImdElTidplan />
         {/* <Well>
     <div className="flex-1 flex h-24 w-auto sm:h-32 md:h-48 lg:h-64">
