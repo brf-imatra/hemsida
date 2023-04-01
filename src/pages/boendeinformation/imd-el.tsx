@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {ForwardRefExoticComponent, RefAttributes, SVGProps} from 'react'
 import { CheckIcon, DocumentIcon, CalendarIcon, CalendarDaysIcon, WrenchScrewdriverIcon, HandThumbUpIcon, UserIcon } from '@heroicons/react/20/solid'
 import {CardEdgeToEdge} from "../../components/Card/CardEdgeToEdge";
 
@@ -227,7 +227,7 @@ type FeadItem = {
     href: string
     datetime: Date
     endDatetime?: Date
-    icon: React.FC<React.ComponentProps<'svg'>>
+    icon: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref"> & { title?: string | undefined; titleId?: string | undefined; } & RefAttributes<SVGSVGElement>>
     iconBackground: string
 
 }
