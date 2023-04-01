@@ -1,22 +1,18 @@
-import React from 'react';
-import { Body, Centered } from '../components';
+import { Body,  Centered2 } from '../components';
+import {MDXProvider} from '@mdx-js/react'
 
-const inbjudan = `
-Plats: Konferenslokalen i Akalla By
+__Plats__: Stora salen i Folkets Husby Edvard Griegsgången 16
+164 32 Kista
 
-Tid: Mötet börjar kl: 19.00 torsdagen 28/4 
+__Tid__: Mötet börjar kl:19.00 torsdagen 4/5
 
-Registrering från och med 18.30 kom i tid.
+Registrering från och med 18.15 kom i tid.
 
-Mer info om årsstämman kommer med dagordning och årsredovisningen som delas ut senast 4 veckor innan föreningsstämman.
+Mer info om årsstämman och dagordning kommer som bilaga med årsredovisningen som delas ut senast 20/4.
 
-Hälsningar Styrelsen
-`;
+_Hälsningar Styrelsen_
 
-const kallelse_distribuerad = `
-Medlemmarna i Brf. Imatra nr 193 i Stockholm inbjuds härmed till ordinarie föreningsstämma torsdagen den 28 april 2021 i Akalla By
 
-Registrering startas kl:18.30 och mötet börjar kl:19.00
 
 Vid stämman har varje medlem en röst.
 Innehar flera medlemmar bostadsrätt gemensamt har de tillsammans endast en röst.
@@ -29,44 +25,48 @@ För fysisk person gäller att endast annan medlem eller medlemmens make/maka, r
 
 MEDTAG BOSTADSRÄTTSBEVIS ELLER ÖVERLÅTELSEAVTAL.
 
-Välkomna
 
-Styrelsen för Brf. Imatra. 
+## Dagordning för föreningsstämman 4/5:
+1. föreningsstämmans öppnande
+2. val av stämmoordförande
+3. anmälan av stämmoordförandens val av protokollförare
+4. godkännande av röstlängd
+5. fråga om närvarorätt vid föreningsstämman
+6. godkännande av dagordning
+7. val av två personer att jämte stämmoordföranden justera protokollet
+8. val av minst två rösträknare
+9. fråga om kallelse skett i behörig ordning
+10. genomgång av styrelsens årsredovisning
+11. genomgång av revisorernas berättelse
+12. beslut om fastställande av resultaträkning och balansräkning
+13. beslut i anledning a bostadsrättsföreningens vinst eller förlust enligt den fastställda balansräkningen
+14. beslut om ansvarsfrihet för styrelsens ledamöter
+15. beslut om arvoden och principer för andra ekonomiska ersättningar för styrelsens ledamöter, revisorer, valberedning och de andra förtroendevalda som valts av föreningsstämman
+16. beslut om antal styrelseledamöter och suppleanter
+17. val av styrelseledamöter och suppleanter
+18. presentation av HSB-ledamot
+19. beslut om antal revisorer och suppleant
+20. val av revisor/er och suppleant
+21. beslut om antal ledamöter i valberedningen
+22. val av valberedning, en ledamot utses till valberedningens ordförande
+23. val av ombud och ersättare till distriktsstämmor samt övriga representanter i HSB
+24. av styrelsen till föreningsstämman hänskjutna frågor och av medlemmar anmälda ärenden som angivits i kallelsen
+25. föreningsstämmans avslutande
 
 
-## Dagordning för föreningsstämman 28/4:
-1. Stämmans öppnande
-2. Val av ordförande vid stämman
-3. Anmälan av stämmoordförandes val av protokollförare
-4. Godkännande av röstlängd
-5. Fastställande av dagordning
-6. Val av två personer att jämte stämmoordförande justera protokollet samt av rösträknare
-7. Fråga om kallelse behörigen skett
-8. Styrelsens årsredovisning
-9. Revisorernas berättelse 
-10. Beslut om fastställande av resultat- och balansräkningen
-11. Beslut i anledning av årets resultat enligt balansräkningen
-12. Beslut i fråga om ansvarsfrihet för styrelsen
-13. Val av styrelseledamöter och suppleanter
-14. Val av revisor och suppleant
-15. Val av valberedning
-16. Fråga om arvoden för styrelsen, revisor
-17. Fråga om arvoden för valberedning
-18. Val av representation i HSB
-19. Anmälda ärenden – motioner
-20. Övriga inkomna frågor
-21. Avslutning
-    `;
-
-export default function FöreningsStämma() {
-  return (
-    <Body>
-      <Centered
+export default (props) => {
+    const components = {
+  h2: props => <h2 className="text-2xl font-extrabold text-red-900 tracking-tight sm:text-3xl" {...props} />
+    }
+    return <MDXProvider components={components} >
+              <Body>
+          <Centered2
         introducing="Kallelse"
         title="Föreningsstämma Brf. Imatra nr 193"
-        content={kallelse_distribuerad}
-        summary="Kallelse till Brf. Imatras föreningstämma torsdagen 28/4 i Akalla By"
-      />
-    </Body>
-  );
+        summary="Kallelse till Brf. Imatras föreningstämma torsdagen 4/5 i Folkets Husby"
+      >
+               <main {...props} />
+          </Centered2>
+      </Body>
+    </MDXProvider>
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { CheckIcon, DocumentIcon, CalendarIcon, WrenchScrewdriverIcon, HandThumbUpIcon, UserIcon } from '@heroicons/react/20/solid'
+import { CheckIcon, DocumentIcon, CalendarIcon, CalendarDaysIcon, WrenchScrewdriverIcon, HandThumbUpIcon, UserIcon } from '@heroicons/react/20/solid'
 import {CardEdgeToEdge} from "../../components/Card/CardEdgeToEdge";
 
 const dateFormatter = (number: number | Date) => {
@@ -138,6 +138,9 @@ export function ImdElTidplan() {
             <p className="mt-4 text-lg leading-8 text-gray-600">
               Installation av elcentraler kommer att startas under slutet av mars och pågär därefter till slutet av juni 2023.
             </p>
+              <p className="mt-4 text-lg leading-8 text-gray-600">
+              Den nya elcentralen som ersätter den befintliga innehåller även en jordfelsbrytare. Detta kan innebära att t ex spis inte kan användas efter installlation om jordfelsbrytaren löser ut pga elfel i den befintliga utrustningen. Detta är en åtgärd som den boende får bekosta för att åtgärda. Se Stambyte FAQ för mer information.
+            </p>
 
           </div>
             <div className="container mx-auto sm:px-6 lg:px-8">
@@ -163,6 +166,7 @@ const timeline: Array<FeadItem> = [
     target: '65, 67, 69, 71, 73, 75',
     href: '#',
     datetime: new Date(2023, 2, 23),
+      endDatetime: new Date(2023, 3, 12),
     icon: WrenchScrewdriverIcon,
     iconBackground: 'bg-yellow-400',
   },
@@ -171,7 +175,8 @@ const timeline: Array<FeadItem> = [
     target: '51, 53, 55, 57, 59, 61',
     href: '#',
     datetime: new Date(2023, 3, 13),
-    icon: CalendarIcon,
+          endDatetime: new Date(2023, 3, 26),
+    icon: CalendarDaysIcon,
     iconBackground: 'bg-gray-500',
   },
               {
@@ -179,6 +184,7 @@ const timeline: Array<FeadItem> = [
     target: '39, 41, 43, 45, 47, 49',
     href: '#',
     datetime: new Date(2023, 3, 27),
+                  endDatetime: new Date(2023, 4, 9),
     icon: CalendarIcon,
     iconBackground: 'bg-gray-500',
   },
@@ -187,6 +193,7 @@ const timeline: Array<FeadItem> = [
     target: '23, 25, 27, 29, 31, 33',
     href: '#',
     datetime: new Date(2023, 4, 10),
+                  endDatetime: new Date(2023, 4, 23),
     icon: CalendarIcon,
     iconBackground: 'bg-gray-500',
   },
@@ -195,6 +202,7 @@ const timeline: Array<FeadItem> = [
     target: '11, 13, 15, 17, 19, 21',
     href: '#',
     datetime: new Date(2023, 4, 24),
+        endDatetime: new Date(2023, 5, 14),
     icon: CalendarIcon,
     iconBackground: 'bg-gray-500',
   },
@@ -218,6 +226,7 @@ type FeadItem = {
     target: string
     href: string
     datetime: Date
+    endDatetime?: Date
     icon: React.FC<React.ComponentProps<'svg'>>
     iconBackground: string
 
@@ -259,6 +268,11 @@ export function Feed({ items }: FeedProps) {
                   </div>
                   <div className="whitespace-nowrap text-right text-sm text-gray-500">
                     <time dateTime={event.datetime.toString()}>{dateFormatter(event.datetime)}</time>
+                    {event.endDatetime ? (
+                        <p className="text-sm text-gray-500">till och med&nbsp;
+                            <time dateTime={event.endDatetime.toString()}>{dateFormatter(event.endDatetime)}</time>
+                        </p>
+                        ) : null}
                   </div>
                 </div>
               </div>
