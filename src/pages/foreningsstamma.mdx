@@ -1,5 +1,6 @@
-import { Body,  Centered2 } from '../components';
+import {Attachment, Body, Centered2} from '../components';
 import {MDXProvider} from '@mdx-js/react'
+import {FullTest} from "./dokuments";
 
 __Plats__: Stora salen i Folkets Husby Edvard Griegsgången 16
 164 32 Kista
@@ -24,6 +25,13 @@ Ombud får bara företräda en medlem. Medlem får på föreningsstämma medför
 För fysisk person gäller att endast annan medlem eller medlemmens make/maka, registrerad partner, sambo, föräldrar, syskon eller barn får vara biträde eller ombud.
 
 MEDTAG BOSTADSRÄTTSBEVIS ELLER ÖVERLÅTELSEAVTAL.
+
+<Attachment items={
+    [
+        {title: "Årsredovisning 2022", filename: "årsredovisning_2022_imatra.pdf", url: "/dokument/arsredovisning/2023/arsredovisning_2022_imatra.pdf"},
+        {title: "Valberedningensförslag", filename: "valberedningen_2022.pdf", url: "/dokument/arsredovisning/2023/valberedningen_2023.pdf"},
+        {title: "Motioner", filename: "motioner_2022.pdf", url: "/dokument/arsredovisning/2023/imatra_motioner_2023.pdf"}
+    ]} />
 
 
 ## Dagordning för föreningsstämman 4/5:

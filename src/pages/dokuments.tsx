@@ -7,6 +7,7 @@ export default function Dokuments() {
     <Body title="Dokument">
       <div className="grid grid-cols-1 gap-6">
         <FöreningsDokument />
+          <År2023 />
         <År2022 />
         <År2021 />
         <År2020 />
@@ -95,6 +96,26 @@ function FöreningsDokument() {
             href="/dokument/2018-05-04_HSB_brf_Imatra_Normalstadgar_2011-version_5.pdf"
             tag="PDF"
             title="HSB brf Imatra Normalstadgar"
+          />
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+function År2023() {
+  return (
+    <div className="bg-white shadow overflow-hidden sm:rounded-md">
+      <div className="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
+        <h2 className="text-lg leading-6 font-medium text-gray-900">2022</h2>
+      </div>
+      <ul>
+        <li className="border-gray-200">
+          <FullTest
+            documentName="årsredovisning_2022_imatra.pdf"
+            href="/dokument/arsredovisning/2023/arsredovisning_2022_imatra.pdf"
+            tag="PDF"
+            title="Årsredovisning"
           />
         </li>
       </ul>

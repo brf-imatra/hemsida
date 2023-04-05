@@ -250,7 +250,7 @@ function Årsstämma() {
         imageAlt="Föreningsårsstämma för brf Imatra"
         published="2023-04-01"
         title="Föreningsstämma 2023"
-        summary="Kallelse till Brf. Imatras föreningsstämma torsdagen 4/5 i Folkets Husby"
+        summary="Kallelse till Brf. Imatras föreningsstämma torsdagen 4/5 i Folkets Husby. Länkar till  2022 årsredovisning, valberedningensförslag samt motioner."
         hrefLink="/foreningsstamma"
       />
     </div>
