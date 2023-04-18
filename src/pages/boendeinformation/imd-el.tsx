@@ -168,7 +168,7 @@ const timeline: Array<FeadItem> = [
     datetime: new Date(2023, 2, 23),
       endDatetime: new Date(2023, 3, 12),
     icon: WrenchScrewdriverIcon,
-    iconBackground: 'bg-yellow-400',
+    iconBackground: 'bg-green-400',
   },
       {
     content: 'Helsingforsgatan',
@@ -176,8 +176,8 @@ const timeline: Array<FeadItem> = [
     href: '#',
     datetime: new Date(2023, 3, 13),
           endDatetime: new Date(2023, 3, 26),
-    icon: CalendarDaysIcon,
-    iconBackground: 'bg-gray-500',
+    icon: WrenchScrewdriverIcon,
+    iconBackground: 'bg-yellow-400',
   },
               {
     content: 'Helsingforsgatan',
@@ -185,7 +185,7 @@ const timeline: Array<FeadItem> = [
     href: '#',
     datetime: new Date(2023, 3, 27),
                   endDatetime: new Date(2023, 4, 9),
-    icon: CalendarIcon,
+    icon: CalendarDaysIcon,
     iconBackground: 'bg-gray-500',
   },
               {
