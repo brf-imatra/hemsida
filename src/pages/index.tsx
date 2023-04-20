@@ -203,10 +203,10 @@ function ImatraNytt() {
       <Card
         imageUrl="/undraw/undraw_new_year_2023_pfnc.svg"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2023-03-03"
+        published="2023-04-20"
         title="Brf Imatra Nyhetsbrev"
-        summary="Nyhetsbrev där du kan läsa om individuell elmätning projektet som startas upp nu, status på stambytetsprojektet, förstudie solceller. Klicka för att läsa mer..."
-        hrefLink="/imatranytt/2023-mars"
+        summary="Nyhetsbrev där du kan läsa om individuell elmätning projektet, entreprenör Nordisk VVS som kommer att genomföra stambytet, Björnsentreprenad (BEAB) som tar över marksktötsel, förstudie solceller, och föreningsstämman 4;e maj. Klicka för att läsa mer..."
+        hrefLink="/imatranytt/2023-april"
       />
     </div>
   );
