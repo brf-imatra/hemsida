@@ -22,8 +22,7 @@ export function Centered({
   const leadingElement = summary ? (
     <p className="mt-8 text-xl text-gray-500 leading-8">{summary}</p>
   ) : null;
-  //const markdown = await markdownToHtml(content)
-  //console.log(markdown)
+
   return (
     <div className="relative py-16 bg-white overflow-hidden">
       <div className="relative px-4 sm:px-6 lg:px-8">

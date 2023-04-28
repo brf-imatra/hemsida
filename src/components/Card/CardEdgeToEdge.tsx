@@ -1,4 +1,4 @@
-import {PropsWithChildren} from "react";
+import { PropsWithChildren } from 'react';
 
 export function CardEdgeToEdge(props: PropsWithChildren<{}>) {
   return (
@@ -8,5 +8,5 @@ export function CardEdgeToEdge(props: PropsWithChildren<{}>) {
         <div className="px-4 py-5 sm:p-6">{props.children}</div>
       </div>
     </>
-  )
+  );
 }

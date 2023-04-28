@@ -7,7 +7,7 @@ export default function Dokuments() {
     <Body title="Dokument">
       <div className="grid grid-cols-1 gap-6">
         <FöreningsDokument />
-          <År2023 />
+        <År2023 />
         <År2022 />
         <År2021 />
         <År2020 />

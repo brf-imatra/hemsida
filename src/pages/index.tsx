@@ -6,15 +6,15 @@ import { readNews } from '../utils';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
 import SocialLinksFooter from '../components/MenuShell/footer';
-import {ImdElTidplan} from "./boendeinformation/imd-el";
+import { ImdElTidplan } from './boendeinformation/imd-el';
 
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const bannerEl = false ? (
+  const bannerEl = true ? (
     <Banner
-      title="Ändrade öppettider!"
-      message="Återvinningstugan kommer att hållas stängd söndag 25 december och söndag 1 januari."
+      title="Påminnelse föreningsstämma"
+      message="Brf. Imatras föreningstämma torsdagen 4/5 i Folkets Husby. Registrering från och med 18.15. Välkomna!"
     />
   ) : null;
 
@@ -37,9 +37,9 @@ export default function Home({
         <SimpleThreeColumn />
 
         {/*<KommandeAktiviteter />*/}
-        {/*<HSBMeddlemsserviceCorona />*/}
+        <HSBMeddlemsserviceCorona />
         {/*  <StatusBesiktningBalkonger />*/}
-          <ImdElTidplan />
+        <ImdElTidplan />
         {/* <Well>
     <div className="flex-1 flex h-24 w-auto sm:h-32 md:h-48 lg:h-64">
         <img className="overflow-y-visible" src="/imatra/foton/helsingforsgatan_spring20.jpg" alt="Brf Imatra våren 2020" loading="eager" />
@@ -289,26 +289,24 @@ Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 
 
 function HSBMeddlemsserviceCorona() {
   const text = `
-Receptionen är stäng för spontanbesök men boka gärna ditt besök så hjälper vi dig.
-För att minska smittspridningen gäller nedan:
-* Nödvändiga besök bokas
-* Endast 1 person i lokalen åt gången
-* Håll 1,5 m avstånd i kön utanför ingågnen
-* Besök oss bara om du är symptomfri
+Räkna med minst tre veckor innan hissarna är i drift igen. Vi beklagar de besvär som detta medför.
 
-## Kontakta oss gärna i våra andra kanaler
-Felanmälan: [hsb.se/felanmalan](https://www.hsb.se/felanmalan)    
-Övriga ärenden:     
-  - [hsb.se/stockholm/kontakt](https://www.hsb.se/stockholm/kontakt)   
-  - [010-442 11 00](tel:0104421100)
-`;
-
+<p>Trasiga hissar på följande adresser</p>
+      <ul>
+        <li>Helsingforsgatan 21</li>
+        <li>Helsingforsgatan 29</li>
+        <li>Helsingforsgatan 43</li>
+        <li>Helsingforsgatan 53</li>
+        <li>Helsingforsgatan 65</li>
+      </ul>
+  <i>Publiserad fredag 2023-04-28</i>
+  `;
   return (
     <Centered
-      introducing="Tack för att du hjälper oss minska smittspridningen!"
-      title="Ändrade öppettider HSB"
+      introducing="Trasiga hissar"
+      title="Reparation av hissar"
       content={text}
-      summary=""
+      summary="Det är tyvärr flera hissar som är ur funktion i föreningen. Frekvensrikarna som har gått sönder är både svåra att få tag på och dyra att byta ut. Därför kommer det att ta tid att få hissarna i drift igen."
     />
   );
 }
@@ -334,7 +332,7 @@ Berörda lägenheter har blivit informerade via utskick.
 
 function KommandeAktiviteter() {
   const meetings = [
-      {
+    {
       id: 0,
       title: 'Medlemsmöte',
       location: 'Folkets Husby - https://folketshusby.se',
