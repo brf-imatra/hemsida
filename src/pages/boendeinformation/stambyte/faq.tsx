@@ -19,8 +19,6 @@ const faqs: Array<FAQ> = [
     question: 'När beräknas stambytet påbörjas?',
     answer:
       'Styrelsen har i april 2023 skrivit avtal med Nordisk VVS för att genomföra stambyte. Arbetet med renovering av stammar kommer att påbörjas i augusti 2023 på Helsingforsgatan 11-21 och beräknas avslutas i slutet av 2025',
-    answer_old:
-      'Styrelsen kan inte ge något exakt datum för när stambytesarbetet kommer att påbörjas. Upphandlingsunderlag är skickat till fyra entreprenörer och styrelsen jobbar för att kunna påbörja stambyte under april 2023. Vi kommer att hålla er uppdaterade om hur det går med stambytet.',
   },
   {
     question:
