@@ -289,8 +289,9 @@ Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 
 
 function HSBMeddlemsserviceCorona() {
   const text = `
-Räkna med minst tre veckor innan hissarna är i drift igen. Vi beklagar de besvär som detta medför.
-
+<p>Det är verkligen beklagligt att detta har hänt och det påverkar boende på ett negativt sätt. Vi förstår att det är frustrerande att behöva ta trapporna istället för hissen, särskilt för de som bor högre upp i byggnaden.</p>
+<p>Vi vill dock försäkra er om att vi arbetar för att lösa problemet så snabbt som möjligt.</p>
+<p>Vi ber om er förståelse och tålamod medan vi arbetar för att få hissarna i drift igen. Vi är fast beslutna att lösa problemet så snabbt som möjligt och se till att hissarn fungerar som vanligt.</p>
 <p>Trasiga hissar på följande adresser</p>
       <ul>
         <li>Helsingforsgatan 21</li>
@@ -306,7 +307,7 @@ Räkna med minst tre veckor innan hissarna är i drift igen. Vi beklagar de besv
       introducing="Trasiga hissar"
       title="Reparation av hissar"
       content={text}
-      summary="Det är tyvärr flera hissar som är ur funktion i föreningen. Frekvensrikarna som har gått sönder är både svåra att få tag på och dyra att byta ut. Därför kommer det att ta tid att få hissarna i drift igen."
+      summary="Tyvärr är det flera hissar som är ur funktion i vår förening. Anledningen till detta är att frekvensrikarna har gått sönder och det är både svårt att få tag på dem och dyrt att byta ut dem. Detta innebär att det kommer att ta tid att få hissarna i drift igen."
     />
   );
 }
