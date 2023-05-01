@@ -1,6 +1,11 @@
 import { Body, Centered2 } from '../../components';
 import {MDXProvider} from '@mdx-js/react';
-import {Fastighetsförsäkring, NettoomsättningOchDrift} from "../../components/Årsredovisning";
+import {
+    Fastighetsförsäkring,
+    NettoomsättningOchDrift,
+    Flerårsöversikt,
+    ResultatEfterFinansielllPoster
+} from "../../components/Årsredovisning";
 
 Data till grafiken nedanför är hämtade från årsredoviningarnas noter __Not 1__ _nettoomsättning_ och __Not 3__ _drift och underhåll_.
 Notera treden att driftskostnaderna har närmat sig drift och underhålls kostnaderna de senaste årenen. För verksamhetsåret 2021 överskred drift och underhålls kostnaderna föreningens nettoomsättning.
@@ -28,6 +33,10 @@ export default props => (
             <Fastighetsförsäkring />
           <div className="mt-4" />
             <NettoomsättningOchDrift />
+          <div className="mt-4" />
+          <ResultatEfterFinansielllPoster />
+          <div className="mt-4" />
+          <Flerårsöversikt />
       </Body>
   </MDXProvider>
 )

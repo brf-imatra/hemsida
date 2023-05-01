@@ -409,7 +409,7 @@ function EkonomiGrafer() {
       <Card
         imageUrl="/undraw/undraw_visual_data_re_mxxo.svg"
         imageAlt="Årsredovisning tabell"
-        published="2022-11-30"
+        published="2023-05-01"
         title="Årsredovisningsanalys"
         summary="Föreningen drabbas av en kraftigt ökad försäkringspremie för år 2023. En grafisk presentation av försäkringspremie, samt nettoomsättning och drift, från de senaste två deceniernas årsredovisningar kan du se här."
         hrefLink="/boendeinformation/arsredovisning-analys"
