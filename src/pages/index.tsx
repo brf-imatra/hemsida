@@ -11,7 +11,7 @@ import { ImdElTidplan } from './boendeinformation/imd-el';
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const bannerEl = true ? (
+  const bannerEl = false ? (
     <Banner
       title="Påminnelse föreningsstämma"
       message="Brf. Imatras föreningstämma torsdagen 4/5 i Folkets Husby. Registrering från och med 18.15. Välkomna!"
