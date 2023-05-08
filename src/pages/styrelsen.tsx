@@ -1,7 +1,7 @@
 import React from 'react';
 import { Body } from '../components';
 
-const summaryText = 'Verksamhetsåret maj 2022 till april/maj 2023.';
+const summaryText = 'Verksamhetsåret maj 2023 till april/maj 2024.';
 const styrelsemedlemmar: People[] = [
   {
     name: 'Marcus Holmgren',
@@ -29,11 +29,6 @@ const styrelsemedlemmar: People[] = [
     imageUrl: '/avatars/img_avatar_m.png',
   },
   {
-    name: 'Minna Pohjola Rahem',
-    role: 'Suppleant',
-    imageUrl: '/avatars/img_avatar_w.png',
-  },
-  {
     name: 'Hayrullah Erdogan',
     role: 'Suppleant',
     imageUrl: '/avatars/img_avatar_m.png',
@@ -42,20 +37,15 @@ const styrelsemedlemmar: People[] = [
 
 const valberedningen: People[] = [
   {
-    name: 'Lena Ringdahl',
+    name: 'Abdulla Rahem',
     role: 'Sammankallande',
-    imageUrl: '/avatars/img_avatar_w.png',
-  },
-  {
-    name: 'Abdullah Kadir-Danzas',
-    role: 'Ledamot',
     imageUrl: '/avatars/img_avatar_m.png',
   },
-  {
-    name: 'Aafreen Gillani Haji',
-    role: 'Ledamot',
-    imageUrl: '/avatars/img_avatar_m.png',
-  },
+  // {
+  //   name: '?',
+  //   role: 'Ledamot',
+  //   imageUrl: '/avatars/img_avatar_w.png',
+  // },
 ];
 
 export default function Styrelsen() {

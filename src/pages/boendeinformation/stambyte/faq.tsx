@@ -18,13 +18,18 @@ const faqs: Array<FAQ> = [
   {
     question: 'När beräknas stambytet påbörjas?',
     answer:
-      'Styrelsen har i april 2023 skrivit avtal med Nordisk VVS för att genomföra stambyte. Arbetet med renovering av stammar kommer att påbörjas i augusti 2023 på Helsingforsgatan 11-21 och beräknas avslutas i slutet av 2025',
+      'Styrelsen har i april 2023 skrivit avtal med Nordisk VVS för att genomföra stambyte. Arbetet med renovering av stammar kommer att påbörjas i augusti 2023 på Helsingforsgatan 11-21 och beräknas avslutas i slutet av 2025 på Helsingforsgatan 65-75',
   },
   {
     question:
       'Elcentralen byts ut och det installeras en jordfelsbrytare. Varför får inte elektrikern lämna på utrustning som utlöser jordfelsbrytare?',
     answer:
       'En jordfelsbrytare är en säkerhetsanordning som skyddar mot elektrisk stöt. Den fungerar genom att övervaka strömmen som flödar genom en krets och snabbt bryta strömmen om en jordfel upptäcks. Jordfel kan orsaka allvarliga personskador och det är därför viktigt att jordfelsbrytaren fungerar korrekt och inte stängs av av misstag. Elektrikern testar jordfelsbrytaren efter installationen för att säkerställa att den fungerar korrekt. Om jordfelsbrytaren utlöses finns det en brukare som orsakar felet. Vidare felsökning och åtgärd behöver genomföras av en elektriker som den boende får bekosta.',
+  },
+  {
+    question: 'Hur lång tid tar stambytet i min lägenhet?',
+    answer:
+      'Varje stam beräknas ta 7 veckor att renovera. Vilket också är den tid som det beräknas pågå arbeten i ditt badrum.',
   },
   // More questions...
 ];

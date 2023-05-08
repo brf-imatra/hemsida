@@ -333,10 +333,10 @@
     lodash.merge "^4.6.2"
     postcss-selector-parser "6.0.10"
 
-"@tremor/react@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@tremor/react/-/react-2.4.0.tgz#61dcd02ec9251098bd4590f4f769cfefb289ac29"
-  integrity sha512-UszaUHKdkNDbb9DX8Eqrcy04kDGwRHO3osy5JQChbVNFYcoeBG/1scD4vCPrRak86MdNk2vleA6V48qkJZDzvQ==
+"@tremor/react@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@tremor/react/-/react-2.4.1.tgz#a82c754e093483e3a8d872e20f0f9cf5d17f18dc"
+  integrity sha512-OVn8FUWL2XbZsUzJ8Ih5ZJn3Aj2Fya4Zfgoc7Avmy1oxl8tEmef5JyU1pIskbnDiRVRRvteL2knziTc3LZsm+Q==
   dependencies:
     "@floating-ui/react" "^0.19.1"
     date-fns "^2.28.0"
