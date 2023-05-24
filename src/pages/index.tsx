@@ -300,7 +300,7 @@ function HSBMeddlemsserviceCorona() {
         <li>Helsingforsgatan 53</li>
         <li>Helsingforsgatan 65</li>
       </ul>
-  <i>Publiserad fredag 2023-04-28</i>
+  <i>Publiserad fredag 2023-04-28 - uppdaterad 2023-05-24</i>
   `;
   return (
     <Centered
