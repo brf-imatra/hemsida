@@ -30,6 +30,26 @@ Fastighetsförsäkring
 
 const fastighetsFörsäkringsData = [
   {
+    date: '1997',
+    Nettoomsättning: 11_605_066,
+    'Drift och underhåll': 6_897_105,
+  },
+  {
+    date: '1998',
+    Nettoomsättning: 12_019_221,
+    'Drift och underhåll': 6_825_659,
+  },
+  {
+    date: '1999',
+    Nettoomsättning: 12_494_649,
+    'Drift och underhåll': 5_758_123,
+  },
+  {
+    date: '2000',
+    Nettoomsättning: 12_789_305,
+    'Drift och underhåll': 5_684_868,
+  },
+  {
     date: '2001',
     Nettoomsättning: 12_785_128,
     'Drift och underhåll': 6_312_944,

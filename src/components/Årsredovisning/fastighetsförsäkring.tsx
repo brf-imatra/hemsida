@@ -30,6 +30,22 @@ Fastighetsförsäkring
 
 const fastighetsFörsäkringsData = [
   {
+    date: '1996',
+    Försäkringspremie: 79_692,
+  },
+  {
+    date: '1997',
+    Försäkringspremie: 81_947,
+  },
+  {
+    date: '1999',
+    Försäkringspremie: 53_258
+  },
+  {
+    date: '2000',
+    Försäkringspremie: 58_437,
+  },
+  {
     date: '2001',
     Försäkringspremie: 72_815,
   },

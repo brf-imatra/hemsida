@@ -12,3 +12,7 @@
         @apply font-medium text-indigo-600;
     }
 }
+
+html {
+    overflow-y: scroll;
+}

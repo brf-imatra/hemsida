@@ -11,10 +11,10 @@ import { ImdElTidplan } from './boendeinformation/imd-el';
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const bannerEl = false ? (
+  const bannerEl = true ? (
     <Banner
-      title="Påminnelse föreningsstämma"
-      message="Brf. Imatras föreningstämma torsdagen 4/5 i Folkets Husby. Registrering från och med 18.15. Välkomna!"
+      title="Garagesopning kommer att ske 1/6"
+      message="Vänligen sopa fram från er parkeringsplats!"
     />
   ) : null;
 
@@ -47,7 +47,7 @@ export default function Home({
       </Well> */}
         <div className="flex flex-row w-full flex-wrap justify-start">
           {/*<InbjudanFöreningsstämma />*/}
-          <Årsstämma />
+          <Årsstämma2023 />
           {/*<FläktByte />*/}
           <ImatraNytt />
           <StambyteFaq />
@@ -248,10 +248,25 @@ function Årsstämma() {
       <Card
         imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
         imageAlt="Föreningsårsstämma för brf Imatra"
-        published="2023-04-01"
-        title="Föreningsstämma 2023"
-        summary="Kallelse till Brf. Imatras föreningsstämma torsdagen 4/5 i Folkets Husby. Länkar till  2022 årsredovisning, valberedningensförslag samt motioner."
+        published="2024-03-25"
+        title="Föreningsstämma 2024"
+        summary="Kallelse till Brf. Imatras föreningsstämma torsdagen 28/4 i Folkets Husby. Länkar till  2023 årsredovisning, valberedningensförslag samt motioner."
         hrefLink="/foreningsstamma"
+      />
+    </div>
+  );
+}
+
+function Årsstämma2023() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_public_discussion_re_w9up.svg"
+        imageAlt="Protokoll från föreningstämman 2023 för brf Imatra"
+        published="2023-05-28"
+        title="Föreningsstämma 2023"
+        summary="Protokoll från föreningsstämma 2023-05-04 i Fokets Husby är nu justerat och godkännt. Protokollet finns att läsa här eller under fliken 'Dokument' i menyn."
+        hrefLink="/dokument/arsredovisning/2023/protokoll_brf_imatra_stamma_2023-2023-05-04.pdf"
       />
     </div>
   );
@@ -299,8 +314,9 @@ function HSBMeddlemsserviceCorona() {
         <li>Helsingforsgatan 43</li>
         <li>Helsingforsgatan 53</li>
         <li>Helsingforsgatan 65</li>
+        <li>Helsingforsgatan 67</li>
       </ul>
-  <i>Publiserad fredag 2023-04-28 - uppdaterad 2023-05-24</i>
+  <i>Publiserad fredag 2023-04-28 - uppdaterad 2023-05-28</i>
   `;
   return (
     <Centered
