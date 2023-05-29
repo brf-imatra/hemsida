@@ -310,13 +310,9 @@ function HSBMeddlemsserviceCorona() {
 <p>Trasiga hissar på följande adresser</p>
       <ul>
         <li>Helsingforsgatan 21</li>
-        <li>Helsingforsgatan 29</li>
         <li>Helsingforsgatan 43</li>
-        <li>Helsingforsgatan 53</li>
-        <li>Helsingforsgatan 65</li>
-        <li>Helsingforsgatan 67</li>
       </ul>
-  <i>Publiserad fredag 2023-04-28 - uppdaterad 2023-05-28</i>
+  <i>Publiserad fredag 2023-04-28 - uppdaterad 2023-05-29</i>
   `;
   return (
     <Centered
