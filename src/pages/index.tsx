@@ -11,7 +11,7 @@ import { ImdElTidplan } from './boendeinformation/imd-el';
 export default function Home({
   news,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const bannerEl = true ? (
+  const bannerEl = false ? (
     <Banner
       title="Garagesopning kommer att ske 1/6"
       message="Vänligen sopa fram från er parkeringsplats!"

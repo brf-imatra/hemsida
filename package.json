@@ -12,7 +12,7 @@
     "format": "prettier --write \"./{src,content}/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.14",
+    "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
@@ -39,6 +39,6 @@
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.3"
   }
 }
