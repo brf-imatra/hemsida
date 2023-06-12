@@ -3,8 +3,8 @@ import {
   AreaChart,
   Card,
   Flex,
-    Dropdown,
-    DropdownItem,
+    Select,
+    SelectItem,
   Icon,
   Text,
   Title,
@@ -105,7 +105,7 @@ export function Flerårsöversikt() {
           <Text>Föreningenskostnader och intäkter över tid</Text>
         </div>
         <div className="mt-6 md:mt-0">
-          <Dropdown
+          <Select
             className="w-56"
             color="zinc"
             defaultValue={selectedKpi}
@@ -114,12 +114,12 @@ export function Flerårsöversikt() {
             {Object.keys(performance[0])
               .filter((item) => item !== 'date')
               .map((item) => (
-                <DropdownItem key={item} value={item} text={item} />
+                <SelectItem key={item} value={item} defaultValue={item} />
               ))}
             {/*         <DropdownItem value="Sparande, kr/kvm" text="Sparande, kr/kvm" />
             <DropdownItem value="Skuldsättning, kr/kvm" text="Skuldsättning, kr/kvm" />
             <DropdownItem value="Customers" text="Customers" />*/}
-          </Dropdown>
+          </Select>
         </div>
       </div>
       <AreaChart
