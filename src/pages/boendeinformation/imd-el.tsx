@@ -235,7 +235,7 @@ const timeline: Array<FeadItem> = [
     datetime: new Date(2023, 4, 29),
     endDatetime: new Date(2023, 5, 9),
     icon: WrenchScrewdriverIcon,
-    iconBackground: 'bg-yellow-500',
+    iconBackground: 'bg-green-400',
   },
   {
     content: 'Helsingforsgatan',
@@ -244,7 +244,7 @@ const timeline: Array<FeadItem> = [
     datetime: new Date(2023, 5,12),
     endDatetime: new Date(2023, 5, 21),
     icon: CalendarDaysIcon,
-    iconBackground: 'bg-gray-500',
+    iconBackground: 'bg-yellow-500',
   },
   {
     content: 'IMD-el slutförande',
