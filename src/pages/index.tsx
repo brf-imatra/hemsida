@@ -37,7 +37,7 @@ export default function Home({
         <SimpleThreeColumn />
 
         {/*<KommandeAktiviteter />*/}
-        <HSBMeddlemsserviceCorona />
+        {/*<StillaståendeHissar2023 />*/}
         {/*  <StatusBesiktningBalkonger />*/}
         <ImdElTidplan />
         {/* <Well>
@@ -203,10 +203,10 @@ function ImatraNytt() {
       <Card
         imageUrl="/undraw/undraw_new_year_2023_pfnc.svg"
         imageAlt="Brf Imatra Nyhetsbrev"
-        published="2023-04-20"
+        published="2023-06-13"
         title="Brf Imatra Nyhetsbrev"
-        summary="Nyhetsbrev där du kan läsa om individuell elmätning projektet, entreprenör Nordisk VVS som kommer att genomföra stambytet, Björnsentreprenad (BEAB) som tar över marksktötsel, förstudie solceller, och föreningsstämman 4;e maj. Klicka för att läsa mer..."
-        hrefLink="/imatranytt/2023-april"
+        summary="Nyhetsbrev där du kan läsa om föreningstämman, individuell elmätning, stambytet, underhåll balkonger, grillning. Klicka för att läsa mer..."
+        hrefLink="/imatranytt/2023-juni"
       />
     </div>
   );
@@ -302,7 +302,7 @@ Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 
   );
 }
 
-function HSBMeddlemsserviceCorona() {
+function StillaståendeHissar2023() {
   const text = `
 <p>Det är verkligen beklagligt att detta har hänt och det påverkar boende på ett negativt sätt. Vi förstår att det är frustrerande att behöva ta trapporna istället för hissen, särskilt för de som bor högre upp i byggnaden.</p>
 <p>Vi vill dock försäkra er om att vi arbetar för att lösa problemet så snabbt som möjligt.</p>

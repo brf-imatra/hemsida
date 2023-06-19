@@ -4,7 +4,7 @@ import { BuildingOfficeIcon } from '@heroicons/react/24/outline';
 const navigation = [
   {
     name: 'HSB Login',
-    href: 'https://hsb-login.hsb.se/logon/LogonPoint/index.html',
+    href: 'https://mitthsb.hsb.se/',
     icon: (props: any) => <BuildingOfficeIcon {...props} />,
   },
   {
