@@ -16,7 +16,7 @@ Några exempel på det är ytskikt och rördragning i badrummet eller läckage f
 
 Exempelvis om någon utifrån kastar sönder din fönsterruta (fönsterglas)
 
-Ring [08-772 80 20](tel:08-7728020) Foksam Företasskador och anmäl din skada.
+Ring [08-772 80 20](tel:08-7728020) Folksam Företasskador och anmäl din skada.
 
 Tala om att du bor i HSB Imatra brf och att de har en bostadsrättstillägsförsärking hos Folksam.
 
