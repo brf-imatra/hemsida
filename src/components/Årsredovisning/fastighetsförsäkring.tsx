@@ -39,7 +39,7 @@ const fastighetsFörsäkringsData = [
   },
   {
     date: '1999',
-    Försäkringspremie: 53_258
+    Försäkringspremie: 53_258,
   },
   {
     date: '2000',
@@ -154,7 +154,7 @@ export function Fastighetsförsäkring() {
         index="date"
         className="h-72 mt-4"
         colors={['indigo']}
-        yAxisWidth={80}
+        yAxisWidth={100}
         valueFormatter={dataFormatter}
       />
     </Card>

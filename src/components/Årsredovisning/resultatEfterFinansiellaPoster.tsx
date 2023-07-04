@@ -110,7 +110,7 @@ export function ResultatEfterFinansielllPoster() {
         index="date"
         className="h-72 mt-4"
         colors={['blue']}
-        yAxisWidth={90}
+        yAxisWidth={110}
         valueFormatter={currencyFormatter}
       />
     </Card>

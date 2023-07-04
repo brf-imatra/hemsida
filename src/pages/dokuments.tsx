@@ -118,15 +118,15 @@ function År2023() {
             title="Årsredovisning"
           />
         </li>
-          <li className="border-gray-200">
+        <li className="border-gray-200">
           <FullTest
             documentName="valberedningen_2023.pdf"
             href="/dokument/arsredovisning/2023/valberedningen_2023.pdf"
             tag="PDF"
             title="Valberednings förslag 2023"
           />
-                      </li>
-          <li className="border-gray-200">
+        </li>
+        <li className="border-gray-200">
           <FullTest
             documentName="imatra_motioner_2023.pdf"
             href="/dokument/arsredovisning/2023/imatra_motioner_2023.pdf"
@@ -135,12 +135,12 @@ function År2023() {
           />
         </li>
         <li className="border-gray-200">
-            <FullTest
-                documentName="protokoll_brf_imatra_stämma_2023-05-04.pdf"
-                href="/dokument/arsredovisning/2023/protokoll_brf_imatra_stamma_2023-2023-05-04.pdf"
-                tag="PDF"
-                title="Föreningsstämma"
-            />
+          <FullTest
+            documentName="protokoll_brf_imatra_stämma_2023-05-04.pdf"
+            href="/dokument/arsredovisning/2023/protokoll_brf_imatra_stamma_2023-2023-05-04.pdf"
+            tag="PDF"
+            title="Föreningsstämma"
+          />
         </li>
       </ul>
     </div>

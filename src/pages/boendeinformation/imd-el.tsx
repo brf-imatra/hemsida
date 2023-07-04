@@ -93,7 +93,7 @@ export default function ImdEl() {
                 <Feed items={timeline} />
               </CardEdgeToEdge>
             </div>
-            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
+            {/*            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
               {gård5.map((stat) => (
                 <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
                   <dt className="text-sm font-semibold leading-6 text-gray-600">
@@ -152,7 +152,7 @@ export default function ImdEl() {
                   </dd>
                 </div>
               ))}
-            </dl>
+            </dl>*/}
           </div>
         </div>
       </div>
@@ -160,7 +160,7 @@ export default function ImdEl() {
   );
 }
 
-export function ImdElTidplan() {
+function ImdElTidplan() {
   return (
     <>
       <div className="bg-white py-24 sm:py-32">
@@ -241,10 +241,10 @@ const timeline: Array<FeadItem> = [
     content: 'Helsingforsgatan',
     target: '11, 13, 15, 17, 19, 21',
     href: '#',
-    datetime: new Date(2023, 5,12),
+    datetime: new Date(2023, 5, 12),
     endDatetime: new Date(2023, 5, 21),
     icon: CalendarDaysIcon,
-    iconBackground: 'bg-yellow-500',
+    iconBackground: 'bg-green-500',
   },
   {
     content: 'IMD-el slutförande',
@@ -280,7 +280,7 @@ type FeedProps = {
   items: FeadItem[];
 };
 
-export function Feed({ items }: FeedProps) {
+function Feed({ items }: FeedProps) {
   return (
     <div className="flow-root">
       <ul role="list" className="-mb-8">

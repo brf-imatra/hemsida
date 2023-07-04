@@ -6,7 +6,6 @@ import { readNews } from '../utils';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
 import SocialLinksFooter from '../components/MenuShell/footer';
-import { ImdElTidplan } from './boendeinformation/imd-el';
 
 export default function Home({
   news,
@@ -39,7 +38,6 @@ export default function Home({
         {/*<KommandeAktiviteter />*/}
         {/*<StillaståendeHissar2023 />*/}
         {/*  <StatusBesiktningBalkonger />*/}
-        <ImdElTidplan />
         {/* <Well>
     <div className="flex-1 flex h-24 w-auto sm:h-32 md:h-48 lg:h-64">
         <img className="overflow-y-visible" src="/imatra/foton/helsingforsgatan_spring20.jpg" alt="Brf Imatra våren 2020" loading="eager" />
@@ -51,6 +49,7 @@ export default function Home({
           {/*<FläktByte />*/}
           <ImatraNytt />
           <StambyteFaq />
+          <ImdEl />
           <EkonomiGrafer />
 
           {/*<Städdag />*/}
@@ -410,6 +409,21 @@ function ElSparTips() {
         title="Elförbrukningstips"
         summary="Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning"
         hrefLink="/boendeinformation/el-spar-tips"
+      />
+    </div>
+  );
+}
+
+function ImdEl() {
+  return (
+    <div className="pt-10 w-64 pr-5 flex-grow">
+      <Card
+        imageUrl="/undraw/undraw_building_re_xfcm.svg"
+        imageAlt="Installation av nya elcentraler"
+        published="2023-07-04"
+        title="IMD-el"
+        summary="Nya elcentralen som ersätter den befintliga innehåller en jordfelsbrytare och mätare för att kunna mäta elanvändningen i varje lägenhet."
+        hrefLink="/boendeinformation/imd-el"
       />
     </div>
   );

@@ -183,7 +183,7 @@ export function NettoomsättningOchDrift() {
         index="date"
         className="h-72 mt-4"
         colors={['amber', 'pink']}
-        yAxisWidth={90}
+        yAxisWidth={110}
         valueFormatter={dataFormatter}
       />
     </Card>
