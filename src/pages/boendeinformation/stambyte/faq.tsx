@@ -18,7 +18,7 @@ const faqs: Array<FAQ> = [
   {
     question: 'När beräknas stambytet påbörjas?',
     answer:
-      'Styrelsen har i april 2023 skrivit avtal med Nordisk VVS för att genomföra stambyte. Arbetet med renovering av stammar kommer att påbörjas i augusti 2023 på Helsingforsgatan 11-21 och beräknas avslutas i slutet av 2025 på Helsingforsgatan 65-75',
+      'Styrelsen har i april 2023 skrivit avtal med Nordisk VVS för att genomföra stambyte. Arbetet med renovering av stammar kommer att påbörjas i augusti 2023 på Helsingforsgatan 11-21 och beräknas avslutas i början på hösten 2025 på Helsingforsgatan 65-75',
   },
   {
     question:
@@ -31,6 +31,10 @@ const faqs: Array<FAQ> = [
     answer:
       'Varje stam beräknas ta 7 veckor att renovera. Vilket också är den tid som det beräknas pågå arbeten i ditt badrum.',
   },
+  {
+    question: 'Byte av badrumsfönster',
+    answer: 'Badrumsfönster kommer att bytas ut innan rivning av badrum. Styrelsen beslutade att byta badrumsfönster innan stambyte och renovering av badrumen eftersom det var tekniska utmaningar att få till en tillräkligt stabil vägg för att kunna montera kakel samt att fönsterrenovering ligger inom 5-10 års intervall.'
+  }
   // More questions...
 ];
 
