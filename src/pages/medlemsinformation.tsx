@@ -98,7 +98,7 @@ export default function MedlemsInfomation({
         <Garage />
       </WellOnGrey>
       <BasicCard className="mt-6">
-        <Återvinning />
+        <RecyclingHouse />
       </BasicCard>
       <WellOnGrey className="mt-6">
         <Tvättstugor />
@@ -245,7 +245,7 @@ function Tvättstugor() {
     doIt()
       // make sure to catch any error
       .catch(console.error);
-  }, []);
+  }, [left, right]);
 
   return (
     <TwoColumns
@@ -257,7 +257,7 @@ function Tvättstugor() {
   );
 }
 
-function Återvinning() {
+function RecyclingHouse() {
   const [content, setContent] = useState('');
   const text = `I föreningen finns ett miljöhus, beläget vid vändplanen Helsingforsgatan 39-51, utrustat med kärl för bl.a. återvinning av tidningar, glas, elektronik och brännbart material.
   Det finns även en ”batteriholk” för mindre hushållsbatterier.
@@ -287,7 +287,7 @@ Detta material får Ni själva ta hand om och slänga gratis på [återvinningsc
     doIt()
       // make sure to catch any error
       .catch(console.error);
-  }, []);
+  }, [text]);
 
   return (
     <Centered

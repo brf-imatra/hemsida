@@ -33,8 +33,9 @@ const faqs: Array<FAQ> = [
   },
   {
     question: 'Byte av badrumsfönster',
-    answer: 'Badrumsfönster kommer att bytas ut innan rivning av badrum. Styrelsen beslutade att byta badrumsfönster innan stambyte och renovering av badrumen eftersom det var tekniska utmaningar att få till en tillräkligt stabil vägg för att kunna montera kakel samt att fönsterrenovering ligger inom 5-10 års intervall.'
-  }
+    answer:
+      'Badrumsfönster kommer att bytas ut innan rivning av badrum. Styrelsen beslutade att byta badrumsfönster innan stambyte och renovering av badrumen eftersom det var tekniska utmaningar att få till en tillräkligt stabil vägg för att kunna montera kakel samt att fönsterrenovering ligger inom 5-10 års intervall.',
+  },
   // More questions...
 ];
 
