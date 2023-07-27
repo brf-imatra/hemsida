@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface SplitWithImageProps {
   introducing?: string;
@@ -19,11 +20,13 @@ export function SplitWithImage({
     <div className="relative bg-white">
       <div className="lg:absolute lg:inset-0">
         <div className="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
-          <img
+          <Image
             className="h-56 w-full object-cover lg:absolute lg:h-full"
             src={imageSrc}
             loading="lazy"
             alt=""
+            height={720}
+            width={1280}
           />
         </div>
       </div>

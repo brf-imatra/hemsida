@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface TwoColumnsWithImageProps {
   introducing?: string;
@@ -62,11 +63,11 @@ export function TwoColumnsWithImage({
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
                 <div className="relative pb-7/12 lg:pb-0">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80"
                     alt=""
-                    width="1184"
-                    height="1376"
+                    width={1184}
+                    height={1376}
                     className="rounded-lg shadow-lg object-cover object-center absolute inset-0 w-full h-full lg:static lg:h-auto"
                     loading="lazy"
                   />

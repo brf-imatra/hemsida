@@ -1,5 +1,6 @@
 import React from 'react';
 import { Body } from '../components';
+import Image from 'next/image';
 
 const summaryText = 'Verksamhetsåret maj 2023 till april/maj 2024.';
 const styrelsemedlemmar: People[] = [
@@ -96,10 +97,12 @@ function TeamWithSmallImages({ title, summary, people }: TeamProps) {
               {people.map((person) => (
                 <li key={person.name}>
                   <div className="flex items-center space-x-4 lg:space-x-6">
-                    <img
+                    <Image
                       className="w-16 h-16 rounded-full lg:w-20 lg:h-20"
                       src={person.imageUrl}
                       alt=""
+                      width={80}
+                      height={80}
                     />
                     <div className="font-medium text-lg leading-6 space-y-1">
                       <h3>{person.name}</h3>

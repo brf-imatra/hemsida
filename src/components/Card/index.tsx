@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface CardProps {
   imageUrl: string;
@@ -14,11 +15,13 @@ export function Card(props: CardProps) {
   return (
     <div className="bg-white border border-lg rounded-lg overflow-hidden">
       <Link href={props.hrefLink}>
-        <img
+        <Image
           src={props.imageUrl}
           alt={props.imageAlt}
           className="max-w-md h-40"
           loading="lazy"
+          height={160}
+          width={320}
         />
         <div className="p-6">
           <h4 className="font-semibold text-lg leading-tight truncate">
