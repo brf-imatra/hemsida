@@ -26,7 +26,7 @@ jobs:
       run: yarn
       working-directory: ${{ env.working_dir }}
       
-    - run: yarn export
+    - run: yarn build
       working-directory: ${{ env.working_dir }}
 
     - name: deploy file to server

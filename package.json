@@ -8,7 +8,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export",
     "format": "prettier --write \"./{src,content}/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
