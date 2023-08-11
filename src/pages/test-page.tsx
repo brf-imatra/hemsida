@@ -14,7 +14,7 @@ export function match<
   TReturnValue = unknown,
 >(
   value: TValue,
-  lookup: Record<TValue, TReturnValue | (() => TReturnValue)>,
+  lookup: Record<TValue, TReturnValue | (() => TReturnValue)>
 ): TReturnValue {
   if (value in lookup) {
     const returnValue = lookup[value];
@@ -23,10 +23,10 @@ export function match<
 
   const error = new Error(
     `Tried to handle "${value}" but there is no handler defined. Only defined handlers are: ${Object.keys(
-      lookup,
+      lookup
     )
       .map((key) => `"${key}"`)
-      .join(', ')}.`,
+      .join(', ')}.`
   );
 
   if (Error.captureStackTrace) {
@@ -42,8 +42,8 @@ export default function Shell() {
       <Head>
         <title>Transition Component - Full Page Transition</title>
       </Head>
-      <div className="h-full p-12 bg-gray-50">
-        <div className="flex flex-col flex-1 h-full overflow-hidden rounded-lg shadow-lg">
+      <div className='h-full bg-gray-50 p-12'>
+        <div className='flex h-full flex-1 flex-col overflow-hidden rounded-lg shadow-lg'>
           <FullPageTransition />
         </div>
       </div>
@@ -101,30 +101,30 @@ function FullPageTransition() {
 
   return (
     <div>
-      <div className="pb-32 bg-gray-800">
-        <nav className="bg-gray-800">
-          <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div className="border-b border-gray-700">
-              <div className="flex items-center justify-between h-16 px-4 sm:px-0">
-                <div className="flex items-center">
-                  <div className="flex-shrink-0">
+      <div className='bg-gray-800 pb-32'>
+        <nav className='bg-gray-800'>
+          <div className='mx-auto max-w-7xl sm:px-6 lg:px-8'>
+            <div className='border-b border-gray-700'>
+              <div className='flex h-16 items-center justify-between px-4 sm:px-0'>
+                <div className='flex items-center'>
+                  <div className='flex-shrink-0'>
                     <img
-                      className="w-8 h-8"
-                      src="https://tailwindui.com/img/logos/workflow-mark-on-dark.svg"
-                      alt="Workflow logo"
+                      className='h-8 w-8'
+                      src='https://tailwindui.com/img/logos/workflow-mark-on-dark.svg'
+                      alt='Workflow logo'
                     />
                   </div>
-                  <div className="hidden md:block">
-                    <div className="flex items-baseline ml-10 space-x-4">
+                  <div className='hidden md:block'>
+                    <div className='ml-10 flex items-baseline space-x-4'>
                       {pages.map((page, i) => (
                         <button
                           key={page}
                           onClick={() => setActivePage(i)}
                           className={classNames(
-                            'px-3 py-2 text-sm font-medium rounded-md focus:outline-none focus:text-white focus:bg-gray-700',
+                            'rounded-md px-3 py-2 text-sm font-medium focus:bg-gray-700 focus:text-white focus:outline-none',
                             i === activePage
-                              ? 'text-white bg-gray-900'
-                              : 'text-gray-300 hover:text-white hover:bg-gray-700',
+                              ? 'bg-gray-900 text-white'
+                              : 'text-gray-300 hover:bg-gray-700 hover:text-white'
                           )}
                         >
                           {page}
@@ -133,40 +133,40 @@ function FullPageTransition() {
                     </div>
                   </div>
                 </div>
-                <div className="hidden md:block">
-                  <div className="flex items-center ml-4 md:ml-6">
+                <div className='hidden md:block'>
+                  <div className='ml-4 flex items-center md:ml-6'>
                     <button
-                      className="p-1 text-gray-400 border-2 border-transparent rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700"
-                      aria-label="Notifications"
+                      className='rounded-full border-2 border-transparent p-1 text-gray-400 hover:text-white focus:bg-gray-700 focus:text-white focus:outline-none'
+                      aria-label='Notifications'
                     >
                       <svg
-                        className="w-6 h-6"
-                        stroke="currentColor"
-                        fill="none"
-                        viewBox="0 0 24 24"
+                        className='h-6 w-6'
+                        stroke='currentColor'
+                        fill='none'
+                        viewBox='0 0 24 24'
                       >
                         <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth='2'
+                          d='M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9'
                         />
                       </svg>
                     </button>
 
                     {/* Profile dropdown */}
-                    <div className="relative ml-3">
+                    <div className='relative ml-3'>
                       <div>
                         <button
-                          className="flex items-center max-w-xs text-sm text-white rounded-full focus:outline-none focus:shadow-solid"
-                          id="user-menu"
-                          aria-label="User menu"
-                          aria-haspopup="true"
+                          className='focus:shadow-solid flex max-w-xs items-center rounded-full text-sm text-white focus:outline-none'
+                          id='user-menu'
+                          aria-label='User menu'
+                          aria-haspopup='true'
                         >
                           <img
-                            className="w-8 h-8 rounded-full"
-                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                            alt=""
+                            className='h-8 w-8 rounded-full'
+                            src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                            alt=''
                           />
                         </button>
                       </div>
@@ -177,27 +177,27 @@ function FullPageTransition() {
             </div>
           </div>
         </nav>
-        <header className="py-10">
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <h1 className="relative inline-block text-3xl font-bold leading-9 text-white">
+        <header className='py-10'>
+          <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+            <h1 className='relative inline-block text-3xl font-bold leading-9 text-white'>
               {pages[activePage]}
             </h1>
           </div>
         </header>
       </div>
 
-      <main className="-mt-32">
-        <div className="px-4 pb-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="px-5 py-6 bg-white rounded-lg shadow sm:px-6">
-            <div className="relative overflow-hidden rounded-lg h-96">
+      <main className='-mt-32'>
+        <div className='mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8'>
+          <div className='rounded-lg bg-white px-5 py-6 shadow sm:px-6'>
+            <div className='relative h-96 overflow-hidden rounded-lg'>
               {pages.map((page, i) => (
                 <Transition
                   appear={false}
                   key={page}
                   show={activePage === i}
                   className={classNames(
-                    'absolute inset-0 p-8 text-3xl rounded-lg text-white font-bold',
-                    colors[i],
+                    'absolute inset-0 rounded-lg p-8 text-3xl font-bold text-white',
+                    colors[i]
                   )}
                   {...transitions}
                 >

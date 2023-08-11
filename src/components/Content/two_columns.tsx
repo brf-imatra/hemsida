@@ -14,27 +14,27 @@ export function TwoColumns({
   rightContent,
 }: TwoColumnsProps) {
   return (
-    <div className="py-16 xl:py-36 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
-      <div className="max-w-max-content lg:max-w-7xl mx-auto">
-        <div className="relative z-10 mb-8 md:mb-2 md:px-6">
-          <div className="text-base max-w-prose lg:max-w-none">
-            <p className="leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+    <div className='overflow-hidden bg-white px-4 py-16 sm:px-6 lg:px-8 xl:py-36'>
+      <div className='max-w-max-content mx-auto lg:max-w-7xl'>
+        <div className='relative z-10 mb-8 md:mb-2 md:px-6'>
+          <div className='max-w-prose text-base lg:max-w-none'>
+            <p className='font-semibold uppercase leading-6 tracking-wide text-indigo-600'>
               {introducing}
             </p>
-            <h2 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+            <h2 className='mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10'>
               {title}
             </h2>
           </div>
         </div>
-        <div className="relative">
-          <div className="relative md:bg-white md:p-6">
-            <div className="lg:grid lg:grid-cols-2 lg:gap-6 mb-8">
+        <div className='relative'>
+          <div className='relative md:bg-white md:p-6'>
+            <div className='mb-8 lg:grid lg:grid-cols-2 lg:gap-6'>
               <div
-                className="prose prose-lg text-gray-500 mb-6 lg:max-w-none lg:mb-0"
+                className='prose prose-lg mb-6 text-gray-500 lg:mb-0 lg:max-w-none'
                 dangerouslySetInnerHTML={{ __html: leftContent }}
               />
               <div
-                className="prose prose-lg text-gray-500"
+                className='prose prose-lg text-gray-500'
                 dangerouslySetInnerHTML={{ __html: rightContent }}
               />
             </div>

@@ -88,26 +88,26 @@ export function Flerårsöversikt() {
 
   return (
     <Card>
-      <div className="md:flex justify-between">
+      <div className='justify-between md:flex'>
         <div>
           <Flex
-            justifyContent="start"
-            className="space-x-0.5"
-            alignItems="center"
+            justifyContent='start'
+            className='space-x-0.5'
+            alignItems='center'
           >
             <Title>Flerårsöversikt</Title>
             <Icon
               icon={InformationCircleIcon}
-              variant="simple"
-              tooltip="Visar utvecklingen av föreningenskostnader ochh intäkter över tid."
+              variant='simple'
+              tooltip='Visar utvecklingen av föreningenskostnader ochh intäkter över tid.'
             />
           </Flex>
           <Text>Föreningenskostnader och intäkter över tid</Text>
         </div>
-        <div className="mt-6 md:mt-0">
+        <div className='mt-6 md:mt-0'>
           <Select
-            className="w-56"
-            color="zinc"
+            className='w-56'
+            color='zinc'
             defaultValue={selectedKpi}
             onValueChange={(value) => setSelectedKpi(value)}
           >
@@ -124,13 +124,13 @@ export function Flerårsöversikt() {
       </div>
       <AreaChart
         data={performance}
-        index="date"
+        index='date'
         categories={[selectedKpi]}
         colors={['blue']}
         showLegend={false}
         valueFormatter={formatters[selectedKpi]}
         yAxisWidth={56}
-        className="h-96 mt-8"
+        className='mt-8 h-96'
       />
     </Card>
   );

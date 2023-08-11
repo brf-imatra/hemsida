@@ -55,22 +55,22 @@ export default function BanhofFaq() {
 
 function Header() {
   return (
-    <div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-      <div className="relative max-w-lg mx-auto lg:max-w-7xl">
+    <div className='bg-white px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-28 lg:pt-24'>
+      <div className='relative mx-auto max-w-lg lg:max-w-7xl'>
         <div>
-          <h1 className="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+          <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10'>
             Gruppanslutning av internet, vanliga frågor (FAQ)
           </h1>
-          <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+          <p className='mt-3 text-xl leading-7 text-gray-500 sm:mt-4'>
             Föreningen har kollektiv uppkoppling till internet från Bahnhof via
             datauttag i hallen. Lösenord till Wifi står på undersidan av
             routern.
           </p>
-          <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+          <p className='mt-3 text-xl leading-7 text-gray-500 sm:mt-4'>
             Här hittar du Banhofs sida för{' '}
             <a
-              className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-              href="https://bahnhof.se/privat/kundservice/"
+              className='font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500'
+              href='https://bahnhof.se/privat/kundservice/'
             >
               Kundservice &amp; Hjälp
             </a>
@@ -78,32 +78,32 @@ function Header() {
             <br />
             Kundservice{' '}
             <a
-              className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-              href="tel:010-510 00 00"
+              className='font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500'
+              href='tel:010-510 00 00'
             >
               010-510 00 00
             </a>{' '}
             .
           </p>
-          <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+          <p className='mt-3 text-xl leading-7 text-gray-500 sm:mt-4'>
             Om du saknar router, maila{' '}
             <a
-              className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-              href="mailto:styrelsen@brfimatra.se"
+              className='font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500'
+              href='mailto:styrelsen@brfimatra.se'
             >
               styrelsen@brfimatra.se
             </a>{' '}
             så ordnar vi det. Notera att routern tillhör lägenheten och ska
             lämnas inkopplad vid avflyttning.
           </p>
-          <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+          <p className='mt-3 text-xl leading-7 text-gray-500 sm:mt-4'>
             Du kan köpa andra alternativ: - Comhem har uttag i vardagsrummet.
             Ring deras kundservice för att teckna abonnemang.
             <br />
             Telenor kan leverera på uttaget i hallen. Maila{' '}
             <a
-              className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-              href="mailto:styrelsen@brfimatra.se?subject=Anslutn%20Banhof%20internet"
+              className='font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500'
+              href='mailto:styrelsen@brfimatra.se?subject=Anslutn%20Banhof%20internet'
             >
               styrelsen@brfimatra.se
             </a>{' '}
@@ -128,16 +128,16 @@ function FrågaSvar({ fråga, svar, svar2, first }: FrågaProps) {
     : 'mt-8 border-t border-gray-200 pt-6 md:grid md:grid-cols-12 md:gap-8';
 
   const svar2Element = svar2 ? (
-    <p className="text-base leading-6 text-gray-500 pt-3">{svar2}</p>
+    <p className='pt-3 text-base leading-6 text-gray-500'>{svar2}</p>
   ) : null;
 
   return (
     <div className={firstStyle}>
-      <dt className="text-base leading-6 font-medium text-gray-900 md:col-span-5">
+      <dt className='text-base font-medium leading-6 text-gray-900 md:col-span-5'>
         {fråga}
       </dt>
-      <dd className="mt-2 md:mt-0 md:col-span-7">
-        <p className="text-base leading-6 text-gray-500">{svar}</p>
+      <dd className='mt-2 md:col-span-7 md:mt-0'>
+        <p className='text-base leading-6 text-gray-500'>{svar}</p>
         {svar2Element}
       </dd>
     </div>
@@ -146,12 +146,12 @@ function FrågaSvar({ fråga, svar, svar2, first }: FrågaProps) {
 
 function BredbandFrågor() {
   return (
-    <div className="bg-gray-50">
-      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+    <div className='bg-gray-50'>
+      <div className='mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16'>
+        <h2 className='text-3xl font-extrabold leading-9 text-gray-900 sm:text-4xl sm:leading-10'>
           Vanliga frågor om bredband
         </h2>
-        <div className="mt-6 border-t-2 border-gray-200 pt-6">
+        <div className='mt-6 border-t-2 border-gray-200 pt-6'>
           <dl>
             {bredbandFaq.map((text, i) => (
               <FrågaSvar key={i} {...text} first={i === 0} />
@@ -165,28 +165,28 @@ function BredbandFrågor() {
 
 function TelefoniFrågor() {
   return (
-    <div className="bg-white">
-      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+    <div className='bg-white'>
+      <div className='mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16'>
+        <h2 className='text-3xl font-extrabold leading-9 text-gray-900 sm:text-4xl sm:leading-10'>
           Vanliga frågor om telefoni
         </h2>
-        <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+        <p className='mt-3 text-xl leading-7 text-gray-500 sm:mt-4'>
           Abonnemangskostnad för fast IP-telefoni från Bahnhof ingår i avgiften
           till föreningen. Du betalar för de samtal du gör. Beställ via{' '}
-          <a href="https://www.bahnhof.se/minasidor/">Bahnhof mina sidor</a>{' '}
+          <a href='https://www.bahnhof.se/minasidor/'>Bahnhof mina sidor</a>{' '}
           eller via Bahnhof kundservice.
         </p>
-        <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+        <p className='mt-3 text-xl leading-7 text-gray-500 sm:mt-4'>
           Det är ändå möjligt att köpa streaming via{' '}
           <a
-            className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-            href="http://www.sappa.se/"
+            className='font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500'
+            href='http://www.sappa.se/'
           >
             Sappa
           </a>{' '}
           om du så önskar. Sappa levereras via Bahnhof router.
         </p>
-        <div className="mt-6 border-t-2 border-gray-200 pt-6">
+        <div className='mt-6 border-t-2 border-gray-200 pt-6'>
           <dl>
             {televisionFaq.map((text, i) => (
               <FrågaSvar key={i} {...text} first={i === 0} />
@@ -200,24 +200,24 @@ function TelefoniFrågor() {
 
 function TelevisionFrågor() {
   return (
-    <div className="bg-gray-50">
-      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+    <div className='bg-gray-50'>
+      <div className='mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16'>
+        <h2 className='text-3xl font-extrabold leading-9 text-gray-900 sm:text-4xl sm:leading-10'>
           Vanliga frågor om TV &amp; streaming
         </h2>
-        <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+        <p className='mt-3 text-xl leading-7 text-gray-500 sm:mt-4'>
           Comhem levererar den TV som ingår i avgiften till föreningen. Det
           levereras via uttag i vardagsrummet (inte via uttaget i hallen).
           Streaming via Comhem Play ingår också. Kontakta{' '}
           <a
-            className="font-medium text-indigo-600 hover:text-indigo-500 transition duration-150 ease-in-out"
-            href="https://www.comhem.se/kundservice"
+            className='font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500'
+            href='https://www.comhem.se/kundservice'
           >
             Comhem kundservice
           </a>{' '}
           för hjälp, utökande av kanalpaket eller köp av digitalbox.
         </p>
-        <div className="mt-6 border-t-2 border-gray-200 pt-6">
+        <div className='mt-6 border-t-2 border-gray-200 pt-6'>
           <dl>
             {televisionFaq.map((text, i) => (
               <FrågaSvar key={i} {...text} first={i === 0} />
@@ -231,13 +231,13 @@ function TelevisionFrågor() {
 
 function Kostnad() {
   return (
-    <div className="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-      <div className="relative max-w-lg mx-auto lg:max-w-7xl">
+    <div className='bg-white px-4 pb-20 pt-16 sm:px-6 lg:px-8 lg:pb-28 lg:pt-24'>
+      <div className='relative mx-auto max-w-lg lg:max-w-7xl'>
         <div>
-          <h2 className="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+          <h2 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-4xl sm:leading-10'>
             Kostnad
           </h2>
-          <p className="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
+          <p className='mt-3 text-xl leading-7 text-gray-500 sm:mt-4'>
             Kostnaden för internet och TV ingår i avgiften till föreningen, men
             redovisas sedan 2020-07-01 separat på fakturan från HSB. Kostnaden
             är lika för alla medlemmar, oavsett om man använder tjänsterna eller

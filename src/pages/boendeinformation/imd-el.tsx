@@ -71,20 +71,20 @@ const gård1 = [
 export default function ImdEl() {
   return (
     <>
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <div className='bg-white py-24 sm:py-32'>
+        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+          <div className='mx-auto max-w-2xl lg:max-w-none'>
+            <div className='text-center'>
+              <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
                 IMD-el
               </h2>
-              <p className="mt-4 text-lg leading-8 text-gray-600">
+              <p className='mt-4 text-lg leading-8 text-gray-600'>
                 Installation av elcentraler kommer att pågå under slutet av mars
                 till slutet av juni 2023.
               </p>
             </div>
-            <div className="container mx-auto sm:px-6 lg:px-8">
-              <p className="mt-4 text-lg leading-8 text-gray-600">
+            <div className='container mx-auto sm:px-6 lg:px-8'>
+              <p className='mt-4 text-lg leading-8 text-gray-600'>
                 Det här är en generell tidplan för installationen av
                 elcentraler. Varje lägenhet och trapphus kommer att aviseras
                 separat innan installationen i lägenheten.
@@ -163,18 +163,18 @@ export default function ImdEl() {
 function ImdElTidplan() {
   return (
     <>
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <div className='bg-white py-24 sm:py-32'>
+        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+          <div className='mx-auto max-w-2xl lg:max-w-none'>
+            <div className='text-center'>
+              <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
                 IMD-el
               </h2>
-              <p className="mt-4 text-lg leading-8 text-gray-600">
+              <p className='mt-4 text-lg leading-8 text-gray-600'>
                 Installation av elcentraler kommer att startas under slutet av
                 mars och pågär därefter till slutet av juni 2023.
               </p>
-              <p className="mt-4 text-lg leading-8 text-gray-600">
+              <p className='mt-4 text-lg leading-8 text-gray-600'>
                 Den nya elcentralen som ersätter den befintliga innehåller även
                 en jordfelsbrytare. Detta kan innebära att t ex spis inte kan
                 användas efter installlation om jordfelsbrytaren löser ut pga
@@ -183,8 +183,8 @@ function ImdElTidplan() {
                 information.
               </p>
             </div>
-            <div className="container mx-auto sm:px-6 lg:px-8">
-              <p className="mt-4 text-lg leading-8 text-gray-600">
+            <div className='container mx-auto sm:px-6 lg:px-8'>
+              <p className='mt-4 text-lg leading-8 text-gray-600'>
                 Det här är en generell tidplan för installationen av
                 elcentraler. Varje lägenhet och trapphus kommer att aviseras
                 separat senast 2 veckor innan installationen i lägenheten.
@@ -282,49 +282,49 @@ type FeedProps = {
 
 function Feed({ items }: FeedProps) {
   return (
-    <div className="flow-root">
-      <ul role="list" className="-mb-8">
+    <div className='flow-root'>
+      <ul role='list' className='-mb-8'>
         {items.map((event, eventIdx) => (
           <li key={eventIdx}>
-            <div className="relative pb-8">
+            <div className='relative pb-8'>
               {eventIdx !== timeline.length - 1 ? (
                 <span
-                  className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
-                  aria-hidden="true"
+                  className='absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200'
+                  aria-hidden='true'
                 />
               ) : null}
-              <div className="relative flex space-x-3">
+              <div className='relative flex space-x-3'>
                 <div>
                   <span
                     className={classNames(
                       event.iconBackground,
-                      'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white',
+                      'flex h-8 w-8 items-center justify-center rounded-full ring-8 ring-white'
                     )}
                   >
                     <event.icon
-                      className="h-5 w-5 text-white"
-                      aria-hidden="true"
+                      className='h-5 w-5 text-white'
+                      aria-hidden='true'
                     />
                   </span>
                 </div>
-                <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                <div className='flex min-w-0 flex-1 justify-between space-x-4 pt-1.5'>
                   <div>
-                    <p className="text-sm text-gray-500">
+                    <p className='text-sm text-gray-500'>
                       {event.content}{' '}
                       <a
                         href={event.href}
-                        className="font-medium text-gray-900"
+                        className='font-medium text-gray-900'
                       >
                         {event.target}
                       </a>
                     </p>
                   </div>
-                  <div className="whitespace-nowrap text-right text-sm text-gray-500">
+                  <div className='whitespace-nowrap text-right text-sm text-gray-500'>
                     <time dateTime={event.datetime.toString()}>
                       {dateFormatter(event.datetime)}
                     </time>
                     {event.endDatetime ? (
-                      <p className="text-sm text-gray-500">
+                      <p className='text-sm text-gray-500'>
                         till och med&nbsp;
                         <time dateTime={event.endDatetime.toString()}>
                           {dateFormatter(event.endDatetime)}

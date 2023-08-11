@@ -7,8 +7,8 @@ export function Well({
   children,
 }: React.PropsWithChildren<React.HTMLAttributes<WellProps>>) {
   return (
-    <div className={'bg-gray-50 overflow-hidden rounded-lg ' + className}>
-      <div className="px-4 py-5 sm:p-6">{children}</div>
+    <div className={'overflow-hidden rounded-lg bg-gray-50 ' + className}>
+      <div className='px-4 py-5 sm:p-6'>{children}</div>
     </div>
   );
 }

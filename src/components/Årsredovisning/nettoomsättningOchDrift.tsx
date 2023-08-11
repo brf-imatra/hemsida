@@ -180,8 +180,8 @@ export function NettoomsättningOchDrift() {
       <AreaChart
         data={fastighetsFörsäkringsData}
         categories={['Nettoomsättning', 'Drift och underhåll']}
-        index="date"
-        className="h-72 mt-4"
+        index='date'
+        className='mt-4 h-72'
         colors={['amber', 'pink']}
         yAxisWidth={110}
         valueFormatter={dataFormatter}

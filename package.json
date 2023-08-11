@@ -11,16 +11,16 @@
     "format": "prettier --write \"./{src,content}/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.15",
+    "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
-    "@next/mdx": "^13.4.12",
+    "@next/mdx": "^13.4.13",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.4",
     "@tailwindcss/typography": "^0.5.9",
-    "@tremor/react": "^3.5.0",
-    "next": "13.4.12",
+    "@tremor/react": "^3.6.1",
+    "next": "13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-transition-group": "^4.4.5",
@@ -29,14 +29,15 @@
     "tailwind": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.5",
-    "@types/react": "^18.2.17",
+    "@types/node": "^20.4.9",
+    "@types/react": "^18.2.20",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.45.0",
-    "eslint-config-next": "^13.4.12",
+    "eslint": "^8.46.0",
+    "eslint-config-next": "^13.4.13",
     "gray-matter": "^4.0.3",
     "postcss": "^8.4.27",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.5.1",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6"
   }

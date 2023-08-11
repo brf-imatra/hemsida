@@ -13,26 +13,26 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const bannerEl = false ? (
     <Banner
-      title="Garagesopning kommer att ske 1/6"
-      message="Vänligen sopa fram från er parkeringsplats!"
+      title='Garagesopning kommer att ske 1/6'
+      message='Vänligen sopa fram från er parkeringsplats!'
     />
   ) : null;
 
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className='relative overflow-hidden'>
         <Image
-          className="w-full h-48 object-cover"
-          src="/imatra/foton/helsingforsgatan_spring20.jpg"
-          alt="Brf Imatra vinter 2022"
-          loading="eager"
+          className='h-48 w-full object-cover'
+          src='/imatra/foton/helsingforsgatan_spring20.jpg'
+          alt='Brf Imatra vinter 2022'
+          loading='eager'
           priority={true}
           height={300}
           width={1920}
         />
-        <div className="px-6 py-4 absolute left-0 top-0">
-          <p className="text-gray-100 font-pacifico subpixel-antialiased text-2xl md:text-5xl lg:text-6xl leading-normal">
-            Välkommen till <span className="whitespace-nowrap">BRF Imatra</span>
+        <div className='absolute left-0 top-0 px-6 py-4'>
+          <p className='font-pacifico text-2xl leading-normal text-gray-100 subpixel-antialiased md:text-5xl lg:text-6xl'>
+            Välkommen till <span className='whitespace-nowrap'>BRF Imatra</span>
           </p>
         </div>
       </div>
@@ -48,7 +48,7 @@ export default function Home({
         <img className="overflow-y-visible" src="/imatra/foton/helsingforsgatan_spring20.jpg" alt="Brf Imatra våren 2020" loading="eager" />
       </div>
       </Well> */}
-        <div className="flex flex-row w-full flex-wrap justify-start">
+        <div className='flex w-full flex-row flex-wrap justify-start'>
           {/*<InbjudanFöreningsstämma />*/}
           <Årsstämma2023 />
           {/*<FläktByte />*/}
@@ -114,14 +114,14 @@ export const getStaticProps = async () => {
 
 function KommandeAvgiftshöjningar() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_investing_re_bov7.svg"
-        imageAlt="Plannerad avgiftshöjning 2023"
-        published="2022-09-16"
-        title="Ekonomi-info"
-        summary="Brf Imatras kommer att behöva höja årsavgiften kraftigare än normalt under de kommande åren. Detta beror på att vi behöver göra stora investeringar i fastigheten. Vi kommer att behöva höja årsavgiften med 10% under 2023."
-        hrefLink="/boendeinformation/stambyte-ekonomi-info-2022-09-16"
+        imageUrl='/undraw/undraw_investing_re_bov7.svg'
+        imageAlt='Plannerad avgiftshöjning 2023'
+        published='2022-09-16'
+        title='Ekonomi-info'
+        summary='Brf Imatras kommer att behöva höja årsavgiften kraftigare än normalt under de kommande åren. Detta beror på att vi behöver göra stora investeringar i fastigheten. Vi kommer att behöva höja årsavgiften med 10% under 2023.'
+        hrefLink='/boendeinformation/stambyte-ekonomi-info-2022-09-16'
       />
     </div>
   );
@@ -129,14 +129,14 @@ function KommandeAvgiftshöjningar() {
 
 function StambyteExtastämma() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_public_discussion_re_w9up.svg"
-        imageAlt="Protokoll från den extra föreningstämman för brf Imatra"
-        published="2022-10-10"
-        title="Protokoll"
+        imageUrl='/undraw/undraw_public_discussion_re_w9up.svg'
+        imageAlt='Protokoll från den extra föreningstämman för brf Imatra'
+        published='2022-10-10'
+        title='Protokoll'
         summary="Protokoll från extra föreningsstämma 2022-09-04 i Fokets Husby är nu justerat och godkännt. Protokollet finns att läsa här eller under fliken 'Dokument' i menyn."
-        hrefLink="/dokument/arsredovisning/2022/protokoll_brf_imatra_extra_stamma_2022-09-20.pdf"
+        hrefLink='/dokument/arsredovisning/2022/protokoll_brf_imatra_extra_stamma_2022-09-20.pdf'
       />
     </div>
   );
@@ -144,14 +144,14 @@ function StambyteExtastämma() {
 
 function StambyteSamtyckesblankett() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_Documents_re_isxv.png"
-        imageAlt="Protokoll från den extra föreningstämman för brf Imatra"
-        published="2022-10-10"
-        title="Samtyckesblankett"
-        summary="Här hittar du samtyckesblanketten för stambyte. Styrelsen rekommenderar att du lämnar samtycke till genomförande av stambyte. Utan samtycke blir du som medlem motpart i hyresnämnden. Samtyckesblanketten ska vara ifylld och undertecknad senast den 24 oktober 2022."
-        hrefLink="/dokument/mallar/stambyte_samtyckesblankett.pdf"
+        imageUrl='/undraw/undraw_Documents_re_isxv.png'
+        imageAlt='Protokoll från den extra föreningstämman för brf Imatra'
+        published='2022-10-10'
+        title='Samtyckesblankett'
+        summary='Här hittar du samtyckesblanketten för stambyte. Styrelsen rekommenderar att du lämnar samtycke till genomförande av stambyte. Utan samtycke blir du som medlem motpart i hyresnämnden. Samtyckesblanketten ska vara ifylld och undertecknad senast den 24 oktober 2022.'
+        hrefLink='/dokument/mallar/stambyte_samtyckesblankett.pdf'
       />
     </div>
   );
@@ -159,14 +159,14 @@ function StambyteSamtyckesblankett() {
 
 function StambyteMedlemsInformation() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
-        imageAlt="Stambyte medlemsinformation"
-        published="2022-06-18"
-        title="Stambytesinformation"
-        summary="Vårt hus är nu snart 50 år gammalt, byggda på 70-talet. Vi är en attraktiv bostadsrättsförening i ett trevligt område. Men visst märks det att husen åldrats! Styrelsen har under en tid undersökt vad som är bäst för just våra hus. Under våren har styrelsen arbetat tillsammans med Nabo och nu kommit fram till ett ställningstagande om hur vi ska gå vidare med den nödvändiga renoveringen av rörstammar och våtrum."
-        hrefLink="/boendeinformation/stambyte-info-2022-06-16"
+        imageUrl='/undraw/undraw_Content_creator_re_pt5b.svg'
+        imageAlt='Stambyte medlemsinformation'
+        published='2022-06-18'
+        title='Stambytesinformation'
+        summary='Vårt hus är nu snart 50 år gammalt, byggda på 70-talet. Vi är en attraktiv bostadsrättsförening i ett trevligt område. Men visst märks det att husen åldrats! Styrelsen har under en tid undersökt vad som är bäst för just våra hus. Under våren har styrelsen arbetat tillsammans med Nabo och nu kommit fram till ett ställningstagande om hur vi ska gå vidare med den nödvändiga renoveringen av rörstammar och våtrum.'
+        hrefLink='/boendeinformation/stambyte-info-2022-06-16'
       />
     </div>
   );
@@ -174,13 +174,13 @@ function StambyteMedlemsInformation() {
 
 function GruppanslutningCard() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_Documents_re_isxv.png"
-        imageAlt="Internet vanliga frågor"
-        title="Internet"
-        summary="Föreningen har kollektiv uppkoppling till internet från Bahnhof via datauttag i hallen."
-        hrefLink="/banhof-faq"
+        imageUrl='/undraw/undraw_Documents_re_isxv.png'
+        imageAlt='Internet vanliga frågor'
+        title='Internet'
+        summary='Föreningen har kollektiv uppkoppling till internet från Bahnhof via datauttag i hallen.'
+        hrefLink='/banhof-faq'
       />
     </div>
   );
@@ -188,14 +188,14 @@ function GruppanslutningCard() {
 
 function Garageplatser() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_newspaper_k72w.png"
-        imageAlt="Garageplatser"
-        published="2020-12-23"
-        title="Garageplatser"
-        summary="Fr.o.m den 2021-01-01 flyttas din bostadsrättsförening Imatra över till den digitala tjänsten och du som boende kan ställa dig i kö och göra intresseanmälningar via Mitt HSB."
-        hrefLink="/garage"
+        imageUrl='/undraw/undraw_newspaper_k72w.png'
+        imageAlt='Garageplatser'
+        published='2020-12-23'
+        title='Garageplatser'
+        summary='Fr.o.m den 2021-01-01 flyttas din bostadsrättsförening Imatra över till den digitala tjänsten och du som boende kan ställa dig i kö och göra intresseanmälningar via Mitt HSB.'
+        hrefLink='/garage'
       />
     </div>
   );
@@ -203,14 +203,14 @@ function Garageplatser() {
 
 function ImatraNytt() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_new_year_2023_pfnc.svg"
-        imageAlt="Brf Imatra Nyhetsbrev"
-        published="2023-06-13"
-        title="Brf Imatra Nyhetsbrev"
-        summary="Nyhetsbrev där du kan läsa om föreningstämman, individuell elmätning, stambytet, underhåll balkonger, grillning. Klicka för att läsa mer..."
-        hrefLink="/imatranytt/2023-juni"
+        imageUrl='/undraw/undraw_new_year_2023_pfnc.svg'
+        imageAlt='Brf Imatra Nyhetsbrev'
+        published='2023-06-13'
+        title='Brf Imatra Nyhetsbrev'
+        summary='Nyhetsbrev där du kan läsa om föreningstämman, individuell elmätning, stambytet, underhåll balkonger, grillning. Klicka för att läsa mer...'
+        hrefLink='/imatranytt/2023-juni'
       />
     </div>
   );
@@ -218,14 +218,14 @@ function ImatraNytt() {
 
 function FläktByte() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_Online_calendar_re_wk3t.svg"
-        imageAlt="Fläktbyte information"
-        published="2021-05-11"
-        title="Fläktbyte under v. 20"
-        summary="Under v. 20 med start måndagen (17/5) sker de fysiska byten. Detta kan medföra störningar/avsaknad ventilation under några timmar sett per fläkt/port. Klicka här för att läsa mer om hur ventilationen fungerar i husen."
-        hrefLink="/dokument/sa_funkar_er_ventilation.pdf"
+        imageUrl='/undraw/undraw_Online_calendar_re_wk3t.svg'
+        imageAlt='Fläktbyte information'
+        published='2021-05-11'
+        title='Fläktbyte under v. 20'
+        summary='Under v. 20 med start måndagen (17/5) sker de fysiska byten. Detta kan medföra störningar/avsaknad ventilation under några timmar sett per fläkt/port. Klicka här för att läsa mer om hur ventilationen fungerar i husen.'
+        hrefLink='/dokument/sa_funkar_er_ventilation.pdf'
       />
     </div>
   );
@@ -233,14 +233,14 @@ function FläktByte() {
 
 function Motioner() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
-        imageAlt="Motioner"
-        published="2022-02-01"
-        title="Motion för 2022"
-        summary="Måndag den 28 februari är sista dagen att komma in med motioner till årets föreningsstämma."
-        hrefLink="/motion"
+        imageUrl='/undraw/undraw_Content_creator_re_pt5b.svg'
+        imageAlt='Motioner'
+        published='2022-02-01'
+        title='Motion för 2022'
+        summary='Måndag den 28 februari är sista dagen att komma in med motioner till årets föreningsstämma.'
+        hrefLink='/motion'
       />
     </div>
   );
@@ -248,14 +248,14 @@ function Motioner() {
 
 function Årsstämma() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_Content_creator_re_pt5b.svg"
-        imageAlt="Föreningsårsstämma för brf Imatra"
-        published="2024-03-25"
-        title="Föreningsstämma 2024"
-        summary="Kallelse till Brf. Imatras föreningsstämma torsdagen 28/4 i Folkets Husby. Länkar till  2023 årsredovisning, valberedningensförslag samt motioner."
-        hrefLink="/foreningsstamma"
+        imageUrl='/undraw/undraw_Content_creator_re_pt5b.svg'
+        imageAlt='Föreningsårsstämma för brf Imatra'
+        published='2024-03-25'
+        title='Föreningsstämma 2024'
+        summary='Kallelse till Brf. Imatras föreningsstämma torsdagen 28/4 i Folkets Husby. Länkar till  2023 årsredovisning, valberedningensförslag samt motioner.'
+        hrefLink='/foreningsstamma'
       />
     </div>
   );
@@ -263,14 +263,14 @@ function Årsstämma() {
 
 function Årsstämma2023() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_public_discussion_re_w9up.svg"
-        imageAlt="Protokoll från föreningstämman 2023 för brf Imatra"
-        published="2023-05-28"
-        title="Föreningsstämma 2023"
+        imageUrl='/undraw/undraw_public_discussion_re_w9up.svg'
+        imageAlt='Protokoll från föreningstämman 2023 för brf Imatra'
+        published='2023-05-28'
+        title='Föreningsstämma 2023'
         summary="Protokoll från föreningsstämma 2023-05-04 i Fokets Husby är nu justerat och godkännt. Protokollet finns att läsa här eller under fliken 'Dokument' i menyn."
-        hrefLink="/dokument/arsredovisning/2023/protokoll_brf_imatra_stamma_2023-2023-05-04.pdf"
+        hrefLink='/dokument/arsredovisning/2023/protokoll_brf_imatra_stamma_2023-2023-05-04.pdf'
       />
     </div>
   );
@@ -278,14 +278,14 @@ function Årsstämma2023() {
 
 function Städdag() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_Online_calendar_re_wk3t.svg"
-        imageAlt="Fläktbyte information"
-        published="2021-09-30"
-        title="Föreningen har gemensam städdag"
-        summary="Föreningen har gemensam städdag lördagen den 9 oktober kl. 10.00-14.00!"
-        hrefLink="/staddag"
+        imageUrl='/undraw/undraw_Online_calendar_re_wk3t.svg'
+        imageAlt='Fläktbyte information'
+        published='2021-09-30'
+        title='Föreningen har gemensam städdag'
+        summary='Föreningen har gemensam städdag lördagen den 9 oktober kl. 10.00-14.00!'
+        hrefLink='/staddag'
       />
     </div>
   );
@@ -298,10 +298,10 @@ Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 
 
   return (
     <Centered
-      introducing="Föreningsstämma"
-      title="Inbjudan för verksamhetsåret 2021"
+      introducing='Föreningsstämma'
+      title='Inbjudan för verksamhetsåret 2021'
       content={text}
-      summary="Föreningsstämma kommer att genomföras torsdagen 28/4 i Akalla By"
+      summary='Föreningsstämma kommer att genomföras torsdagen 28/4 i Akalla By'
     />
   );
 }
@@ -320,10 +320,10 @@ function StillaståendeHissar2023() {
   `;
   return (
     <Centered
-      introducing="Trasiga hissar"
-      title="Reparation av hissar"
+      introducing='Trasiga hissar'
+      title='Reparation av hissar'
       content={text}
-      summary="Tyvärr är det flera hissar som är ur funktion i vår förening. Anledningen till detta är att frekvensrikarna har gått sönder och det är både svårt att få tag på dem och dyrt att byta ut dem. Detta innebär att det kommer att ta tid att få hissarna i drift igen."
+      summary='Tyvärr är det flera hissar som är ur funktion i vår förening. Anledningen till detta är att frekvensrikarna har gått sönder och det är både svårt att få tag på dem och dyrt att byta ut dem. Detta innebär att det kommer att ta tid att få hissarna i drift igen.'
     />
   );
 }
@@ -339,10 +339,10 @@ Berörda lägenheter har blivit informerade via utskick.
 
   return (
     <Centered
-      introducing="Statusbesiktning"
-      title="Balkonger"
+      introducing='Statusbesiktning'
+      title='Balkonger'
       content={text}
-      summary="20 balkonger kommer att besiktas onsdag 22/3 mellan 09.00-15.00."
+      summary='20 balkonger kommer att besiktas onsdag 22/3 mellan 09.00-15.00.'
     />
   );
 }
@@ -375,19 +375,19 @@ function KommandeAktiviteter() {
     minute: 'numeric',
   });
   return (
-    <section className="mt-12">
-      <h2 className="font-semibold text-gray-900">Kommande aktiviteter</h2>
-      <ol className="mt-2 divide-y divide-gray-200 text-sm leading-6 text-gray-500">
+    <section className='mt-12'>
+      <h2 className='font-semibold text-gray-900'>Kommande aktiviteter</h2>
+      <ol className='mt-2 divide-y divide-gray-200 text-sm leading-6 text-gray-500'>
         {meetings.map((m) => (
-          <li key={m.id} className="py-4 sm:flex">
-            <time dateTime={seShort.format(m.date)} className="w-28 flex-none">
+          <li key={m.id} className='py-4 sm:flex'>
+            <time dateTime={seShort.format(m.date)} className='w-28 flex-none'>
               {seLong.format(m.date)}
             </time>
-            <p className="mt-2 flex-auto font-semibold text-gray-900 sm:mt-0">
+            <p className='mt-2 flex-auto font-semibold text-gray-900 sm:mt-0'>
               {m.title}
             </p>
-            <p className="flex-none sm:ml-6">{m.location}</p>
-            <p className="flex-none sm:ml-6">
+            <p className='flex-none sm:ml-6'>{m.location}</p>
+            <p className='flex-none sm:ml-6'>
               start{' '}
               <time dateTime={m.date.toISOString()}>
                 {seTid.format(m.date)}
@@ -406,14 +406,14 @@ function KommandeAktiviteter() {
 
 function ElSparTips() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_checklist__re_2w7v.svg"
-        imageAlt="Tips för att hålla nere elförbrukningen"
-        published="2022-11-12"
-        title="Elförbrukningstips"
-        summary="Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning"
-        hrefLink="/boendeinformation/el-spar-tips"
+        imageUrl='/undraw/undraw_checklist__re_2w7v.svg'
+        imageAlt='Tips för att hålla nere elförbrukningen'
+        published='2022-11-12'
+        title='Elförbrukningstips'
+        summary='Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning'
+        hrefLink='/boendeinformation/el-spar-tips'
       />
     </div>
   );
@@ -421,14 +421,14 @@ function ElSparTips() {
 
 function ImdEl() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_building_re_xfcm.svg"
-        imageAlt="Installation av nya elcentraler"
-        published="2023-07-04"
-        title="IMD-el"
-        summary="Nya elcentralen som ersätter den befintliga innehåller en jordfelsbrytare och mätare för att kunna mäta elanvändningen i varje lägenhet."
-        hrefLink="/boendeinformation/imd-el"
+        imageUrl='/undraw/undraw_building_re_xfcm.svg'
+        imageAlt='Installation av nya elcentraler'
+        published='2023-07-04'
+        title='IMD-el'
+        summary='Nya elcentralen som ersätter den befintliga innehåller en jordfelsbrytare och mätare för att kunna mäta elanvändningen i varje lägenhet.'
+        hrefLink='/boendeinformation/imd-el'
       />
     </div>
   );
@@ -436,14 +436,14 @@ function ImdEl() {
 
 function EkonomiGrafer() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_visual_data_re_mxxo.svg"
-        imageAlt="Årsredovisning tabell"
-        published="2023-05-01"
-        title="Årsredovisningsanalys"
-        summary="Föreningen drabbas av en kraftigt ökad försäkringspremie för år 2023. En grafisk presentation av försäkringspremie, samt nettoomsättning och drift, från de senaste två deceniernas årsredovisningar kan du se här."
-        hrefLink="/boendeinformation/arsredovisning-analys"
+        imageUrl='/undraw/undraw_visual_data_re_mxxo.svg'
+        imageAlt='Årsredovisning tabell'
+        published='2023-05-01'
+        title='Årsredovisningsanalys'
+        summary='Föreningen drabbas av en kraftigt ökad försäkringspremie för år 2023. En grafisk presentation av försäkringspremie, samt nettoomsättning och drift, från de senaste två deceniernas årsredovisningar kan du se här.'
+        hrefLink='/boendeinformation/arsredovisning-analys'
       />
     </div>
   );
@@ -451,14 +451,14 @@ function EkonomiGrafer() {
 
 function StambyteFaq() {
   return (
-    <div className="pt-10 w-64 pr-5 flex-grow">
+    <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl="/undraw/undraw_questions_re_1fy7.svg"
-        imageAlt="Frågor och svar om stambyte"
-        published="2022-12-30"
-        title="Stambyte FAQ"
-        summary="Vanliga frågor och svar om stambyte hittar du här. Denna kommer att uppdateras löpande."
-        hrefLink="/boendeinformation/stambyte/faq"
+        imageUrl='/undraw/undraw_questions_re_1fy7.svg'
+        imageAlt='Frågor och svar om stambyte'
+        published='2022-12-30'
+        title='Stambyte FAQ'
+        summary='Vanliga frågor och svar om stambyte hittar du här. Denna kommer att uppdateras löpande.'
+        hrefLink='/boendeinformation/stambyte/faq'
       />
     </div>
   );

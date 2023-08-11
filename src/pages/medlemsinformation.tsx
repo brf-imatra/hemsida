@@ -23,24 +23,24 @@ export default function MedlemsInfomation({
   articles,
 }: MedlemsInfomationProps) {
   return (
-    <Body title="Medlemsinformation">
-      <BasicCard id="bostadsratt">
+    <Body title='Medlemsinformation'>
+      <BasicCard id='bostadsratt'>
         <Bostadsrätt {...articles.bostadsratt} />
-        <div className="bg-white overflow-hidden flex justify-center">
-          <div className="px-4 py-5 sm:p-6">
-            <Link href="/styrelsen" passHref>
+        <div className='flex justify-center overflow-hidden bg-white'>
+          <div className='px-4 py-5 sm:p-6'>
+            <Link href='/styrelsen' passHref>
               <button
-                type="button"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                type='button'
+                className='inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
               >
                 Styrelsemedlemmar & valberedningen
               </button>
             </Link>
           </div>
         </div>
-        <div className="relative py-16 bg-white overflow-hidden">
-          <div className="relative px-4 sm:px-6 lg:px-8">
-            <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+        <div className='relative overflow-hidden bg-white py-16'>
+          <div className='relative px-4 sm:px-6 lg:px-8'>
+            <div className='prose prose-lg prose-indigo mx-auto mt-6 text-gray-500'>
               <h2>Intresserad av styrelsearbete?</h2>
               <p>
                 Är du intresserad av att sitta i styrelsen i din
@@ -61,14 +61,14 @@ export default function MedlemsInfomation({
                 </li>
               </ul>
               <div
-                className="relative h-0 overflow-hidden max-w-full"
+                className='relative h-0 max-w-full overflow-hidden'
                 style={{ paddingBottom: '56.25%' }}
               >
                 <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/G64_T709Bns"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  className='absolute left-0 top-0 h-full w-full'
+                  src='https://www.youtube.com/embed/G64_T709Bns'
+                  frameBorder='0'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                   allowFullScreen
                 ></iframe>
               </div>
@@ -77,30 +77,30 @@ export default function MedlemsInfomation({
         </div>
         <KonsekvensUtanStyrelse />
       </BasicCard>
-      <WellOnGrey className="mt-6">
+      <WellOnGrey className='mt-6'>
         <Historik />
       </WellOnGrey>
-      <BasicCard className="mt-6">
+      <BasicCard className='mt-6'>
         <Medlemskap />
       </BasicCard>
-      <BasicCard id="hemforsakring" className="mt-6">
+      <BasicCard id='hemforsakring' className='mt-6'>
         <Hemförsäkring {...articles.hemforsakring} />
       </BasicCard>
 
-      <WellOnGrey className="mt-6">
+      <WellOnGrey className='mt-6'>
         <Cykel />
       </WellOnGrey>
 
-      <BasicCard className="mt-6">
+      <BasicCard className='mt-6'>
         <Förråd />
       </BasicCard>
-      <WellOnGrey className="mt-6">
+      <WellOnGrey className='mt-6'>
         <Garage />
       </WellOnGrey>
-      <BasicCard className="mt-6">
+      <BasicCard className='mt-6'>
         <RecyclingHouse />
       </BasicCard>
-      <WellOnGrey className="mt-6">
+      <WellOnGrey className='mt-6'>
         <Tvättstugor />
       </WellOnGrey>
     </Body>
@@ -126,10 +126,10 @@ function Bostadsrätt({
 function KonsekvensUtanStyrelse() {
   return (
     <Centered
-      introducing="Hur gör vi utan styrelse?"
-      title="Det saknas styrelseledamöter"
-      summary="Konsekvensen av att inte få ihop en styrelse kan bli att bostadsrättsföreningen tvingas gå i likvidation. I en bostadsrättsförening måste styrelsen bestå av minst tre styrelseledamöter varav en skall vara ordförande. Om det saknas en behörig styrelse är bostadsrättsföreningen skyldig att ansöka hos Tingsrätten om att föreningen försätts i likvidation."
-      content="Om bostadsrättsföreningen skulle tvingas att gå i likvidation innebär det att bostadsrättsföreningen upplöses genom att fastigheter och andra tillgångar säljs, skulder betalas och eventuellt överskott fördelas mellan medlemmarna i enlighet med bestämmelser i bostadsrättsföreningens stadgar. För att undvika en likvidation är det viktigt att alla medlemmar i bostadsrättsföreningen förstår vikten av att engagera sig i föreningen."
+      introducing='Hur gör vi utan styrelse?'
+      title='Det saknas styrelseledamöter'
+      summary='Konsekvensen av att inte få ihop en styrelse kan bli att bostadsrättsföreningen tvingas gå i likvidation. I en bostadsrättsförening måste styrelsen bestå av minst tre styrelseledamöter varav en skall vara ordförande. Om det saknas en behörig styrelse är bostadsrättsföreningen skyldig att ansöka hos Tingsrätten om att föreningen försätts i likvidation.'
+      content='Om bostadsrättsföreningen skulle tvingas att gå i likvidation innebär det att bostadsrättsföreningen upplöses genom att fastigheter och andra tillgångar säljs, skulder betalas och eventuellt överskott fördelas mellan medlemmarna i enlighet med bestämmelser i bostadsrättsföreningens stadgar. För att undvika en likvidation är det viktigt att alla medlemmar i bostadsrättsföreningen förstår vikten av att engagera sig i föreningen.'
     />
   );
 }
@@ -143,10 +143,10 @@ function Medlemskap() {
 
   return (
     <Centered
-      introducing="Medlemskap"
-      title="Medlemskap"
+      introducing='Medlemskap'
+      title='Medlemskap'
       content={text}
-      summary="Styrelsen beviljar dig medlemskap"
+      summary='Styrelsen beviljar dig medlemskap'
     />
   );
 }
@@ -172,9 +172,9 @@ function Hemförsäkring({
 function Historik() {
   return (
     <TwoColumns
-      title="Historia"
-      introducing="Föreningensursprung"
-      leftContent="Brf Imatra och radhusen i trädgårdsstaden byggdes ursprungligen som hyreslägenheter av JM Mattsson och inflyttningen började mellan 1975-1976. Bostadsrättsföreningen Imatra bildades 1979-02-27 och registrerades 1979-04-17."
+      title='Historia'
+      introducing='Föreningensursprung'
+      leftContent='Brf Imatra och radhusen i trädgårdsstaden byggdes ursprungligen som hyreslägenheter av JM Mattsson och inflyttningen började mellan 1975-1976. Bostadsrättsföreningen Imatra bildades 1979-02-27 och registrerades 1979-04-17.'
       rightContent={`Brf Imatra arrenderar tre tomträtter från Stockholms stad där våra 15 hus står. Totalt har föreningen 254 lägenheter, 10 kommersiella lokaler och fem garage med ungefär 300 parkeringsplatser.\n\nFöreningens mål är att skapa en bra boendemiljö för våra medlemmar på lång sikt`}
     />
   );
@@ -191,8 +191,8 @@ function Cykel() {
 
   return (
     <TwoColumns
-      title="Cykelförvaring"
-      introducing="Cykel"
+      title='Cykelförvaring'
+      introducing='Cykel'
       leftContent={left}
       rightContent={right}
     />
@@ -202,10 +202,10 @@ function Cykel() {
 function Förråd() {
   return (
     <Centered
-      introducing="Förvaring"
-      title="Förråd"
-      content="Till varje lägenhet hör ett källarförråd som är märkt med ditt lägenhetsnummer på vit skylt. Vänligen sätt dit hänglås även om du inte använder förrådet så ingen annan tar det."
-      summary=""
+      introducing='Förvaring'
+      title='Förråd'
+      content='Till varje lägenhet hör ett källarförråd som är märkt med ditt lägenhetsnummer på vit skylt. Vänligen sätt dit hänglås även om du inte använder förrådet så ingen annan tar det.'
+      summary=''
     />
   );
 }
@@ -219,7 +219,7 @@ function Garage() {
   Det går inte i dagsläget att ladda elbilar i våra garage. Det finns laddare vid husbybadet.`;
 
   return (
-    <Centered introducing="Bil" title="Garage" content={text} summary="" />
+    <Centered introducing='Bil' title='Garage' content={text} summary='' />
   );
 }
 
@@ -249,8 +249,8 @@ function Tvättstugor() {
 
   return (
     <TwoColumns
-      title="Tvättstuga"
-      introducing="Tvättstugor"
+      title='Tvättstuga'
+      introducing='Tvättstugor'
       leftContent={leftContent}
       rightContent={rightContent}
     />
@@ -291,10 +291,10 @@ Detta material får Ni själva ta hand om och slänga gratis på [återvinningsc
 
   return (
     <Centered
-      introducing="Återvinning"
-      title="Återvinningsstugans"
+      introducing='Återvinning'
+      title='Återvinningsstugans'
       content={content}
-      summary=""
+      summary=''
     />
   );
 }

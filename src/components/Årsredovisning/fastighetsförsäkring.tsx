@@ -151,8 +151,8 @@ export function Fastighetsförsäkring() {
       <AreaChart
         data={fastighetsFörsäkringsData}
         categories={['Försäkringspremie']}
-        index="date"
-        className="h-72 mt-4"
+        index='date'
+        className='mt-4 h-72'
         colors={['indigo']}
         yAxisWidth={100}
         valueFormatter={dataFormatter}

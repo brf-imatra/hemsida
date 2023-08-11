@@ -48,30 +48,30 @@ export default function Pricing() {
   return (
     // <div className="mx-auto max-w-7xl bg-white py-24 px-4 sm:px-6 lg:px-8">
 
-    <div className="mt-24 space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:space-y-0">
+    <div className='mt-24 space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:space-y-0'>
       {pricing.tiers.map((tier) => (
         <div
           key={tier.title}
-          className="relative flex flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-sm"
+          className='relative flex flex-col rounded-2xl border border-gray-200 bg-white p-4 shadow-sm'
         >
-          <div className="">
-            <h3 className="text-xl font-semibold text-gray-900">
+          <div className=''>
+            <h3 className='text-xl font-semibold text-gray-900'>
               Investeringskostnader
             </h3>
-            <p className="absolute top-0 -translate-y-1/2 transform rounded-full bg-indigo-500 py-1.5 px-4 text-sm font-semibold text-white">
+            <p className='absolute top-0 -translate-y-1/2 transform rounded-full bg-indigo-500 px-4 py-1.5 text-sm font-semibold text-white'>
               {tier.title}
             </p>
           </div>
           {tier.kostnader.map((feature) => (
-            <div className="flex-shrink-0" key={feature.namn}>
-              <h3 className="text-xl font-semibold text-gray-500">
+            <div className='flex-shrink-0' key={feature.namn}>
+              <h3 className='text-xl font-semibold text-gray-500'>
                 {feature.namn}
               </h3>
-              <p className="mt-4 flex items-baseline text-gray-900">
-                <span className="text-4xl font-bold tracking-tight">
+              <p className='mt-4 flex items-baseline text-gray-900'>
+                <span className='text-4xl font-bold tracking-tight'>
                   {svFormat.format(feature.pris)}
                 </span>
-                <span className="ml-1 text-l font-semibold text-gray-700">
+                <span className='text-l ml-1 font-semibold text-gray-700'>
                   {feature.enhet}
                 </span>
               </p>

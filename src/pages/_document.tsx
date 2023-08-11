@@ -14,13 +14,13 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="sv">
+      <Html lang='sv'>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-            rel="stylesheet"
+            href='https://fonts.googleapis.com/css2?family=Pacifico&display=swap'
+            rel='stylesheet'
           />
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+          <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
         </Head>
         <body>
           <Main />

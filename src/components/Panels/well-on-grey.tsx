@@ -7,8 +7,8 @@ export function WellOnGrey({
   children,
 }: React.PropsWithChildren<React.HTMLAttributes<WellOnGreyProps>>) {
   return (
-    <div className={'bg-gray-200 overflow-hidden rounded-lg ' + className}>
-      <div className="px-4 py-5 sm:p-6">{children}</div>
+    <div className={'overflow-hidden rounded-lg bg-gray-200 ' + className}>
+      <div className='px-4 py-5 sm:p-6'>{children}</div>
     </div>
   );
 }
