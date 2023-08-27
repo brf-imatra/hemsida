@@ -13,25 +13,25 @@ interface CardProps {
 
 export function Card(props: CardProps) {
   return (
-    <div className="bg-white border border-lg rounded-lg overflow-hidden">
+    <div className='border-lg overflow-hidden rounded-lg border bg-white'>
       <Link href={props.hrefLink}>
         <Image
           src={props.imageUrl}
           alt={props.imageAlt}
-          className="max-w-md h-40"
-          loading="lazy"
+          className='h-40 max-w-md'
+          loading='lazy'
           height={160}
           width={320}
         />
-        <div className="p-6">
-          <h4 className="font-semibold text-lg leading-tight truncate">
+        <div className='p-6'>
+          <h4 className='truncate text-lg font-semibold leading-tight'>
             {props.title}
           </h4>
-          <div className="text-gray-600 text-xs uppercase font-medium tracking-wide mt-2">
+          <div className='mt-2 text-xs font-medium uppercase tracking-wide text-gray-600'>
             {props.published}
           </div>
-          <div className="mt-6">
-            <span className="text-gray-600 text-sm">{props.summary}</span>
+          <div className='mt-6'>
+            <span className='text-sm text-gray-600'>{props.summary}</span>
           </div>
         </div>
       </Link>

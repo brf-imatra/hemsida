@@ -107,8 +107,8 @@ export function ResultatEfterFinansielllPoster() {
       <AreaChart
         data={resultatData}
         categories={['Resultat, efter finansiella poster']}
-        index="date"
-        className="h-72 mt-4"
+        index='date'
+        className='mt-4 h-72'
         colors={['blue']}
         yAxisWidth={110}
         valueFormatter={currencyFormatter}

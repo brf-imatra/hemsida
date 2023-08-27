@@ -10,9 +10,9 @@ export function BasicCard({
   return (
     <div
       id={id}
-      className={'bg-white overflow-hidden shadow rounded-lg ' + className}
+      className={'overflow-hidden rounded-lg bg-white shadow ' + className}
     >
-      <div className="px-4 py-5 sm:p-6">{children}</div>
+      <div className='px-4 py-5 sm:p-6'>{children}</div>
     </div>
   );
 }

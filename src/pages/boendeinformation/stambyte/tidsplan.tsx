@@ -26,14 +26,14 @@ const dateFormatter = (number: number | Date) => {
 export default function ImdEl() {
   return (
     <>
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+      <div className='bg-white py-24 sm:py-32'>
+        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+          <div className='mx-auto max-w-2xl lg:max-w-none'>
+            <div className='text-center'>
+              <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
                 Stambyte
               </h2>
-              <p className="mt-4 text-lg leading-8 text-gray-600">
+              <p className='mt-4 text-lg leading-8 text-gray-600'>
                 Det här är den övergripande produktionsplanen. Stambytet startar
                 med projektering och etablering i maj och juni 2023. I augusti
                 2023 påbörjas stambytet vid Helsingforsgatan 11-21 för att
@@ -41,30 +41,48 @@ export default function ImdEl() {
                 avslutas augusti 2025.
               </p>
             </div>
-            <div className="container mx-auto sm:px-6 lg:px-8">
-              <p className="mt-4 text-lg leading-8 text-gray-600">
+            <div className='container mx-auto sm:px-6 lg:px-8'>
+              <p className='mt-4 text-lg leading-8 text-gray-600'>
                 Gårdsvis kommer medlemmar att kallas till trapphusmöte i god tid
                 innan stambytet påbörjas på respektive gård. Där kommer ni att
                 få mer information om vad som gäller för just er gård.
               </p>
-              <p className="mt-4 text-lg leading-8 text-gray-600">
+              <p className='mt-4 text-lg leading-8 text-gray-600'>
                 Därefter kommer varje medlem att kallas till ett tillvalsmöte
                 där ni får välja material och färger till ert badrum.
               </p>
-              <p className="mt-4 text-lg leading-8 text-gray-600">
-                Kallvatten och slask installeras i trapphus innan arbete med
-                stam påbörjas.
+              <p className='mt-4 text-lg leading-8 text-gray-600'>
+                Innan arbetet med stambytet påbörjas kommer kallvatten och slask
+                att installeras i trapphuset. Detta kommer att säkerställa att
+                arbetet kan utföras smidigt och utan störningar för medlemmarna.
+                Vi ser fram emot att ge er en förbättrad och mer bekväm
+                boendemiljö när projektet är klart!
+              </p>
+              <p>
+                Det här är en övergripande produktionsplan för stambyte som
+                kommer att ske på Helsingforsgatan 11-21 och 65-75 mellan maj
+                2023 och augusti 2025. Planering och förberedelser kommer att
+                göras under maj och juni 2023 och själva stambytet påbörjas i
+                augusti 2023. Varje gård kommer att kallas till ett trapphusmöte
+                där mer information kommer att ges om vad som gäller för just
+                den specifika gården. Därefter kommer varje medlem att kallas
+                till ett tillvalsmöte där ni kan välja material och färger till
+                ert badrum. Innan arbetet med stambytet påbörjas kommer
+                kallvatten och slask att installeras i trapphuset. Detta kommer
+                att säkerställa att arbetet kan utföras smidigt och utan
+                störningar för medlemmarna. Vi ser fram emot att ge er en
+                förbättrad och mer bekväm boendemiljö när projektet är klart!
               </p>
               <CardEdgeToEdge>
                 <Feed items={timeline} />
               </CardEdgeToEdge>
             </div>
           </div>
-          <GårdAktivitet title="Gård 1" items={gård1Tidslinje} />
-          <GårdAktivitet title="Gård 2" items={gård2Tidslinje} />
-          <GårdAktivitet title="Gård 3" items={gård3Tidslinje} />
-          <GårdAktivitet title="Gård 4" items={gård4Tidslinje} />
-          <GårdAktivitet title="Gård 5" items={gård5Tidslinje} />
+          <GårdAktivitet title='Gård 1' items={gård1Tidslinje} />
+          <GårdAktivitet title='Gård 2' items={gård2Tidslinje} />
+          <GårdAktivitet title='Gård 3' items={gård3Tidslinje} />
+          <GårdAktivitet title='Gård 4' items={gård4Tidslinje} />
+          <GårdAktivitet title='Gård 5' items={gård5Tidslinje} />
         </div>
       </div>
     </>
@@ -163,49 +181,49 @@ type FeedProps = {
 
 export function Feed({ items }: FeedProps) {
   return (
-    <div className="flow-root">
-      <ul role="list" className="-mb-8">
+    <div className='flow-root'>
+      <ul role='list' className='-mb-8'>
         {items.map((event, eventIdx) => (
           <li key={eventIdx}>
-            <div className="relative pb-8">
+            <div className='relative pb-8'>
               {eventIdx !== timeline.length - 1 ? (
                 <span
-                  className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
-                  aria-hidden="true"
+                  className='absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200'
+                  aria-hidden='true'
                 />
               ) : null}
-              <div className="relative flex space-x-3">
+              <div className='relative flex space-x-3'>
                 <div>
                   <span
                     className={classNames(
                       event.iconBackground,
-                      'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white',
+                      'flex h-8 w-8 items-center justify-center rounded-full ring-8 ring-white'
                     )}
                   >
                     <event.icon
-                      className="h-5 w-5 text-white"
-                      aria-hidden="true"
+                      className='h-5 w-5 text-white'
+                      aria-hidden='true'
                     />
                   </span>
                 </div>
-                <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                <div className='flex min-w-0 flex-1 justify-between space-x-4 pt-1.5'>
                   <div>
-                    <p className="text-sm text-gray-500">
+                    <p className='text-sm text-gray-500'>
                       {event.content}{' '}
                       <a
                         href={event.href}
-                        className="font-medium text-gray-900"
+                        className='font-medium text-gray-900'
                       >
                         {event.target}
                       </a>
                     </p>
                   </div>
-                  <div className="whitespace-nowrap text-right text-sm text-gray-500">
+                  <div className='whitespace-nowrap text-right text-sm text-gray-500'>
                     <time dateTime={event.datetime.toString()}>
                       {dateFormatter(event.datetime)}
                     </time>
                     {event.endDatetime ? (
-                      <p className="text-sm text-gray-500">
+                      <p className='text-sm text-gray-500'>
                         till och med&nbsp;
                         <time dateTime={event.endDatetime.toString()}>
                           {dateFormatter(event.endDatetime)}
@@ -476,62 +494,62 @@ type GårdAktivitetProps = {
 
 function GårdAktivitet({ items, title }: GårdAktivitetProps) {
   return (
-    <div className="pt-6">
-      <div className="container mx-auto sm:px-6 lg:px-8">
+    <div className='pt-6'>
+      <div className='container mx-auto sm:px-6 lg:px-8'>
         <CardEdgeToEdge>
-          <div className="px-4 sm:px-6 lg:px-8">
-            <div className="sm:flex sm:items-center">
-              <div className="sm:flex-auto">
+          <div className='px-4 sm:px-6 lg:px-8'>
+            <div className='sm:flex sm:items-center'>
+              <div className='sm:flex-auto'>
                 <h1
                   id={title.slice(0, 1) + title.slice(title.length - 1)}
-                  className="text-base font-semibold leading-6 text-gray-900"
+                  className='text-base font-semibold leading-6 text-gray-900'
                 >
                   {title}
                 </h1>
-                <p className="mt-2 text-sm text-gray-700">
+                <p className='mt-2 text-sm text-gray-700'>
                   A list of all the users in your account including their name,
                   title, email and role.
                 </p>
               </div>
             </div>
-            <div className="mt-8 flow-root">
-              <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-                <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-                  <table className="min-w-full divide-y divide-gray-300">
+            <div className='mt-8 flow-root'>
+              <div className='-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8'>
+                <div className='inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8'>
+                  <table className='min-w-full divide-y divide-gray-300'>
                     <thead>
                       <tr>
                         <th
-                          scope="col"
-                          className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
+                          scope='col'
+                          className='py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0'
                         >
                           Aktivitet
                         </th>
                         <th
-                          scope="col"
-                          className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                          scope='col'
+                          className='px-3 py-3.5 text-left text-sm font-semibold text-gray-900'
                         >
                           Startdatum
                         </th>
                         <th
-                          scope="col"
-                          className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                          scope='col'
+                          className='px-3 py-3.5 text-left text-sm font-semibold text-gray-900'
                         >
                           Slutdatum
                         </th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-gray-200">
+                    <tbody className='divide-y divide-gray-200'>
                       {items.map((item) => (
                         <tr key={item.activity}>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">
+                          <td className='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0'>
                             {item.activity}
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <td className='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>
                             <time dateTime={item.from.toString()}>
                               {dateFormatter(item.from)}
                             </time>
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <td className='whitespace-nowrap px-3 py-4 text-sm text-gray-500'>
                             <time dateTime={item.to.toString()}>
                               {dateFormatter(item.to)}
                             </time>
