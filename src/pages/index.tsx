@@ -7,6 +7,7 @@ import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
 import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
+import Badrum from './badrumsfonster.mdx';
 
 export default function Home({
   news,
@@ -50,8 +51,8 @@ export default function Home({
       </Well> */}
         <div className='flex w-full flex-row flex-wrap justify-start'>
           {/*<InbjudanFöreningsstämma />*/}
+          <Badrum />
           <Årsstämma2023 />
-          {/*<FläktByte />*/}
           <ImatraNytt />
           <StambyteFaq />
           <ImdEl />
@@ -59,7 +60,7 @@ export default function Home({
 
           {/*<Städdag />*/}
           <ElSparTips />
-          <StambyteSamtyckesblankett />
+          {/*<StambyteSamtyckesblankett />*/}
           <StambyteExtastämma />
           <KommandeAvgiftshöjningar />
 
@@ -216,18 +217,31 @@ function ImatraNytt() {
   );
 }
 
-function FläktByte() {
+function BadrumsfönsterMätning_old() {
+  const text = `
+I samband med stambytet kommer även badrumsfönster att bytas ut. För att kunna säkerställa att vi har korrekta mått för alla olika fönstervarianterna behöver vi genomföra mätningar på plats i  badrum samt lägenheter med wc/dusch rum.
+
+Mätningen kommer att genomföras på kvällstider för att minimera eventuell inverkan på era dagliga aktiviteter. Alla lägenheter kommer inte att besökas men för att underlätta tillträde och genomföra mätning av alla lägenhetstyper går vi ut med denna information till alla medlemmar.
+
+Hembesöken genomföras kvällstid, av projektledaren för stambytet Tony Fjällström och Karime Malmros från Stadsmålarna, under följande två kvällar:
+
+- Tisdag den 29:e augusti  mellan kl. 18:00 till 21:00.
+
+- Onsdag den 30:e augusti mellan kl. 18:00 till 21:00.
+
+Tack för er förståelse och samarbete.
+
+Marcus Holmgren
+Ordförande
+Brf Imatra`;
+
   return (
-    <div className='w-64 flex-grow pr-5 pt-10'>
-      <Card
-        imageUrl='/undraw/undraw_Online_calendar_re_wk3t.svg'
-        imageAlt='Fläktbyte information'
-        published='2021-05-11'
-        title='Fläktbyte under v. 20'
-        summary='Under v. 20 med start måndagen (17/5) sker de fysiska byten. Detta kan medföra störningar/avsaknad ventilation under några timmar sett per fläkt/port. Klicka här för att läsa mer om hur ventilationen fungerar i husen.'
-        hrefLink='/dokument/sa_funkar_er_ventilation.pdf'
-      />
-    </div>
+    <Centered
+      introducing='Stambyte'
+      title='Begäran om tillträde'
+      content={text}
+      summary='Hembesök för badrumsfönster mätning tisdag 29;e och onsdag 30;e augusti mellan kl. 18:00 till 21:00.'
+    />
   );
 }
 
