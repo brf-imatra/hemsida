@@ -7,7 +7,6 @@ import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
 import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
-import Badrum from './badrumsfonster.mdx';
 
 export default function Home({
   news,
@@ -51,7 +50,7 @@ export default function Home({
       </Well> */}
         <div className='flex w-full flex-row flex-wrap justify-start'>
           {/*<InbjudanFöreningsstämma />*/}
-          <Badrum />
+          {/*<Badrum />*/}
           <Årsstämma2023 />
           <ImatraNytt />
           <StambyteFaq />

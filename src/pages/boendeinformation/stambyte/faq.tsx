@@ -18,7 +18,7 @@ const faqs: Array<FAQ> = [
   {
     question: 'När beräknas stambytet påbörjas?',
     answer:
-      'Styrelsen har i april 2023 skrivit avtal med Nordisk VVS för att genomföra stambyte. Arbetet med renovering av stammar kommer att påbörjas i augusti 2023 på Helsingforsgatan 11-21 och beräknas avslutas i början på hösten 2025 på Helsingforsgatan 65-75',
+      'Styrelsen skrev avtal med Nordisk VVS i april 2023 för att genomföra stambyte. Arbetet med renovering av stammar påbörjades 14;e augusti 2023 på Helsingforsgatan 11 och 13 och beräknas avslutas i början på hösten 2025 på Helsingforsgatan 65-75',
   },
   {
     question:
@@ -34,8 +34,12 @@ const faqs: Array<FAQ> = [
   {
     question: 'Byte av badrumsfönster',
     answer:
-      'Badrumsfönster kommer att bytas ut innan rivning av badrum. Styrelsen beslutade att byta badrumsfönster innan stambyte och renovering av badrumen eftersom det var tekniska utmaningar att få till en tillräkligt stabil vägg för att kunna montera kakel samt att fönsterrenovering ligger inom 5-10 års intervall.',
+      'Badrumsfönster kommer att bytas ut innan rivning av badrum. Styrelsen beslutade att byta badrumsfönster innan stambyte och renovering av badrumen eftersom det var tekniska utmaningar att få till en extra 50 mm yta på väggen som går mot köket samt att fönsterrenovering ligger inom 5-10 års intervall.',
   },
+  {
+    question: 'Jag tänkte renovera mitt kök. Kan jag göra det före stambytet?',
+    answer: 'Det är våran starkaste rekommendation att vänta med köksrenovering tills stambytet är klart i din lägenhet. Detta för att undvika problem med moderna kök som kan ha låga socklar, vilket skapar problem för dragningen av avlopp från köket.',
+  }
   // More questions...
 ];
 
