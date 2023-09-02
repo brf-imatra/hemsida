@@ -61,7 +61,7 @@ function ShareButton() {
           url: 'https://brfimatra.se',
         });
         console.log('Data was shared successfully');
-      } catch (err) {
+      } catch (err: any) {
         console.error('Share failed:', err.message);
       }
     } else {
