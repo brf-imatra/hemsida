@@ -40,12 +40,7 @@ type YearDocumentProps = {
   documents: Array<DokumentRadProps>;
 };
 
-function DokumentRad({
-  href,
-  title,
-  tag,
-  documentName,
-}: DokumentRadProps) {
+function DokumentRad({ href, title, tag, documentName }: DokumentRadProps) {
   const headerElement =
     title || tag ? (
       <div className='flex items-center justify-between'>

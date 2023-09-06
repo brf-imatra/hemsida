@@ -12,7 +12,7 @@ export default function Dokuments() {
   );
 }
 
-const Blanketter : Array<DokumentRadProps> = [
+const Blanketter: Array<DokumentRadProps> = [
   {
     documentName: 'andring-i-lagenhet.pdf',
     href: '/dokument/mallar/andring-i-lagenhet.pdf',
@@ -26,4 +26,3 @@ const Blanketter : Array<DokumentRadProps> = [
     title: 'Andrahandsuthyrning',
   },
 ];
-

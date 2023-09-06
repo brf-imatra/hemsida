@@ -6,3 +6,4 @@ export * from './Body';
 export * from './Content';
 export * from './Panels';
 export * from './Banner';
+export * from './Section';
