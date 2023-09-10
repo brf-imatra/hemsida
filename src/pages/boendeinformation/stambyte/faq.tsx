@@ -49,7 +49,7 @@ const timeline: Array<TimelineItem> = [
   {
     name: 'Inriktningsbeslut',
     description:
-      'Eftersom föreningen är drabbad av exceptionellt många vattenskador tar styrelsen ett inriktningsbelsut om att inleda projekt för stambyte av fastigheterna.',
+      'Eftersom föreningen är drabbad av exceptionellt många vattenskador tar styrelsen ett inriktningsbeslut om att inleda projekt för stambyte av fastigheterna.',
     dateTime: new Date(2021, 11),
   },
   {
@@ -61,7 +61,7 @@ const timeline: Array<TimelineItem> = [
   {
     name: 'Produktionsstart',
     description:
-      'Styrelsen teknar avtal med entreprenören Nordisk VVS i april. I mitten av augusti börjar stambytet på Helsingfosgatan 11 & 13.',
+      'Styrelsen tecknar avtal med entreprenören Nordisk VVS i april. I mitten av augusti börjar stambytet på Helsingfosgatan 11 & 13.',
     dateTime: new Date(2023, 7),
   },
   {
