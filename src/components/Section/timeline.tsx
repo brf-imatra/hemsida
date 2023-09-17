@@ -18,7 +18,7 @@ export function Timeline({ timeline }: { timeline: Array<TimelineItem> }) {
             <div key={item.name}>
               <time
                 dateTime={item.dateTime.toISOString()}
-                className='flex items-center text-sm font-semibold leading-6 text-indigo-600 capitalize'
+                className='flex items-center text-sm font-semibold capitalize leading-6 text-indigo-600'
               >
                 <svg
                   viewBox='0 0 4 4'

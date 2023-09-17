@@ -99,7 +99,7 @@ export function Flerårsöversikt() {
             <Icon
               icon={InformationCircleIcon}
               variant='simple'
-              tooltip='Visar utvecklingen av föreningenskostnader ochh intäkter över tid.'
+              tooltip='Visar utvecklingen av föreningenskostnader och intäkter över tid.'
             />
           </Flex>
           <Text>Föreningenskostnader och intäkter över tid</Text>
