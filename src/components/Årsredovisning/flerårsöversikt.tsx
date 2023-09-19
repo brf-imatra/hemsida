@@ -129,7 +129,7 @@ export function Flerårsöversikt() {
         colors={['blue']}
         showLegend={false}
         valueFormatter={formatters[selectedKpi]}
-        yAxisWidth={56}
+        yAxisWidth={66}
         className='mt-8 h-96'
       />
     </Card>
