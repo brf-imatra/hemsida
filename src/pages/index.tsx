@@ -238,7 +238,6 @@ Brf Imatra`;
     <Centered
       introducing='Stambyte'
       title='Begäran om tillträde'
-      content={text}
       summary='Hembesök för badrumsfönster mätning tisdag 29;e och onsdag 30;e augusti mellan kl. 18:00 till 21:00.'
     />
   );
@@ -313,7 +312,6 @@ Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 
     <Centered
       introducing='Föreningsstämma'
       title='Inbjudan för verksamhetsåret 2021'
-      content={text}
       summary='Föreningsstämma kommer att genomföras torsdagen 28/4 i Akalla By'
     />
   );
@@ -335,30 +333,11 @@ function StillaståendeHissar2023() {
     <Centered
       introducing='Trasiga hissar'
       title='Reparation av hissar'
-      content={text}
       summary='Tyvärr är det flera hissar som är ur funktion i vår förening. Anledningen till detta är att frekvensrikarna har gått sönder och det är både svårt att få tag på dem och dyrt att byta ut dem. Detta innebär att det kommer att ta tid att få hissarna i drift igen.'
     />
   );
 }
 
-function StatusBesiktningBalkonger() {
-  const text = `
-HSB Stockholm har fått i uppdrag av styrelsen att undersöka bostadsrättsföreningens balkonger.
-Detta gör man för att få en uppfattning av dess skick och kunna planera eventuella underhållsåtgärder.
-
-<br />
-Berörda lägenheter har blivit informerade via utskick.
-`;
-
-  return (
-    <Centered
-      introducing='Statusbesiktning'
-      title='Balkonger'
-      content={text}
-      summary='20 balkonger kommer att besiktas onsdag 22/3 mellan 09.00-15.00.'
-    />
-  );
-}
 
 function KommandeAktiviteter() {
   const meetings = [

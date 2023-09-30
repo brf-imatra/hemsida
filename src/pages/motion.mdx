@@ -1,8 +1,20 @@
-import React from 'react';
 import { Body, Centered } from '../components';
 
-const data = `
-Motionerna kan mailas till: [styrelsen@brfimatra.se](styrelsen@brfimatra.se) eller lämnas i brevlådan styrelselokalen, Helsingforsgatan 69 eller hos fastighetsskötarna på Helsingforsgatan 45.  
+
+export default function Motion(props) {
+  return (
+    <Body>
+      <Centered
+        introducing='Dags att motionera'
+        title='Motioner för år 2024'
+        summary='Torsdag den 29 februari är sista dagen att komma in med motioner till årets föreningsstämma.'
+        {...props} />
+    </Body>
+  );
+}
+
+
+Motionerna kan mailas till: [styrelsen@brfimatra.se](mailto:styrelsen@brfimatra.se?subject=Motion%20brf%20Imatra) eller lämnas i brevlådan styrelselokalen, Helsingforsgatan 69 eller hos fastighetsskötarna på Helsingforsgatan 45.
 OBS! Märk motionen med _Brf Imatra_.
 
 Tid och plats för föreningsstämman meddelas senare.
@@ -15,21 +27,8 @@ Rekommenderad motionsstruktur innehåller följande tre punkter:
 - __Brödtext__ – här förklarar du bakgrunden till Ditt förslag och argumenterar för detta. Som regel vinner Du på att formulera Dig kort och kärnfullt.
 - __Yrkande__ – motionen ska avslutas med ett konkret förslag som årsmötet ska kunna säga ja eller nej till.
 
-Felanmälningar skall inte lämnas som motioner. 
+Felanmälningar skall inte lämnas som motioner.
 I dessa fall skall Du göra en felanmälan på tel. 08-695 00 00
 
 Hälsningar Styrelsen
-`;
 
-export default function Motion() {
-  return (
-    <Body>
-      <Centered
-        introducing='Dags att motionera'
-        title='Motioner för år 2022'
-        content={data}
-        summary='Måndag den 28 februari är sista dagen att komma in med motioner till årets föreningsstämma.'
-      />
-    </Body>
-  );
-}

@@ -1,4 +1,4 @@
-import { Body,  Centered2 } from '../../components';
+import { Body,  Centered } from '../../components';
 import {MDXProvider} from '@mdx-js/react'
 
 ![En bild som visar text, gräs,
@@ -518,13 +518,13 @@ export default (props) => {
     }
     return <MDXProvider components={components} >
               <Body>
-          <Centered2
+          <Centered
         introducing="Stambyte"
         title="Brf Imatra medlemsinformation"
         summary="Brf Imatra medlemsinformation om renovering av badrum och byte av rörstammar"
       >
                <main {...props} />
-          </Centered2>
+          </Centered>
       </Body>
     </MDXProvider>
 }

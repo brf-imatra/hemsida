@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import Image from 'next/image';
 
 interface SplitWithImageProps {
   introducing?: string;
   title: string;
-  content: any;
   summary?: string;
   imageSrc: string;
 }
@@ -12,10 +11,10 @@ interface SplitWithImageProps {
 export function SplitWithImage({
   introducing,
   title,
-  content,
   summary,
   imageSrc,
-}: SplitWithImageProps) {
+  children,
+}: PropsWithChildren<SplitWithImageProps>) {
   return (
     <div className='relative bg-white'>
       <div className='lg:absolute lg:inset-0'>
@@ -40,10 +39,7 @@ export function SplitWithImage({
               {title}
             </h2>
             <p className='mb-5 text-lg leading-7 text-gray-500'>{summary}</p>
-            <div
-              className='prose prose-lg text-gray-500'
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
+            <div className='prose prose-lg text-gray-500'>{children}</div>
           </div>
         </div>
       </div>

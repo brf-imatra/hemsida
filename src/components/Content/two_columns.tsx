@@ -1,18 +1,17 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 interface TwoColumnsProps {
   introducing?: string;
   title: string;
-  leftContent: any;
   rightContent: any;
 }
 
 export function TwoColumns({
   introducing,
   title,
-  leftContent,
   rightContent,
-}: TwoColumnsProps) {
+  children,
+}: PropsWithChildren<TwoColumnsProps>) {
   return (
     <div className='overflow-hidden bg-white px-4 py-16 sm:px-6 lg:px-8 xl:py-36'>
       <div className='max-w-max-content mx-auto lg:max-w-7xl'>
@@ -29,14 +28,10 @@ export function TwoColumns({
         <div className='relative'>
           <div className='relative md:bg-white md:p-6'>
             <div className='mb-8 lg:grid lg:grid-cols-2 lg:gap-6'>
-              <div
-                className='prose prose-lg mb-6 text-gray-500 lg:mb-0 lg:max-w-none'
-                dangerouslySetInnerHTML={{ __html: leftContent }}
-              />
-              <div
-                className='prose prose-lg text-gray-500'
-                dangerouslySetInnerHTML={{ __html: rightContent }}
-              />
+              <div className='prose prose-lg mb-6 text-gray-500 lg:mb-0 lg:max-w-none'>
+                {children}
+              </div>
+              <div className='prose prose-lg text-gray-500'>{rightContent}</div>
             </div>
           </div>
         </div>
