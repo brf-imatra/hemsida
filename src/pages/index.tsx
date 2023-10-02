@@ -1,6 +1,4 @@
-import { InferGetStaticPropsType } from 'next';
-
-import { Porttelefon } from './boendeinformation/porttelefon.mdx';
+import { Porttelefon }  from './boendeinformation/porttelefon';
 import { Banner, Body, Card, Centered } from '../components';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
