@@ -1,16 +1,13 @@
 import { InferGetStaticPropsType } from 'next';
 
+import { Porttelefon } from './boendeinformation/porttelefon.mdx';
 import { Banner, Body, Card, Centered } from '../components';
-import { News } from '../types';
-import { readNews } from '../utils';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
 import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
 
-export default function Home({
-  news,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home() {
   const bannerEl = false ? (
     <Banner
       title='Garagesopning kommer att ske 1/6'
@@ -66,6 +63,7 @@ export default function Home({
           <StambyteMedlemsInformation />
           <Garageplatser />
           <GruppanslutningCard />
+          <Porttelefon />
 
           {/* {news.slice(0, 5).map((post) => (
             <div
@@ -91,26 +89,6 @@ export default function Home({
     </>
   );
 }
-
-export const getStaticProps = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-
-  const posts: News[] = await res.json();
-
-  const news = readNews();
-
-  // return {
-  //   paths,
-  //   fallback: false,
-  // };
-  console.log('Hemsida: ', news.length);
-
-  return {
-    props: {
-      news: news.concat(posts),
-    },
-  };
-};
 
 function KommandeAvgiftshöjningar() {
   return (
@@ -337,7 +315,6 @@ function StillaståendeHissar2023() {
     />
   );
 }
-
 
 function KommandeAktiviteter() {
   const meetings = [
