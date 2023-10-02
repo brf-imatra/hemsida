@@ -1,4 +1,4 @@
-import { Body, Centered2 } from '../../../components';
+import { Body, Centered } from '../../../components';
 import {MDXProvider} from '@mdx-js/react'; import Pricing from "./Pricing";
 
 
@@ -60,11 +60,11 @@ _*_ samtliga kostnadsbedömningar är grovt uppskattade utifrån Brf Imatras bad
 export default props => (
   <MDXProvider>
       <Body>
-          <Centered2
+          <Centered
               introducing="Vattenburen eller el-uppvärmt golvvärme?"
               title="Rapport Golvvärme">
             <main {...props} />
-          </Centered2>
+          </Centered>
       </Body>
   </MDXProvider>
 )

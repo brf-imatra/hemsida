@@ -1,8 +1,17 @@
----
-title: "Hemförsäkring för bostadsrätt"
-introducing: "Hemförsäkring"
-summary: "En hemförsäkring behöver du för att skydda ditt hem och dina saker."
----
+import { SplitWithImage } from '../../components';
+
+
+export default function Article(props) {
+  const image = '/imatra/foton/helsingforsgatan_autumn19.jpg';
+  return (<SplitWithImage
+      introducing="Hemförsäkring"
+      title="Hemförsäkring för bostadsrätt"
+      summary="En hemförsäkring behöver du för att skydda ditt hem och dina saker."
+      imageSrc={image}
+      {...props} />
+  );
+}
+
 
 ## Bostadsrättstillägg
 Föreningen har tecknat ett kollektivt bostadsrättstillägg.

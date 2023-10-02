@@ -1,4 +1,4 @@
-import {Attachment, Body, Centered2} from '../components';
+import {Attachment, Body, Centered} from '../components';
 import {MDXProvider} from '@mdx-js/react'
 import {DokumentRad} from "./dokuments";
 
@@ -69,13 +69,13 @@ export default (props) => {
     }
     return <MDXProvider components={components} >
               <Body>
-          <Centered2
+          <Centered
         introducing="Kallelse"
         title="Föreningsstämma Brf. Imatra nr 193"
         summary="Kallelse till Brf. Imatras föreningstämma torsdagen 4/5 i Folkets Husby"
       >
                <main {...props} />
-          </Centered2>
+          </Centered>
       </Body>
     </MDXProvider>
 }

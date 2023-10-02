@@ -1,4 +1,4 @@
-import { Body, Centered2 } from '../../components';
+import { Body, Centered } from '../../components';
 import {MDXProvider} from '@mdx-js/react';
 import {
     Fastighetsförsäkring,
@@ -25,11 +25,11 @@ När stambyte är slutfört har föreningen en mycket bra position att förhandl
 export default props => (
   <MDXProvider>
       <Body>
-          <Centered2
+          <Centered
               introducing="Årsredovisningsanalys"
               title="Nettoomsättning och drift">
             <main {...props} />
-          </Centered2>
+          </Centered>
             <Fastighetsförsäkring />
           <div className="mt-4" />
             <NettoomsättningOchDrift />

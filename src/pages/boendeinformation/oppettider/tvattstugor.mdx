@@ -1,4 +1,4 @@
-import { Body, Centered2 } from '../../../components';
+import { Body, Centered } from '../../../components';
 import {MDXProvider} from '@mdx-js/react'
 
 
@@ -61,13 +61,13 @@ Du loggar in med de uppgifterna du fick när du kvitterade ut och hämtade tagge
 export default props => (
   <MDXProvider>
       <Body>
-          <Centered2
+          <Centered
         introducing="Tvättstugor"
         title="Bokning och regler"
         summary=""
       >
                <main {...props} />
-          </Centered2>
+          </Centered>
       </Body>
   </MDXProvider>
 )

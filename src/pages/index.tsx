@@ -1,16 +1,11 @@
-import { InferGetStaticPropsType } from 'next';
-
+import { Porttelefon, KommandeAktiviteter }  from '../components/Startsida';
 import { Banner, Body, Card, Centered } from '../components';
-import { News } from '../types';
-import { readNews } from '../utils';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
 import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
 
-export default function Home({
-  news,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home() {
   const bannerEl = false ? (
     <Banner
       title='Garagesopning kommer att ske 1/6'
@@ -66,6 +61,7 @@ export default function Home({
           <StambyteMedlemsInformation />
           <Garageplatser />
           <GruppanslutningCard />
+          <Porttelefon />
 
           {/* {news.slice(0, 5).map((post) => (
             <div
@@ -91,26 +87,6 @@ export default function Home({
     </>
   );
 }
-
-export const getStaticProps = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-
-  const posts: News[] = await res.json();
-
-  const news = readNews();
-
-  // return {
-  //   paths,
-  //   fallback: false,
-  // };
-  console.log('Hemsida: ', news.length);
-
-  return {
-    props: {
-      news: news.concat(posts),
-    },
-  };
-};
 
 function KommandeAvgiftshöjningar() {
   return (
@@ -238,7 +214,6 @@ Brf Imatra`;
     <Centered
       introducing='Stambyte'
       title='Begäran om tillträde'
-      content={text}
       summary='Hembesök för badrumsfönster mätning tisdag 29;e och onsdag 30;e augusti mellan kl. 18:00 till 21:00.'
     />
   );
@@ -312,8 +287,7 @@ Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 
   return (
     <Centered
       introducing='Föreningsstämma'
-      title='Inbjudan för verksamhetsåret 2021'
-      content={text}
+      title='Inbjudan för verksamhetsåret 2023'
       summary='Föreningsstämma kommer att genomföras torsdagen 28/4 i Akalla By'
     />
   );
@@ -335,87 +309,11 @@ function StillaståendeHissar2023() {
     <Centered
       introducing='Trasiga hissar'
       title='Reparation av hissar'
-      content={text}
       summary='Tyvärr är det flera hissar som är ur funktion i vår förening. Anledningen till detta är att frekvensrikarna har gått sönder och det är både svårt att få tag på dem och dyrt att byta ut dem. Detta innebär att det kommer att ta tid att få hissarna i drift igen.'
     />
   );
 }
 
-function StatusBesiktningBalkonger() {
-  const text = `
-HSB Stockholm har fått i uppdrag av styrelsen att undersöka bostadsrättsföreningens balkonger.
-Detta gör man för att få en uppfattning av dess skick och kunna planera eventuella underhållsåtgärder.
-
-<br />
-Berörda lägenheter har blivit informerade via utskick.
-`;
-
-  return (
-    <Centered
-      introducing='Statusbesiktning'
-      title='Balkonger'
-      content={text}
-      summary='20 balkonger kommer att besiktas onsdag 22/3 mellan 09.00-15.00.'
-    />
-  );
-}
-
-function KommandeAktiviteter() {
-  const meetings = [
-    {
-      id: 0,
-      title: 'Medlemsmöte',
-      location: 'Folkets Husby - https://folketshusby.se',
-      date: new Date(2023, 3, 20, 18, 0, 0),
-      endDate: new Date(2023, 3, 20, 20, 0, 0),
-    },
-    {
-      id: 4,
-      title: 'Föreningsstämma',
-      location: 'Folkets Husby - https://folketshusby.se',
-      date: new Date(2023, 4, 4, 17, 45, 0),
-      endDate: new Date(2023, 4, 4, 20, 0, 0),
-    },
-  ];
-  const seShort = new Intl.DateTimeFormat('sv-SE');
-  const seLong = new Intl.DateTimeFormat('sv-SE', {
-    weekday: 'long',
-    month: 'long',
-    day: 'numeric',
-  });
-  const seTid = new Intl.DateTimeFormat('sv-SE', {
-    hour: 'numeric',
-    minute: 'numeric',
-  });
-  return (
-    <section className='mt-12'>
-      <h2 className='font-semibold text-gray-900'>Kommande aktiviteter</h2>
-      <ol className='mt-2 divide-y divide-gray-200 text-sm leading-6 text-gray-500'>
-        {meetings.map((m) => (
-          <li key={m.id} className='py-4 sm:flex'>
-            <time dateTime={seShort.format(m.date)} className='w-28 flex-none'>
-              {seLong.format(m.date)}
-            </time>
-            <p className='mt-2 flex-auto font-semibold text-gray-900 sm:mt-0'>
-              {m.title}
-            </p>
-            <p className='flex-none sm:ml-6'>{m.location}</p>
-            <p className='flex-none sm:ml-6'>
-              start{' '}
-              <time dateTime={m.date.toISOString()}>
-                {seTid.format(m.date)}
-              </time>{' '}
-              - slut{' '}
-              <time dateTime={m.endDate.toISOString()}>
-                {seTid.format(m.endDate)}
-              </time>
-            </p>
-          </li>
-        ))}
-      </ol>
-    </section>
-  );
-}
 
 function ElSparTips() {
   return (

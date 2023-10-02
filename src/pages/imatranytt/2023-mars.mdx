@@ -1,16 +1,16 @@
-import { Body, Centered2 } from '../../components';
+import { Body, Centered } from '../../components';
 import {MDXProvider} from '@mdx-js/react'
 
 export default props => (
   <MDXProvider>
       <Body>
-          <Centered2
+          <Centered
         introducing="Nyhetsbrev från din förening HSB/Brf Imatra"
         title="Brf Imatra informerar"
         summary="Akalla 2023-03-03"
       >
                <main {...props} />
-          </Centered2>
+          </Centered>
       </Body>
   </MDXProvider>
 )

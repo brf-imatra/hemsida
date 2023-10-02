@@ -1,4 +1,4 @@
-import { Body, Centered2 } from '../../components';
+import { Body, Centered } from '../../components';
 import {MDXProvider} from '@mdx-js/react';
 
 Med de höga elpriserna behöver alla hjälpas åt att hålla nere elförbrukningen så att vi kan spara pengar och påverka hur mycket av månadsavgifterna som ska gå till vår gemensamma elräkning. När vi infört individuell el-mätning så kan vi själva se tydligt vad förändringar i vår egen förbrukning betyder.
@@ -30,11 +30,11 @@ Föreningen behöver fortsätta arbeta med energibesparande åtgärder på kort 
 export default props => (
   <MDXProvider>
       <Body>
-          <Centered2
+          <Centered
               introducing="Tips för att minska elförbrukningen"
               title="Så kan vi påverka vår elräkning">
             <main {...props} />
-          </Centered2>
+          </Centered>
       </Body>
   </MDXProvider>
 )

@@ -1,0 +1,15 @@
+import { TwoColumns } from '../../components';
+import TvättstugaRight from './tvättstugor-right.mdx';
+
+export default function Article(props) {
+  return (<TwoColumns
+      title='Tvättstuga'
+      introducing='Tvättstugor'
+      rightContent={<TvättstugaRight />}
+      {...props} />
+  );
+}
+
+Det finns elva tvättstugor, två på varje gård i låghusen. Du kan boka vilken du vill av dessa och två åt gången.
+
+Tvättmedel tillsätts automatiskt men går att välja bort med ett knapptryck om du vill använda eget tvättmedel som då läggs in direkt i maskinen. Tänk på att vi har mjukt vatten och ta en mindre dos tvättmedel.
