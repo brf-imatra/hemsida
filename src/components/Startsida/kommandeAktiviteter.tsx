@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export function KommandeAktiviteter() {
   const meetings = [
     {
