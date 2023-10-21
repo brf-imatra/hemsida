@@ -6,7 +6,7 @@ const navigation = [
     name: 'HSB Login',
     href: 'https://mitthsb.hsb.se/',
     icon: (props: any) => <BuildingOfficeIcon {...props} />,
-  }
+  },
 ];
 
 export default function SocialLinksFooter() {

@@ -1,4 +1,4 @@
-import { Porttelefon, KommandeAktiviteter }  from '../components/Startsida';
+import { Porttelefon, KommandeAktiviteter } from '../components/Startsida';
 import { Banner, Body, Card, Centered } from '../components';
 import { SimpleThreeColumn } from '../components/Section/simple_three_column';
 import React from 'react';
@@ -46,8 +46,8 @@ export default function Home() {
         <div className='flex w-full flex-row flex-wrap justify-start'>
           {/*<InbjudanFöreningsstämma />*/}
           {/*<Badrum />*/}
-          <Årsstämma2023 />
           <ImatraNytt />
+          <Årsstämma2023 />
           <StambyteFaq />
           <ImdEl />
           <EkonomiGrafer />
@@ -183,10 +183,10 @@ function ImatraNytt() {
       <Card
         imageUrl='/undraw/undraw_new_year_2023_pfnc.svg'
         imageAlt='Brf Imatra Nyhetsbrev'
-        published='2023-06-13'
+        published='2023-10-19'
         title='Brf Imatra Nyhetsbrev'
-        summary='Nyhetsbrev där du kan läsa om föreningstämman, individuell elmätning, stambytet, underhåll balkonger, grillning. Klicka för att läsa mer...'
-        hrefLink='/imatranytt/2023-juni'
+        summary='Nyhetsbrev där du kan läsa om stambytet, IMD-el, återvinningsstugan, boendemiljö och utemiljö i föreningen. Klicka för att läsa mer...'
+        hrefLink='/imatranytt/2023-oktober'
       />
     </div>
   );
@@ -313,7 +313,6 @@ function StillaståendeHissar2023() {
     />
   );
 }
-
 
 function ElSparTips() {
   return (
