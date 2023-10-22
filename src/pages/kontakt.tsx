@@ -234,6 +234,7 @@ function Styrelsen() {
           </span>
         </div>
       </DescriptionListRow>
+      <DescriptionListRow title='Styrelselokal'>Helsingforsgatan 69 <i>källarplan</i></DescriptionListRow>
     </DescriptionList>
   );
 }
