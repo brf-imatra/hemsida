@@ -252,7 +252,7 @@ const timeline: Array<FeadItem> = [
     href: '#',
     datetime: new Date(2023, 5, 22),
     icon: HandThumbUpIcon,
-    iconBackground: 'bg-yellow-500',
+    iconBackground: 'bg-green-500',
   },
 ];
 

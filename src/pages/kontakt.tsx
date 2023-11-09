@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Body } from '../components';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
-export default function MedlemsInfomation() {
+export default function KontaktUppgifter() {
   return (
     <>
       <Head>
@@ -22,16 +22,19 @@ export default function MedlemsInfomation() {
         <div className='mt-6 grid gap-16 border-t-2 border-gray-100 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12'>
           <HSBMedlemsservice />
           <HSBFastighetsskotare />
+          <HSBFaktura />
+          <Styrelsen />
           <Securitas />
           <Anticimex />
 
-          <Styrelsen />
           {/*<Valberedning />*/}
         </div>
       </Body>
     </>
   );
 }
+
+
 
 function HSBMedlemsservice() {
   return (
@@ -140,6 +143,37 @@ function HSBFastighetsskotare() {
     </DescriptionList>
   );
 }
+
+function HSBFaktura() {
+  return (
+    <DescriptionList
+      title='HSB brf Imatra i Stockholm'
+      description='Fakturaadress och postadress för HSB brf Imatra i Stockholm.'
+    >
+      <DescriptionListRow title='Fakturaadress' borderless={true}>
+          <dl>
+          <dt className='pb-2 text-sm font-medium leading-5 text-gray-500'>
+            HSB:s brf Imatra 2193
+          </dt>
+          <dt>Ref 99-2193-000</dt>
+          <dt>FE 391</dt>
+            <dt>838 73  Frösön</dt>
+        </dl>
+      </DescriptionListRow>
+ <DescriptionListRow title='Postadress' borderless={true}>
+          <dl>
+          <dt className='pb-2 text-sm font-medium leading-5 text-gray-500'>
+            HSB Stockholm
+          </dt>
+          <dt>Att: brf Imatra 2193</dt>
+          <dt>Box 1385</dt>
+            <dt>172 27  Sundbyberg</dt>
+        </dl>
+      </DescriptionListRow>
+    </DescriptionList>
+  );
+}
+
 
 function Securitas() {
   return (
