@@ -6,10 +6,10 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
 
 export default function Home() {
-  const bannerEl = false ? (
+  const bannerEl = true ? (
     <Banner
-      title='Garagesopning kommer att ske 1/6'
-      message='Vänligen sopa fram från er parkeringsplats!'
+      title='Miljöstugan är stängd julafton och nyårsafton'
+      message='Både julafton söndag 24/12 och nyårsafton söndag 31/12 är miljöstugan stängd!'
     />
   ) : null;
 
@@ -18,8 +18,8 @@ export default function Home() {
       <div className='relative overflow-hidden'>
         <Image
           className='h-48 w-full object-cover'
-          src='/imatra/foton/helsingforsgatan_spring20.jpg'
-          alt='Brf Imatra vinter 2022'
+          src='/imatra/foton/helsingforsgatan_winter22.jpg'
+          alt='Brf Imatra vinter'
           loading='eager'
           priority={true}
           height={300}
@@ -47,6 +47,7 @@ export default function Home() {
           {/*<InbjudanFöreningsstämma />*/}
           {/*<Badrum />*/}
           <ImatraNytt />
+          <NyttLokalkontorHSB />
           <Årsstämma2023 />
           <StambyteFaq />
           <ImdEl />
@@ -369,6 +370,25 @@ function StambyteFaq() {
         title='Stambyte FAQ'
         summary='Vanliga frågor och svar om stambyte hittar du här. Denna kommer att uppdateras löpande.'
         hrefLink='/boendeinformation/stambyte/faq'
+      />
+    </div>
+  );
+}
+
+export function NyttLokalkontorHSB() {
+  return (
+    <div className='w-64 flex-grow pr-5 pt-10'>
+      <Card
+        imageUrl='/undraw/undraw_road_sign_re_3kc3.svg'
+        imageAlt='HSB Stockholm nytt lokalkontor i Kista'
+        published='2023-11-30'
+        title='HSB lokalkontor i Kista'
+        summary='HSB Stockholm har sedan tidigare kommunicerat att kontoret på
+Finlandsgatan 10 i Akalla stänger i slutet av 2023 i samband med att
+hyresavtalet löper ut. Kontoret på Finlandsgatan i Akalla stänger för
+besök den 5 december, därefter finns tillgång till nedanstående
+tjänsteutbud. Läs mer...'
+        hrefLink='/medlemsinformation/hsb-lokalkontor-2023'
       />
     </div>
   );
