@@ -74,7 +74,7 @@ function HSBMedlemsservice() {
           </span>
         </div>
       </DescriptionListRow>
-      <DescriptionListRow title='Besök'>Finlandsgatan 10</DescriptionListRow>
+      <DescriptionListRow title='Besök'>Helsingörsgatan 38</DescriptionListRow>
       <DescriptionListRow title='Öppettider'>
         <dl>
           <dt className='pb-2 text-sm font-medium leading-5 text-gray-500'>
