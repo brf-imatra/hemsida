@@ -137,6 +137,10 @@ const fastighetsFörsäkringsData = [
     date: '2023',
     Försäkringspremie: 969_363,
   },
+  {
+    date: '2024',
+    Försäkringspremie: 1_168_320,
+  },
 ];
 
 const dataFormatter = (number: number) => {

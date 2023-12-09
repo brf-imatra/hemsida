@@ -32,3 +32,6 @@ yarn-error.log*
 
 # JetBrain IDE
 .idea
+
+# yarn
+/.yarn/install-state.gz

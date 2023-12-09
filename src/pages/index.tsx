@@ -50,8 +50,8 @@ export default function Home() {
           <NyttLokalkontorHSB />
           <Årsstämma2023 />
           <StambyteFaq />
-          <ImdEl />
           <EkonomiGrafer />
+          <ImdEl />
 
           {/*<Städdag />*/}
           <ElSparTips />
@@ -351,9 +351,9 @@ function EkonomiGrafer() {
       <Card
         imageUrl='/undraw/undraw_visual_data_re_mxxo.svg'
         imageAlt='Årsredovisning tabell'
-        published='2023-05-01'
+        published='2023-12-07'
         title='Årsredovisningsanalys'
-        summary='Föreningen drabbas av en kraftigt ökad försäkringspremie för år 2023. En grafisk presentation av försäkringspremie, samt nettoomsättning och drift, från de senaste två deceniernas årsredovisningar kan du se här.'
+        summary='Föreningen drabbas även 2024 av en kraftigt ökad försäkringspremie. En grafisk presentation av försäkringspremie, samt nettoomsättning och drift, från de senaste två deceniernas årsredovisningar kan du se här.'
         hrefLink='/boendeinformation/arsredovisning-analys'
       />
     </div>
@@ -368,7 +368,7 @@ function StambyteFaq() {
         imageAlt='Frågor och svar om stambyte'
         published='2022-12-30'
         title='Stambyte FAQ'
-        summary='Vanliga frågor och svar om stambyte hittar du här. Denna kommer att uppdateras löpande.'
+        summary='Vanliga frågor och svar om stambyte hittar du här.'
         hrefLink='/boendeinformation/stambyte/faq'
       />
     </div>
