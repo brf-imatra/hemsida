@@ -34,8 +34,6 @@ export default function KontaktUppgifter() {
   );
 }
 
-
-
 function HSBMedlemsservice() {
   return (
     <DescriptionList
@@ -151,29 +149,28 @@ function HSBFaktura() {
       description='Fakturaadress och postadress för HSB brf Imatra i Stockholm.'
     >
       <DescriptionListRow title='Fakturaadress' borderless={true}>
-          <dl>
+        <dl>
           <dt className='pb-2 text-sm font-medium leading-5 text-gray-500'>
             HSB:s brf Imatra 2193
           </dt>
           <dt>Ref 99-2193-000</dt>
           <dt>FE 391</dt>
-            <dt>838 73  Frösön</dt>
+          <dt>838 73 Frösön</dt>
         </dl>
       </DescriptionListRow>
- <DescriptionListRow title='Postadress' borderless={true}>
-          <dl>
+      <DescriptionListRow title='Postadress' borderless={true}>
+        <dl>
           <dt className='pb-2 text-sm font-medium leading-5 text-gray-500'>
             HSB Stockholm
           </dt>
           <dt>Att: brf Imatra 2193</dt>
           <dt>Box 1385</dt>
-            <dt>172 27  Sundbyberg</dt>
+          <dt>172 27 Sundbyberg</dt>
         </dl>
       </DescriptionListRow>
     </DescriptionList>
   );
 }
-
 
 function Securitas() {
   return (
@@ -268,7 +265,9 @@ function Styrelsen() {
           </span>
         </div>
       </DescriptionListRow>
-      <DescriptionListRow title='Styrelselokal'>Helsingforsgatan 69 <i>källarplan</i></DescriptionListRow>
+      <DescriptionListRow title='Styrelselokal'>
+        Helsingforsgatan 69 <i>källarplan</i>
+      </DescriptionListRow>
     </DescriptionList>
   );
 }

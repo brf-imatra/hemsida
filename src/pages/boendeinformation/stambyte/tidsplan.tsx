@@ -235,14 +235,3 @@ export function Feed({ items }: FeedProps) {
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-

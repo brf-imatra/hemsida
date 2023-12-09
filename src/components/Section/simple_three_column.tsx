@@ -6,7 +6,6 @@ import {
   BoltIcon,
 } from '@heroicons/react/24/outline';
 
-
 const features = [
   {
     name: 'Tvättstugebokning',
@@ -57,22 +56,27 @@ export function SimpleThreeColumn() {
   return (
     <div className='bg-white'>
       <div className='mx-auto max-w-xl px-4 sm:px-6 lg:max-w-7xl lg:px-8'>
-        <h2 className='sr-only'>Länkar till externa tjänster för brf Imatra.</h2>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <h2 className='sr-only'>
+          Länkar till externa tjänster för brf Imatra.
+        </h2>
+        <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
+          <dl className='grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16'>
             {features.map((feature) => (
-              <div key={feature.name} className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
+              <div key={feature.name} className='relative pl-16'>
+                <dt className='text-base font-semibold leading-7 text-gray-900'>
                   {/*<div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">*/}
                   {/*  <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />*/}
                   {/*</div>*/}
                   {feature.name}
                 </dt>
                 {feature.descriptions.map((description, i) => (
-                <dd key={i} className='mt-2 text-base leading-7 text-gray-600'>
-                  {description}
-                </dd>
-              ))}
+                  <dd
+                    key={i}
+                    className='mt-2 text-base leading-7 text-gray-600'
+                  >
+                    {description}
+                  </dd>
+                ))}
               </div>
             ))}
           </dl>
@@ -104,7 +108,7 @@ export function SimpleThreeColumn() {
 type ExternalLinkProps = {
   text: string;
   href: string;
-}
+};
 
 export function ExternalLink({ text, href }: ExternalLinkProps) {
   return (
