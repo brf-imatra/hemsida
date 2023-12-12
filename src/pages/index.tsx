@@ -46,6 +46,7 @@ export default function Home() {
         <div className='flex w-full flex-row flex-wrap justify-start'>
           {/*<InbjudanFöreningsstämma />*/}
           {/*<Badrum />*/}
+          <Avgiftshöjning2024 />
           <ImatraNytt />
           <NyttLokalkontorHSB />
           <Årsstämma2023 />
@@ -193,30 +194,29 @@ function ImatraNytt() {
   );
 }
 
-function BadrumsfönsterMätning_old() {
+function Avgiftshöjning2024() {
   const text = `
-I samband med stambytet kommer även badrumsfönster att bytas ut. För att kunna säkerställa att vi har korrekta mått för alla olika fönstervarianterna behöver vi genomföra mätningar på plats i  badrum samt lägenheter med wc/dusch rum.
+På rekommendation av HSBs ekonomer har styrelsen beslutat att höja månadsavgiften med 
+20% från 1 januari 2024.  Avgiftshöjningen blir dock i praktiken 14% när elen nu kommer att 
+mätas individuellt. De boendes elförbrukningen i lägenheterna har uppskattats till 6% av 
+årsavgiften.
 
-Mätningen kommer att genomföras på kvällstider för att minimera eventuell inverkan på era dagliga aktiviteter. Alla lägenheter kommer inte att besökas men för att underlätta tillträde och genomföra mätning av alla lägenhetstyper går vi ut med denna information till alla medlemmar.
-
-Hembesöken genomföras kvällstid, av projektledaren för stambytet Tony Fjällström och Karime Malmros från Stadsmålarna, under följande två kvällar:
-
-- Tisdag den 29:e augusti  mellan kl. 18:00 till 21:00.
-
-- Onsdag den 30:e augusti mellan kl. 18:00 till 21:00.
-
-Tack för er förståelse och samarbete.
-
-Marcus Holmgren
-Ordförande
-Brf Imatra`;
+Höjningen blir större än det som bedömdes nödvändigt vid den ekonomiska genomgången i 
+samband med extrastämman. Den nya höjningen är dock vad som krävs för att vi ska kunna 
+hantera räntor, försäkringar och kostnader som föreningen har liten möjlighet att påverka i 
+den rådande ekonomiska situationen i Sverige.`;
 
   return (
-    <Centered
-      introducing='Stambyte'
-      title='Begäran om tillträde'
-      summary='Hembesök för badrumsfönster mätning tisdag 29;e och onsdag 30;e augusti mellan kl. 18:00 till 21:00.'
-    />
+    <div className='w-64 flex-grow pr-5 pt-10'>
+      <Card
+        imageUrl='/undraw/undraw_building_re_xfcm.svg'
+        imageAlt='Avgiftshöjning 2024'
+        published='2023-12-12'
+        title='Avgiftshöjning 2024'
+        summary={text}
+        hrefLink=''
+      />
+    </div>
   );
 }
 
