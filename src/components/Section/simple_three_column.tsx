@@ -42,11 +42,11 @@ const features = [
     name: 'Felanmälan',
     descriptions: [
       <ExternalLink
-        key='Servicecenter'
-        text='HSB Servicecenter'
-        href='https://felanmalan.hsb.se/'
+        key='Felanmälan'
+        text='Felanmälan i Mitt HSB'
+        href='https://www.hsb.se/stockholm/om-hsb/kontakt/felanmalan-information/felanmalan-brf/'
       />,
-      'Här kan du göra en felanmälan för din bostadsrätt. Beteckningen på bostadsrättsförening är Imatra nr 193.',
+      'Här kan du göra en felanmälan för din bostadsrätt. Beteckningen på bostadsrättsförening är Imatra nr 193. Vid akuta ärenden som t.ex. vattenläcka, stopp i avlopp eller strömlöshet, ring 010-442 11 00',
     ],
     icon: BoltIcon,
   },

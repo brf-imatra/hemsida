@@ -46,7 +46,7 @@ export default function Home() {
         <div className='flex w-full flex-row flex-wrap justify-start'>
           {/*<InbjudanFöreningsstämma />*/}
           {/*<Badrum />*/}
-          <Avgiftshöjning2024 />
+          {/*<Avgiftshöjning2024 />*/}
           <ImatraNytt />
           <NyttLokalkontorHSB />
           <Årsstämma2023 />
@@ -185,10 +185,10 @@ function ImatraNytt() {
       <Card
         imageUrl='/undraw/undraw_new_year_2023_pfnc.svg'
         imageAlt='Brf Imatra Nyhetsbrev'
-        published='2023-10-19'
+        published='2023-12-15'
         title='Brf Imatra Nyhetsbrev'
-        summary='Nyhetsbrev där du kan läsa om stambytet, IMD-el, återvinningsstugan, boendemiljö och utemiljö i föreningen. Klicka för att läsa mer...'
-        hrefLink='/imatranytt/2023-oktober'
+        summary='Bostadsrättsföreningen höjer månadsavgiften med 14% från januari. Höjningen beror på stigande kostnader för räntor, försäkringar och andra faktorer som föreningen har liten möjlighet att påverka. Stambytet på gård 2 börjar i mellandagarna. Postnord delar inte ut post under rivningsfasen av stambytet. Avläsning och debitering av individuell elförbrukning startar januari. Valberedningen söker efterträdare till styrelsemedlemmar som avgår vid stämman. Klicka för att läsa mer...'
+        hrefLink='/imatranytt/2023-december'
       />
     </div>
   );
