@@ -13,6 +13,8 @@ import {
   UserIcon,
 } from '@heroicons/react/20/solid';
 import { CardEdgeToEdge } from '../../components/Card/CardEdgeToEdge';
+import { Body } from '../../components';
+import { DokumentGrupp, DokumentRadProps } from '../dokuments';
 
 const dateFormatter = (number: number | Date) => {
   const seLong = new Intl.DateTimeFormat('sv-SE', {
@@ -23,50 +25,6 @@ const dateFormatter = (number: number | Date) => {
   return seLong.format(number);
 };
 
-const gård5 = [
-  { id: 75, name: 'Helsingforsgatan 75', value: '3%' },
-  { id: 73, name: 'Helsingforsgatan 73', value: '99.9%' },
-  { id: 71, name: 'Helsingforsgatan 71', value: '$70M' },
-  { id: 69, name: 'Helsingforsgatan 69', value: '$60M' },
-  { id: 67, name: 'Helsingforsgatan 67', value: '$50M' },
-  { id: 65, name: 'Helsingforsgatan 65', value: '$50M' },
-];
-
-const gård4 = [
-  { id: 61, name: 'Helsingforsgatan 65', value: '3%' },
-  { id: 59, name: 'Helsingforsgatan 59', value: '99.9%' },
-  { id: 57, name: 'Helsingforsgatan 57', value: '$70M' },
-  { id: 55, name: 'Helsingforsgatan 55', value: '$60M' },
-  { id: 53, name: 'Helsingforsgatan 53', value: '$50M' },
-  { id: 51, name: 'Helsingforsgatan 51', value: '$50M' },
-];
-
-const gård3 = [
-  { id: 49, name: 'Helsingforsgatan 49', value: '3%' },
-  { id: 47, name: 'Helsingforsgatan 47', value: '99.9%' },
-  { id: 45, name: 'Helsingforsgatan 45', value: '$70M' },
-  { id: 43, name: 'Helsingforsgatan 43', value: '$60M' },
-  { id: 41, name: 'Helsingforsgatan 41', value: '$50M' },
-  { id: 39, name: 'Helsingforsgatan 39', value: '$50M' },
-];
-
-const gård2 = [
-  { id: 33, name: 'Helsingforsgatan 33', value: '3%' },
-  { id: 31, name: 'Helsingforsgatan 31', value: '99.9%' },
-  { id: 29, name: 'Helsingforsgatan 29', value: '$70M' },
-  { id: 27, name: 'Helsingforsgatan 27', value: '$60M' },
-  { id: 25, name: 'Helsingforsgatan 25', value: '$50M' },
-  { id: 23, name: 'Helsingforsgatan 23', value: '$50M' },
-];
-
-const gård1 = [
-  { id: 21, name: 'Helsingforsgatan 21', value: '3%' },
-  { id: 19, name: 'Helsingforsgatan 19', value: '99.9%' },
-  { id: 17, name: 'Helsingforsgatan 17', value: '$70M' },
-  { id: 15, name: 'Helsingforsgatan 15', value: '$60M' },
-  { id: 13, name: 'Helsingforsgatan 13', value: '$50M' },
-  { id: 11, name: 'Helsingforsgatan 11', value: '$50M' },
-];
 
 export default function ImdEl() {
   return (
@@ -93,106 +51,7 @@ export default function ImdEl() {
                 <Feed items={timeline} />
               </CardEdgeToEdge>
             </div>
-            {/*            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
-              {gård5.map((stat) => (
-                <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
-                  <dt className="text-sm font-semibold leading-6 text-gray-600">
-                    Helsingforsgatan {stat.id}
-                  </dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
-              {gård4.map((stat) => (
-                <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
-                  <dt className="text-sm font-semibold leading-6 text-gray-600">
-                    {stat.name}
-                  </dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
-              {gård3.map((stat) => (
-                <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
-                  <dt className="text-sm font-semibold leading-6 text-gray-600">
-                    {stat.name}
-                  </dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
-              {gård2.map((stat) => (
-                <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
-                  <dt className="text-sm font-semibold leading-6 text-gray-600">
-                    {stat.name}
-                  </dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-3">
-              {gård1.map((stat) => (
-                <div key={stat.id} className="flex flex-col bg-gray-400/5 p-8">
-                  <dt className="text-sm font-semibold leading-6 text-gray-600">
-                    {stat.name}
-                  </dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>*/}
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-
-function ImdElTidplan() {
-  return (
-    <>
-      <div className='bg-white py-24 sm:py-32'>
-        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-          <div className='mx-auto max-w-2xl lg:max-w-none'>
-            <div className='text-center'>
-              <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-                IMD-el
-              </h2>
-              <p className='mt-4 text-lg leading-8 text-gray-600'>
-                Installation av elcentraler kommer att startas under slutet av
-                mars och pågär därefter till slutet av juni 2023.
-              </p>
-              <p className='mt-4 text-lg leading-8 text-gray-600'>
-                Den nya elcentralen som ersätter den befintliga innehåller även
-                en jordfelsbrytare. Detta kan innebära att t ex spis inte kan
-                användas efter installlation om jordfelsbrytaren löser ut pga
-                elfel i den befintliga utrustningen. Detta är en åtgärd som den
-                boende får bekosta för att åtgärda. Se Stambyte FAQ för mer
-                information.
-              </p>
-            </div>
-            <div className='container mx-auto sm:px-6 lg:px-8'>
-              <p className='mt-4 text-lg leading-8 text-gray-600'>
-                Det här är en generell tidplan för installationen av
-                elcentraler. Varje lägenhet och trapphus kommer att aviseras
-                separat senast 2 veckor innan installationen i lägenheten.
-              </p>
-              <CardEdgeToEdge>
-                <Feed items={timeline} />
-              </CardEdgeToEdge>
-            </div>
+            <Dokuments />
           </div>
         </div>
       </div>
@@ -341,3 +200,35 @@ function Feed({ items }: FeedProps) {
     </div>
   );
 }
+
+
+
+function Dokuments() {
+  return (
+      <div className='grid grid-cols-1 gap-6'>
+        <DokumentGrupp title='2021' documents={Blanketter} />
+      </div>
+  );
+}
+
+const Blanketter: Array<DokumentRadProps> = [
+  {
+    documentName: 'Gruppforteckning_1-RoK.pdf',
+    href: '/dokument/gruppforteckning/Gruppforteckning_1-RoK.pdf',
+    tag: 'PDF',
+    title: 'Gruppförteckning 1 RoK',
+  },
+  {
+    documentName: 'Gruppforteckning_1o2-RoK.pdf',
+    href: '/dokument/gruppforteckning/Gruppforteckning_1o2-RoK.pdf',
+    tag: 'PDF',
+    title: 'Gruppförteckning 1 och 2 RoK',
+  },
+  {
+    documentName: 'Gruppforteckning_3-4-RoK.pdf',
+    href: '/dokument/gruppforteckning/Gruppforteckning_3-4-RoK.pdf',
+    tag: 'PDF',
+    title: 'Gruppförteckning 3 och 4 RoK',
+  },
+];
+

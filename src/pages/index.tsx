@@ -6,7 +6,7 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
 
 export default function Home() {
-  const bannerEl = true ? (
+  const bannerEl = false ? (
     <Banner
       title='Miljöstugan är stängd julafton och nyårsafton'
       message='Både julafton söndag 24/12 och nyårsafton söndag 31/12 är miljöstugan stängd!'
