@@ -42,6 +42,18 @@ const faqs: Array<FAQ> = [
     answer:
       'Det är våran starkaste rekommendation att vänta med köksrenovering tills stambytet är klart i din lägenhet. Detta för att undvika problem med moderna kök som kan ha låga socklar, vilket skapar problem för dragningen av avlopp från köket.',
   },
+  {
+    question: 'Vad händer med min post under stambytet?',
+    answer:
+      `All postutdelningen pausas under stambytesarbeten i portarna. 
+Er post kan tillsvidare hämtas på Postens Företagscenter, Datavägen 7. 
+  
+  Våra öppettider är: 
+    Måndag fredag 08:30-13:00. 15:00-18:00 
+
+Om ni har några frågor är ni välkomna att maila utdelning.jarfalla@postnord.com
+ Mvh Postnord i Veddesta`,
+    link: 'http://maps.google.com/?q=Datavägen%207%2017543%20JÄRFÄLLA'},
   // More questions...
 ];
 
