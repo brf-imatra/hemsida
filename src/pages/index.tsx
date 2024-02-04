@@ -183,12 +183,12 @@ function ImatraNytt() {
   return (
     <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl='/undraw/undraw_new_year_2023_pfnc.svg'
+        imageUrl='/undraw/undraw_newspaper_re_syf5.svg'
         imageAlt='Brf Imatra Nyhetsbrev'
-        published='2023-12-15'
+        published='2024-01-03'
         title='Brf Imatra Nyhetsbrev'
-        summary='Bostadsrättsföreningen höjer månadsavgiften med 14% från januari. Höjningen beror på stigande kostnader för räntor, försäkringar och andra faktorer som föreningen har liten möjlighet att påverka. Stambytet på gård 2 börjar i mellandagarna. Postnord delar inte ut post under rivningsfasen av stambytet. Avläsning och debitering av individuell elförbrukning startar januari. Valberedningen söker efterträdare till styrelsemedlemmar som avgår vid stämman. Klicka för att läsa mer...'
-        hrefLink='/imatranytt/2023-december'
+        summary='Medlemsträff i Folkets Husby onsdag 14;e februari kl 19.00. Stambyte klart på gård 1. Återvinningsstugan och container. Klicka för att läsa mer...'
+        hrefLink='/imatranytt/2024-februari'
       />
     </div>
   );

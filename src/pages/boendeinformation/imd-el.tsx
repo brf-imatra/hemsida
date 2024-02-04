@@ -25,7 +25,6 @@ const dateFormatter = (number: number | Date) => {
   return seLong.format(number);
 };
 
-
 export default function ImdEl() {
   return (
     <>
@@ -201,13 +200,11 @@ function Feed({ items }: FeedProps) {
   );
 }
 
-
-
 function Dokuments() {
   return (
-      <div className='grid grid-cols-1 gap-6'>
-        <DokumentGrupp title='2021' documents={Blanketter} />
-      </div>
+    <div className='grid grid-cols-1 gap-6'>
+      <DokumentGrupp title='2021' documents={Blanketter} />
+    </div>
   );
 }
 
@@ -231,4 +228,3 @@ const Blanketter: Array<DokumentRadProps> = [
     title: 'Gruppförteckning 3 och 4 RoK',
   },
 ];
-
