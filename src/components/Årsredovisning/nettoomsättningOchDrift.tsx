@@ -136,7 +136,7 @@ const fastighetsFörsäkringsData = [
   {
     date: "2023",
     "Nettoomsättning": 19_182_000,
-    "Drift och underhåll": 17_000_000,
+    "Drift och underhåll": 17_622_000,
   },
 ];
 
