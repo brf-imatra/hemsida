@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta
           httpEquiv='Content-Security-Policy'
-          content="default-src 'self'; frame-src https://youtu.be https://www.youtube.com; script-src 'self' 'unsafe-eval'; connect-src 'self' ws://localhost:3000/_next/webpack-hmr; img-src 'self'; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://rsms.me;base-uri 'self';form-action 'self';font-src https://*.googleapis.com https://*.gstatic.com/ https://rsms.me"
+          content="default-src 'self'; frame-src https://youtu.be https://www.youtube.com https://brfimatra.se/ https://wwww.brfimatra.se/; script-src 'self' 'unsafe-eval'; connect-src 'self' ws://localhost:3000/_next/webpack-hmr; img-src 'self'; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://rsms.me;base-uri 'self';form-action 'self';font-src https://*.googleapis.com https://*.gstatic.com/ https://rsms.me"
         />
         <meta
           property='og:description'
