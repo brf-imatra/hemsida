@@ -44,8 +44,7 @@ const faqs: Array<FAQ> = [
   },
   {
     question: 'Vad händer med min post under stambytet?',
-    answer:
-      `All postutdelningen pausas under stambytesarbeten i portarna. 
+    answer: `All postutdelningen pausas under stambytesarbeten i portarna. 
 Er post kan tillsvidare hämtas på Postens Företagscenter, Datavägen 7. 
   
   Våra öppettider är: 
@@ -53,7 +52,8 @@ Er post kan tillsvidare hämtas på Postens Företagscenter, Datavägen 7.
 
 Om ni har några frågor är ni välkomna att maila utdelning.jarfalla@postnord.com
  Mvh Postnord i Veddesta`,
-    link: 'http://maps.google.com/?q=Datavägen%207%2017543%20JÄRFÄLLA'},
+    link: 'http://maps.google.com/?q=Datavägen%207%2017543%20JÄRFÄLLA',
+  },
   // More questions...
 ];
 

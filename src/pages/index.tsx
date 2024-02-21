@@ -48,6 +48,7 @@ export default function Home() {
           {/*<Badrum />*/}
           {/*<Avgiftshöjning2024 />*/}
           <ImatraNytt />
+          <Släckljusen />
           <NyttLokalkontorHSB />
           <Årsstämma2023 />
           <StambyteFaq />
@@ -57,7 +58,7 @@ export default function Home() {
           {/*<Städdag />*/}
           <ElSparTips />
           {/*<StambyteSamtyckesblankett />*/}
-          <StambyteExtastämma />
+          <StambyteExtrastämma />
           <KommandeAvgiftshöjningar />
 
           <StambyteMedlemsInformation />
@@ -105,7 +106,7 @@ function KommandeAvgiftshöjningar() {
   );
 }
 
-function StambyteExtastämma() {
+function StambyteExtrastämma() {
   return (
     <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
@@ -120,16 +121,15 @@ function StambyteExtastämma() {
   );
 }
 
-function StambyteSamtyckesblankett() {
+function Släckljusen() {
   return (
     <div className='w-64 flex-grow pr-5 pt-10'>
       <Card
-        imageUrl='/undraw/undraw_Documents_re_isxv.png'
-        imageAlt='Protokoll från den extra föreningstämman för brf Imatra'
-        published='2022-10-10'
-        title='Samtyckesblankett'
-        summary='Här hittar du samtyckesblanketten för stambyte. Styrelsen rekommenderar att du lämnar samtycke till genomförande av stambyte. Utan samtycke blir du som medlem motpart i hyresnämnden. Samtyckesblanketten ska vara ifylld och undertecknad senast den 24 oktober 2022.'
-        hrefLink='/dokument/mallar/stambyte_samtyckesblankett.pdf'
+        imageUrl='/undraw/undraw_at_home_re_1m0v.svg'
+        imageAlt='Glöm inte att släcka ljusen'
+        title='Släcka ljusen'
+        summary='FRIS (Föreningen Räddningskörer i Samverkan) har med stöd av MSB tagit fram ett utbildnings och informationsmaterial Glöm inte släcka ljusen'
+        hrefLink='/boendeinformation/slacka-ljusen'
       />
     </div>
   );
@@ -287,9 +287,9 @@ Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 
 
   return (
     <Centered
-      introducing='Föreningsstämma'
-      title='Inbjudan för verksamhetsåret 2023'
-      summary='Föreningsstämma kommer att genomföras torsdagen 28/4 i Akalla By'
+      introducing='Spara datumet!'
+      title='Föreningsstämma för verksamhetsåret 2023'
+      summary='Föreningsstämma kommer att genomföras onsdag 15/5 på Folkets Husby'
     />
   );
 }

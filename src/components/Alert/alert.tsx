@@ -24,9 +24,6 @@ export function Alert({ message }: AlertProps) {
           </svg>
         </div>
         <div className='ml-3'>
-          <h3 className='text-sm font-medium text-yellow-800'>
-            HSB Kontoret stängt under v 10
-          </h3>
           <div className='mt-2 text-sm text-yellow-700'>
             <p>{message}</p>
           </div>
