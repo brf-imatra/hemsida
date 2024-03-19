@@ -87,11 +87,11 @@ const resultatData = [
   },
   {
     date: '2022',
-    'Resultat, efter finansiella poster': -912_000,
+    'Resultat, efter finansiella poster': -911_897,
   },
-    {
+  {
     date: '2023',
-    'Resultat, efter finansiella poster': -469_000,
+    'Resultat, efter finansiella poster': -1_833_358,
   },
 ];
 

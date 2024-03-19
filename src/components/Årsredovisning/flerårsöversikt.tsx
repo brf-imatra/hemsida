@@ -21,6 +21,7 @@ export const performance = [
     'Driftkostnad, kr/kvm': 660,
     'Årsavgifter, kr/kvm': 719,
     'Totala intäkter, kr/kvm': 869,
+    'Soliditet, %': 11,
   },
   {
     date: '2019',
@@ -31,6 +32,7 @@ export const performance = [
     'Driftkostnad, kr/kvm': 815,
     'Årsavgifter, kr/kvm': 734,
     'Totala intäkter, kr/kvm': 869,
+    'Soliditet, %': 7,
   },
   {
     date: '2020',
@@ -41,6 +43,7 @@ export const performance = [
     'Driftkostnad, kr/kvm': 785,
     'Årsavgifter, kr/kvm': 752,
     'Totala intäkter, kr/kvm': 903,
+    'Soliditet, %': 8,
   },
   {
     date: '2021',
@@ -51,6 +54,7 @@ export const performance = [
     'Driftkostnad, kr/kvm': 1075,
     'Årsavgifter, kr/kvm': 776,
     'Totala intäkter, kr/kvm': 1014,
+    'Soliditet, %': -1,
   },
   {
     date: '2022',
@@ -61,16 +65,18 @@ export const performance = [
     'Driftkostnad, kr/kvm': 915,
     'Årsavgifter, kr/kvm': 778,
     'Totala intäkter, kr/kvm': 1029,
+    'Soliditet, %': -2,
   },
-    {
+  {
     date: '2023',
-    'Sparande, kr/kvm': 146,
+    'Sparande, kr/kvm': 2,
     'Skuldsättning, kr/kvm': 4125,
     'Räntekänslighet, %': 5,
-    'Energikostnad, kr/kvm': 280,
+    'Energikostnad, kr/kvm': 319,
     'Driftkostnad, kr/kvm': 915,
     'Årsavgifter, kr/kvm': 856,
-    'Totala intäkter, kr/kvm': 1054,
+    'Totala intäkter, kr/kvm': 1075,
+    'Soliditet, %': -4,
   },
 ];
 
@@ -94,6 +100,7 @@ export function Flerårsöversikt() {
     'Driftkostnad, kr/kvm': currencyFormatter,
     'Årsavgifter, kr/kvm': currencyFormatter,
     'Totala intäkter, kr/kvm': currencyFormatter,
+    'Soliditet, %': numberFormatter,
   };
 
   return (
