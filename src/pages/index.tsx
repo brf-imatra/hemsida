@@ -287,10 +287,10 @@ Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 
 
   return (
     <Centered
-      introducing='Spara datumet!'
+      introducing='Inbjudan'
       title='Föreningsstämma för verksamhetsåret 2023'
       summary='Föreningsstämma kommer att genomföras onsdag 15/5 på Folkets Husby'
-    />
+    ><p className='mt-8 text-xl leading-8 text-gray-500'>{text}</p></Centered>
   );
 }
 
