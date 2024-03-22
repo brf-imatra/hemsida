@@ -130,8 +130,8 @@ const fastighetsFörsäkringsData = [
   },
   {
     date: '2022',
-    Nettoomsättning: 17_799_188,
-    'Drift och underhåll': 16_162_119,
+    Nettoomsättning: 17_913_032,
+    'Drift och underhåll': 15_510_086,
   },
   {
     date: '2023',

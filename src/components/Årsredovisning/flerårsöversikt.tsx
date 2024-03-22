@@ -73,7 +73,6 @@ export const performance = [
     'Skuldsättning, kr/kvm': 4125,
     'Räntekänslighet, %': 5,
     'Energikostnad, kr/kvm': 319,
-    'Driftkostnad, kr/kvm': 915,
     'Årsavgifter, kr/kvm': 856,
     'Totala intäkter, kr/kvm': 1075,
     'Soliditet, %': -4,
