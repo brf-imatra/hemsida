@@ -3,8 +3,8 @@ import {
   AreaChart,
   Card,
   Flex,
-  Select,
-  SelectItem,
+  SearchSelect,
+  SearchSelectItem,
   Icon,
   Text,
   Title,
@@ -21,6 +21,7 @@ export const performance = [
     'Driftkostnad, kr/kvm': 660,
     'Årsavgifter, kr/kvm': 719,
     'Totala intäkter, kr/kvm': 869,
+    'Soliditet, %': 11,
   },
   {
     date: '2019',
@@ -31,6 +32,7 @@ export const performance = [
     'Driftkostnad, kr/kvm': 815,
     'Årsavgifter, kr/kvm': 734,
     'Totala intäkter, kr/kvm': 869,
+    'Soliditet, %': 7,
   },
   {
     date: '2020',
@@ -41,6 +43,7 @@ export const performance = [
     'Driftkostnad, kr/kvm': 785,
     'Årsavgifter, kr/kvm': 752,
     'Totala intäkter, kr/kvm': 903,
+    'Soliditet, %': 8,
   },
   {
     date: '2021',
@@ -51,6 +54,7 @@ export const performance = [
     'Driftkostnad, kr/kvm': 1075,
     'Årsavgifter, kr/kvm': 776,
     'Totala intäkter, kr/kvm': 1014,
+    'Soliditet, %': -1,
   },
   {
     date: '2022',
@@ -61,6 +65,17 @@ export const performance = [
     'Driftkostnad, kr/kvm': 915,
     'Årsavgifter, kr/kvm': 778,
     'Totala intäkter, kr/kvm': 1029,
+    'Soliditet, %': -2,
+  },
+  {
+    date: '2023',
+    'Sparande, kr/kvm': 2,
+    'Skuldsättning, kr/kvm': 4125,
+    'Räntekänslighet, %': 5,
+    'Energikostnad, kr/kvm': 319,
+    'Årsavgifter, kr/kvm': 856,
+    'Totala intäkter, kr/kvm': 1075,
+    'Soliditet, %': -4,
   },
 ];
 
@@ -84,6 +99,7 @@ export function Flerårsöversikt() {
     'Driftkostnad, kr/kvm': currencyFormatter,
     'Årsavgifter, kr/kvm': currencyFormatter,
     'Totala intäkter, kr/kvm': currencyFormatter,
+    'Soliditet, %': numberFormatter,
   };
 
   return (
@@ -105,7 +121,7 @@ export function Flerårsöversikt() {
           <Text>Föreningenskostnader och intäkter över tid</Text>
         </div>
         <div className='mt-6 md:mt-0'>
-          <Select
+          <SearchSelect
             className='w-56'
             color='zinc'
             defaultValue={selectedKpi}
@@ -114,12 +130,12 @@ export function Flerårsöversikt() {
             {Object.keys(performance[0])
               .filter((item) => item !== 'date')
               .map((item) => (
-                <SelectItem key={item} value={item} defaultValue={item} />
+                <SearchSelectItem key={item} value={item} defaultValue={item} />
               ))}
             {/*         <DropdownItem value="Sparande, kr/kvm" text="Sparande, kr/kvm" />
             <DropdownItem value="Skuldsättning, kr/kvm" text="Skuldsättning, kr/kvm" />
             <DropdownItem value="Customers" text="Customers" />*/}
-          </Select>
+          </SearchSelect>
         </div>
       </div>
       <AreaChart

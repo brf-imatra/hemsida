@@ -1,31 +1,5 @@
 import { Card, Title, Text, AreaChart } from '@tremor/react';
 
-/*
-Fastighetsförsäkring
-
-2013,
-
-2014,
-
-2015,
-
-2016,
-
-2017,
-
-2018,
-
-2019,
-
-2020,
-
-2021,
-
-2022,
-
-2023,
- */
-
 // Not 2 från årsredovisningarna
 
 const fastighetsFörsäkringsData = [
@@ -157,13 +131,13 @@ const fastighetsFörsäkringsData = [
   {
     date: '2022',
     Nettoomsättning: 17_913_032,
-    'Drift och underhåll': 16_303_675,
+    'Drift och underhåll': 15_510_086,
   },
-  // {
-  //   date: "2023",
-  //   "Nettoomsättning": 0,
-  //     "Drift och underhåll": 0,
-  // },
+  {
+    date: '2023',
+    Nettoomsättning: 19_181_737,
+    'Drift och underhåll': 16_889_089,
+  },
 ];
 
 const dataFormatter = (number: number) => {

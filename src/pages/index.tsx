@@ -6,10 +6,10 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
 
 export default function Home() {
-  const bannerEl = false ? (
+  const bannerEl = true ? (
     <Banner
-      title='Miljöstugan är stängd julafton och nyårsafton'
-      message='Både julafton söndag 24/12 och nyårsafton söndag 31/12 är miljöstugan stängd!'
+      title='Miljöstugan är stängd påskdagen'
+      message='Påskdagen 31/3 är miljöstugan stängd!'
     />
   ) : null;
 
@@ -18,8 +18,8 @@ export default function Home() {
       <div className='relative overflow-hidden'>
         <Image
           className='h-48 w-full object-cover'
-          src='/imatra/foton/helsingforsgatan_winter22.jpg'
-          alt='Brf Imatra vinter'
+          src='/imatra/foton/helsingforsgatan_spring20.jpg'
+          alt='Brf Imatra'
           loading='eager'
           priority={true}
           height={300}
@@ -287,10 +287,10 @@ Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 
 
   return (
     <Centered
-      introducing='Spara datumet!'
+      introducing='Inbjudan'
       title='Föreningsstämma för verksamhetsåret 2023'
       summary='Föreningsstämma kommer att genomföras onsdag 15/5 på Folkets Husby'
-    />
+    ><p className='mt-8 text-xl leading-8 text-gray-500'>{text}</p></Centered>
   );
 }
 
