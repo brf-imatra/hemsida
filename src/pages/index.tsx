@@ -6,7 +6,7 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
 
 export default function Home() {
-  const bannerEl = true ? (
+  const bannerEl = false ? (
     <Banner
       title='Miljöstugan är stängd påskdagen'
       message='Påskdagen 31/3 är miljöstugan stängd!'
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
       </Well> */}
         <div className='flex w-full flex-row flex-wrap justify-start'>
-          {/*<InbjudanFöreningsstämma />*/}
+          <InbjudanFöreningsstämma />
           {/*<Badrum />*/}
           {/*<Avgiftshöjning2024 />*/}
           <ImatraNytt />
@@ -282,14 +282,16 @@ function Städdag() {
 
 function InbjudanFöreningsstämma() {
   const text = `
-Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 4 veckor innan föreningsstämman.
+Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 2 veckor innan föreningsstämman.
+
+Vi ser fram emot att träffa dig!
 `;
 
   return (
     <Centered
-      introducing='Inbjudan'
-      title='Föreningsstämma för verksamhetsåret 2023'
-      summary='Föreningsstämma kommer att genomföras onsdag 15/5 på Folkets Husby'
+      introducing='Välkommen'
+      title='Brf Imatras årsstämma'
+      summary='Onsdagen den 15 maj bjuder vi in alla medlemmar till vår årliga föreningsstämma på Folkets Husby. Under stämman får du information om föreningens verksamhet under det gångna året, och du har möjlighet att påverka föreningens framtid.'
     ><p className='mt-8 text-xl leading-8 text-gray-500'>{text}</p></Centered>
   );
 }
