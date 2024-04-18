@@ -132,9 +132,6 @@ export function Flerårsöversikt() {
               .map((item) => (
                 <SearchSelectItem key={item} value={item} defaultValue={item} />
               ))}
-            {/*         <DropdownItem value="Sparande, kr/kvm" text="Sparande, kr/kvm" />
-            <DropdownItem value="Skuldsättning, kr/kvm" text="Skuldsättning, kr/kvm" />
-            <DropdownItem value="Customers" text="Customers" />*/}
           </SearchSelect>
         </div>
       </div>
@@ -142,7 +139,7 @@ export function Flerårsöversikt() {
         data={performance}
         index='date'
         categories={[selectedKpi]}
-        colors={['blue']}
+        colors={['orange']}
         showLegend={false}
         valueFormatter={formatters[selectedKpi]}
         yAxisWidth={66}

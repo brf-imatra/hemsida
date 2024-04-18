@@ -185,10 +185,10 @@ function ImatraNytt() {
       <Card
         imageUrl='/undraw/undraw_newspaper_re_syf5.svg'
         imageAlt='Brf Imatra Nyhetsbrev'
-        published='2024-01-03'
+        published='2024-04-18'
         title='Brf Imatra Nyhetsbrev'
-        summary='Medlemsträff i Folkets Husby onsdag 14;e februari kl 19.00. Stambyte klart på gård 1. Återvinningsstugan och container. Klicka för att läsa mer...'
-        hrefLink='/imatranytt/2024-februari'
+        summary='IMD-el med kvartalsvis debitering. Returrunda där du kan lämna saker för återvinning. Beab utför vårstädning, beskärning och reparationer. Grilla försiktigt och tänk på brandrisken. Föreningsstämma och nya ledamöter till styrelsen efterlyses! Klicka för att läsa mer...'
+        hrefLink='/imatranytt/2024-april'
       />
     </div>
   );
