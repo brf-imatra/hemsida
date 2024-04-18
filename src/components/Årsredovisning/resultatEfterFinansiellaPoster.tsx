@@ -113,7 +113,7 @@ export function ResultatEfterFinansielllPoster() {
         categories={['Resultat, efter finansiella poster']}
         index='date'
         className='mt-4 h-72'
-        colors={['blue']}
+        colors={['rose']}
         yAxisWidth={110}
         valueFormatter={currencyFormatter}
       />
