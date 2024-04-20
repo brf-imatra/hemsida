@@ -131,11 +131,11 @@ const fastighetsFörsäkringsData = [
   },
   {
     date: '2022',
-    Försäkringspremie: 718_045,
+    Försäkringspremie: 726_169,
   },
   {
     date: '2023',
-    Försäkringspremie: 969_363,
+    Försäkringspremie: 977_863,
   },
   {
     date: '2024',

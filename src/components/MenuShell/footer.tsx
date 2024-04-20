@@ -28,7 +28,7 @@ export default function SocialLinksFooter() {
         </div>
         <div className='mt-8 md:order-1 md:mt-0'>
           <p className='text-center text-base text-gray-400'>
-            &copy; 2023 Brf Imatra.
+            &copy; 2024 Brf Imatra.
           </p>
         </div>
       </div>

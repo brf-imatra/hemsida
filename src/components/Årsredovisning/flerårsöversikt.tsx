@@ -69,7 +69,7 @@ export const performance = [
   },
   {
     date: '2023',
-    'Sparande, kr/kvm': 2,
+    'Sparande, kr/kvm': -9,
     'Skuldsättning, kr/kvm': 4125,
     'Räntekänslighet, %': 5,
     'Energikostnad, kr/kvm': 319,

@@ -78,22 +78,22 @@ function HSBMedlemsservice() {
           <dt className='pb-2 text-sm font-medium leading-5 text-gray-500'>
             1 september - 30 juni
           </dt>
-          <dt>Måndag & onsdag 8-12</dt>
-          <dt>Tisdag & torsdag 13-18</dt>
+          <dt>Måndag & onsdag 8:00-12:00</dt>
+          <dt>Tisdag & torsdag 13:00-18:00</dt>
         </dl>
       </DescriptionListRow>
 
       <DescriptionListRow borderless={true}>
         <dl>
           <dt className='pb-2 text-sm font-medium leading-5 text-gray-500'>
-            1 juli - 31 augusti
+            1 juli - 15 augusti
           </dt>
-          <dt>Måndag 8-12</dt>
-          <dt>Torsdag 13-18</dt>
+          <dt>Måndag 8:00-12:00</dt>
+          <dt>Torsdag 13:00-18:00</dt>
         </dl>
       </DescriptionListRow>
 
-      <DescriptionListRow title='Akut felanmälan dygnet runt'>
+      <DescriptionListRow title='Akuta fel utanför normala arbetstider'>
         <div className='flex flex-1'>
           <PhoneIcon
             className='h-5 w-5 flex-shrink-0 text-gray-400'
@@ -165,7 +165,7 @@ function HSBFaktura() {
           </dt>
           <dt>Att: brf Imatra 2193</dt>
           <dt>Box 1385</dt>
-          <dt>172 27 Sundbyberg</dt>
+          <dt>171 27 Solna</dt>
         </dl>
       </DescriptionListRow>
     </DescriptionList>

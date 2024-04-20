@@ -552,9 +552,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tremor/react@npm:^3.16.0":
-  version: 3.16.0
-  resolution: "@tremor/react@npm:3.16.0"
+"@tremor/react@npm:^3.16.1":
+  version: 3.16.1
+  resolution: "@tremor/react@npm:3.16.1"
   dependencies:
     "@floating-ui/react": "npm:^0.19.2"
     "@headlessui/react": "npm:^1.7.18"
@@ -567,7 +567,7 @@ __metadata:
   peerDependencies:
     react: ^18.0.0
     react-dom: ">=16.6.0"
-  checksum: 42a7f52100c18cac78e375a970e766fd9669ee374da9ef41cdddbe47e2804e0b66aec549ab2c167c79f2982d4e331bfa54c71e06b6bd63367aa12322e57b1645
+  checksum: cb60299d888070df523275f8f5505c447e461e3f1f038131031a9be8873a4a757d1b2def7297bc3c700737d50e3d310900f3fa2488657cabdf88185e25949665
   languageName: node
   linkType: hard
 
@@ -1354,7 +1354,7 @@ __metadata:
     "@tailwindcss/aspect-ratio": "npm:^0.4.2"
     "@tailwindcss/forms": "npm:^0.5.7"
     "@tailwindcss/typography": "npm:^0.5.12"
-    "@tremor/react": "npm:^3.16.0"
+    "@tremor/react": "npm:^3.16.1"
     "@types/node": "npm:^20.12.7"
     "@types/react": "npm:^18.2.79"
     autoprefixer: "npm:^10.4.19"
