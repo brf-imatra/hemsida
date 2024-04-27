@@ -10,6 +10,7 @@ export default function Dokuments() {
           title='Bostadsrättsförening Imatra'
           documents={ForeningsDokument}
         />
+        <DokumentGrupp title='2024' documents={Dokument2024} />
         <DokumentGrupp title='2023' documents={Dokument2023} />
         <DokumentGrupp title='2022' documents={Dokument2022} />
         <DokumentGrupp title='2021' documents={Dokument2021} />
@@ -117,6 +118,15 @@ const ForeningsDokument: Array<DokumentRadProps> = [
     href: '/dokument/2018-05-04_HSB_brf_Imatra_Normalstadgar_2011-version_5.pdf',
     tag: 'PDF',
     title: 'HSB brf Imatra Normalstadgar',
+  },
+];
+
+const Dokument2024: Array<DokumentRadProps> = [
+    {
+    documentName: 'årsredovisning_2023_imatra.pdf',
+    href: '/dokument/arsredovisning/2024/arsredovisning_2023_imatra.pdf',
+    tag: 'PDF',
+    title: 'Årsredovisning',
   },
 ];
 
