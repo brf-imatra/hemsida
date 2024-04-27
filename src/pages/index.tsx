@@ -6,10 +6,10 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
 
 export default function Home() {
-  const bannerEl = false ? (
+  const bannerEl = true ? (
     <Banner
-      title='Miljöstugan är stängd påskdagen'
-      message='Påskdagen 31/3 är miljöstugan stängd!'
+      title='Årsredovisning 2023'
+      message='Årsredovisningen för 2023 hittar du under fliken Dokument eller artikeln Föreningstämma 2024.'
     />
   ) : null;
 
@@ -44,7 +44,9 @@ export default function Home() {
       </div>
       </Well> */}
         <div className='flex w-full flex-row flex-wrap justify-start'>
-          <InbjudanFöreningsstämma />
+
+          {/*<InbjudanFöreningsstämma />*/}
+          <Årsstämma />
           {/*<Badrum />*/}
           {/*<Avgiftshöjning2024 />*/}
           <ImatraNytt />
@@ -241,9 +243,9 @@ function Årsstämma() {
       <Card
         imageUrl='/undraw/undraw_Content_creator_re_pt5b.svg'
         imageAlt='Föreningsårsstämma för brf Imatra'
-        published='2024-03-25'
+        published='2024-04-27'
         title='Föreningsstämma 2024'
-        summary='Kallelse till Brf. Imatras föreningsstämma torsdagen 28/4 i Folkets Husby. Länkar till  2023 årsredovisning, valberedningensförslag samt motioner.'
+        summary='Kallelse till Brf. Imatras föreningsstämma onsdag 15/5 i Folkets Husby. Här hittar du 2023 årsredovisning, valberedningensförslag samt motioner. Klicka för att läsa mer...'
         hrefLink='/foreningsstamma'
       />
     </div>
@@ -282,8 +284,7 @@ function Städdag() {
 
 function InbjudanFöreningsstämma() {
   const text = `
-Dagordning och årsredovisning kommer att delas ut till alla medlemmar senast 2 veckor innan föreningsstämman.
-
+Dagordning och årsredovisning hittar du här på hemsidan under fliken Dokument. Tryckt material kommer att delas ut under vecka 19.
 Vi ser fram emot att träffa dig!
 `;
 
