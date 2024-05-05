@@ -46,7 +46,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7":
+"@babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7":
   version: 7.23.2
   resolution: "@babel/runtime@npm:7.23.2"
   dependencies:
@@ -146,19 +146,6 @@ __metadata:
   version: 0.1.6
   resolution: "@floating-ui/utils@npm:0.1.6"
   checksum: 0a089db0e0526b89e83cb0a773a903517db5c9067cd473febfd8fa91a3a2ccbc3a835234796c1bb528def21dbb67be50e28d9c473cb58a6d90679d7e549b9c0c
-  languageName: node
-  linkType: hard
-
-"@headlessui/react@npm:^1.7.18":
-  version: 1.7.18
-  resolution: "@headlessui/react@npm:1.7.18"
-  dependencies:
-    "@tanstack/react-virtual": "npm:^3.0.0-beta.60"
-    client-only: "npm:^0.0.1"
-  peerDependencies:
-    react: ^16 || ^17 || ^18
-    react-dom: ^16 || ^17 || ^18
-  checksum: 2d88d10874879182d4b9ed9a7779266032214034481129ba544e858d3624c8d12333e6a9d9d8263f2f116bc823bcfd43a2d1f69800fbf6a47b34d989370346e5
   languageName: node
   linkType: hard
 
@@ -552,22 +539,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tremor/react@npm:^3.16.1":
-  version: 3.16.1
-  resolution: "@tremor/react@npm:3.16.1"
+"@tremor/react@npm:^3.16.2":
+  version: 3.16.2
+  resolution: "@tremor/react@npm:3.16.2"
   dependencies:
     "@floating-ui/react": "npm:^0.19.2"
-    "@headlessui/react": "npm:^1.7.18"
+    "@headlessui/react": "npm:^1.7.19"
     "@headlessui/tailwindcss": "npm:^0.2.0"
     date-fns: "npm:^2.30.0"
     react-day-picker: "npm:^8.9.1"
     react-transition-state: "npm:^2.1.1"
-    recharts: "npm:^2.10.3"
+    recharts: "npm:^2.12.6"
     tailwind-merge: "npm:^1.14.0"
   peerDependencies:
     react: ^18.0.0
     react-dom: ">=16.6.0"
-  checksum: cb60299d888070df523275f8f5505c447e461e3f1f038131031a9be8873a4a757d1b2def7297bc3c700737d50e3d310900f3fa2488657cabdf88185e25949665
+  checksum: 84e7a4a4adc92ce145a3a1720080356de07881eead0694b2935b700e15bc634429ae2233c49ae7f21f8fda77a684f092017267837a7d26617fa7a6c3f5de4141
   languageName: node
   linkType: hard
 
@@ -713,12 +700,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.12.7":
-  version: 20.12.7
-  resolution: "@types/node@npm:20.12.7"
+"@types/node@npm:^20.12.8":
+  version: 20.12.8
+  resolution: "@types/node@npm:20.12.8"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: dce80d63a3b91892b321af823d624995c61e39c6a223cc0ac481a44d337640cc46931d33efb3beeed75f5c85c3bda1d97cef4c5cd4ec333caf5dee59cff6eca0
+  checksum: 840002d20654e38a9af8cdffa215598fdb28ac4f96c5701ed672ec365ed6ccc66da299edddaa409baf13cd71bbf1128901f633b5e44e070fc236e26415805b78
   languageName: node
   linkType: hard
 
@@ -1354,8 +1341,8 @@ __metadata:
     "@tailwindcss/aspect-ratio": "npm:^0.4.2"
     "@tailwindcss/forms": "npm:^0.5.7"
     "@tailwindcss/typography": "npm:^0.5.13"
-    "@tremor/react": "npm:^3.16.1"
-    "@types/node": "npm:^20.12.7"
+    "@tremor/react": "npm:^3.16.2"
+    "@types/node": "npm:^20.12.8"
     "@types/react": "npm:^18.3.1"
     autoprefixer: "npm:^10.4.19"
     eslint: "npm:^8.57.0"
@@ -1364,8 +1351,8 @@ __metadata:
     postcss: "npm:^8.4.38"
     prettier: "npm:^3.2.5"
     prettier-plugin-tailwindcss: "npm:^0.5.14"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
     react-transition-group: "npm:^4.4.5"
     tailwind: "npm:^4.0.0"
     tailwindcss: "npm:^3.4.3"
@@ -2074,15 +2061,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-helpers@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "dom-helpers@npm:3.4.0"
-  dependencies:
-    "@babel/runtime": "npm:^7.1.2"
-  checksum: 1d2d3e4eadac2c4f4c8c7470a737ab32b7ec28237c4d094ea967ec3184168fd12452196fcc424a5d7860b6176117301aeaecba39467bf1a6e8492a8e5c9639d1
-  languageName: node
-  linkType: hard
-
 "dom-helpers@npm:^5.0.1":
   version: 5.2.1
   resolution: "dom-helpers@npm:5.2.1"
@@ -2726,7 +2704,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-equals@npm:^5.0.0":
+"fast-equals@npm:^5.0.1":
   version: 5.0.1
   resolution: "fast-equals@npm:5.0.1"
   checksum: d7077b8b681036c2840ed9860a3048e44fc268fad2b525b8f25b43458be0c8ad976152eb4b475de9617170423c5b802121ebb61ed6641c3ac035fadaf805c8c0
@@ -4055,7 +4033,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.19":
+"lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
@@ -5613,15 +5591,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0":
-  version: 18.2.0
-  resolution: "react-dom@npm:18.2.0"
+"react-dom@npm:18.3.1":
+  version: 18.3.1
+  resolution: "react-dom@npm:18.3.1"
   dependencies:
     loose-envify: "npm:^1.1.0"
-    scheduler: "npm:^0.23.0"
+    scheduler: "npm:^0.23.2"
   peerDependencies:
-    react: ^18.2.0
-  checksum: 66dfc5f93e13d0674e78ef41f92ed21dfb80f9c4ac4ac25a4b51046d41d4d2186abc915b897f69d3d0ebbffe6184e7c5876f2af26bfa956f179225d921be713a
+    react: ^18.3.1
+  checksum: a752496c1941f958f2e8ac56239172296fcddce1365ce45222d04a1947e0cc5547df3e8447f855a81d6d39f008d7c32eab43db3712077f09e3f67c4874973e85
   languageName: node
   linkType: hard
 
@@ -5632,39 +5610,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-lifecycles-compat@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "react-lifecycles-compat@npm:3.0.4"
-  checksum: 1d0df3c85af79df720524780f00c064d53a9dd1899d785eddb7264b378026979acbddb58a4b7e06e7d0d12aa1494fd5754562ee55d32907b15601068dae82c27
-  languageName: node
-  linkType: hard
-
-"react-smooth@npm:^2.0.5":
-  version: 2.0.5
-  resolution: "react-smooth@npm:2.0.5"
+"react-smooth@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "react-smooth@npm:4.0.1"
   dependencies:
-    fast-equals: "npm:^5.0.0"
-    react-transition-group: "npm:2.9.0"
+    fast-equals: "npm:^5.0.1"
+    prop-types: "npm:^15.8.1"
+    react-transition-group: "npm:^4.4.5"
   peerDependencies:
-    prop-types: ^15.6.0
-    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 3d7e5d0c7c927bebf47743d868ac76e8637cf18564cd1fd12edab5cfdad462743ebdd5a2f4030c653d2244f6cf85fabe26a78ee4308e7b9c738b6818755ce0b1
-  languageName: node
-  linkType: hard
-
-"react-transition-group@npm:2.9.0":
-  version: 2.9.0
-  resolution: "react-transition-group@npm:2.9.0"
-  dependencies:
-    dom-helpers: "npm:^3.4.0"
-    loose-envify: "npm:^1.4.0"
-    prop-types: "npm:^15.6.2"
-    react-lifecycles-compat: "npm:^3.0.4"
-  peerDependencies:
-    react: ">=15.0.0"
-    react-dom: ">=15.0.0"
-  checksum: df40608e9defb6873290b9f2165921f17139b8edbb2019e2de38f77477f9cbd8fdb739b20e1e04cb16a513137c80e85cf5f0fff96049a94b740d389313394476
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 5c19a2c147798c3de1329d442b1a371139c01113cc108c38c201b63502c329f943ede505c44089d26a6563eaa72a67b845d538d956f34a389b37fd3961308834
   languageName: node
   linkType: hard
 
@@ -5693,12 +5649,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
-  version: 18.2.0
-  resolution: "react@npm:18.2.0"
+"react@npm:18.3.1":
+  version: 18.3.1
+  resolution: "react@npm:18.3.1"
   dependencies:
     loose-envify: "npm:^1.1.0"
-  checksum: b562d9b569b0cb315e44b48099f7712283d93df36b19a39a67c254c6686479d3980b7f013dc931f4a5a3ae7645eae6386b4aa5eea933baa54ecd0f9acb0902b8
+  checksum: 283e8c5efcf37802c9d1ce767f302dd569dd97a70d9bb8c7be79a789b9902451e0d16334b05d73299b20f048cbc3c7d288bbbde10b701fa194e2089c237dbea3
   languageName: node
   linkType: hard
 
@@ -5752,23 +5708,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"recharts@npm:^2.10.3":
-  version: 2.10.3
-  resolution: "recharts@npm:2.10.3"
+"recharts@npm:^2.12.6":
+  version: 2.12.6
+  resolution: "recharts@npm:2.12.6"
   dependencies:
     clsx: "npm:^2.0.0"
     eventemitter3: "npm:^4.0.1"
-    lodash: "npm:^4.17.19"
+    lodash: "npm:^4.17.21"
     react-is: "npm:^16.10.2"
-    react-smooth: "npm:^2.0.5"
+    react-smooth: "npm:^4.0.0"
     recharts-scale: "npm:^0.4.4"
     tiny-invariant: "npm:^1.3.1"
     victory-vendor: "npm:^36.6.8"
   peerDependencies:
-    prop-types: ^15.6.0
     react: ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 7c2896e05bef4777362621ab3b4de5aaa2469370295638028e93f1fc917fbf93c94ff09d330c5d01529c50d2b7a9b4a29a4f259e3f39b0a7b471f9dfe5ecbe1d
+  checksum: df21d5e7c33d8dc341a9186b414169b49deb1bceb73d0a265d3ef58791555680d2ed6b0fcaa88c2ebb3d12b5f3ee5f25c23e76bcc934a226127af9d5dd99ab3a
   languageName: node
   linkType: hard
 
@@ -5997,7 +5952,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.23.0":
+"scheduler@npm:^0.23.2":
   version: 0.23.2
   resolution: "scheduler@npm:0.23.2"
   dependencies:

@@ -30,7 +30,7 @@ const faqs: Array<FAQ> = [
   {
     question: 'Hur lång tid tar stambytet i min lägenhet?',
     answer:
-      'Varje stam beräknas ta 7 veckor att renovera. Vilket också är den tid som det beräknas pågå arbeten i ditt badrum.',
+      'Varje stam beräknas ta 8 veckor att renovera. Vilket också är den tid som det beräknas pågå arbeten i ditt badrum.',
   },
   {
     question: 'Byte av badrumsfönster',
