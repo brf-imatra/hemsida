@@ -1,5 +1,5 @@
 import React, { Fragment, PropsWithChildren, useState } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
+import { Dialog, DialogPanel, Transition, TransitionChild } from '@headlessui/react';
 import {
   Bars3Icon,
   EnvelopeIcon,
@@ -12,7 +12,7 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { ExternalLink } from '../Section/simple_three_column';
+import { ExternalLink } from '../Section';
 
 const navigation = [
   { name: 'Hem', href: '/', icon: HomeIcon, current: true },
@@ -32,22 +32,14 @@ export function LightSidebar({ children }: PropsWithChildren) {
 
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full">
-        <body class="h-full">
-        ```
-      */}
       <div>
-        <Transition.Root show={sidebarOpen} as={Fragment}>
+        <Transition show={sidebarOpen} as={Fragment}>
           <Dialog
             as='div'
             className='relative z-40 md:hidden'
             onClose={setSidebarOpen}
           >
-            <Transition.Child
+            <TransitionChild
               as={Fragment}
               enter='transition-opacity ease-linear duration-300'
               enterFrom='opacity-0'
@@ -57,10 +49,10 @@ export function LightSidebar({ children }: PropsWithChildren) {
               leaveTo='opacity-0'
             >
               <div className='fixed inset-0 bg-gray-600 bg-opacity-75' />
-            </Transition.Child>
+            </TransitionChild>
 
             <div className='fixed inset-0 z-40 flex'>
-              <Transition.Child
+              <TransitionChild
                 as={Fragment}
                 enter='transition ease-in-out duration-300 transform'
                 enterFrom='-translate-x-full'
@@ -69,8 +61,8 @@ export function LightSidebar({ children }: PropsWithChildren) {
                 leaveFrom='translate-x-0'
                 leaveTo='-translate-x-full'
               >
-                <Dialog.Panel className='relative flex w-full max-w-xs flex-1 flex-col bg-white'>
-                  <Transition.Child
+                <DialogPanel className='relative flex w-full max-w-xs flex-1 flex-col bg-white'>
+                  <TransitionChild
                     as={Fragment}
                     enter='ease-in-out duration-300'
                     enterFrom='opacity-0'
@@ -92,7 +84,7 @@ export function LightSidebar({ children }: PropsWithChildren) {
                         />
                       </button>
                     </div>
-                  </Transition.Child>
+                  </TransitionChild>
                   <div className='h-0 flex-1 overflow-y-auto pb-4 pt-5'>
                     <div className='flex flex-shrink-0 items-center px-4'>
                       <Image
@@ -135,14 +127,14 @@ export function LightSidebar({ children }: PropsWithChildren) {
                       href='https://milou.brfimatra.se:10003'
                     />
                   </div>
-                </Dialog.Panel>
-              </Transition.Child>
+                </DialogPanel>
+              </TransitionChild>
               <div className='w-14 flex-shrink-0'>
                 {/* Force sidebar to shrink to fit close icon */}
               </div>
             </div>
           </Dialog>
-        </Transition.Root>
+        </Transition>
 
         {/* Static sidebar for desktop */}
         <div className='hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col'>

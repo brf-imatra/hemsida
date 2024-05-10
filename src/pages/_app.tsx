@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 import '../styles/tailwind.css';
 import Head from 'next/head';
-import { LightSidebar } from '../components/MenuShell';
+import { LightSidebar } from '../components';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

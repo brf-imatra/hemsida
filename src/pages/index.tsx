@@ -8,8 +8,8 @@ import Image from 'next/image';
 export default function Home() {
   const bannerEl = true ? (
     <Banner
-      title='Årsredovisning 2023'
-      message='Årsredovisningen för 2023 hittar du under fliken Dokument eller artikeln Föreningstämma 2024.'
+      title='Föreningsstämman onsdag 15;e maj'
+      message='Föreningsstämman onsdag 15;e maj från kl 18:00 uppe i Folkets Husby och därför är återvinningsstugan stängd denna onsdag.'
     />
   ) : null;
 
