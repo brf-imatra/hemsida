@@ -2,6 +2,23 @@ import {Attachment, Body, Centered} from '../components';
 import {MDXProvider} from '@mdx-js/react'
 import {DokumentRad} from "./dokuments";
 
+export default (props) => {
+    const components = {
+  h2: props => <h2 className="text-2xl font-extrabold text-red-900 tracking-tight sm:text-3xl" {...props} />
+    }
+    return <MDXProvider components={components} >
+              <Body>
+          <Centered
+        introducing="Kallelse"
+        title="Föreningsstämma Brf. Imatra nr 193"
+        summary="Kallelse till Brf. Imatras föreningstämma onsdag 15/5 i Folkets Husby"
+      >
+               <main {...props} />
+          </Centered>
+      </Body>
+    </MDXProvider>
+}
+
 __Plats__: Stora salen i Folkets Husby Edvard Griegsgången 16
 164 32 Kista
 
@@ -59,21 +76,3 @@ MEDTAG BOSTADSRÄTTSBEVIS ELLER ÖVERLÅTELSEAVTAL.
 23. val av ombud och ersättare till distriktsstämmor samt övriga representanter i HSB
 24. av styrelsen till föreningsstämman hänskjutna frågor och av medlemmar anmälda ärenden som angivits i kallelsen
 25. föreningsstämmans avslutande
-
-
-export default (props) => {
-    const components = {
-  h2: props => <h2 className="text-2xl font-extrabold text-red-900 tracking-tight sm:text-3xl" {...props} />
-    }
-    return <MDXProvider components={components} >
-              <Body>
-          <Centered
-        introducing="Kallelse"
-        title="Föreningsstämma Brf. Imatra nr 193"
-        summary="Kallelse till Brf. Imatras föreningstämma torsdagen 4/5 i Folkets Husby"
-      >
-               <main {...props} />
-          </Centered>
-      </Body>
-    </MDXProvider>
-}
