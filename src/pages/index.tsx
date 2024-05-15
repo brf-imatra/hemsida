@@ -46,10 +46,10 @@ export default function Home() {
         <div className='flex w-full flex-row flex-wrap justify-start'>
 
           {/*<InbjudanFöreningsstämma />*/}
-          {/*<Årsstämma />*/}
           {/*<Badrum />*/}
           {/*<Avgiftshöjning2024 />*/}
           <ImatraNytt />
+          <Årsstämma />
           {/*<Årsstämma2024 />*/}
           <Släckljusen />
           <NyttLokalkontorHSB />
