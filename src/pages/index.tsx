@@ -6,7 +6,7 @@ import SocialLinksFooter from '../components/MenuShell/footer';
 import Image from 'next/image';
 
 export default function Home() {
-  const bannerEl = true ? (
+  const bannerEl = false ? (
     <Banner
       title='Föreningsstämman onsdag 15;e maj'
       message='Föreningsstämman onsdag 15;e maj från kl 18:00 uppe i Folkets Husby och därför är återvinningsstugan stängd denna onsdag.'
@@ -46,10 +46,11 @@ export default function Home() {
         <div className='flex w-full flex-row flex-wrap justify-start'>
 
           {/*<InbjudanFöreningsstämma />*/}
-          <Årsstämma />
+          {/*<Årsstämma />*/}
           {/*<Badrum />*/}
           {/*<Avgiftshöjning2024 />*/}
           <ImatraNytt />
+          {/*<Årsstämma2024 />*/}
           <Släckljusen />
           <NyttLokalkontorHSB />
           <Årsstämma2023 />
@@ -247,6 +248,21 @@ function Årsstämma() {
         title='Föreningsstämma 2024'
         summary='Kallelse till Brf. Imatras föreningsstämma onsdag 15/5 i Folkets Husby. Här hittar du 2023 årsredovisning, valberedningensförslag samt motioner. Klicka för att läsa mer...'
         hrefLink='/foreningsstamma'
+      />
+    </div>
+  );
+}
+
+function Årsstämma2024() {
+  return (
+    <div className='w-64 flex-grow pr-5 pt-10'>
+      <Card
+        imageUrl='/undraw/undraw_public_discussion_re_w9up.svg'
+        imageAlt='Protokoll från föreningstämman 2024 för brf Imatra'
+        published='2024-05-xx'
+        title='Föreningsstämma 2024'
+        summary="Protokoll från föreningsstämma 2024-05-15 i Fokets Husby är nu justerat och godkännt. Protokollet finns att läsa här eller under fliken 'Dokument' i menyn."
+        hrefLink='/dokument/arsredovisning/2024/protokoll_brf_imatra_stamma_2024-2024-05-15.pdf'
       />
     </div>
   );
