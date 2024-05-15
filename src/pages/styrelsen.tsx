@@ -1,6 +1,7 @@
 import React from 'react';
 import { Body } from '../components';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const summaryText = 'Verksamhetsåret maj 2023 till april/maj 2024.';
 const styrelsemedlemmar: People[] = [
@@ -49,7 +50,17 @@ const valberedningen: People[] = [
   // },
 ];
 
+
 export default function Styrelsen() {
+  return (
+    <Body>
+      <p className="mt-6 text-lg leading-8 text-gray-600">Se protokoll från senaste årets föreningstämma för nuvarande styrelsesammanstättning.</p>
+      <Link href="/dokuments" className="font-semibold text-indigo-600 hover:text-indigo-500 underline">Länk till dokument</Link>
+    </Body>
+  );
+}
+
+export function Styrelsen_old() {
   return (
     <Body>
       <TeamWithSmallImages

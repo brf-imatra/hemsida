@@ -17,7 +17,7 @@ export default function MedlemsInfomation() {
     <Body title='Medlemsinformation'>
       <BasicCard id='bostadsratt'>
         <Bostadsrätt />
-        <div className='flex justify-center overflow-hidden bg-white'>
+       {/* <div className='flex justify-center overflow-hidden bg-white'>
           <div className='px-4 py-5 sm:p-6'>
             <Link href='/styrelsen' passHref>
               <button
@@ -28,7 +28,7 @@ export default function MedlemsInfomation() {
               </button>
             </Link>
           </div>
-        </div>
+        </div>*/}
         <div className='relative overflow-hidden bg-white py-16'>
           <div className='relative px-4 sm:px-6 lg:px-8'>
             <div className='prose prose-lg prose-indigo mx-auto mt-6 text-gray-500'>
