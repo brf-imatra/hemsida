@@ -122,11 +122,17 @@ const ForeningsDokument: Array<DokumentRadProps> = [
 ];
 
 const Dokument2024: Array<DokumentRadProps> = [
-    {
+  {
     documentName: 'årsredovisning_2023_imatra.pdf',
     href: '/dokument/arsredovisning/2024/arsredovisning_2023_imatra.pdf',
     tag: 'PDF',
     title: 'Årsredovisning',
+  },
+  {
+    documentName: 'protokoll_brf_imatra_stamma_2024-05-15.pdf',
+    href: '/dokument/arsredovisning/2024/protokoll_brf_imatra_stamma_2024-05-15.pdf',
+    tag: 'PDF',
+    title: 'Föreningsstämma',
   },
 ];
 
