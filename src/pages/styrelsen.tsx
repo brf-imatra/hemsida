@@ -50,12 +50,19 @@ const valberedningen: People[] = [
   // },
 ];
 
-
 export default function Styrelsen() {
   return (
     <Body>
-      <p className="mt-6 text-lg leading-8 text-gray-600">Se protokoll från senaste årets föreningstämma för nuvarande styrelsesammanstättning.</p>
-      <Link href="/dokuments" className="font-semibold text-indigo-600 hover:text-indigo-500 underline">Länk till dokument</Link>
+      <p className='mt-6 text-lg leading-8 text-gray-600'>
+        Se protokoll från senaste årets föreningstämma för nuvarande
+        styrelsesammanstättning.
+      </p>
+      <Link
+        href='/dokuments'
+        className='font-semibold text-indigo-600 underline hover:text-indigo-500'
+      >
+        Länk till dokument
+      </Link>
     </Body>
   );
 }

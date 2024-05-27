@@ -44,12 +44,12 @@ export default function Home() {
       </div>
       </Well> */}
         <div className='flex w-full flex-row flex-wrap justify-start'>
-
+          <ProtokollStämma2024 />
           {/*<InbjudanFöreningsstämma />*/}
           {/*<Badrum />*/}
           {/*<Avgiftshöjning2024 />*/}
           <ImatraNytt />
-          <Årsstämma />
+          {/* <Årsstämma />*/}
           {/*<Årsstämma2024 />*/}
           <Släckljusen />
           <NyttLokalkontorHSB />
@@ -104,6 +104,21 @@ function KommandeAvgiftshöjningar() {
         title='Ekonomi-info'
         summary='Brf Imatras kommer att behöva höja årsavgiften kraftigare än normalt under de kommande åren. Detta beror på att vi behöver göra stora investeringar i fastigheten. Vi kommer att behöva höja årsavgiften med 10% under 2023.'
         hrefLink='/boendeinformation/stambyte-ekonomi-info-2022-09-16'
+      />
+    </div>
+  );
+}
+
+function ProtokollStämma2024() {
+  return (
+    <div className='w-64 flex-grow pr-5 pt-10'>
+      <Card
+        imageUrl='/undraw/undraw_public_discussion_re_w9up.svg'
+        imageAlt='Protokoll från ordinarie föreningstämman för brf Imatra'
+        published='2024-05-27'
+        title='Protokoll'
+        summary="Protokoll från ordinarie föreningsstämma 2024-05-14 i Fokets Husby är nu justerat och godkännt. Protokollet finns att läsa här eller under fliken 'Dokument' i menyn."
+        hrefLink='/dokument/arsredovisning/2024/protokoll_brf_imatra_stamma_2024-05-15.pdf'
       />
     </div>
   );
@@ -309,7 +324,9 @@ Vi ser fram emot att träffa dig!
       introducing='Välkommen'
       title='Brf Imatras årsstämma'
       summary='Onsdagen den 15 maj bjuder vi in alla medlemmar till vår årliga föreningsstämma på Folkets Husby. Under stämman får du information om föreningens verksamhet under det gångna året, och du har möjlighet att påverka föreningens framtid.'
-    ><p className='mt-8 text-xl leading-8 text-gray-500'>{text}</p></Centered>
+    >
+      <p className='mt-8 text-xl leading-8 text-gray-500'>{text}</p>
+    </Centered>
   );
 }
 

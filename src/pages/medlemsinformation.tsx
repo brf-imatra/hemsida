@@ -17,7 +17,7 @@ export default function MedlemsInfomation() {
     <Body title='Medlemsinformation'>
       <BasicCard id='bostadsratt'>
         <Bostadsrätt />
-       {/* <div className='flex justify-center overflow-hidden bg-white'>
+        {/* <div className='flex justify-center overflow-hidden bg-white'>
           <div className='px-4 py-5 sm:p-6'>
             <Link href='/styrelsen' passHref>
               <button
