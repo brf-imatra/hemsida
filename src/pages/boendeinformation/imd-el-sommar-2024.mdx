@@ -1,0 +1,88 @@
+import { Alert, Body, Centered } from '../../components';
+import {MDXProvider} from '@mdx-js/react'
+import { ExclamationTriangleIcon } from '@heroicons/react/20/solid'
+
+export default props => (
+  <MDXProvider>
+      <Body>
+          <Centered
+        introducing="IMD-el"
+        title="Angående felaktig avisering av IMD-el"
+        summary="På avgiftsavin för juli (med förfallodatum 2024-06-28) har felaktigt elförbrukningen för tre månader debiterats. Detta beror på att Infometric, som levererar mätdata till HSB, har exporterat fel datafiler, samt att HSB missat att sprida ut kostnaden för el över fler månader."
+      >
+               <main {...props} />
+          </Centered>
+      </Body>
+  </MDXProvider>
+)
+
+
+
+
+Styrelsen beklagar detta och har har varit i kontakt med både Infometric och HSB för att liknande fel inte ska inträffa igen och för att hitta en lösning på det fel som nu föreligger.
+
+Posten ”EL IMD” på juli-avin som avser perioden 2023-12-01−2023-12-31 är helt fel eftersom IMD-el inte startade förrän i januari. Boende uppmanas att inte betala in det beloppet (plus motsvarande momspost) utan subtrahera det från fakturans totalbelopp innan inbetalning. Om du ändå betalar in detta kommer du ha betalat för mycket och överskottet överförs då till nästkommande avi. Ingen kommer alltså i slutändan betala för decembers elförbrukning.
+
+Styrelsen har beslutat att de medlemmar som önskar få anstånd för IMD-el-debiteringen avseende perioden: 2024-03-01 - 2024-03-31 behöver ta kontakt med Kund och medlemsservice ([010-442 10 00](tel:010-4421000), [service.stockholm@hsb.se](mailto:service.stockholm@hsb.se)). Anståndet gäller till 2024-08-30 och enbart för beloppet avseende el (plus momsen).
+
+
+Priser för el per månad 2024:
+
+<table class="min-w-full divide-y divide-gray-200">
+  <thead class="bg-gray-50">
+    <tr>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Månad
+      </th>
+      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Pris (SEK)
+      </th>
+    </tr>
+  </thead>
+  <tbody class="bg-white divide-y divide-gray-200">
+    <tr>
+      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+        Januari
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        2,38
+      </td>
+    </tr>
+    <tr>
+      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+        Februari
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        2,02
+      </td>
+    </tr>
+    <tr>
+      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+        Mars
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        2,07
+      </td>
+    </tr>
+    <tr>
+      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+        April
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        1,76
+      </td>
+    </tr>
+    <tr>
+      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+        Maj
+      </td>
+      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+        1,37
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+Med vänlig hälsning \
+Styrelsen HSB Brf Imatra i Stockholm

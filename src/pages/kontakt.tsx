@@ -88,7 +88,7 @@ function HSBMedlemsservice() {
           <dt className='pb-2 text-sm font-medium leading-5 text-gray-500'>
             1 juli - 15 augusti
           </dt>
-          <dt>Måndag 8:00-12:00</dt>
+          <dt>Onsdag  8:00-12:00</dt>
           <dt>Torsdag 13:00-18:00</dt>
         </dl>
       </DescriptionListRow>
