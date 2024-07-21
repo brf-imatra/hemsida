@@ -44,6 +44,7 @@ export default function Home() {
       </div>
       </Well> */}
         <div className='flex w-full flex-row flex-wrap justify-start'>
+          <ImdElKorrigering />
           <ProtokollStämma2024 />
           {/*<InbjudanFöreningsstämma />*/}
           {/*<Badrum />*/}
@@ -348,6 +349,21 @@ function StillaståendeHissar2023() {
       title='Reparation av hissar'
       summary='Tyvärr är det flera hissar som är ur funktion i vår förening. Anledningen till detta är att frekvensrikarna har gått sönder och det är både svårt att få tag på dem och dyrt att byta ut dem. Detta innebär att det kommer att ta tid att få hissarna i drift igen.'
     />
+  );
+}
+
+function ImdElKorrigering() {
+  return (
+    <div className='w-64 flex-grow pr-5 pt-10'>
+      <Card
+        imageUrl='/undraw/undraw_electricity_k2ft.svg'
+        imageAlt='Tips för att hålla nere elförbrukningen'
+        published='2024-06-19'
+        title='IMD-el avier'
+        summary='Angående felaktig avisering av IMD-el. På avgiftsavin för juli (med förfallodatum 2024-06-28) har felaktigt elförbrukningen för tre månader debiterats. Klicka för att läsa mer...'
+        hrefLink='/boendeinformation/imd-el-sommar-2024'
+      />
+    </div>
   );
 }
 
