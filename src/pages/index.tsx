@@ -204,10 +204,10 @@ function ImatraNytt() {
       <Card
         imageUrl='/undraw/undraw_newspaper_re_syf5.svg'
         imageAlt='Brf Imatra Nyhetsbrev'
-        published='2024-04-18'
+        published='2024-11-29'
         title='Brf Imatra Nyhetsbrev'
-        summary='IMD-el med kvartalsvis debitering. Returrunda där du kan lämna saker för återvinning. Beab utför vårstädning, beskärning och reparationer. Grilla försiktigt och tänk på brandrisken. Föreningsstämma och nya ledamöter till styrelsen efterlyses! Klicka för att läsa mer...'
-        hrefLink='/imatranytt/2024-april'
+        summary='Vi informerar om stambytets fortskridande, individuell elmätning, miljöstugan, julsäsong, hissar, passagesystem och avgiftshöjning. Det finns också information om öppet hus, föreningslokalen och HSB:s lokalkontor. Viktiga telefonnummer och kontaktuppgifter hittar du också här. Klicka för att läsa mer...'
+        hrefLink='/imatranytt/2024-november'
       />
     </div>
   );

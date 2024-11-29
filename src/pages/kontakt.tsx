@@ -88,7 +88,7 @@ function HSBMedlemsservice() {
           <dt className='pb-2 text-sm font-medium leading-5 text-gray-500'>
             1 juli - 15 augusti
           </dt>
-          <dt>Onsdag  8:00-12:00</dt>
+          <dt>Onsdag 8:00-12:00</dt>
           <dt>Torsdag 13:00-18:00</dt>
         </dl>
       </DescriptionListRow>
@@ -176,9 +176,9 @@ function Securitas() {
   return (
     <DescriptionList
       title='Securitas'
-      description='Styr upp ordningsproblem och utför parkeringsövervakning på gårdar, garage och vändplaner.'
+      description='Akut felanmälan utanför vanlig kontorstid. Securitas hanterar även ordningsproblem och utför parkeringsövervakning på gårdar, garage och vändplaner.'
     >
-      <DescriptionListRow title='Störningsjour' borderless={true}>
+      <DescriptionListRow title='Akut felanmälan' borderless={true}>
         <div className='flex flex-1'>
           <PhoneIcon
             className='h-5 w-5 flex-shrink-0 text-gray-400'
@@ -186,7 +186,23 @@ function Securitas() {
           />
           <span className='pl-2'>
             <a
-              href='tel:010-470 55 10'
+              href='tel:086950000'
+              className='font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500'
+            >
+              08-695 00 00
+            </a>
+          </span>
+        </div>
+      </DescriptionListRow>
+      <DescriptionListRow title='Störningsjour' borderless={false}>
+        <div className='flex flex-1'>
+          <PhoneIcon
+            className='h-5 w-5 flex-shrink-0 text-gray-400'
+            aria-hidden='true'
+          />
+          <span className='pl-2'>
+            <a
+              href='tel:0104705510'
               className='font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500'
             >
               010-470 55 10
@@ -202,7 +218,7 @@ function Securitas() {
           />
           <span className='pl-2'>
             <a
-              href='tel:08-657 77 75'
+              href='tel:086577775'
               className='font-medium text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-500'
             >
               08-657 77 75

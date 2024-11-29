@@ -29,42 +29,7 @@ export default function MedlemsInfomation() {
             </Link>
           </div>
         </div>*/}
-        <div className='relative overflow-hidden bg-white py-16'>
-          <div className='relative px-4 sm:px-6 lg:px-8'>
-            <div className='prose prose-lg prose-indigo mx-auto mt-6 text-gray-500'>
-              <h2>Intresserad av styrelsearbete?</h2>
-              <p>
-                Är du intresserad av att sitta i styrelsen i din
-                bostadsrättsförening, men vet inte riktigt vad det innebär och
-                vad du behöver kunna? HSB Stockholm erbjuder en föreläsning med
-                verksamhetschef Petrus Jansson som besvarar frågeställningar
-                som:
-              </p>
-              <ul>
-                <li>
-                  Hur arbetar en bostadsrättsförenings styrelse och vilka roller
-                  finns?
-                </li>
-                <li>Hur fungerar en bostadsrättsförenings ekonomi?</li>
-                <li>Vilka lagar och regler styr en bostadsrättsförening?</li>
-                <li>
-                  Vilket ansvar har styrelsen i en bostadsrättsföreningen?
-                </li>
-              </ul>
-              <div
-                className='relative h-0 max-w-full overflow-hidden'
-                style={{ paddingBottom: '56.25%' }}
-              >
-                <iframe
-                  className='absolute left-0 top-0 h-full w-full border-0'
-                  src='https://www.youtube.com/embed/G64_T709Bns'
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <KonsekvensUtanStyrelse />
       </BasicCard>
       <WellOnGrey className='mt-6'>
@@ -94,5 +59,43 @@ export default function MedlemsInfomation() {
         <Tvättstugor />
       </WellOnGrey>
     </Body>
+  );
+}
+
+function HsbFilmOmStyrelse() {
+  return (
+    <div className='relative overflow-hidden bg-white py-16'>
+      <div className='relative px-4 sm:px-6 lg:px-8'>
+        <div className='prose prose-lg prose-indigo mx-auto mt-6 text-gray-500'>
+          <h2>Intresserad av styrelsearbete?</h2>
+          <p>
+            Är du intresserad av att sitta i styrelsen i din
+            bostadsrättsförening, men vet inte riktigt vad det innebär och vad
+            du behöver kunna? HSB Stockholm erbjuder en föreläsning med
+            verksamhetschef Petrus Jansson som besvarar frågeställningar som:
+          </p>
+          <ul>
+            <li>
+              Hur arbetar en bostadsrättsförenings styrelse och vilka roller
+              finns?
+            </li>
+            <li>Hur fungerar en bostadsrättsförenings ekonomi?</li>
+            <li>Vilka lagar och regler styr en bostadsrättsförening?</li>
+            <li>Vilket ansvar har styrelsen i en bostadsrättsföreningen?</li>
+          </ul>
+          <div
+            className='relative h-0 max-w-full overflow-hidden'
+            style={{ paddingBottom: '56.25%' }}
+          >
+            <iframe
+              className='absolute left-0 top-0 h-full w-full border-0'
+              src='https://www.youtube.com/embed/G64_T709Bns'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
