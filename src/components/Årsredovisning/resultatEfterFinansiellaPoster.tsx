@@ -93,6 +93,10 @@ const resultatData = [
     date: '2023',
     'Resultat, efter finansiella poster': -1_470_858,
   },
+  {
+    date: '2024',
+    'Resultat, efter finansiella poster': -420_457,
+  },
 ];
 
 const currencyFormatter = (number: number) => {

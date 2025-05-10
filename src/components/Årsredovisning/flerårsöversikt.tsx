@@ -71,11 +71,25 @@ export const performance = [
     date: '2023',
     'Sparande, kr/kvm': -9,
     'Skuldsättning, kr/kvm': 4125,
+    'Skuldsättning bostadsrättsyta, kr/kvm': 4680,
     'Räntekänslighet, %': 5,
     'Energikostnad, kr/kvm': 319,
     'Årsavgifter, kr/kvm': 856,
+    'Årsavgifter/totala intäkter, %': 72,
     'Totala intäkter, kr/kvm': 1075,
     'Soliditet, %': -4,
+  },
+  {
+    date: '2024',
+    'Sparande, kr/kvm': 101,
+    'Skuldsättning, kr/kvm': 8077,
+    'Skuldsättning bostadsrättsyta, kr/kvm': 9165,
+    'Räntekänslighet, %': 9,
+    'Energikostnad, kr/kvm': 333,
+    'Årsavgifter, kr/kvm': 1018,
+    'Årsavgifter/totala intäkter, %': 78,
+    'Totala intäkter, kr/kvm': 1149,
+    'Soliditet, %': -2,
   },
 ];
 
@@ -87,6 +101,9 @@ const currencyFormatter = (number: number) => {
 const numberFormatter = (value: number) =>
   `${Intl.NumberFormat('sv').format(value).toString()}`;
 
+const percentageFormatter = (value: number) =>
+  `${Intl.NumberFormat('sv').format(value).toString()} %`;
+
 export function Flerårsöversikt() {
   const [selectedKpi, setSelectedKpi] = useState('Sparande, kr/kvm');
 
@@ -94,12 +111,14 @@ export function Flerårsöversikt() {
   const formatters: { [key: string]: any } = {
     'Sparande, kr/kvm': currencyFormatter,
     'Skuldsättning, kr/kvm': currencyFormatter,
-    'Räntekänslighet, %': numberFormatter,
+    'Skuldsättning bostadsrättsyta, kr/kvm': currencyFormatter,
+    'Räntekänslighet, %': percentageFormatter,
     'Energikostnad, kr/kvm': currencyFormatter,
     'Driftkostnad, kr/kvm': currencyFormatter,
     'Årsavgifter, kr/kvm': currencyFormatter,
     'Totala intäkter, kr/kvm': currencyFormatter,
-    'Soliditet, %': numberFormatter,
+    'Årsavgifter/totala intäkter, %': percentageFormatter,
+    'Soliditet, %': percentageFormatter,
   };
 
   return (
@@ -127,7 +146,7 @@ export function Flerårsöversikt() {
             defaultValue={selectedKpi}
             onValueChange={(value) => setSelectedKpi(value)}
           >
-            {Object.keys(performance[0])
+            {Object.keys(performance[6])
               .filter((item) => item !== 'date')
               .map((item) => (
                 <SearchSelectItem key={item} value={item} defaultValue={item} />
