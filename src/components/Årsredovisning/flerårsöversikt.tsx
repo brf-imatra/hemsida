@@ -91,6 +91,18 @@ export const performance = [
     'Totala intäkter, kr/kvm': 1149,
     'Soliditet, %': -2,
   },
+  {
+    date: '2025',
+    'Sparande, kr/kvm': 224,
+    'Skuldsättning, kr/kvm': 6961,
+    'Skuldsättning bostadsrättsyta, kr/kvm': 9629,
+    'Räntekänslighet, %': 8,
+    'Energikostnad, kr/kvm': 282,
+    'Årsavgifter, kr/kvm': 1272,
+    'Årsavgifter/totala intäkter, %': 78,
+    'Totala intäkter, kr/kvm': 1185,
+    'Soliditet, %': -1,
+  }
 ];
 
 // Basic formatters for the chart values

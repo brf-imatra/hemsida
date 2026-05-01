@@ -143,6 +143,11 @@ const fastighetsFörsäkringsData = [
     Nettoomsättning: 21_575_392,
     'Drift och underhåll': 15_939_940,
   },
+  {
+    date: '2025',
+    Nettoomsättning: 26_736_113,
+    'Drift och underhåll': 16_802_080,
+  },
 ];
 
 const dataFormatter = (number: number) => {
